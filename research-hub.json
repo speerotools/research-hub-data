@@ -1,6 +1,6 @@
 {
-  "version": "2026-09-14T09:00:10Z",
-  "commit": "e9855669ac4e9cf82f3f3927dbdd670ebfa5a6bf",
+  "version": "2026-09-14T10:55:00Z",
+  "commit": "2e59cae501e7154d1d74b9d5e72b257b2ed055ca",
   "methods": {
     "tree-testing": {
       "name": "Tree Testing",
@@ -2259,5 +2259,41 @@
     "Askable": "Participant Recruitment",
     "Amplitude": "Analytics"
   },
-  "toolCount": 36
+  "toolCount": 36,
+  "vendorPages": {
+    "ablyft": "ablyft",
+    "datadog": "eppo-by-datadog",
+    "omniconvert": "omniconvert",
+    "confidence (spotify)": "spotify-confidence",
+    "sitecore": "sitecore",
+    "shoplift": "shoplift",
+    "launchdarkly": "launchdarkly",
+    "symplify": "symplify",
+    "vwo": "vwo",
+    "optimizely": "optimizely",
+    "adobe target": "adobe-target",
+    "conductrics": "conductrics",
+    "absmartly": "absmartly",
+    "intelligems": "intelligems",
+    "webtrends optimize": "webtrends-optimize",
+    "posthog": "posthog",
+    "uniform": "uniform",
+    "monetate": "monetate",
+    "ab tasty": "ab-tasty",
+    "convert": "convert",
+    "zoho pagesense": "zoho-pagesense",
+    "harness fme": "harness-fme",
+    "salesforce marketing cloud personalization": "salesforce-marketing-cloud-personalization",
+    "contentful personalization (formerly ninetailed)": "ninetailed-by-contentful",
+    "varify.io": "varify",
+    "croct": "croct",
+    "mutiny": "mutiny",
+    "growthbook": "growthbook",
+    "kameleoon": "kameleoon",
+    "statsig": "statsig",
+    "webflow optimize": "webflow-optimize",
+    "compose": "compose",
+    "amplitude": "amplitude",
+    "dynamic yield": "dynamic-yield"
+  }
 }
