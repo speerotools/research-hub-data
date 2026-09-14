@@ -176,7 +176,7 @@ Each carries one Code Embed:
 ```html
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,900;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/speerotools/research-hub-embed@v1.1.0/dist/embed.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/speerotools/research-hub-embed@v1.1.1/dist/embed.css">
 
 <div id="speero-research-hub"></div>
 
@@ -186,7 +186,7 @@ Each carries one Code Embed:
     methodBase: "/research-methods/"
   };
 </script>
-<script src="https://cdn.jsdelivr.net/gh/speerotools/research-hub-embed@v1.1.0/dist/embed.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/speerotools/research-hub-embed@v1.1.1/dist/embed.js"></script>
 ```
 
 Pin the tag. `@main` is mutable, jsDelivr caches it, and a rollback then is
@@ -241,7 +241,7 @@ Each carries the site's own `GTM Snippet`, `Custom Nav CSS`, `navbar` and
 each template, because Webflow's class editor cannot express descendant
 selectors and the HTML inside a CMS rich text field carries no classes.
 
-Both landing pages carry the hub embed pinned to `@v1.1.0`, mounted at
+Both landing pages carry the hub embed pinned to `@v1.1.1`, mounted at
 `#speero-research-hub` (the same namespacing `/ab-testing-tools` uses), plus a
 Collection List of every item rendered as plain links below it. That list is
 what passes authority into the 51 new URLs and it works with JavaScript off.
