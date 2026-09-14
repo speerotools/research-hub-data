@@ -72,9 +72,14 @@ jobs:
           WEBFLOW_TOKEN: ${{ secrets.WEBFLOW_TOKEN }}
           WEBFLOW_RECIPES_COLLECTION: ${{ vars.WEBFLOW_RECIPES_COLLECTION }}
           WEBFLOW_METHODS_COLLECTION: ${{ vars.WEBFLOW_METHODS_COLLECTION }}
-          # Keep publishing off until the Webflow templates exist, otherwise
-          # you publish 51 unstyled pages.
+          # Publishes the CMS items this run changed. This is the one that
+          # makes Airtable edits reach speero.com on their own.
           WEBFLOW_PUBLISH: ${{ vars.WEBFLOW_PUBLISH }}
+          # Additionally publishes the whole site. Pushes EVERY staged change
+          # across speero.com, including unfinished Designer work, so leave it
+          # off unless you have decided you want that.
+          WEBFLOW_SITE_PUBLISH: ${{ vars.WEBFLOW_SITE_PUBLISH }}
+          WEBFLOW_CUSTOM_DOMAINS: ${{ vars.WEBFLOW_CUSTOM_DOMAINS }}
           DRY_RUN: ${{ inputs.dry_run }}
           ALLOW_SLUG_CHANGE: ${{ inputs.allow_slug_change }}
         run: python .github/scripts/webflow_sync.py

@@ -25,9 +25,10 @@ Safety
   - A changed slug aborts unless ALLOW_SLUG_CHANGE=true. Renaming a live URL
     needs a 301, and the Webflow redirects API is Enterprise-only, so that
     redirect has to be added by hand in site settings first.
-  - Publishing is item-level only. The site publish endpoint pushes every
-    staged change on the whole site, including whatever someone has half
-    finished in the Designer, so CI must never call it.
+  - Publishing is item-level by default. WEBFLOW_SITE_PUBLISH additionally
+    publishes the whole site, which pushes EVERY staged change across
+    speero.com, including whatever someone has half finished in the
+    Designer. It is off unless you turn it on deliberately.
 
 Environment variables:
   WEBFLOW_TOKEN                 required - CMS read/write + publish
@@ -35,7 +36,9 @@ Environment variables:
   WEBFLOW_RECIPES_COLLECTION    required once created
   WEBFLOW_METHODS_COLLECTION    required once created
   DATA_FILE                     default: research-hub.json
-  WEBFLOW_PUBLISH               default: "false"
+  WEBFLOW_PUBLISH               default: "false"  (publishes changed CMS items)
+  WEBFLOW_SITE_PUBLISH          default: "false"  (also publishes the whole site)
+  WEBFLOW_CUSTOM_DOMAINS        comma-separated domain ids; empty = webflow.io only
   DRY_RUN                       default: "false"  (print the plan, write nothing)
   ALLOW_SLUG_CHANGE             default: "false"
   MAX_ARCHIVE                   default: "5"
@@ -68,6 +71,8 @@ DRY_RUN = os.environ.get("DRY_RUN", "false").lower() == "true"
 ALLOW_SLUG_CHANGE = os.environ.get("ALLOW_SLUG_CHANGE", "false").lower() == "true"
 MAX_ARCHIVE = int(os.environ.get("MAX_ARCHIVE", "5"))
 PURGE = os.environ.get("JSDELIVR_PURGE", "true").lower() == "true"
+SITE_PUBLISH = os.environ.get("WEBFLOW_SITE_PUBLISH", "false").lower() == "true"
+CUSTOM_DOMAINS = [d.strip() for d in os.environ.get("WEBFLOW_CUSTOM_DOMAINS", "").split(",") if d.strip()]
 
 # A sync that suddenly has almost no content is a broken sync, not a deletion.
 MIN_RECIPES = int(os.environ.get("MIN_RECIPES", "10"))
@@ -78,6 +83,9 @@ PURGE_URLS = [
 ]
 
 BATCH = 100  # Webflow's cap on bulk create / update / publish
+
+# Filled by reconcile(); drives whether a site publish is worth doing.
+CHANGED: list[int] = []
 
 
 # ---------------------------------------------------------------------------
@@ -262,12 +270,31 @@ def reconcile(label: str, collection: str, desired: dict[str, dict],
         print(f"   {len(changed_ids)} item(s) staged, not published "
               f"(WEBFLOW_PUBLISH is off)")
 
+    CHANGED.append(len(changed_ids))
     return id_map
 
 
 # ---------------------------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------------------------
+
+def publish_site() -> None:
+    """Publish the whole site. Only called when WEBFLOW_SITE_PUBLISH is on.
+
+    This pushes every staged change across speero.com, not only this hub's.
+    With no domain ids it reaches the webflow.io subdomain only, which is a
+    staging publish and will not update the live site.
+    """
+    body: dict = {}
+    if CUSTOM_DOMAINS:
+        body["customDomains"] = CUSTOM_DOMAINS
+    else:
+        body["publishToWebflowSubdomain"] = True
+        print("  WARN no WEBFLOW_CUSTOM_DOMAINS set: publishing to the "
+              "webflow.io subdomain only, speero.com will not update",
+              file=sys.stderr)
+    req("POST", f"{API}/sites/{SITE_ID}/publish", body)
+
 
 def purge_cdn() -> None:
     for u in PURGE_URLS:
@@ -321,6 +348,14 @@ def main() -> None:
         desired_recipes[r["rid"]] = fd
 
     reconcile("Research Recipes", RECIPES_COLLECTION, desired_recipes, MIN_RECIPES)
+
+    # A site publish is only worth its blast radius when something moved.
+    if SITE_PUBLISH and not DRY_RUN and sum(CHANGED):
+        target = ", ".join(CUSTOM_DOMAINS) if CUSTOM_DOMAINS else "webflow.io subdomain"
+        print(f"\nPublishing the site ({target})...")
+        publish_site()
+    elif SITE_PUBLISH and not DRY_RUN:
+        print("\nNothing changed, skipping the site publish.")
 
     if PURGE and not DRY_RUN:
         print("\nPurging jsDelivr cache...")

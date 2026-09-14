@@ -51,7 +51,9 @@ python .github/scripts/selftest.py
 | Secret | `WEBFLOW_TOKEN` | Webflow site token with CMS read/write + publish |
 | Variable | `WEBFLOW_RECIPES_COLLECTION` | `6aa7a1bd15cd9e02755eb211` |
 | Variable | `WEBFLOW_METHODS_COLLECTION` | `6aa7a1bd0bfd0f44768d2230` |
-| Variable | `WEBFLOW_PUBLISH` | `false` until the templates are built, then `true` |
+| Variable | `WEBFLOW_PUBLISH` | `true` once the templates are built. Publishes the CMS items each run changed, which is what makes Airtable edits reach the site on their own |
+| Variable | `WEBFLOW_SITE_PUBLISH` | `false` by default. `true` also publishes the whole site each time something changes |
+| Variable | `WEBFLOW_CUSTOM_DOMAINS` | `5fc6336ebdd770a40b4cc91e,5fc6336ebdd7702abe4cc91d` (www.speero.com, speero.com). Required if `WEBFLOW_SITE_PUBLISH` is on, or the publish only reaches the webflow.io subdomain |
 
 ## Safety rails
 
@@ -69,9 +71,12 @@ These exist because the failure modes are silent, not loud.
 - **Removals archive, never delete**, and are capped at `MAX_ARCHIVE`.
 - **A thin data file aborts the run.** Fewer than 10 recipes or 10 methods is
   read as a failed sync, not as a deletion.
-- **No site publish from CI.** `POST /sites/:id/publish` pushes every staged
-  change on the whole site, including unfinished Designer work. This pipeline
-  only ever publishes the CMS items it touched.
+- **Site publish is opt-in.** By default the pipeline publishes only the CMS
+  items it touched, which covers every content change including brand new
+  recipes and methods. `WEBFLOW_SITE_PUBLISH=true` additionally publishes the
+  whole site, which is the only way to ship template and page changes
+  automatically, and which pushes every staged change across speero.com
+  including unfinished Designer work. It is skipped when nothing changed.
 
 ## Optional Airtable fields
 
