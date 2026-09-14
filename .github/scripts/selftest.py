@@ -134,5 +134,5 @@ def main(path: str) -> int:
 
 if __name__ == "__main__":
     target = sys.argv[1] if len(sys.argv) > 1 else str(
-        Path(__file__).parents[2] / "fixtures" / "research-hub.sample.json")
+        Path(__file__).parents[2] / "research-hub.json")
     sys.exit(main(target))

@@ -1,98 +1,98 @@
 # Speero Research Recipe Hub — Data
 
 Airtable is the source of truth. A GitHub Action turns it into the published
-JSON and into the Webflow CMS pages. Nothing in this repo is edited by hand
-except the scripts themselves.
-
-Published data (served via jsDelivr, read by the embed):
+JSON and into the Webflow CMS pages. Nothing here is edited by hand except the
+scripts.
 
 ```
 https://cdn.jsdelivr.net/gh/speerotools/research-hub-data@main/research-hub.json
 ```
 
-## One loop
+## The loop
 
-`sync.yml` runs nightly and on demand:
+`sync.yml` runs nightly at 05:00 UTC and on demand:
 
 1. `sync.py` reads the five Airtable tables and writes `research-hub.json`.
 2. `selftest.py` renders every page offline and fails on anything broken.
-3. The JSON is committed, so every change to the live data has a diff.
-4. `webflow_sync.py` reconciles the two CMS collections and purges the CDN.
+3. `publish_assets.py` writes the markdown mirrors, `llms.txt`, `llms-full.txt`.
+4. Everything is committed, so every change to live data has a diff.
+5. `webflow_sync.py` reconciles the two CMS collections and purges the CDN.
 
-Edit Airtable, the site follows. There is no monthly scan and no AI in this
-pipeline; the hub's content is written, not scraped.
+Edit Airtable, the site follows. No monthly scan, no AI in this pipeline.
 
-## Scripts (`.github/scripts/`)
+## Scripts
 
 | Script | What it does |
 |---|---|
 | `sync.py` | Airtable → `research-hub.json`. Strict: unresolvable method names, malformed method sequences and link fields that disagree with the sequence text all fail the run. |
-| `render.py` | Pure functions turning the JSON into Webflow-ready HTML and JSON-LD. No network. |
-| `webflow_sync.py` | Reconciles Research Recipes + Research Methods. Creates, updates only what changed, archives what left, publishes item by item. |
-| `selftest.py` | Offline validation of the rendered output. Runs against the committed fixture with no arguments. |
-
-Run the validator with no secrets at all:
-
-```bash
-python .github/scripts/selftest.py
-```
-
-## Docs
-
-- [`docs/making-changes.md`](docs/making-changes.md) — how to update the hub day to day
-- [`docs/setup.md`](docs/setup.md) — repos, tokens, variables, Airtable fields, first run
-- [`docs/webflow-build.md`](docs/webflow-build.md) — collection ids, template bindings, JSON-LD, landing pages
-- [`docs/launch-checklist.md`](docs/launch-checklist.md) — what to verify before publishing
+| `render.py` | Pure functions: JSON → Webflow-ready HTML and JSON-LD. No network. |
+| `webflow_sync.py` | Reconciles both collections, matched on Airtable record id. Refreshes landing page schema. |
+| `publish_assets.py` | Markdown mirrors, `llms.txt`, `llms-full.txt`. |
+| `selftest.py` | Offline validation. `python .github/scripts/selftest.py` needs no secrets. |
 
 ## Secrets and variables
 
 | Kind | Name | Value |
 |---|---|---|
-| Secret | `AIRTABLE_TOKEN` | PAT with `data.records:read` + `schema.bases:read` on base `apppcPYWsZzUeEOZ9` |
-| Secret | `WEBFLOW_TOKEN` | Webflow site token with CMS read/write + publish |
-| Variable | `WEBFLOW_RECIPES_COLLECTION` | `6aa7a1bd15cd9e02755eb211` |
+| Secret | `AIRTABLE_TOKEN` | PAT, `data.records:read` + `schema.bases:read`, base `apppcPYWsZzUeEOZ9` |
+| Secret | `WEBFLOW_TOKEN` | Site token, CMS read/write + publish |
 | Variable | `WEBFLOW_METHODS_COLLECTION` | `6aa7a1bd0bfd0f44768d2230` |
-| Variable | `WEBFLOW_PUBLISH` | `true` once the templates are built. Publishes the CMS items each run changed, which is what makes Airtable edits reach the site on their own |
-| Variable | `WEBFLOW_SITE_PUBLISH` | `false` by default. `true` also publishes the whole site each time something changes |
-| Variable | `WEBFLOW_CUSTOM_DOMAINS` | `5fc6336ebdd770a40b4cc91e,5fc6336ebdd7702abe4cc91d` (www.speero.com, speero.com). Required if `WEBFLOW_SITE_PUBLISH` is on, or the publish only reaches the webflow.io subdomain |
+| Variable | `WEBFLOW_RECIPES_COLLECTION` | `6aa7a1bd15cd9e02755eb211` |
+| Variable | `WEBFLOW_PUBLISH` | `true` publishes the CMS items each run changed |
+| Variable | `WEBFLOW_SITE_PUBLISH` | `true` also publishes the whole site. Pushes every staged change across speero.com, including unfinished Designer work |
+| Variable | `WEBFLOW_CUSTOM_DOMAINS` | `5fc6336ebdd770a40b4cc91e,5fc6336ebdd7702abe4cc91d`. Required with site publish, or it only reaches the webflow.io subdomain |
+
+Webflow site `5fbb892601063dd93dd166d7`. Templates: methods
+`6aa7a1bd0bfd0f44768d2236`, recipes `6aa7a1be15cd9e02755eb217`. Landing pages:
+recipes `6aa7afe0091e3b99dd1f5cee`, methods `6aa7afe1091e3b99dd1f5d56`.
+
+## Making changes
+
+**Content, a new recipe, a new method, a tool.** Edit Airtable. That is the
+whole job. The nightly run creates the page, URL, meta, internal links both
+ways and the landing page index entry. Run the workflow manually to see it
+sooner.
+
+A new record needs Name, Slug, Description; recipes also need a linked
+Opportunity, Research Methods and a Method sequence. The sequence must be
+`Stage` / rationale / `Methods: A, B, C` blocks separated by blank lines, and
+every method it names must match a record and appear in the link field too. If
+those disagree the run stops and names the record.
+
+**Design.** Webflow Designer, then publish.
+
+**The embed.** Edit `speerotools/research-hub-embed`, push, tag, then bump the
+version in the Code Embed on both landing pages and publish. Pinned on purpose:
+a tag is immutable, so a rollback is a one-character edit.
+
+**A slug.** Don't, unless it matters. The sync aborts on slug changes. Add the
+301 in Webflow site settings by hand first (the redirects API is
+Enterprise-only), then re-run with `allow_slug_change`.
 
 ## Safety rails
 
-These exist because the failure modes are silent, not loud.
+- Strict transforms. A method name that does not resolve is an error, not a
+  silently unlinked bit of plain text.
+- The link field and the sequence text must agree.
+- Slug changes abort the run.
+- Removals archive, never delete, and are capped by `MAX_ARCHIVE`.
+- Fewer than 10 recipes or 10 methods reads as a failed sync, not a deletion.
+- Site publish is opt-in and skipped when nothing changed.
 
-- **Strict transforms.** A method named in a `Method sequence` that matches no
-  record is an error. Those links are the cluster; a plain-text method name
-  looks fine on the page and quietly costs an internal link.
-- **Both sides must agree.** The `Research Methods` link field and the
-  `Method sequence` text describe the same relationship. If they disagree,
-  someone edited one and forgot the other, and the run stops.
-- **Slug changes abort.** A renamed slug breaks a live URL, and Webflow's
-  redirects API is Enterprise-only, so the 301 has to be added by hand in site
-  settings first. Then re-run with `allow_slug_change`.
-- **Removals archive, never delete**, and are capped at `MAX_ARCHIVE`.
-- **A thin data file aborts the run.** Fewer than 10 recipes or 10 methods is
-  read as a failed sync, not as a deletion.
-- **Site publish is opt-in.** By default the pipeline publishes only the CMS
-  items it touched, which covers every content change including brand new
-  recipes and methods. `WEBFLOW_SITE_PUBLISH=true` additionally publishes the
-  whole site, which is the only way to ship template and page changes
-  automatically, and which pushes every staged change across speero.com
-  including unfinished Designer work. It is skipped when nothing changed.
+## Known constraints
 
-## Optional Airtable fields
+**JSON-LD on item pages does not work.** Webflow HTML-escapes PlainText CMS
+tokens and entities are not decoded inside `<script>`, so a bound blob
+publishes as invalid JSON. A custom block also suppresses Webflow's own
+automatic `WebPage` schema, so both templates are cleared and rely on that.
+The landing pages carry full `WebSite` + `Organization` + `ItemList` schema,
+rebuilt every run, because static JSON is not affected.
 
-The sync works without these. Each one turns a feature back on:
+**Conditional visibility is Designer-only**; the visibility setting has zero
+bindable sources. So section headings are generated inside their field: an
+empty field renders nothing at all, rather than a bare heading.
 
-| Field | Table | Effect |
-|---|---|---|
-| `Last Modified` (Last Modified Time) | Recipes, Research Methods | Fills the visible "last updated" date and `dateModified` in the schema. Without it, pages carry no date. |
-| `New` (checkbox) | Recipes | Restores the "New" badge the prototype shows on 10 recipes. |
-| `Related method` (link to self) | Research Methods | Restores the related-method link. |
-| `Meta Title` / `Meta Description` | both | Overrides the generated meta for pages worth hand-writing. |
-
-## Data contract
-
-`research-hub.json` is the shape the prototype embed already speaks, so
-`embed.js` needed no reshaping beyond fetching instead of inlining. Recipes
-and methods are keyed by slug; `rid` on each carries the Airtable record id,
-which is what the Webflow sync matches on.
+**Optional Airtable fields.** `Last Modified` (both tables) drives the visible
+date and `dateModified`. `New` on Recipes restores the badge. `Related method`
+on Research Methods restores the paired-method line. `Meta Title` and
+`Meta Description` override the generated values.
