@@ -1,6 +1,6 @@
 {
-  "version": "2026-09-14T10:55:00Z",
-  "commit": "2e59cae501e7154d1d74b9d5e72b257b2ed055ca",
+  "version": "2026-09-14T11:59:19Z",
+  "commit": "efae9e53cd5f1c8a9dc09254c93bdb023e0ed19b",
   "methods": {
     "tree-testing": {
       "name": "Tree Testing",
@@ -19,7 +19,7 @@
         "Optimal Workshop",
         "UserZoom"
       ],
-      "related": null,
+      "related": "card-sorting",
       "desc": "Tree testing involves replicating a website navigation (existing or proposed) in a link \"tree\". Recruited participants are then set tasks to find specific content or information within the link tree. This provides data on how easy specific content is to find within the navigational structure.",
       "use": "Tree testing is similar to card sorting in that it provides insight into the navigational structure of a website. \n\nIt can be used to gather initial data into where the main issues are within an existing navigational structure (as identified via other research methods), and it can also be used as a validation technique to validate changes/improvements.",
       "pros": "Tree testing is a relatively unique research method due to its focused nature (specifically focused on website content structure). \n\nTree testing provides insight into how easy content is to find within an existing or proposed navigational structure.\n\nTree testing can be done on existing structures to identify issues and opportunities or on proposed structures to validate changes. \n\nTools like OptimalWorkshop make tree testing relatively quick and easy to set up and run.",
@@ -76,7 +76,7 @@
       "tools": [
         "Miro"
       ],
-      "related": null,
+      "related": "competitor-review",
       "desc": "A UX heuristic review in this context is a review of a website based on a set of guiding UX principles, with the aim to identify areas of potential UX friction (ultimately areas of the user experience that could be creating friction or barriers for users on that website). A UX Heuristic review can be conducted on any digital experience; from a full website or core user journey, through to a single page, a piece of functionality, or a design or prototype.",
       "use": "A UX heuristic review is a good starting point for an experimentation programme or larger research project. This is a particularly effective option in the case of low traffic pages which making it difficult to run polls or analyze analytics data. A UX heuristic review can also be used when there's limited time / budget to run alternative user research activities.",
       "pros": "A good starting point, particularly if you’re not very familiar with the website, e.g. you’re new to a business or working in an agency.\n\nIt’s relatively quick and inexpensive (no tool costs, only resource costs).\n\nCan be used as an effective tool for encouraging collaboration across teams, and for helping build a culture of experimentation.\n\nIdentifies “low hanging fruit” such as bugs and JDIs.",
@@ -145,7 +145,7 @@
       "tools": [
         "Zuko"
       ],
-      "related": null,
+      "related": "analytics-data-analysis",
       "desc": "Form analytics is similar to regular analytics analysis, but focused on your website forms.  You can analyse metrics such as form field interaction, drop out rates, error rates, etc to understand which fields are causing friction.",
       "use": "Exploratory research has identified a specific barrier in your checkout or on other onsite forms.",
       "pros": "Provides in-depth data to inform form optimisation; e.g. removing fields, changing layouts etc.",
@@ -184,7 +184,7 @@
       "tools": [
         "Usability Hub"
       ],
-      "related": null,
+      "related": "preference-test",
       "desc": "We use a sample pool of target participants and analyse their responses to a series of questions after they look at a page for a limited time (typically 5 seconds). This helps us gather feedback on the copy, UI, clarity/motivation on next action etc. Five second tests allow us to gauge what information and impression users derive from a design within the initial five seconds of viewing the page. This helps us understand the effectiveness of the design and the messaging.",
       "use": "The primary use case for a 5 second test is to gather insight into users very first impression of a page. This could be as part of research on landing page optimisation and / or acquisition research. \n\n5 second testing could also be used as part of validation research. If you want to establish how a change to a page, such as a headline copy change, will change users first impressions. \n\n5 second tests are best for gathering insights about copy and overall page design / messaging.",
       "pros": "5 second testing is a quick and inexpensive way to gather insight into users first impressions of a page.",
@@ -286,7 +286,7 @@
         "Survey Monkey",
         "Userback.io"
       ],
-      "related": null,
+      "related": "customer-interviews",
       "desc": "A customer survey sent out via email to your customers (ideally segmented by customer type, e.g. new customers, recently lapsed customers, VIPs, etc). Typically the goal of a customer survey is to understand customers perception of your product/service, to understand what problem/s your product/service solves for them and any improvement areas based on their experiences.",
       "use": "To understand customers motivations, FUDs (fears, uncertainties, and doubts) perception of your product/service, to understand what problem/s your product/service solves for them and any improvement areas based on their experiences. \n\nCustomer surveys can also be used to investigate specific topics or areas of opportunity.",
       "pros": "A customer survey allows you to gather large samples of data, which isn't possible when running customer interviews. Customer surveys can also be used alongside customer interviews to increase the depth of insight. \n\nCustomer surveys can be used to gather valuable insight into wider business strategy, as well as what is important to users in general when considering products/services like yours. \n\nCustomer surveys allow you to gather both qualitative and quantitative data, depending on the types of questions you ask.",
@@ -346,7 +346,7 @@
         "Google Forms",
         "Survey Monkey"
       ],
-      "related": null,
+      "related": "customer-interviews",
       "desc": "A survey sent by email to members of the sales team and/or the customer service team. These surveys gather insight from the internal teams who interact with customers every day, uncovering customer motivations, FUDs and frictions. This tribal knowledge from sales and customer service can then be applied to improve the website.",
       "use": "Sales / Customer Support surveys are an effective method when running exploratory research. \n\nSales / Customer Support surveys can be particularly useful when looking to develop or enhance ideal customer profiles, or personas. Speaking to sales teams can help you understand customers (and potential customers) key triggers and motivations for seeking out your product or service. You can also use sales interviews to uncover the primary barriers to conversion; the reasons why potential customers don't convert. \n\nCustomer support/service surveys are effective when looking to understand customer's key issues or frustrations. This type of data can be useful when focusing on retention for subscription products/services. This activity can also identify key questions that users have that could be answered on the website.",
       "pros": "A customer survey allows you to gather large samples of data, which isn't possible when running customer interviews. Customer surveys can also be used alongside customer interviews to increase the depth of insight. \n\nCustomer surveys allow you to gather both qualitative and quantitative data, depending on the types of questions you ask.",
@@ -498,7 +498,7 @@
         "UserZoom",
         "Lookback"
       ],
-      "related": null,
+      "related": "remote-usability-studies",
       "desc": "Use a sample pool of participants who match your target audience. Watch and listen as they walk through your site and perform queued tasks. Moderated usability studies involve one-to-one sessions conducted by a skilled moderator who will set the tasks and questions, allowing for a deeper level of insight. Moderated usability studies can be conducted in person or via Zoom, Teams, etc.",
       "use": "A requirement to understand the wider user journey, e.g. how users shop / browse more generally. A need for more in-depth, qualitative insights, a longer / more detailed user journey / set of tasks (that would be difficult to explain in a remote setting).",
       "pros": "Moderated usability studies give more control to the moderator, since they are running the session live. This means they can answer questions from the participant and / or bring the participant back on track if they get stuck or misunderstand the task.\n\nThe insights from moderated usability studies tend to be more in-depth than those from remote. Again, this is because the moderator is able to ask follow-up questions, ask for clarification, etc.",
@@ -553,7 +553,7 @@
         "Zoom",
         "Lookback"
       ],
-      "related": null,
+      "related": "customer-survey",
       "desc": "Usually 30 minute - 1 hour sessions run on a one-to-one basis either in person or remotely on Zoom, Teams, etc. Customers are recruited via email database and should ideally be incentivized for their time, e.g. a discount code or gift card.",
       "use": "To understand customers motivations, FUDs (fears, uncertainties, and doubts) perception of your product/service, to understand what problem/s your product/service solves for them and any improvement areas based on their experiences. \n\nCustomer interviews can also be used to investigate specific topics or areas of opportunity.",
       "pros": "Customer interviews allow you to dig deeper than customer surveys by asking follow up questions based on customers answers. This makes them more appropriate for more complex use cases or when you have a more specific area of focus.",
@@ -618,7 +618,7 @@
         "UserZoom",
         "Lookback"
       ],
-      "related": null,
+      "related": "moderated-usability-studies",
       "desc": "Use a sample pool of participants who match your target audience. Watch and listen as they walk through your site and perform tasks set by you, designed to emulate your core user journey or area of focus. Tasks and questions are set up within an external tool, meaning participants complete the session independently in their own time, thinking out loud as they go. Once complete, the recording of their screen, voice over (and sometimes webcam image) will be accessible within the tool for analysis.",
       "use": "Gather insight into on-site friction points on a specific page, piece of functionality, core user journey, or full website. Uncovers key areas of confusion, frustration, and barriers to conversion. Gather data on metrics such as task success rate, time per task, System Usability Score, etc.",
       "pros": "One of the key benefits of remote usability studies vs. moderated is that it is conducted from the comfort of the participant's own home, using their own devices. This helps make the session more realistic. The fact there is no moderator or live observers can also help prevent research bias such as the Hawthorne effect.",
@@ -654,7 +654,7 @@
         "Zoom",
         "Lookback"
       ],
-      "related": null,
+      "related": "win-loss-analysis",
       "desc": "One-to-one interviews with recent buyers and lost prospects about how the purchase decision actually went: the trigger that started the search, the alternatives weighed, the objections that nearly killed the deal, and what tipped it in the end. Run like customer interviews, but the sample deliberately includes the deals you lost, which is where the sharpest positioning insight lives.",
       "use": "Understand why deals are won and lost in the buyer's own words. Feeds ICP research, positioning and messaging with the market's real decision criteria and vocabulary, and locates the funnel stages where deals stall or die. Adds the why behind the patterns CRM win-loss analysis surfaces.",
       "pros": "Covers the buyers you lost, whose reasons never surface in customer research. First-hand accounts of the decision replace the sales team's secondhand recollection, and the buyer's own language feeds straight into positioning and messaging work.",
@@ -710,7 +710,7 @@
         "Full Story",
         "Amplitude"
       ],
-      "related": null,
+      "related": "form-analytics",
       "desc": "Analysis of website analytics data to determine overall performance, performance by segment, e.g. device, channel, user type, analysis of on-site behaviour or digging into the impact a specific element or piece of functionality has on performance and user experience.",
       "use": "Understand overall on-site user behaviour with high levels of certainty (assuming no sampling) and the differences across key segments. \n\nDig deeper into the performance and / or impact of a specific page, element, or area of the website.",
       "pros": "Analytics data is one of the most robust sources of data you can use to help you understand on-site engagement, interaction, and user behaviour. This is because this data is based on real user behaviour, without research bias, at a large scale.",
@@ -752,7 +752,7 @@
         "Usability Hub",
         "Wynter"
       ],
-      "related": null,
+      "related": "five-second-test",
       "desc": "Preference testing involves showing participants two (or more) versions of a page, an element, or a piece of copy, and asking them to select their preference and provide rationale for their preference. Data from the full sample of participants can then be used to draw conclusions about the best-performing version.",
       "use": "Preference tests are a validation technique designed to gather data on a concept or solution. As such, preference tests can be beneficial in the planning stages of an AB test to either pre-validate or refine test concepts. Preference tests can also be used as an alternative to an AB test where true AB testing isn't possible for technical reasons or where there's not enough traffic.",
       "pros": "Preference testing is generally quick and inexpensive, providing a quick and easy way to gather data to help inform concept design.",
@@ -791,7 +791,7 @@
         "Crazyegg",
         "Lucky Orange"
       ],
-      "related": null,
+      "related": "heatmaps",
       "desc": "Session recording analysis involves watching recordings of real users interacting with the website, using a tool added into your website code. Recordings show the pages users view, where they scroll and click, and their mouse movements. It's also possible to see things like \"rage clicks\" where a user clicks on something multiple times in frustration.",
       "use": "Session recordings can provide you with insight into real user's on-site behaviour which can help you identify areas of friction, frustration or barriers to conversion. \n\nObserving session recordings can be beneficial for gathering an overall understanding of how users are interacting with your website, as well as digging into interactions with specific pages or elements. \n\nSession recordings can also be used to watch users interacting with any live experiments. This can be beneficial from a QA and an analysis perspective.",
       "pros": "Observe real user behaviour with no research bias; users don't specifically know they are being recorded. \n\nHelps bring other data such as digital analytics numbers \"to life\", by providing a more visual representation of the data. For example, Analytics might show a high exit rate from the basket page, session recordings can help explain why this is happening by showing users interacting with the basket (and potentially experiencing issues).",
@@ -816,7 +816,7 @@
       "tools": [
         "Miro"
       ],
-      "related": null,
+      "related": "ux-heuristic-review",
       "desc": "A competitor review involves reviewing the website UX of your competitors, using the UX heuristic principles,  to help gather an understanding of the market/industry, identify trends, gather inspiration and compare the user experience to the client’s website. \n\nA competitor review could also include review of the competitor's offering, pricing and overall proposition, to gather an understanding of the industry and identify opportunities.",
       "use": "A competitor analysis can be beneficial to understand the different user experiences your potential customers may be exposed to in their comparison process. \n\nIf you're struggling to solve a specific problem that is very specific to your industry, it can be beneficial to understand how others in your industry solve these problems.\n\nIf you're new to a role / industry then a competitor review can be beneficial to give you an overview of the industry and the competition. It's good practice to keep up to speed with what competitors are doing, but it should not side track you from focusing on solving your own business challenges.",
       "pros": "Understand the wider industry, who is doing what and where you sit within this (from a UX, price, offering and proposition perspective). \n\nGather ideas and inspiration about how to tackle key customer problems.",
@@ -855,7 +855,7 @@
         "Crazyegg",
         "Lucky Orange"
       ],
-      "related": null,
+      "related": "session-recordings",
       "desc": "Heat maps visualise on-site behaviour by representing clicks, hover and mouse movement with colours overlaid on a screenshot of the pages of a website. In general red indicates an area of high engagement (either clicks, hovers, or mouse movement) and blue indicates \"cold\" areas of low engagement. Heat maps are generated by a tool added into your website code. Heat map tools include Hotjar, Content Square and Full Story.",
       "use": "Visualise how users behave on specific pages on the website. Understand which elements on the page are drawing users attention and which are being missed. Dig deeper into friction points / engagement with specific pages/elements.\n\nHeatmap analysis can be beneficial for gathering an overall understanding of how users are interacting with your website, as well as digging into interactions with specific pages or elements. \n\nHeatmaps can also be used to compare on-page behaviour between different variations of an experiment, which can be beneficial from an analysis perspective.",
       "pros": "Visualise real on-page behaviour with no research bias; users don't specifically know they are being recorded. \n\nHelps bring other data such as digital analytics numbers \"to life\", by providing a more visual representation of the data. For example, Analytics might show a high exit rate from the basket page, session recordings can help explain why this is happening by showing users interacting with the basket (and potentially experiencing issues). \n\nHeatmaps are an amalgamation of group behaviour, e.g. they represent trends from a large sample of users. As such, you can analyse large scale user behaviour relatively easily.",
@@ -883,7 +883,7 @@
         "Usability Hub",
         "UserZoom"
       ],
-      "related": null,
+      "related": "tree-testing",
       "desc": "Card sorting involves participants sorting and labeling website content (which is represented on \"cards\") into groups that make sense to them. The data from all participants can then be combined to identify the core groupings, labels, and any anomalies. This data can be used to inform the structure of a website's navigation.",
       "use": "Card sorting is a core part of designing and developing a website from scratch. \n\nCard sorting can also be an effective research technique when other research has pointed to issues with how website content is grouped and labeled. This can help identify how users would expect content to be labeled and grouped, which can uncover optimization opportunities.",
       "pros": "Card sorting is a relatively unique research method due to its focused nature (specifically focused on website content structure). \n\nCard sorting provides insight into how users expect website content to be grouped and labeled. \n\nYou have the option of using open, closed, or hybrid card sorts, which can be beneficial in different ways at different points in a project. \n\nTools like OptimalWorkshop make remote card sorting relatively quick and easy to set up and run.",
@@ -917,7 +917,7 @@
       "tools": [
         "Zoom"
       ],
-      "related": null,
+      "related": "customer-survey",
       "desc": "Sales / Customer Support interviews involve running 30 minute to 1 hour sessions with members of the sales team and/or the customer service team, either in person or remotely on Zoom, Teams, etc. Team members are recruited via email, either directly or through a client point of contact. These interviews draw on the internal teams who interact with customers every day, uncovering customer motivations, FUDs and frictions. This tribal knowledge from sales and customer service can then be applied to improve the website.",
       "use": "Sales / Customer Support interviews are an effective method when running exploratory research. \n\nSales interviews can be particularly useful when looking to develop or enhance ideal customer profiles, or personas. Speaking to sales teams can help you understand customers (and potential customers) key triggers and motivations for seeking out your product or service. You can also use sales interviews to uncover the primary barriers to conversion; the reasons why potential customers don't convert. \n\nCustomer support/service interviews are effective when looking to understand customer's key issues or frustrations. This type of data can be useful when focusing on retention for subscription products/services. This activity can also identify key questions that users have that could be answered on the website.",
       "pros": "Interviews allow you to dig deeper than surveys by asking follow-up questions based on answers. This makes them more appropriate for more complex use cases or when you have a more specific area of focus. \n\nRunning interviews with Sales / Customer Support teams provides you with a snapshot of the top customer problems from an internal perspective.",
