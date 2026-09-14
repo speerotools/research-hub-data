@@ -246,8 +246,11 @@ def reconcile(label: str, collection: str, desired: dict[str, dict],
         changed_ids.extend(u["id"] for u in batch)
 
     for it in to_archive:
+        # Send the item's existing fieldData back untouched. A PATCH with an
+        # empty fieldData would blank the item on its way out, and an archived
+        # item is meant to stay readable.
         req("PATCH", f"{API}/collections/{collection}/items/{it['id']}",
-            {"isArchived": True, "fieldData": {}})
+            {"isArchived": True, "fieldData": it.get("fieldData") or {}})
         print(f"   archived {(it.get('fieldData') or {}).get('slug')}")
 
     if PUBLISH and changed_ids:

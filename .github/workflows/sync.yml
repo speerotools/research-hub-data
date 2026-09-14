@@ -88,5 +88,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      # Falls back to the fixture until the first sync has committed real data.
       - name: Validate the committed data file
-        run: python .github/scripts/selftest.py research-hub.json
+        run: |
+          if [ -f research-hub.json ]; then
+            python .github/scripts/selftest.py research-hub.json
+          else
+            echo "No research-hub.json yet - validating against the fixture"
+            python .github/scripts/selftest.py
+          fi
