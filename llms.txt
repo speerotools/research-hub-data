@@ -1,0 +1,69 @@
+# Speero Research Recipe Hub
+
+> A research recipe is a prescription: diagnosed from the symptom and written for the problem. Each one names a customer problem in the customer's own words, then sequences the research methods that answer it across Explore, Focus and Validate, so the methods corroborate each other instead of standing alone.
+
+## Research recipes
+
+- [Acquisition Research](https://speero.com/research-recipes/acquisition-research): Paid traffic is arriving but converting poorly, and it is unclear whether the problem sits in the ads, the landing pages, or the match between the two.
+- [B2B ICP Research](https://speero.com/research-recipes/b2b-icp-research): Messaging and targeting are running on assumptions about who the ideal customer is and what drives them.
+- [Brand Perception Baseline & Tracking](https://speero.com/research-recipes/brand-perception-tracking): A rebrand, relaunch or repositioning is coming, and nobody can say how the market sees the brand today, which means nobody will be able to say whether the work changed anything.
+- [Category & Listing Page Optimisation](https://speero.com/research-recipes/category-listing-page): Shoppers reach the category and listing pages but leave without clicking into a product, and it is unclear whether the range, the filters or the product cards are to blame.
+- [Checkout & Cart Optimisation](https://speero.com/research-recipes/checkout-cart-optimisation): Shoppers add items to the basket and then leave before paying, and the team can't see what tips them out.
+- [Churn & Retention Research](https://speero.com/research-recipes/churn-retention): Customers cancel and the business is left guessing whether it was price, value, a missing feature or a bad experience.
+- [Content-to-Lead Conversion Research](https://speero.com/research-recipes/content-to-lead): The content programme is doing its job of attracting readers, and then the relationship ends at the last paragraph.
+- [Conversion Research](https://speero.com/research-recipes/conversion-research): You need a complete view of where and why visitors fail to convert across the site, not just on a single page.
+- [Engagement Decay & Habit Research](https://speero.com/research-recipes/engagement-decay): These customers activated, found value, and then drifted; not because anything broke, but because the product never earned a place in the routine.
+- [Free Trial to Paid Conversion](https://speero.com/research-recipes/trial-to-paid): People sign up for the trial but never convert to a paid plan, and the team can't tell whether the product failed to prove its value or the upgrade moment failed to land.
+- [Involuntary Churn & Payment Recovery Research](https://speero.com/research-recipes/involuntary-churn): A meaningful slice of churn is customers who never decided to leave; a payment failed, the retries ran out, and the subscription ended for someone who wanted to keep it.
+- [Landing Page Optimisation](https://speero.com/research-recipes/landing-page-optimisation): A landing page is underperforming and you need to understand what is blocking visitors before redesigning it.
+- [Lead Quality Research](https://speero.com/research-recipes/lead-quality): The lead count looks healthy and the pipeline doesn't, which usually means the acquisition engine is optimised for volume rather than fit.
+- [Lead-Gen Form Optimisation](https://speero.com/research-recipes/lead-gen-form): Prospects start the lead form but abandon it before submitting, and the cost of every lost completion is high.
+- [Mobile Experience Optimisation](https://speero.com/research-recipes/mobile-experience): Mobile traffic is large but converts well below desktop, and the team can't tell whether it's layout, speed, forms or intent.
+- [Navigation & Information Architecture](https://speero.com/research-recipes/navigation-information-architecture): Visitors know what they want but can't find it, so they bounce between pages or fall back on search and give up.
+- [Onboarding & Activation Research](https://speero.com/research-recipes/onboarding-activation): New users sign up but never reach the first moment of real value, so they drift away before the product can prove itself.
+- [Product Page Optimisation](https://speero.com/research-recipes/product-page): People reach the product page but don't add to basket, and it's unclear whether the blocker is information, doubt or price.
+- [Repeat Purchase & Post-Purchase Research](https://speero.com/research-recipes/repeat-purchase): Most first-time buyers never come back, and the margin lives in the orders they never place.
+- [Researching With Low Traffic](https://speero.com/research-recipes/researching-low-traffic): The site doesn't get enough traffic to run reliable A/B tests or gather meaningful poll and analytics data, so decisions default to opinion.
+- [SEO & Search Intent Research](https://speero.com/research-recipes/seo-search-intent): The customers who most need what the business does are searching for it in their own words and finding someone else.
+- [SaaS Pricing Page](https://speero.com/research-recipes/saas-pricing-page): The pricing page is where SaaS buyers decide whether the product is worth it, and it is often where they stall.
+- [Traffic Quality & Channel Fit Research](https://speero.com/research-recipes/traffic-quality-channel-fit): Traffic is growing but the visitors arriving aren't the ones the business is built for, and everything downstream pays for it.
+- [Trust & Credibility Audit](https://speero.com/research-recipes/trust-credibility): Visitors are interested but hesitate to commit because the site hasn't earned their confidence yet.
+- [Validating a Redesign Before Build](https://speero.com/research-recipes/validating-redesign): A big redesign is about to be built and the risk is shipping months of work that performs worse than what it replaces.
+- [Value Proposition & Messaging](https://speero.com/research-recipes/value-prop-messaging): Visitors land on the site and can't quickly tell what the product is, who it's for or why it beats the alternative.
+
+## Research methods
+
+- [5 Second Test](https://speero.com/research-methods/five-second-test): We use a sample pool of target participants and analyse their responses to a series of questions after they look at a page for a limited time (typically 5 seconds).
+- [A/B Testing](https://speero.com/research-methods/ab-testing): Running a live, randomised experiment that splits traffic between a control and one or more variants to measure the causal effect of a change on a target metric.
+- [Ads Analysis](https://speero.com/research-methods/ads-analysis): Analysis of ads data within Google Ads, Facebook ads, Instagram ads, etc, focused on performance, CPC, Impressions, Clicks, Cost, with the aim of identifying which campaigns and ads are underperforming.
+- [Analytics Data Analysis](https://speero.com/research-methods/analytics-data-analysis): Analysis of website analytics data to determine overall performance, performance by segment, e.g.
+- [Brand Perception Survey](https://speero.com/research-methods/brand-perception-survey): A structured survey run with a recruited panel that matches the target market, measuring unaided and aided brand awareness, brand preference, and the associations people hold against named competitors.
+- [Card Sorting](https://speero.com/research-methods/card-sorting): Card sorting involves participants sorting and labeling website content (which is represented on "cards") into groups that make sense to them.
+- [Competitor Review](https://speero.com/research-methods/competitor-review): A competitor review involves reviewing the website UX of your competitors, using the UX heuristic principles, to help gather an understanding of the market/industry, identify trends, gather inspiration and compare the user experience to the client’s website.
+- [Copy Testing](https://speero.com/research-methods/copy-testing): A form of user research focused on website copy and written content.
+- [Customer Interviews](https://speero.com/research-methods/customer-interviews): Usually 30 minute - 1 hour sessions run on a one-to-one basis either in person or remotely on Zoom, Teams, etc.
+- [Customer Survey](https://speero.com/research-methods/customer-survey): A customer survey sent out via email to your customers (ideally segmented by customer type, e.g.
+- [Diary Studies](https://speero.com/research-methods/diary-studies): Diary studies involve recruiting participants to take part in research over the period of a few weeks to a few months.
+- [Form Analytics](https://speero.com/research-methods/form-analytics): Form analytics is similar to regular analytics analysis, but focused on your website forms.
+- [Heatmaps](https://speero.com/research-methods/heatmaps): Heat maps visualise on-site behaviour by representing clicks, hover and mouse movement with colours overlaid on a screenshot of the pages of a website.
+- [Live Chat Analysis](https://speero.com/research-methods/live-chat-analysis): Analysis of on-site live chat transcripts to uncover fears, uncertainties and doubts that users are facing on-site, including identifying any unanswered questions (which could point towards missing or sub-optimal website content).
+- [Moderated Usability Studies](https://speero.com/research-methods/moderated-usability-studies): Use a sample pool of participants who match your target audience.
+- [On-site Polls](https://speero.com/research-methods/on-site-polls): On-site polls are very short surveys that appear on your website for website users to answer.
+- [Online Review Analysis](https://speero.com/research-methods/online-review-analysis): Structured analysis of the reviews the market has already written on review platforms, app stores and marketplaces, for the brand and for its competitors.
+- [Preference Test](https://speero.com/research-methods/preference-test): Preference testing involves showing participants two (or more) versions of a page, an element, or a piece of copy, and asking them to select their preference and provide rationale for their preference.
+- [Prototype Testing](https://speero.com/research-methods/prototype-testing): Use usability study tools or specific prototype testing tools such as Maze to set recruited participants specific tasks to complete on a prototype version of a page, functionality or website.
+- [Remote Usability Studies](https://speero.com/research-methods/remote-usability-studies): Use a sample pool of participants who match your target audience.
+- [Sales / Customer Service Interviews](https://speero.com/research-methods/sales-customer-service-interviews): Sales / Customer Support interviews involve running 30 minute to 1 hour sessions with members of the sales team and/or the customer service team, either in person or remotely on Zoom, Teams, etc.
+- [Sales / Customer Service Survey](https://speero.com/research-methods/sales-customer-service-survey): A survey sent by email to members of the sales team and/or the customer service team.
+- [Search & SERP Analysis](https://speero.com/research-methods/search-serp-analysis): Analysis of organic search performance and the surrounding results landscape.
+- [Session Recordings](https://speero.com/research-methods/session-recordings): Session recording analysis involves watching recordings of real users interacting with the website, using a tool added into your website code.
+- [Social Media Listening](https://speero.com/research-methods/social-media-listening): Systematic monitoring of what people say about a brand, its competitors and its category across social platforms, forums and communities.
+- [Tree Testing](https://speero.com/research-methods/tree-testing): Tree testing involves replicating a website navigation (existing or proposed) in a link "tree".
+- [UX Heuristic Review](https://speero.com/research-methods/ux-heuristic-review): A UX heuristic review in this context is a review of a website based on a set of guiding UX principles, with the aim to identify areas of potential UX friction (ultimately areas of the user experience that could be creating friction or barriers for users on that website).
+- [Win-loss Analysis (CRM Analysis)](https://speero.com/research-methods/win-loss-analysis): Analysis of data housed within existing CRM (Customer Relationship Management) tool / database, e.g.
+- [Win-loss Interviews](https://speero.com/research-methods/win-loss-interviews): One-to-one interviews with recent buyers and lost prospects about how the purchase decision actually went: the trigger that started the search, the alternatives weighed, the objections that nearly killed the deal, and what tipped it in the end.
+
+## Optional
+
+- [Markdown mirrors of every page](https://cdn.jsdelivr.net/gh/speerotools/research-hub-data@main/llms-full.txt)
+- [Machine-readable source data](https://cdn.jsdelivr.net/gh/speerotools/research-hub-data@main/research-hub.json)
