@@ -4,6 +4,24 @@ Everything the sync writes is already in the CMS. This doc is the Designer
 half: what to bind where, and the handful of details that are easy to get
 subtly wrong.
 
+## What is already built
+
+Both collections exist and the method template has been built via the API:
+page chrome (GTM, Custom Nav CSS, navbar), breadcrumb, H1, facts panel,
+all content sections, and the reverse-links section. What remains on it is
+listed under "Still to do by hand" at the end of this doc.
+
+The layout follows `/ab-testing-tools`: the same `navbar` and `footer`
+component instances, the site's `container` class, and hub-specific classes
+prefixed `rh-` so nothing touches the existing design system.
+
+One deliberate difference from the testing tools hub. Its per-vendor pages
+carry only name and slug in the CMS and render their body client-side from
+`island.js`. That is the wrong shape here, because the whole argument for
+these pages is that they are indexable documents. So the recipe and method
+pages are server-rendered from real CMS fields, and JavaScript is only
+involved on the landing pages.
+
 ## Collections
 
 | Collection | ID | Items | URL |
@@ -143,9 +161,9 @@ Each carries one Code Embed:
 ```html
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,900;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/speerotools/research-hub-embed@v1.0.0/dist/embed.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/speerotools/research-hub-embed@v1.1.0/dist/embed.css">
 
-<div id="app"></div>
+<div id="speero-research-hub"></div>
 
 <script>
   window.RESEARCH_HUB_CONFIG = {
@@ -153,7 +171,7 @@ Each carries one Code Embed:
     methodBase: "/research-methods/"
   };
 </script>
-<script src="https://cdn.jsdelivr.net/gh/speerotools/research-hub-embed@v1.0.0/dist/embed.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/speerotools/research-hub-embed@v1.1.0/dist/embed.js"></script>
 ```
 
 Pin the tag. `@main` is mutable, jsDelivr caches it, and a rollback then is
@@ -186,3 +204,50 @@ Webflow's redirects API is Enterprise-only, so a renamed slug needs a manual
 301 in site settings. The sync aborts on any slug change rather than
 silently breaking a live URL. If a rename is genuinely wanted: add the 301
 first, then re-run the workflow with `allow_slug_change` ticked.
+
+---
+
+## Built via the API: what exists and what does not
+
+Four pages were built programmatically. Element ids and bindings are in place;
+what is listed under "Still to do by hand" needs the Designer, because the
+Webflow API does not expose those controls.
+
+| Page | ID | State |
+|---|---|---|
+| Research Methods Template | `6aa7a1bd0bfd0f44768d2236` | built and bound |
+| Research Recipes Template | `6aa7a1be15cd9e02755eb217` | built and bound |
+| `/research-recipes` landing | `6aa7afe0091e3b99dd1f5cee` | hero, embed, index lists |
+| `/research-methods` landing | `6aa7afe1091e3b99dd1f5d56` | see notes |
+
+Each carries the site's own `GTM Snippet`, `Custom Nav CSS`, `navbar` and
+`footer` component instances, the `container` class, and hub classes prefixed
+`rh-`. Rich text internals are styled from a `<style>` embed at the top of
+each template, because Webflow's class editor cannot express descendant
+selectors and the HTML inside a CMS rich text field carries no classes.
+
+### Still to do by hand
+
+Four things, all of them small, none of them exposed by the API.
+
+1. **Insert the CMS field into each JSON-LD embed.** Both templates carry an
+   `HtmlEmbed` with a `<script type="application/ld+json">` skeleton and a
+   comment saying exactly what to do: click in, press **+ Add Field**, choose
+   `Schema JSONLD` (and `FAQ JSONLD` on the method template). Embed content
+   cannot be bound through the API. Then publish one page and run it through
+   Rich Results Test before doing the rest, because Webflow sometimes escapes
+   quotes in bound plain text and breaks the block silently.
+
+2. **Conditional visibility.** Set "show only if set" on the Go deeper
+   section, the Also Solves line, the FAQ embed and the Last updated row.
+   Conditional visibility is a Designer-only control; a direct API binding is
+   rejected with "not inside a CMS context".
+
+3. **Page settings SEO.** On both templates, bind Title to `Meta Title` and
+   Description to `Meta Description`. The Data API only accepts static strings
+   for page SEO, so the CMS token has to be picked in the UI.
+
+4. **Reverse links as cards, if wanted.** The method template binds the
+   generated `Used By Recipes` rich text, which works as is. To get styled
+   cards instead, swap it for a Collection List of Research Recipes filtered
+   by `Research Methods` contains `Current Research Method`.
