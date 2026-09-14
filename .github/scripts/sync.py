@@ -108,7 +108,7 @@ F_METHOD = {
     "signal": "Strength of Signal", "effort": "Effort", "tools": "Tools",
     "resources": "Resources", "surface": "Surface Area",
     # optional
-    "related": "Related method", "seo_title": "Meta Title",
+    "related": "Related Methods", "seo_title": "Meta Title",
     "seo_desc": "Meta Description", "modified": "Last Modified",
 }
 F_TOOL = {
@@ -275,10 +275,47 @@ def fetch_vendor_pages() -> dict[str, str]:
 # AIRTABLE
 # ---------------------------------------------------------------------------
 
+FIELD_MAPS = {
+    "outcomes": ("F_OUTCOME", None),
+    "opportunities": ("F_OPPORTUNITY", None),
+    "recipes": ("F_RECIPE", None),
+    "methods": ("F_METHOD", None),
+    "tools": ("F_TOOL", None),
+}
+
+
+def check_field_names(base) -> None:
+    """Warn when a configured field name is not in the table.
+
+    An optional field with the wrong name fails silently: the feature simply
+    never renders and nothing says why. That cost us the related-method line
+    on every page until someone happened to look at the field list.
+    """
+    configured = {
+        "outcomes": F_OUTCOME, "opportunities": F_OPPORTUNITY,
+        "recipes": F_RECIPE, "methods": F_METHOD, "tools": F_TOOL,
+    }
+    for key, mapping in configured.items():
+        try:
+            live = {f.name for f in base.table(T[key]).schema().fields}
+        except Exception as e:
+            warn(f"could not read the {key} schema to check field names ({e})")
+            continue
+        for logical, name in mapping.items():
+            if name not in live:
+                warn(f"{key}: no field named {name!r} (configured as {logical!r}); "
+                     f"anything that depends on it will be empty")
+        unused = sorted(live - set(mapping.values()))
+        if unused:
+            print(f"  {key}: {len(unused)} field(s) in Airtable the sync does not "
+                  f"read: {', '.join(unused)}")
+
+
 def fetch_all() -> dict[str, dict[str, dict]]:
     """Every table as {record_id: fields}."""
     api = Api(TOKEN)
     base = api.base(BASE_ID)
+    check_field_names(base)
     out: dict[str, dict[str, dict]] = {}
     for key, table_id in T.items():
         rows = base.table(table_id).all()

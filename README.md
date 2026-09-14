@@ -93,6 +93,12 @@ bindable sources. So section headings are generated inside their field: an
 empty field renders nothing at all, rather than a bare heading.
 
 **Optional Airtable fields.** `Last Modified` (both tables) drives the visible
-date and `dateModified`. `New` on Recipes restores the badge. `Related method`
-on Research Methods restores the paired-method line. `Meta Title` and
-`Meta Description` override the generated values.
+date and `dateModified`. `Related Methods` on Research Methods drives the
+paired-method line. `New` on Recipes restores the badge and is the one field
+that does not exist yet. `Meta Title` and `Meta Description` override the
+generated values.
+
+Field names are checked against the live schema on every run. A mistyped
+optional field warns rather than failing silently, and the run prints which
+Airtable fields the sync does not read, so content added to the base does not
+go unnoticed.
