@@ -265,6 +265,25 @@ regenerated every run.
 landing view directly beneath the server-rendered one. Fixed with
 `defaultRoute: "recipes"`, matching what the methods page already did.
 
+### Section headings are generated, not static
+
+Webflow's conditional visibility is a Designer-only control with no API
+equivalent (the visibility setting reports zero bindable sources). A static
+`<h2>` above an empty field therefore renders bare, and on real data that
+meant "Go deeper" showing with nothing under it on all 26 recipes and 14 of
+29 methods.
+
+So the H2 for Practical considerations, Common tools, Go deeper and the
+cross-hub slot lives inside the generated field. An empty field now produces
+nothing at all, on every page, with no manual step and no way to forget it.
+Headings for sections that are never empty (When to reach for it, Strengths
+and limits, The method sequence, Recipes that use this method) stay as
+template elements.
+
+Consequence for the Designer: those headings are styled from the `<style>`
+embed at the top of each template, under `.rh-rt h2`, not from the `rh-h2`
+class.
+
 ### Still to do by hand
 
 Four things, all of them small, none of them exposed by the API.
@@ -275,14 +294,22 @@ Four things, all of them small, none of them exposed by the API.
    section above. FAQ schema stays unwired until the Considerations labels
    are rewritten as questions.
 
-2. **Conditional visibility.** Set "show only if set" on the Go deeper
-   section, the Also Solves line, the FAQ embed and the Last updated row.
-   Conditional visibility is a Designer-only control; a direct API binding is
-   rejected with "not inside a CMS context".
+2. **Conditional visibility.** Mostly solved by generating headings with
+   their content (see above). What is left is cosmetic: the Last updated row
+   shows the label with no date if `Last Modified` is ever cleared, and the
+   `Also Solves` line renders an empty element on the 24 recipes with one
+   opportunity. Neither leaves a visible artefact today. Elements that would
+   benefit are labelled in the Navigator with `SET CONDITIONAL:` and the
+   field to test.
 
-3. **Page settings SEO.** On both templates, bind Title to `Meta Title` and
-   Description to `Meta Description`. The Data API only accepts static strings
-   for page SEO, so the CMS token has to be picked in the UI.
+3. ~~**Page settings SEO.**~~ Done via the API on both templates: Title binds
+   to `Meta Title`, Description to `Meta Description`, and Open Graph title
+   and description inherit from them on all four pages. Verified rendering on
+   `/research-methods/card-sorting`.
+
+   Still open: no Open Graph **image**. Social shares have no thumbnail. That
+   needs a 1200x630 asset, which is a design task, then one API call to set it
+   as the default on all four pages.
 
 4. **Reverse links as cards, if wanted.** The method template binds the
    generated `Used By Recipes` rich text, which works as is. To get styled

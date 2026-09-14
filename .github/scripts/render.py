@@ -185,6 +185,17 @@ def tools_html(tool_names: list[str], tools: dict, vendor_pages: dict | None = N
     return "<ul>" + "".join(items) + "</ul>" if items else ""
 
 
+def titled(heading: str, body: str) -> str:
+    """Put the H2 inside the generated field, not in the template.
+
+    Webflow's conditional visibility is a Designer-only control with no API
+    equivalent, so a static heading above an empty field renders bare. Making
+    the heading part of the content means an empty field produces nothing at
+    all, on every page, with no manual step.
+    """
+    return f"<h2>{esc(heading)}</h2>{body}" if body else ""
+
+
 def cross_hub_html(slug: str) -> str:
     """The cross-hub slot. Renders only where a pairing exists."""
     pair = CROSS_HUB.get(slug)
@@ -360,11 +371,13 @@ def method_fields(slug: str, m: dict, data: dict) -> dict:
         "use-cases": paragraphs(m.get("use", "")),
         "pros": paragraphs(m.get("pros", "")),
         "cons": paragraphs(m.get("cons", "")),
-        "considerations": labelled_sections(m.get("considerations", "")),
-        "tools": tools_html(m.get("tools", []), data.get("tools", {}),
-                            data.get("vendorPages", {})),
+        "considerations": titled("Practical considerations",
+                                 labelled_sections(m.get("considerations", ""))),
+        "tools": titled("Common tools",
+                        tools_html(m.get("tools", []), data.get("tools", {}),
+                                   data.get("vendorPages", {}))),
         "cross-hub": cross_hub_html(slug),
-        "resources": links(m.get("resources", [])),
+        "resources": titled("Go deeper", links(m.get("resources", []))),
         "used-by-recipes": recipe_links(used),
         "page-url": METHOD_BASE + slug,
         "meta-title": m.get("seoTitle") or meta_title(m["name"], "| Speero research methods"),
@@ -392,7 +405,7 @@ def recipe_fields(slug: str, r: dict, data: dict) -> dict:
         "evidence-strength": r.get("evidence", ""),
         "method-sequence": sequence_html(r.get("stages", []), data["methods"]),
         "also-solves": r.get("opp2", ""),
-        "resources": links(r.get("resources", [])),
+        "resources": titled("Go deeper", links(r.get("resources", []))),
         "page-url": RECIPE_BASE + slug,
         "meta-title": r.get("seoTitle") or meta_title(r["name"], "| Speero research recipes"),
         "meta-description": r.get("seoDesc") or meta_description(r.get("desc", "")),
