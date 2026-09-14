@@ -218,13 +218,20 @@ Webflow API does not expose those controls.
 | Research Methods Template | `6aa7a1bd0bfd0f44768d2236` | built and bound |
 | Research Recipes Template | `6aa7a1be15cd9e02755eb217` | built and bound |
 | `/research-recipes` landing | `6aa7afe0091e3b99dd1f5cee` | hero, embed, index lists |
-| `/research-methods` landing | `6aa7afe1091e3b99dd1f5d56` | see notes |
+| `/research-methods` landing | `6aa7afe1091e3b99dd1f5d56` | hero, embed, index list |
 
 Each carries the site's own `GTM Snippet`, `Custom Nav CSS`, `navbar` and
 `footer` component instances, the `container` class, and hub classes prefixed
 `rh-`. Rich text internals are styled from a `<style>` embed at the top of
 each template, because Webflow's class editor cannot express descendant
 selectors and the HTML inside a CMS rich text field carries no classes.
+
+Both landing pages carry the hub embed pinned to `@v1.1.0`, mounted at
+`#speero-research-hub` (the same namespacing `/ab-testing-tools` uses), plus a
+Collection List of every item rendered as plain links below it. That list is
+what passes authority into the 51 new URLs and it works with JavaScript off.
+`/research-methods` passes `defaultRoute: "methods"` so it opens on the
+method directory instead of the hub landing view.
 
 ### Still to do by hand
 
