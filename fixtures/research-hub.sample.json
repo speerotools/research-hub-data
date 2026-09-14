@@ -1,0 +1,2257 @@
+{
+  "version": "fixture",
+  "commit": "fixture",
+  "methods": {
+    "analytics-data-analysis": {
+      "name": "Analytics Data Analysis",
+      "objective": [
+        "Explore",
+        "Focus",
+        "Validate"
+      ],
+      "data": "Quantitative",
+      "signal": "High",
+      "effort": "Medium",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [
+        "Google Analytics",
+        "Adobe Analytics",
+        "Content Square",
+        "Decibel Insight",
+        "Heap",
+        "Full Story",
+        "Amplitude"
+      ],
+      "related": "form-analytics",
+      "desc": "Analysis of website analytics data to determine overall performance, performance by segment, e.g. device, channel, user type, analysis of on-site behaviour or digging into the impact a specific element or piece of functionality has on performance and user experience.",
+      "use": "Understand overall on-site user behaviour with high levels of certainty (assuming no sampling) and the differences across key segments. Dig deeper into the performance and / or impact of a specific page, element, or area of the website.",
+      "pros": "Analytics data is one of the most robust sources of data you can use to help you understand on-site engagement, interaction, and user behaviour. This is because this data is based on real user behaviour, without research bias, at a large scale.",
+      "cons": "Sampling issues can reduce the accuracy of your data, which can result in drawing false assumptions, making decisions based on flawed data, etc.\n\nAnalytics data will tell you what is happening on your site, but not why. As with session recordings and heatmaps, the data is also open to interpretation.\n\nRobust analytics data analysis is a skill. It can easily be misunderstood or misinterpreted.",
+      "considerations": "Configuration\nEffective analytics data analysis is reliant on a robust tool configuration, ensuring the data you're looking at is accurate. Effective set up can be complex and requires in-depth tool knowledge, ideally from a developer or from someone with experience in setting up analytics tools.\n\nAnalysis\nAs analytics data is open to interpretation it is important to keep analysis actionable. At times it is relevant to simply point out facts, e.g. x% of data comes from mobile devices. But from an optimisation perspective, we should be considering the \"so what?\", e.g. what does this tell us, what opportunities does this present, etc?\n\nTools\nThere are many digital analytics tools available. Chances are the business you work in or with will already use one. Google Analytics (now GA4) is one of the most popular and most well-known tools.",
+      "resources": [
+        [
+          "How to find optimization opportunities in analytics data",
+          "https://speero.com/post/how-to-find-optimization-opportunities-in-analytics-data"
+        ],
+        [
+          "Data analysis and reporting in GA4 for ecommerce",
+          "https://speero.com/post/data-analysis-and-reporting-in-ga4-for-ecommerce"
+        ],
+        [
+          "Data discrepancies in Google Analytics",
+          "https://speero.com/post/data-discrepancies-in-google-analytics-what-can-go-wrong-why-how-to-fix-it"
+        ],
+        [
+          "Speero GA4 audit tool",
+          "https://ga4audit.speero.com/"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm000"
+    },
+    "session-recordings": {
+      "name": "Session Recordings",
+      "objective": [
+        "Explore",
+        "Focus",
+        "Validate"
+      ],
+      "data": "Quantitative",
+      "signal": "Low",
+      "effort": "Medium",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [
+        "Hotjar",
+        "Content Square",
+        "Decibel Insight",
+        "Microsoft Clarity",
+        "VWO",
+        "Full Story",
+        "Mouseflow",
+        "Crazyegg",
+        "Lucky Orange"
+      ],
+      "related": "heatmaps",
+      "desc": "Session recording analysis involves watching recordings of real users interacting with the website, using a tool added into your website code. Recordings show the pages users view, where they scroll and click, and their mouse movements. It's also possible to see things like \"rage clicks\" where a user clicks on something multiple times in frustration.",
+      "use": "Session recordings can provide you with insight into real users' on-site behaviour which can help you identify areas of friction, frustration or barriers to conversion. Observing session recordings can be beneficial for gathering an overall understanding of how users are interacting with your website, as well as digging into interactions with specific pages or elements. Session recordings can also be used to watch users interacting with any live experiments, which is useful from a QA and an analysis perspective.",
+      "pros": "Observe real user behaviour with no research bias; users don't specifically know they are being recorded.\n\nHelps bring other data such as digital analytics numbers \"to life\" by providing a more visual representation of the data. For example, analytics might show a high exit rate from the basket page; session recordings can help explain why by showing users interacting with the basket.",
+      "cons": "Session recordings are open to interpretation, since there's a lack of explanation of the behaviour. You may see someone doing something, but you won't necessarily know why they are doing it (and you can't ask them).\n\nAnalysis can be time-consuming, since you have to manually watch the recordings. Speeding up recordings, skipping inactivity and using filters helps.",
+      "considerations": "Analysis & Interpretation\nEstablish a strategy for tagging and note-taking that is used consistently, to support analysis and prevent insights getting lost or diluted. Behaviours that look uninteresting in the first five recordings may turn out to appear in the large majority of sessions, so tag from the beginning. It can also help to gather multiple people to interpret behaviours together and hypothesise about why they happen.\n\nQualitative vs. Quantitative\nStrictly speaking session recordings are a form of digital analytics, but given the time involved in watching individual sessions, treat them as the qualitative counterpart to heatmaps.",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm001"
+    },
+    "heatmaps": {
+      "name": "Heatmaps",
+      "objective": [
+        "Explore",
+        "Focus",
+        "Validate"
+      ],
+      "data": "Quantitative",
+      "signal": "Medium",
+      "effort": "Medium",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [
+        "Hotjar",
+        "Content Square",
+        "Decibel Insight",
+        "Microsoft Clarity",
+        "VWO",
+        "Full Story",
+        "Mouseflow",
+        "Crazyegg",
+        "Lucky Orange"
+      ],
+      "related": "session-recordings",
+      "desc": "Heatmaps visualise on-site behaviour by representing clicks, hover and mouse movement with colours overlaid on a screenshot of the pages of a website. In general red indicates an area of high engagement and blue indicates \"cold\" areas of low engagement. Heatmaps are generated by a tool added into your website code.",
+      "use": "Visualise how users behave on specific pages. Understand which elements are drawing attention and which are being missed. Dig deeper into friction points and engagement with specific pages or elements. Heatmaps can also be used to compare on-page behaviour between variations of an experiment.",
+      "pros": "Visualise real on-page behaviour with no research bias.\n\nHeatmaps are an amalgamation of group behaviour, representing trends from a large sample of users, so you can analyse large-scale behaviour relatively easily.",
+      "cons": "Heatmaps are open to interpretation: you may see high or low engagement with an element, but not why.\n\nHeatmaps can be prone to technical issues, for example with dynamic elements, so unusual patterns should be investigated before being trusted.",
+      "considerations": "Analysis & Interpretation\nAs with session recordings, it can help to gather multiple people to interpret heatmaps and hypothesise about why a behaviour might be happening.\n\nTechnical accuracy\nThe tool typically overlays data from hundreds or thousands of users on a single sample screenshot, which may not represent exactly what every user saw. Dynamic elements such as navigation drop-downs can distort what engagement is attributed to.",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm002"
+    },
+    "form-analytics": {
+      "name": "Form Analytics",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Quantitative",
+      "signal": "High",
+      "effort": "Medium",
+      "surface": [
+        "Forms",
+        "Checkout & cart"
+      ],
+      "tools": [
+        "Zuko"
+      ],
+      "related": "analytics-data-analysis",
+      "desc": "Form analytics is similar to regular analytics analysis, but focused on your website forms. You can analyse metrics such as form field interaction, drop-out rates and error rates to understand which fields are causing friction.",
+      "use": "Exploratory research has identified a specific barrier in your checkout or on other on-site forms.",
+      "pros": "Provides in-depth data to inform form optimisation, e.g. removing fields, changing layouts.",
+      "cons": "Can be subject to technical issues; much like standard analytics tools, the accuracy of the configuration is integral.",
+      "considerations": "Tools\nYou can either set this up manually using custom analytics tracking or use a bespoke form analytics tool such as Zuko.",
+      "resources": [
+        [
+          "How to fill the form optimization knowledge gap",
+          "https://speero.com/post/how-to-fill-the-form-optimization-knowledge-gap-what-data-do-you-need-and-where-do-you-find-it"
+        ],
+        [
+          "Anatomy of a web form",
+          "https://speero.com/post/anatomy-of-a-web-form-the-common-building-blocks-and-what-to-look-out-for-when-optimizing"
+        ],
+        [
+          "Form optimization tips with Alun from Zuko",
+          "https://speero.com/post/form-optimization-tips-with-alun-from-zuko"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm003"
+    },
+    "on-site-polls": {
+      "name": "On-site Polls",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Qualitative",
+      "signal": "Medium",
+      "effort": "Low",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [
+        "Hotjar",
+        "VWO",
+        "Medallia",
+        "Userback.io",
+        "Lucky Orange"
+      ],
+      "related": null,
+      "desc": "On-site polls are very short surveys that appear on your website for users to answer, typically 1-2 questions so the journey isn't disrupted. They can be open or closed questions, run site-wide or on specific pages, and triggered on behaviours such as time on page, scroll depth and exit intent.",
+      "use": "Gather feedback as users are experiencing the website, to understand key barriers from users who haven't converted yet. Effective for insight into UX friction and barriers to conversion, and for understanding intent, motivation and who is visiting. Polls can also recruit participants for other methods such as interviews or usability studies.",
+      "pros": "Polls capture insight from users who have naturally found their way to your website, meaning they have a genuine need for your product or service.\n\nFeedback is gathered in the moment, which prevents users having to recall previous experiences (a major source of bias).",
+      "cons": "Polls can disrupt the user experience and frustrate visitors, especially alongside other pop-ups. Response rates are often under 10%, so check traffic levels against the required sample before committing. Expect some spam responses and filter them before analysis.",
+      "considerations": "Questions & logic\nAn easy closed question first can hook users, but drop-off between questions is large; a single open question often yields more actionable insight. Running a sequence of polls (closed first, open follow-up) can give both.\n\nSample size\nAim for roughly 200 open-ended responses to be confident in the strength of signal within the analysis. If reaching that would take more than about 4 weeks, a poll may not be the right method.",
+      "resources": [
+        [
+          "How to use on-site surveys to understand your users",
+          "https://speero.com/post/how-to-use-on-site-surveys-to-help-you-understand-your-users"
+        ],
+        [
+          "How to gather voice of customer behavioral insights",
+          "https://speero.com/post/how-to-gather-voice-of-customer-behavioral-insights"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm004"
+    },
+    "customer-survey": {
+      "name": "Customer Survey",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Qualitative",
+      "signal": "Medium",
+      "effort": "Medium",
+      "surface": [
+        "Any surface",
+        "Messaging & copy"
+      ],
+      "tools": [
+        "TypeForm",
+        "Google Forms",
+        "Survey Monkey",
+        "Userback.io"
+      ],
+      "related": "customer-interviews",
+      "desc": "A customer survey sent out via email to your customers, ideally segmented by customer type, e.g. new customers, recently lapsed customers, VIPs. Typically the goal is to understand customers' perception of your product or service, what problems it solves for them, and improvement areas based on their experiences.",
+      "use": "To understand customers' motivations, FUDs (fears, uncertainties and doubts), perception of your product/service, what problems it solves and improvement areas. Customer surveys can also be used to investigate specific topics or areas of opportunity.",
+      "pros": "Surveys gather large samples, which isn't possible with interviews alone, and pair well with interviews to add scale to depth.\n\nThey can inform wider business strategy as well as on-site work, and gather both qualitative and quantitative data depending on question types.",
+      "cons": "An insightful survey is determined by the questions you ask: avoid leading and multifaceted questions.\n\nDon't use surveys to gather feedback on website experiences; recalled UX feedback is unreliable.\n\nLarge sets of open-ended responses take real effort to code and analyse, and existing customers carry brand bias that should be acknowledged.",
+      "considerations": "Sample size\nAim for roughly 200 open-ended responses to be confident in the strength of signal within the analysis.\n\nIncentives\nAn incentive (discount code, gift card) boosts response rate; match it to your audience.\n\nTools\nFree tools cover most needs unless you have bespoke requirements such as large data sets or custom logic.",
+      "resources": [
+        [
+          "4 mental models for voice of customer research",
+          "https://speero.com/post/4-mental-models-to-help-you-conduct-voice-of-customer-research"
+        ],
+        [
+          "How to gather voice of customer behavioral insights",
+          "https://speero.com/post/how-to-gather-voice-of-customer-behavioral-insights"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm005"
+    },
+    "customer-interviews": {
+      "name": "Customer Interviews",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Qualitative",
+      "signal": "Medium",
+      "effort": "Medium",
+      "surface": [
+        "Any surface",
+        "Messaging & copy"
+      ],
+      "tools": [
+        "Zoom",
+        "Lookback"
+      ],
+      "related": "customer-survey",
+      "desc": "Usually 30 minute to 1 hour sessions run on a one-to-one basis, either in person or remotely on Zoom, Teams, etc. Customers are recruited via your email database and should ideally be incentivized for their time, e.g. a discount code or gift card.",
+      "use": "To understand customers' motivations, FUDs, perception of your product/service, what problems it solves and improvement areas. Interviews can also be used to investigate specific topics or areas of opportunity.",
+      "pros": "Interviews let you dig deeper than surveys by asking follow-up questions based on answers, making them appropriate for complex topics or a specific area of focus.",
+      "cons": "Time-consuming, so not suited to large samples; pair with a survey for scale.\n\nQuality depends on interviewer skill: avoid leading and multifaceted questions.\n\nDon't use interviews to gather recalled website UX feedback; a moderated usability study is more appropriate (the two can be combined into a hybrid session).",
+      "considerations": "Recruitment\nReach out to your existing customer email base, choosing segments to match the research goal (recent convertors for exploratory work; targeted segments for focused work).\n\nIncentives\nMatch the incentive to the audience and the time asked of them.\n\nLogistics\nUse a direct booking link, record sessions with permission, send reminders, and over-recruit slightly to absorb no-shows.",
+      "resources": [
+        [
+          "Deep ICP research",
+          "https://speero.com/post/deep-icp-research"
+        ],
+        [
+          "4 mental models for voice of customer research",
+          "https://speero.com/post/4-mental-models-to-help-you-conduct-voice-of-customer-research"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm006"
+    },
+    "sales-customer-service-survey": {
+      "name": "Sales / Customer Service Survey",
+      "objective": [
+        "Explore"
+      ],
+      "data": "Qualitative",
+      "signal": "Low",
+      "effort": "Medium",
+      "surface": [
+        "Messaging & copy",
+        "Pricing page"
+      ],
+      "tools": [
+        "Google Forms",
+        "Survey Monkey"
+      ],
+      "related": "customer-interviews",
+      "desc": "A survey sent by email to members of the sales team and/or the customer service team. These surveys gather insight from the internal teams who interact with customers every day, uncovering customer motivations, FUDs and frictions. This tribal knowledge from sales and customer service can then be applied to improve the website.",
+      "use": "Effective for exploratory research, particularly for developing or enhancing ideal customer profiles and personas, uncovering the primary barriers to conversion, and identifying the key questions users have that the website could answer. Customer service data is especially useful when focusing on retention.",
+      "pros": "Gathers a larger internal sample than interviews alone, and can collect both qualitative and quantitative data depending on question types.",
+      "cons": "Internal data carries bias, and customer pain points arrive filtered through the team rather than directly from the customer. Question quality determines insight quality, and large open-ended sets take effort to analyse.",
+      "considerations": "Sample size\nThe goal is quantitative insight, so gather the biggest sample the size of the sales and service teams allows; it will usually be smaller than a customer survey sample.",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm007"
+    },
+    "sales-customer-service-interviews": {
+      "name": "Sales / Customer Service Interviews",
+      "objective": [
+        "Explore"
+      ],
+      "data": "Qualitative",
+      "signal": "Low",
+      "effort": "Medium",
+      "surface": [
+        "Messaging & copy",
+        "Pricing page"
+      ],
+      "tools": [
+        "Zoom"
+      ],
+      "related": "customer-survey",
+      "desc": "Sales / Customer Support interviews involve running 30 minute to 1 hour sessions with members of the sales team and/or the customer service team, either in person or remotely on Zoom, Teams, etc. These interviews draw on the internal teams who interact with customers every day, uncovering customer motivations, FUDs and frictions.",
+      "use": "Effective for exploratory research. Sales interviews help build ideal customer profiles and reveal why potential customers don't convert. Customer support interviews surface customers' key issues and frustrations, useful for retention work and for identifying questions the website should answer.",
+      "pros": "Interviews let you dig deeper than surveys with follow-up questions, and give a fast snapshot of the top customer problems from the internal perspective.",
+      "cons": "Internal data carries bias and arrives filtered through the team. Interviews take time, so they aren't suited to large samples; pair with a survey for scale.",
+      "considerations": "Logistics\nUse a direct booking link, record with permission, send reminders. No-show risk is lower with internal participants but still worth mitigating.\n\nSample size\nQualitative goals mean the sample doesn't need to be large; around five well-chosen participants per team is a reasonable guide, adjusted for organisation size.",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm008"
+    },
+    "win-loss-analysis": {
+      "name": "Win-loss Analysis (CRM Analysis)",
+      "objective": [
+        "Explore"
+      ],
+      "data": "Quantitative",
+      "signal": "Medium",
+      "effort": "Medium",
+      "surface": [
+        "Messaging & copy",
+        "Pricing page"
+      ],
+      "tools": [],
+      "related": null,
+      "desc": "Analysis of data housed within your existing CRM tool or database, e.g. Salesforce, Pipedrive, to understand customers' and potential customers' challenges, pain points, blockers and decision-making process at scale, and to identify nuances between different customer types.",
+      "use": "When you lack insight into your ICP's motivations and FUDs, struggle to convert leads, or when messaging is informed by internal assumption rather than data. Also useful for building ICPs and personas from scratch.",
+      "pros": "No need to conduct new research; the data already exists.\n\nInsights come from real users with a genuine need, revealing the key questions and barriers holding users back from converting.",
+      "cons": "Difficult to conduct effectively if CRM data is poorly organised or reasons for lost deals aren't recorded. May carry bias if based solely on sales team notes.",
+      "considerations": "Sample size\nDepends on the depth of the data: aim for 200-300 records for top-level data, or 50-100 where the data is detailed and qualitative. Ensure adequate samples across segments if comparing convertors and non-convertors.",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm009"
+    },
+    "live-chat-analysis": {
+      "name": "Live Chat Analysis",
+      "objective": [
+        "Explore"
+      ],
+      "data": "Qualitative",
+      "signal": "Medium",
+      "effort": "Medium",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [
+        "Lucky Orange"
+      ],
+      "related": null,
+      "desc": "Analysis of on-site live chat transcripts to uncover the fears, uncertainties and doubts users are facing on-site, including identifying any unanswered questions, which can point towards missing or sub-optimal website content.",
+      "use": "If you have live chat with high engagement, the questions users ask are a goldmine of insight. A very effective way to tap into users' main queries and struggles when time and budget for new research are limited.",
+      "pros": "No need to conduct new research; the data already exists, and it comes from real users with a genuine need.",
+      "cons": "Time-consuming with large volumes of data; value decreases when data is limited.",
+      "considerations": "Chat type\nThe value depends on whether it's a chatbot or a manned live chat, and on whether the service team categorises queries, which shapes the analysis approach.\n\nSample size\nAs with surveys and polls, 200-300 conversations is the sweet spot for analysis.",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm010"
+    },
+    "ads-analysis": {
+      "name": "Ads Analysis",
+      "objective": [
+        "Focus"
+      ],
+      "data": "Quantitative",
+      "signal": "High",
+      "effort": "Medium",
+      "surface": [
+        "Acquisition & ads",
+        "Landing pages"
+      ],
+      "tools": [],
+      "related": null,
+      "desc": "Analysis of ads data within Google Ads, Facebook ads, Instagram ads, etc., focused on performance, CPC, impressions, clicks and cost, with the aim of identifying which campaigns and ads are underperforming.",
+      "use": "Increase ROI from acquisition spend, improve the effectiveness of paid landing pages, start optimising acquisition activities, and connect your acquisition strategy to your on-site optimisation efforts.",
+      "pros": "Highlights which campaigns are performing well and which are not, so spend can be optimised.",
+      "cons": "On its own, lacks the qualitative insight needed to determine why certain efforts underperform.",
+      "considerations": "Expertise\nIdeally conducted by someone with acquisition knowledge who isn't directly involved in your acquisition strategy, to prevent bias.",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm011"
+    },
+    "ux-heuristic-review": {
+      "name": "UX Heuristic Review",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Qualitative",
+      "signal": "Low",
+      "effort": "Low",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [
+        "Miro"
+      ],
+      "related": "competitor-review",
+      "desc": "A review of a website based on a set of guiding UX principles, aiming to identify areas of potential UX friction: parts of the experience that could be creating barriers for users. It can be conducted on any digital experience, from a full website or core journey through to a single page, a piece of functionality, or a design or prototype.",
+      "use": "A good starting point for an experimentation programme or larger research project. Particularly effective for low-traffic pages where polls and analytics are hard to run, or when time and budget for other research are limited.",
+      "pros": "A good starting point, particularly if you're not familiar with the website.\n\nRelatively quick and inexpensive (no tool costs).\n\nEncourages collaboration across teams and helps build a culture of experimentation, and identifies low-hanging fruit such as bugs and JDIs.",
+      "cons": "Low strength of signal: insights aren't based on real user data, so it should not be used to validate high-risk decisions.\n\nCan be misused to push personal agendas, and ideally needs additional research to support or validate insights.",
+      "considerations": "A robust review has two steps: a group workshop and a scoring exercise by a smaller team.\n\nThe workshop (up to 10 people, 60-90 minutes, on Miro or FigJam or with post-its) focuses on themes across individuals to avoid personal opinion. A typical agenda: intro (10 min), solo review and classification (20 min), group top-3 discussion (10 min), present back (20 min).\n\nThe scoring matrix follows: up to 5 people scoring the experience against a set of UX guidelines in a spreadsheet, digging into the detail and validating the workshop output.",
+      "resources": [
+        [
+          "ResearchXL model",
+          "https://speero.com/post/how-to-create-winning-tests-using-the-researchxl-model"
+        ],
+        [
+          "ResearchXL blueprint",
+          "https://speero.com/blueprints/research-xl"
+        ],
+        [
+          "Example review: Lily's Kitchen",
+          "https://speero.com/post/a-heuristic-review-of-lilys-kitchen"
+        ],
+        [
+          "Example review: WHOOP",
+          "https://speero.com/post/an-heuristic-review-of-whoop-com"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm012"
+    },
+    "competitor-review": {
+      "name": "Competitor Review",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Qualitative",
+      "signal": "Low",
+      "effort": "Low",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [
+        "Miro"
+      ],
+      "related": "ux-heuristic-review",
+      "desc": "A review of your competitors' website UX using UX heuristic principles, to understand the market, identify trends, gather inspiration, and compare the user experience to your own. It can also cover competitors' offering, pricing and overall proposition.",
+      "use": "Understand the different experiences your potential customers are exposed to in their comparison process. Useful when solving problems specific to your industry, or when you're new to a role or industry and need an overview of the competition.",
+      "pros": "Understand the wider industry, who is doing what, and where you sit from a UX, price, offering and proposition perspective. Gathers ideas and inspiration for tackling key customer problems.",
+      "cons": "Just because a competitor is doing something does not mean it is working for them. Use the insights as inspiration; never copy blindly.",
+      "considerations": "Which competitors?\nTypically review 3-5. Consider including companies outside your typical competitor set who solve a shared customer problem, even in a different industry.",
+      "resources": [
+        [
+          "Ecommerce UX battle: benchmarking 4 mobile websites",
+          "https://speero.com/post/ecommerce-ux-battle-benchmarking-4-beauty-cosmetics-mobile-websites"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm013"
+    },
+    "remote-usability-studies": {
+      "name": "Remote Usability Studies",
+      "objective": [
+        "Explore",
+        "Focus",
+        "Validate"
+      ],
+      "data": "Qualitative",
+      "signal": "Medium",
+      "effort": "Medium",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [
+        "Userlytics",
+        "Usertesting.com",
+        "Askable",
+        "UserZoom",
+        "Lookback"
+      ],
+      "related": "moderated-usability-studies",
+      "desc": "Use a sample pool of participants who match your target audience. Watch and listen as they walk through your site and perform tasks designed to emulate your core user journey. Tasks are set up within an external tool; participants complete the session independently, thinking out loud, and the recording is available for analysis.",
+      "use": "Gather insight into on-site friction points on a specific page, piece of functionality, core journey, or full website. Uncovers confusion, frustration and barriers to conversion, plus metrics like task success rate, time per task and System Usability Score.",
+      "pros": "Conducted from the comfort of the participant's own home on their own devices, making sessions more realistic. No moderator or live observers also helps prevent bias such as the Hawthorne effect.",
+      "cons": "The remote nature means users can go off track or misunderstand tasks, which can invalidate insights, and there is no moderator to bring them back or ask follow-up questions.",
+      "considerations": "Tool\nSuccess depends less on the tool than on accurate recruitment and well-crafted tasks. Compare panel size and quality, screener options, analysis features and pricing models.\n\nSample size\nNielsen Norman's guide is \"the answer is 5, except when it's not\": apply it per segment (device, user type) and add 1-2 buffer sessions for no-shows and poor-quality participants.",
+      "resources": [
+        [
+          "How many test users? (NN/g)",
+          "https://www.nngroup.com/articles/how-many-test-users/"
+        ],
+        [
+          "How to get the most out of your user testing efforts",
+          "https://speero.com/post/how-to-get-the-most-out-of-your-user-testing-efforts"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm014"
+    },
+    "moderated-usability-studies": {
+      "name": "Moderated Usability Studies",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Qualitative",
+      "signal": "High",
+      "effort": "High",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [
+        "Zoom",
+        "Askable",
+        "UserZoom",
+        "Lookback"
+      ],
+      "related": "remote-usability-studies",
+      "desc": "Use a sample pool of participants who match your target audience. Watch and listen as they walk through your site and perform queued tasks. Moderated usability studies involve one-to-one sessions conducted by a skilled moderator who sets the tasks and questions, allowing for a deeper level of insight. Sessions can run in person or via Zoom, Teams, etc.",
+      "use": "When you need to understand the wider user journey, need more in-depth qualitative insight, or have a longer or more detailed set of tasks that would be difficult to explain in a remote setting.",
+      "pros": "The moderator can answer questions, bring participants back on track, and ask follow-ups and clarifications, so insights tend to be deeper than remote sessions.",
+      "cons": "Success depends on the moderator's skill; leading questions introduce bias, and being observed live invites effects such as the Hawthorne effect.",
+      "considerations": "Recruitment\nA panel tool isn't always necessary: you can recruit from your customer database or via an on-site poll and run sessions on any video call tool, at the cost of more admin and higher no-show risk.\n\nSample size\nNielsen Norman's \"5, except when it's not\" applies per segment, with 1-2 buffer sessions recommended.",
+      "resources": [
+        [
+          "How to get the most out of your user testing efforts",
+          "https://speero.com/post/how-to-get-the-most-out-of-your-user-testing-efforts"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm015"
+    },
+    "prototype-testing": {
+      "name": "Prototype Testing",
+      "objective": [
+        "Validate"
+      ],
+      "data": "Qualitative",
+      "signal": "Medium",
+      "effort": "Medium",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [
+        "Userlytics",
+        "Usertesting.com",
+        "Maze"
+      ],
+      "related": null,
+      "desc": "Use usability study tools or dedicated prototype testing tools such as Maze to set recruited participants specific tasks on a prototype version of a page, functionality or website. Usually run remotely, but can also be moderated.",
+      "use": "To validate that a proposed solution has the intended impact in improving the user experience, and to identify issues pre-development.",
+      "pros": "Gathers qualitative support for a design or functionality change before (or instead of) A/B testing. Especially valuable when A/B testing isn't possible due to technical or traffic limitations, and the tools are relatively inexpensive.",
+      "cons": "Building the prototype can be time-intensive, technical issues during sessions can hurt validity, and task wording must avoid leading participants. If you go on to A/B test as well, it adds time before results.",
+      "considerations": "Sample size\nThe usability study logic applies: Nielsen Norman's \"5, except when it's not\", per segment, with buffer sessions.",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm016"
+    },
+    "copy-testing": {
+      "name": "Copy Testing",
+      "objective": [
+        "Explore",
+        "Focus",
+        "Validate"
+      ],
+      "data": "Qualitative",
+      "signal": "Medium",
+      "effort": "Low",
+      "surface": [
+        "Messaging & copy",
+        "Landing pages",
+        "Pricing page"
+      ],
+      "tools": [
+        "Wynter"
+      ],
+      "related": null,
+      "desc": "A form of user research focused on website copy and written content. A sample pool of users is recruited to review excerpts of copy, then answer questions assessing their level of understanding, outstanding questions and next steps. Our recommended copy testing tool is Wynter.",
+      "use": "Understand how your audience perceives your messaging: is anything confusing, does it miss the mark? Validate your audience's pain points, define the benefits that resonate most and least, and check whether headlines stand out or feel bland against the competition.",
+      "pros": "Participants are outsourced, so you don't need new tools on your site, high traffic, or existing customers to get started. Gathers qualitative feedback on copy from people who match your ICP.",
+      "cons": "Focused only on copy; don't use it to gather insight about design or functionality.",
+      "considerations": "Recruitment\nCheck that the tool's panel can reach your target audience; if it can't, plan an alternative recruitment route before committing.",
+      "resources": [
+        [
+          "How does product copy format affect user engagement? (original research)",
+          "https://speero.com/post/how-does-product-copy-format-affect-user-engagement-original-research"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm017"
+    },
+    "five-second-test": {
+      "name": "5 Second Test",
+      "objective": [
+        "Focus",
+        "Validate"
+      ],
+      "data": "Quantitative",
+      "signal": "Low",
+      "effort": "Low",
+      "surface": [
+        "Landing pages",
+        "Messaging & copy"
+      ],
+      "tools": [
+        "Usability Hub"
+      ],
+      "related": "preference-test",
+      "desc": "A sample pool of target participants views a page for a limited time (typically five seconds), then answers a series of questions. This gauges what information and impression users derive from a design within the first five seconds, revealing the effectiveness of the design and messaging.",
+      "use": "The primary use case is insight into users' very first impression of a page, often as part of landing page or acquisition research. Also useful in validation, e.g. checking how a headline change shifts first impressions. Best for copy and overall page design and messaging.",
+      "pros": "A quick and inexpensive way to gather insight into first impressions.",
+      "cons": "Five seconds isn't long: participants can usually only answer one or two core questions, and tests run on static screenshots, so functionality can't be assessed.",
+      "considerations": "Sample size\nAround 50-100 participants per test maintains insight quality, applied per segment (e.g. mobile and desktop separately).\n\nLength\nThe window can be extended to 10 or 15 seconds where participants need slightly longer to answer follow-ups effectively.",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm018"
+    },
+    "preference-test": {
+      "name": "Preference Test",
+      "objective": [
+        "Validate"
+      ],
+      "data": "Quantitative",
+      "signal": "Low",
+      "effort": "Low",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [
+        "Usability Hub",
+        "Wynter"
+      ],
+      "related": "five-second-test",
+      "desc": "Participants are shown two or more versions of a page, element, or piece of copy, and asked to select their preference and explain why. Data from the full sample is used to draw conclusions about the best-performing version.",
+      "use": "A validation technique for gathering data on a concept or solution: pre-validating or refining A/B test concepts in the planning stage, or standing in for an A/B test where testing isn't possible for technical or traffic reasons.",
+      "pros": "Quick and inexpensive; an easy way to gather data that informs concept design.",
+      "cons": "Participants can't interact with functionality, so feedback reflects design and copy rather than true ease of use. Unlike a real A/B test, participants aren't parting with data or money, which introduces bias. Low incentives can affect response quality, so review qualitative feedback for void responses.",
+      "considerations": "Sample size\nPreference tests gather quantitative data, so include at least 30 participants, ideally more.\n\nTools\nUsually built into tools such as Maze, Usability Hub (design) and Wynter (copy) rather than standalone.",
+      "resources": [
+        [
+          "Preference testing guide (Maze)",
+          "https://maze.co/blog/preference-testing/"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm019"
+    },
+    "card-sorting": {
+      "name": "Card Sorting",
+      "objective": [
+        "Focus",
+        "Validate"
+      ],
+      "data": "Quantitative",
+      "signal": "Medium",
+      "effort": "Medium",
+      "surface": [
+        "Navigation & IA"
+      ],
+      "tools": [
+        "Optimal Workshop",
+        "Userlytics",
+        "Usability Hub",
+        "UserZoom"
+      ],
+      "related": "tree-testing",
+      "desc": "Participants sort and label website content (represented on \"cards\") into groups that make sense to them. Combined data across participants identifies the core groupings, labels and anomalies, informing the structure of a website's navigation.",
+      "use": "A core part of designing a website from scratch, and an effective technique when other research points to issues with how content is grouped and labeled: it reveals how users expect content to be organised.",
+      "pros": "Uniquely focused on content structure, with open, closed and hybrid variants useful at different project stages. Tools like Optimal Workshop make remote card sorting quick to set up and run.",
+      "cons": "Data analysis can be difficult and time-intensive; the data is extensive and takes understanding to interpret accurately. Moderated card sorting is time-intensive and can be expensive.",
+      "considerations": "Open vs. closed\nOpen sorts let participants group and label freely and make the best starting point; closed sorts validate a defined label set; hybrids suit cases where some categories are fixed.\n\nSample size\nNNGroup recommends 15 participants as a minimum, more for quantitative-style analysis.\n\nFormat\nModerated variants add qualitative insight into where participants hesitate, at the cost of time and harder analysis.",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm020"
+    },
+    "tree-testing": {
+      "name": "Tree Testing",
+      "objective": [
+        "Focus",
+        "Validate"
+      ],
+      "data": "Quantitative",
+      "signal": "Medium",
+      "effort": "Medium",
+      "surface": [
+        "Navigation & IA"
+      ],
+      "tools": [
+        "Userlytics",
+        "Optimal Workshop",
+        "UserZoom"
+      ],
+      "related": "card-sorting",
+      "desc": "Tree testing replicates a website navigation (existing or proposed) in a link \"tree\". Recruited participants are set tasks to find specific content within the tree, providing data on how easy content is to find within the navigational structure.",
+      "use": "Similar to card sorting in providing insight into navigational structure. Use it to locate the main issues within an existing structure, or as a validation technique for proposed changes and improvements.",
+      "pros": "Uniquely focused on findability within a content structure, works on existing or proposed structures, and tools like Optimal Workshop make it quick to set up.",
+      "cons": "Data analysis can be difficult and time-intensive; the data is extensive and takes understanding to interpret accurately.",
+      "considerations": "Sample size\nA quantitative method, so size the sample for the precision needed; most tree tests run with 50-150 participants.",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm021"
+    },
+    "diary-studies": {
+      "name": "Diary Studies",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Qualitative",
+      "signal": "High",
+      "effort": "High",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [],
+      "related": null,
+      "desc": "Participants take part in research over a few weeks to a few months, submitting \"diary\" entries every time they naturally do a certain behaviour, e.g. browsing for a specific product or service. Studies can run via email, text, WhatsApp or bespoke platforms.",
+      "use": "Collecting qualitative data about behaviours and experiences over time. Appropriate where the decision-making process is long and the wider journey matters, e.g. automotive or property, or for offline parts of the journey such as returns.",
+      "pros": "An in-depth longitudinal study yielding robust data about the wider journey and decision-making process; insights that are difficult to gather any other way.",
+      "cons": "Long and complex to run, and can be expensive: recruitment must find people genuinely in-market and incentives must be generous for weeks or months of participation.",
+      "considerations": "Incentives\nStage the incentive (e.g. half upfront, half on completion) to keep participants engaged throughout.\n\nTools\nUse whatever makes entries easiest for the participant; WhatsApp or text usually beats a dedicated tool they must log into.",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm022"
+    },
+    "ab-testing": {
+      "name": "A/B Testing",
+      "objective": [
+        "Validate"
+      ],
+      "data": "Quantitative",
+      "signal": "High",
+      "effort": "High",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [
+        "AB Testing Tools (Speero Comparison)"
+      ],
+      "related": null,
+      "desc": "Running a live, randomised experiment that splits traffic between a control and one or more variants to measure the causal effect of a change on a target metric.",
+      "use": "Confirming that a change actually improves the outcome it targets before rolling it out fully. Settling disagreements about a design or flow with real customer behaviour rather than opinion.",
+      "pros": "Gives a direct, causal read on impact rather than a proxy signal. Removes bias from the decision since real customers self-select into each path.",
+      "cons": "Needs enough traffic and time to reach a reliable result. Only tests the specific variants built, so it depends on earlier research to shape a strong hypothesis.",
+      "considerations": "Best run once a hypothesis has already been shaped by exploratory and focus-stage research, since a test is only as good as the idea behind it.",
+      "resources": [
+        [
+          "A/B testing tools comparison",
+          "https://speero.com/ab-testing-tools"
+        ],
+        [
+          "A/B test significance calculator",
+          "https://speero.com/ab-test-calculator"
+        ],
+        [
+          "How to prioritize your A/B test ideas",
+          "https://speero.com/post/how-to-prioritize-your-a-b-tests-ideas"
+        ],
+        [
+          "Can you run multiple A/B tests at the same time?",
+          "https://speero.com/post/can-you-run-multiple-a-b-tests-at-the-same-time"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm023"
+    },
+    "search-serp-analysis": {
+      "name": "Search & SERP Analysis",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Quantitative",
+      "signal": "High",
+      "effort": "Medium",
+      "surface": [
+        "Acquisition & ads",
+        "Landing pages"
+      ],
+      "tools": [
+        "Google Search Console",
+        "Ahrefs"
+      ],
+      "related": "ads-analysis",
+      "desc": "Analysis of organic search performance and the surrounding results landscape. The queries that bring visitors in and the ones that should but don't, rankings and click-through against the pages that hold them, and the content competitors use to win the intents that matter. Pairs the site's search data with the language customers actually type.",
+      "use": "Grow qualified organic traffic, close the gap between customer search language and site language, prioritise content investment by intent, and connect organic acquisition to on-site optimisation.",
+      "pros": "Real behavioural data at scale from actual customer queries. Shows demand and competitive position without spending on a panel or media.",
+      "cons": "Intent has to be inferred from queries rather than asked. Rankings move slowly, so validating changes takes time and can be confounded by algorithm updates.",
+      "considerations": "",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm024"
+    },
+    "win-loss-interviews": {
+      "name": "Win-loss Interviews",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Qualitative",
+      "signal": "Medium",
+      "effort": "High",
+      "surface": [
+        "Messaging & copy",
+        "Pricing page"
+      ],
+      "tools": [
+        "Zoom",
+        "Lookback"
+      ],
+      "related": "win-loss-analysis",
+      "desc": "One-to-one interviews with recent buyers and lost prospects about how the purchase decision actually went: the trigger that started the search, the alternatives weighed, the objections that nearly killed the deal, and what tipped it in the end. Run like customer interviews, but the sample deliberately includes the deals you lost, which is where the sharpest positioning insight lives.",
+      "use": "Understand why deals are won and lost in the buyer's own words. Feeds ICP research, positioning and messaging with the market's real decision criteria and vocabulary, and locates the funnel stages where deals stall or die. Adds the why behind the patterns CRM win-loss analysis surfaces.",
+      "pros": "Covers the buyers you lost, whose reasons never surface in customer research. First-hand accounts of the decision replace the sales team's secondhand recollection, and the buyer's own language feeds straight into positioning and messaging work.",
+      "cons": "Lost prospects are harder to recruit and often need a neutral interviewer plus a real incentive to speak candidly. Samples stay small, so the findings show the shape of the decision rather than its frequency.",
+      "considerations": "Recruitment\nReach out within a few weeks of the decision, while the detail is still fresh. Lost prospects speak more honestly to a neutral third party than to anyone from the vendor, so consider who conducts the sessions. A meaningful incentive matters more here than in customer research, since lost prospects owe you nothing.\n\nSample size\nQualitative goals apply: a handful of wins and a handful of losses per segment is a workable guide, and the losses are usually where the sharpest insight sits. Pair with CRM win-loss analysis when the pattern needs scale behind it.",
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREm025"
+    }
+  },
+  "outcomes": [
+    {
+      "slug": "acquisition",
+      "name": "Acquisition",
+      "metric": "Traffic quality, cost per acquisition, ROAS",
+      "desc": "Getting the right visitors to the site efficiently, and making sure the promise that brought them matches what they find."
+    },
+    {
+      "slug": "conversion",
+      "name": "Conversion",
+      "metric": "Conversion rate, revenue per visitor",
+      "desc": "Turning visitors into customers once they arrive, by removing friction and answering the questions that hold them back."
+    },
+    {
+      "slug": "retention",
+      "name": "Retention",
+      "metric": "Retention rate, churn, repeat rate, LTV",
+      "desc": "Keeping customers active and getting enough ongoing value to stay, and understanding why they leave when they do."
+    },
+    {
+      "slug": "foundational",
+      "name": "Foundational",
+      "metric": "Underpins all three areas",
+      "desc": "Cross-cutting understanding such as ICP, audience and messaging that feeds acquisition, conversion and retention rather than sitting under one of them."
+    }
+  ],
+  "northStar": "The one measurable outcome the programme is accountable to. It stays fixed while the opportunities and bets beneath it flex as research and test learnings come in. Set per client; everything below ladders up to it.",
+  "recipes": {
+    "conversion-research": {
+      "name": "Conversion Research",
+      "outcome": "conversion",
+      "problem": "Something keeps stopping me finishing what I came to do, but it's not one obvious thing.",
+      "opp": "Visitors fail to convert across the site",
+      "hmw": "How might we find and remove the biggest on-site barriers to conversion?",
+      "triggers": [
+        "Below-benchmark conversion rate",
+        "No single clear drop-off",
+        "Need to build a prioritised test pipeline"
+      ],
+      "dstage": "Explore",
+      "evidence": "Emerging",
+      "desc": "You need a complete view of where and why visitors fail to convert across the site, not just on a single page. This is the broad diagnostic that feeds an experimentation programme. It deliberately triangulates across data types: no single method is trusted on its own; the value comes from where the behavioural, attitudinal and observed evidence agree.",
+      "stages": [
+        [
+          "Explore",
+          "Build the quantitative behavioural picture and an expert baseline.",
+          [
+            "analytics-data-analysis",
+            "heatmaps",
+            "session-recordings",
+            "ux-heuristic-review"
+          ]
+        ],
+        [
+          "Focus",
+          "Add the voice of the customer behind the behaviour.",
+          [
+            "customer-survey",
+            "on-site-polls"
+          ]
+        ],
+        [
+          "Validate",
+          "Watch real people attempt the core journeys.",
+          [
+            "remote-usability-studies"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "How to build a research system that actually drives tests",
+          "https://speero.com/post/how-to-build-a-research-system-that-actually-drives-tests"
+        ],
+        [
+          "ResearchXL model",
+          "https://speero.com/post/how-to-create-winning-tests-using-the-researchxl-model"
+        ],
+        [
+          "ResearchXL blueprint",
+          "https://speero.com/blueprints/research-xl"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr000"
+    },
+    "acquisition-research": {
+      "name": "Acquisition Research",
+      "outcome": "acquisition",
+      "problem": "I clicked the ad expecting one thing, the page doesn't match it, so I leave.",
+      "opp": "Paid visitors bounce off landing pages",
+      "opp2": "We're attracting the wrong visitors",
+      "hmw": "How might we make the landing page deliver on the promise the ad made?",
+      "triggers": [
+        "High ad spend with weak ROAS",
+        "High landing-page bounce",
+        "Poor message match between the ad and the page"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "desc": "Paid traffic is arriving but converting poorly, and it is unclear whether the problem sits in the ads, the landing pages, or the match between the two. This recipe connects acquisition spend to the on-site experience so you can improve ROAS rather than simply cut budget. The data shows where the leak is, the qualitative methods suggest why, and optimisation effort lands on the right page with the right message.",
+      "stages": [
+        [
+          "Explore",
+          "Set the quantitative picture: which campaigns underperform, and what those visitors do once they land.",
+          [
+            "ads-analysis",
+            "analytics-data-analysis"
+          ]
+        ],
+        [
+          "Focus",
+          "Flag likely friction on the landing pages themselves.",
+          [
+            "ux-heuristic-review"
+          ]
+        ],
+        [
+          "Validate",
+          "Check the first impression matches the promise the ad made.",
+          [
+            "five-second-test"
+          ]
+        ]
+      ],
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr001"
+    },
+    "saas-pricing-page": {
+      "name": "SaaS Pricing Page",
+      "outcome": "conversion",
+      "problem": "I can't work out which plan is right for me or what I'd actually end up paying, so I stall.",
+      "opp": "Buyers can't tell which plan fits them",
+      "hmw": "How might we help buyers self-select the right plan with confidence?",
+      "triggers": [
+        "High exit on the pricing page",
+        "Low trial-to-paid",
+        "Sales repeatedly answering the same plan-comparison questions"
+      ],
+      "dstage": "Focus",
+      "evidence": "Emerging",
+      "desc": "The pricing page is where SaaS buyers decide whether the product is worth it, and it is often where they stall. The goal is to understand why visitors hesitate, what they need in order to feel confident, and whether the plans, copy and layout match how they actually evaluate value. The combination moves from market context, to internal knowledge, to message clarity, to observed behaviour, so no single lens carries the decision.",
+      "stages": [
+        [
+          "Explore",
+          "See how rivals frame pricing and surface obvious friction on your own page.",
+          [
+            "competitor-review",
+            "ux-heuristic-review"
+          ]
+        ],
+        [
+          "Focus",
+          "Bring in the real objections buyers raise, and check the plan language is understood.",
+          [
+            "sales-customer-service-interviews",
+            "copy-testing"
+          ]
+        ],
+        [
+          "Validate",
+          "Watch how people move through the page and where they get stuck choosing.",
+          [
+            "remote-usability-studies"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "Pricing page optimization: how to order pricing plans (original research)",
+          "https://speero.com/post/pricing-page-optimization-how-to-order-pricing-plans-original-research"
+        ],
+        [
+          "13 SaaS pricing models explained",
+          "https://speero.com/post/13-saas-pricing-models-you-can-test-to-optimize-growth-and-monetization"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr002"
+    },
+    "landing-page-optimisation": {
+      "name": "Landing Page Optimisation",
+      "outcome": "acquisition",
+      "problem": "I clicked the ad expecting one thing, the page doesn't match it, so I leave.",
+      "opp": "Paid visitors bounce off landing pages",
+      "hmw": "How might we make the landing page deliver on the promise the ad made?",
+      "triggers": [
+        "High landing-page bounce",
+        "Low message-clarity scores",
+        "Weak paid conversion despite qualified traffic"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "desc": "A landing page is underperforming and you need to understand what is blocking visitors before redesigning it. The aim is to diagnose friction across first impression, message and on-page behaviour. The behavioural data shows what is happening, the polls and copy testing explain why, and the heuristic review and 5 second test surface quick wins to act on first.",
+      "stages": [
+        [
+          "Explore",
+          "Get a fast read on clarity and obvious friction.",
+          [
+            "five-second-test",
+            "ux-heuristic-review"
+          ]
+        ],
+        [
+          "Focus",
+          "See where attention goes, where people drop, and ask them what's missing.",
+          [
+            "heatmaps",
+            "session-recordings",
+            "on-site-polls",
+            "copy-testing"
+          ]
+        ],
+        [
+          "Validate",
+          "Confirm the winning change with a live experiment.",
+          [
+            "ab-testing"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "16 ecommerce A/B test ideas backed by UX research",
+          "https://speero.com/post/16-ecommerce-a-b-test-ideas-backed-by-ux-research"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr003"
+    },
+    "checkout-cart-optimisation": {
+      "name": "Checkout & Cart Optimisation",
+      "outcome": "conversion",
+      "problem": "I was ready to buy, then the checkout asked for too much or felt unsafe, so I bailed.",
+      "opp": "Shoppers abandon at the payment step",
+      "hmw": "How might we get ready-to-buy shoppers through checkout without losing them?",
+      "triggers": [
+        "High cart abandonment",
+        "Drop-off concentrated on the payment or shipping step",
+        "Repeated 'is this secure' support queries"
+      ],
+      "dstage": "Focus",
+      "evidence": "Emerging",
+      "desc": "Shoppers add items to the basket and then leave before paying, and the team can't see what tips them out. Start broad to find where value leaks, focus in on the fields where people stall, and finish by validating a reworked flow before it goes near a build, so several independent signals point at the same fix.",
+      "stages": [
+        [
+          "Explore",
+          "Find which steps lose the most people, and watch what they do at the moment they drop.",
+          [
+            "analytics-data-analysis",
+            "session-recordings",
+            "heatmaps"
+          ]
+        ],
+        [
+          "Focus",
+          "Zoom into the payment and address fields, and ask leavers why.",
+          [
+            "form-analytics",
+            "on-site-polls"
+          ]
+        ],
+        [
+          "Validate",
+          "Prove the reworked flow with observed tasks and a live test.",
+          [
+            "remote-usability-studies",
+            "ab-testing"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "Anatomy of a web form",
+          "https://speero.com/post/anatomy-of-a-web-form-the-common-building-blocks-and-what-to-look-out-for-when-optimizing"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr004"
+    },
+    "navigation-information-architecture": {
+      "name": "Navigation & Information Architecture",
+      "outcome": "conversion",
+      "problem": "I know what I want but the menus don't match how I think, so I keep hunting.",
+      "opp": "Visitors can't find the right product or page",
+      "hmw": "How might we structure navigation around how customers actually look for things?",
+      "triggers": [
+        "Heavy reliance on site search",
+        "High pogo-sticking between category pages",
+        "Low findability scores in past tests"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "desc": "Visitors know what they want but can't find it, so they bounce between pages or fall back on search and give up. Begin by reading the symptoms, then move to the structure itself, and validate the winning structure so you change the navigation on evidence rather than on internal logic.",
+      "stages": [
+        [
+          "Explore",
+          "Read the symptoms: search terms, dead-end paths, hunting behaviour.",
+          [
+            "analytics-data-analysis",
+            "session-recordings"
+          ]
+        ],
+        [
+          "Focus",
+          "Learn how customers expect content grouped.",
+          [
+            "card-sorting"
+          ]
+        ],
+        [
+          "Validate",
+          "Check the proposed structure lets people find things.",
+          [
+            "tree-testing",
+            "remote-usability-studies"
+          ]
+        ]
+      ],
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr005"
+    },
+    "validating-redesign": {
+      "name": "Validating a Redesign Before Build",
+      "outcome": "conversion",
+      "problem": "As a visitor I'd be handed a new design the team hopes is better but hasn't checked with anyone like me.",
+      "opp": "A redesign is about to ship untested",
+      "hmw": "How might we prove the new design beats the current one before we build it?",
+      "triggers": [
+        "Major redesign scoped",
+        "Significant build cost",
+        "No evidence the new direction outperforms the current page"
+      ],
+      "dstage": "Validate",
+      "evidence": "Hypothesised",
+      "desc": "A big redesign is about to be built and the risk is shipping months of work that performs worse than what it replaces. This recipe front-loads the validation so the redesign earns its place before a developer touches it.",
+      "stages": [
+        [
+          "Focus",
+          "Check the new design communicates its point, and pressure-test the words carrying it.",
+          [
+            "five-second-test",
+            "copy-testing"
+          ]
+        ],
+        [
+          "Validate",
+          "Weigh it against the current version, confirm people can complete the core tasks, then prove it live.",
+          [
+            "preference-test",
+            "prototype-testing",
+            "moderated-usability-studies",
+            "ab-testing"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "Testing HIPPOs",
+          "https://speero.com/post/testing-hippos"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr006"
+    },
+    "churn-retention": {
+      "name": "Churn & Retention Research",
+      "outcome": "retention",
+      "problem": "I signed up but stopped getting enough value to justify keeping the subscription.",
+      "opp": "We don't know why customers churn",
+      "hmw": "How might we understand and reduce the reasons customers leave?",
+      "triggers": [
+        "Rising churn",
+        "Low repeat usage",
+        "Cancellation reasons citing value or fit"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "desc": "Customers cancel and the business is left guessing whether it was price, value, a missing feature or a bad experience. Start with the traces customers leave behind, then quantify the leading reasons and explain the why behind the numbers. The layers turn a vague churn figure into specific, addressable causes.",
+      "stages": [
+        [
+          "Explore",
+          "Read the traces customers leave behind: usage, CRM patterns, recurring complaints.",
+          [
+            "analytics-data-analysis",
+            "win-loss-analysis",
+            "live-chat-analysis"
+          ]
+        ],
+        [
+          "Focus",
+          "Quantify the leading reasons, then hear the why in customers' own words.",
+          [
+            "customer-survey",
+            "customer-interviews"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "The untapped profit in customer retention",
+          "https://speero.com/post/ecommerce-optimization-series-1-the-untapped-profit-in-customer-retention-"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr007"
+    },
+    "value-prop-messaging": {
+      "name": "Value Proposition & Messaging",
+      "outcome": "foundational",
+      "problem": "I'm on the page but I can't tell what this is or whether it's for someone like me.",
+      "opp": "Visitors don't understand what we offer",
+      "hmw": "How might we make our value clear and relevant within seconds of landing?",
+      "triggers": [
+        "High bounce on key landing pages",
+        "Low message-clarity scores",
+        "Sales correcting basic misunderstandings"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "desc": "Visitors land on the site and can't quickly tell what the product is, who it's for or why it beats the alternative. The explore work goes to the source: how customers describe the value in their own words, and which claims are table stakes versus genuinely differentiating. That language then gets sharpened and tested.",
+      "stages": [
+        [
+          "Explore",
+          "Capture the value in customers' own words, and map which claims differentiate.",
+          [
+            "customer-interviews",
+            "customer-survey",
+            "competitor-review"
+          ]
+        ],
+        [
+          "Focus",
+          "Sharpen and test whether the message reads clearly and fast.",
+          [
+            "copy-testing",
+            "five-second-test"
+          ]
+        ],
+        [
+          "Validate",
+          "Confirm the page answers the questions real visitors arrive with.",
+          [
+            "on-site-polls"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "How does product copy format affect user engagement? (original research)",
+          "https://speero.com/post/how-does-product-copy-format-affect-user-engagement-original-research"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr008"
+    },
+    "mobile-experience": {
+      "name": "Mobile Experience Optimisation",
+      "outcome": "conversion",
+      "problem": "On my phone the site is fiddly, so I give up and mean to come back later, but I don't.",
+      "opp": "Mobile converts far worse than desktop",
+      "hmw": "How might we close the gap between mobile and desktop conversion?",
+      "triggers": [
+        "Mobile conversion well below desktop",
+        "High mobile share of traffic",
+        "Mis-tap and zoom behaviour in recordings"
+      ],
+      "dstage": "Explore",
+      "evidence": "Emerging",
+      "desc": "Mobile traffic is large but converts well below desktop, and the team can't tell whether it's layout, speed, forms or intent. Isolate the mobile segment to size and locate the gap, watch the cramped taps and mis-hit buttons that numbers alone hide, and validate fixes on real devices, not a shrunken desktop window.",
+      "stages": [
+        [
+          "Explore",
+          "Isolate the mobile segment to size the gap, then watch what the numbers hide.",
+          [
+            "analytics-data-analysis",
+            "session-recordings",
+            "heatmaps"
+          ]
+        ],
+        [
+          "Focus",
+          "Expose where mobile input breaks down, and catch frustrations in the moment.",
+          [
+            "form-analytics",
+            "on-site-polls"
+          ]
+        ],
+        [
+          "Validate",
+          "Test fixes in sessions run on real devices.",
+          [
+            "remote-usability-studies"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "Ecommerce UX battle: benchmarking 4 mobile websites",
+          "https://speero.com/post/ecommerce-ux-battle-benchmarking-4-beauty-cosmetics-mobile-websites"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr009"
+    },
+    "product-page": {
+      "name": "Product Page Optimisation",
+      "outcome": "conversion",
+      "problem": "I looked at the product but couldn't get the answers I needed to commit, so I left it.",
+      "opp": "Product views don't turn into add-to-carts",
+      "hmw": "How might we give product pages the information and reassurance that earns the add-to-cart?",
+      "triggers": [
+        "High product-page traffic with low add-to-cart rate",
+        "Repeated pre-sales questions",
+        "Attention stopping above key content"
+      ],
+      "dstage": "Focus",
+      "evidence": "Emerging",
+      "desc": "People reach the product page but don't add to basket, and it's unclear whether the blocker is information, doubt or price. Behaviour shows which content people seek out, skip or expand; the voice of the customer draws out the unanswered questions holding a purchase back; and usability sessions confirm a revised page actually resolves them.",
+      "stages": [
+        [
+          "Explore",
+          "Compare product-page performance and see where attention stops.",
+          [
+            "analytics-data-analysis",
+            "session-recordings",
+            "heatmaps"
+          ]
+        ],
+        [
+          "Focus",
+          "Draw out the unanswered questions and hesitations.",
+          [
+            "on-site-polls",
+            "customer-survey"
+          ]
+        ],
+        [
+          "Validate",
+          "Confirm the revised page resolves real doubt.",
+          [
+            "remote-usability-studies"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "Implementing urgency on product pages for a 27.1% lift (case study)",
+          "https://speero.com/post/implementing-urgency-on-ecommerce-product-pages-for-a-27-1-lift-case-study"
+        ],
+        [
+          "Should you add product videos to your product pages?",
+          "https://speero.com/post/should-you-add-product-videos-to-your-product-pages-that-was-the-next-question-tacked-in-our-series-it-depends"
+        ],
+        [
+          "How product image size affects attention and engagement (original research)",
+          "https://speero.com/post/how-product-image-size-affects-attention-and-engagement-original-research"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr010"
+    },
+    "lead-gen-form": {
+      "name": "Lead-Gen Form Optimisation",
+      "outcome": "acquisition",
+      "problem": "I started filling in the form but it asked too much or broke, so I stopped.",
+      "opp": "Prospects abandon the lead form",
+      "hmw": "How might we make the lead form quick and painless enough to finish?",
+      "triggers": [
+        "Low form completion rate",
+        "Drop-off on specific fields",
+        "High cost per lead from paid traffic"
+      ],
+      "dstage": "Focus",
+      "evidence": "Emerging",
+      "desc": "Prospects start the lead form but abandon it before submitting, and the cost of every lost completion is high. Form analytics is the spine here, showing the exact fields where people stall, re-enter or quit, so the changes are grounded in where the friction genuinely sits.",
+      "stages": [
+        [
+          "Explore",
+          "Locate the exact fields where people stall, and frame how many are affected.",
+          [
+            "form-analytics",
+            "analytics-data-analysis"
+          ]
+        ],
+        [
+          "Focus",
+          "Watch behaviour around those fields, and ask what stopped them.",
+          [
+            "session-recordings",
+            "heatmaps",
+            "on-site-polls"
+          ]
+        ],
+        [
+          "Validate",
+          "Check the restructured form in usability sessions before launch.",
+          [
+            "remote-usability-studies"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "Anatomy of a web form",
+          "https://speero.com/post/anatomy-of-a-web-form-the-common-building-blocks-and-what-to-look-out-for-when-optimizing"
+        ],
+        [
+          "Single vs multi-column forms (original research)",
+          "https://speero.com/post/form-field-usability-should-you-use-single-or-multi-column-forms-original-research"
+        ],
+        [
+          "Select menus vs radio buttons (original research)",
+          "https://speero.com/post/form-field-usability-revisited-select-menus-vs-radio-buttons-original-research"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr011"
+    },
+    "onboarding-activation": {
+      "name": "Onboarding & Activation Research",
+      "outcome": "retention",
+      "problem": "I signed up but couldn't quickly see the point, so I never really got started.",
+      "opp": "New users don't reach first value",
+      "hmw": "How might we get new users to their first win before they lose interest?",
+      "triggers": [
+        "High signup-to-activation drop-off",
+        "Low day-7 return rate",
+        "Early support tickets about getting started"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "desc": "New users sign up but never reach the first moment of real value, so they drift away before the product can prove itself. Map the activation funnel, watch what new users try and abandon, learn what people expected and where reality fell short, and confirm a revised path gets people to value faster.",
+      "stages": [
+        [
+          "Explore",
+          "Map the activation funnel and watch the early minutes where users stall.",
+          [
+            "analytics-data-analysis",
+            "session-recordings"
+          ]
+        ],
+        [
+          "Focus",
+          "Learn what people expected, and follow the experience across the first days.",
+          [
+            "customer-interviews",
+            "customer-survey",
+            "diary-studies"
+          ]
+        ],
+        [
+          "Validate",
+          "Confirm a revised onboarding path gets people to value faster.",
+          [
+            "remote-usability-studies"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "How Codecademy saw 5X growth with strategic testing",
+          "https://speero.com/post/how-codecademy-saw-5x-growth-with-strategic-testing"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr012"
+    },
+    "trust-credibility": {
+      "name": "Trust & Credibility Audit",
+      "outcome": "conversion",
+      "problem": "It looks interesting but I'm not sure I can trust them with my money or my details.",
+      "opp": "Visitors hesitate because they don't trust us yet",
+      "hmw": "How might we give visitors enough confidence to commit?",
+      "triggers": [
+        "High traffic with low conversion on commitment steps",
+        "Weak or missing proof elements",
+        "Low brand familiarity"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "desc": "Visitors are interested but hesitate to commit because the site hasn't earned their confidence yet. Expert review flags the credibility gaps, the category shows which trust signals buyers expect, and the voice of the customer locates the specific doubts that stall real customers. Together they separate the trust problems you can feel from the ones customers act on.",
+      "stages": [
+        [
+          "Explore",
+          "Flag credibility gaps an expert eye catches, and map the trust signals buyers see elsewhere.",
+          [
+            "ux-heuristic-review",
+            "competitor-review"
+          ]
+        ],
+        [
+          "Focus",
+          "Locate the specific doubts that stall real customers.",
+          [
+            "customer-interviews",
+            "customer-survey",
+            "on-site-polls"
+          ]
+        ],
+        [
+          "Validate",
+          "Check the reassurance language actually lands.",
+          [
+            "copy-testing"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "Do review stars on Google help click-through rate? (original study)",
+          "https://speero.com/post/do-review-stars-on-google-help-click-through-rate-original-study"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr013"
+    },
+    "b2b-icp-research": {
+      "name": "B2B ICP Research",
+      "outcome": "foundational",
+      "problem": "Nothing on the site convinces me it's built for a company like mine.",
+      "opp": "We don't really understand our ICP",
+      "hmw": "How might we speak to our ICP's real motivations, triggers and doubts?",
+      "triggers": [
+        "Messaging built on internal assumptions",
+        "Unclear persona definition",
+        "Weak win rates against competitors"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "desc": "Messaging and targeting are running on assumptions about who the ideal customer is and what drives them. This recipe builds a grounded picture of the ICP: their motivations, triggers, and fears, uncertainties and doubts. The picture starts in the CRM record, where win-loss analysis shows who actually buys and who walks. The interviews go deep, the polls add immediacy and scale, and the usability sessions tie attitude to behaviour. The messaging built on all of it then gets tested with the people it describes before it ships.",
+      "stages": [
+        [
+          "Explore",
+          "Get the real language and hesitations behind a decision to buy, from the CRM record and the buyers themselves.",
+          [
+            "customer-interviews",
+            "win-loss-analysis",
+            "win-loss-interviews"
+          ]
+        ],
+        [
+          "Focus",
+          "Capture intent and barriers from people evaluating you right now, and tie attitude to behaviour.",
+          [
+            "on-site-polls",
+            "remote-usability-studies"
+          ]
+        ],
+        [
+          "Validate",
+          "Test the messaging built on it with the people it describes before it ships.",
+          [
+            "copy-testing"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "Deep ICP research",
+          "https://speero.com/post/deep-icp-research"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr014"
+    },
+    "researching-low-traffic": {
+      "name": "Researching With Low Traffic",
+      "outcome": "foundational",
+      "problem": "We don't have the volume to be statistically significant, so every change is a leap of faith.",
+      "opp": "We can't test because traffic is too low",
+      "hmw": "How might we build evidence for decisions when traffic can't support A/B tests?",
+      "triggers": [
+        "Sessions too low to reach significance in a realistic test window",
+        "High-stakes pages with thin behavioural data",
+        "Decisions resting on opinion or the loudest voice"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "new": true,
+      "desc": "The site doesn't get enough traffic to run reliable A/B tests or gather meaningful poll and analytics data, so decisions default to opinion. This recipe builds evidence with methods that bring their own participants instead of borrowing yours. The result is a decision backed by several independent signals, none of which needed the traffic you don't have.",
+      "stages": [
+        [
+          "Explore",
+          "Set an expert baseline and see how the category solves the same problems. No traffic required.",
+          [
+            "ux-heuristic-review",
+            "competitor-review"
+          ]
+        ],
+        [
+          "Focus",
+          "Let recruited panels carry the work: your audience, someone else's traffic.",
+          [
+            "remote-usability-studies",
+            "copy-testing"
+          ]
+        ],
+        [
+          "Validate",
+          "Stand in for the A/B test with recruited-sample comparisons.",
+          [
+            "preference-test",
+            "prototype-testing"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "Optimizing a low traffic site for a 13.5% uplift (case study)",
+          "https://speero.com/post/optimizing-a-low-traffic-site-for-a-13-5-uplift-case-study"
+        ],
+        [
+          "How much data do you need to be data-driven?",
+          "https://speero.com/post/how-much-data-do-you-need-to-be-data-driven-rant"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr015"
+    },
+    "category-listing-page": {
+      "name": "Category & Listing Page Optimisation",
+      "outcome": "conversion",
+      "problem": "I'm scrolling the category page but nothing helps me narrow it down, so I leave without picking anything.",
+      "opp": "Shoppers browse categories but don't click into products",
+      "hmw": "How might we help shoppers narrow the range and find a product worth clicking?",
+      "triggers": [
+        "High category-page exits",
+        "Low listing-to-product click-through",
+        "Filters and sorting applied then abandoned",
+        "Deep scrolling with few product clicks"
+      ],
+      "dstage": "Focus",
+      "evidence": "Emerging",
+      "new": true,
+      "desc": "Shoppers reach the category and listing pages but leave without clicking into a product, and it is unclear whether the range, the filters or the product cards are to blame. Changes to filters, sorting and card content should follow the way shoppers genuinely shop the range.",
+      "stages": [
+        [
+          "Explore",
+          "Size the problem: which categories leak most, and how listing visits relate to product views.",
+          [
+            "analytics-data-analysis"
+          ]
+        ],
+        [
+          "Focus",
+          "Watch how people work the page, and ask what's stopping them narrowing down.",
+          [
+            "heatmaps",
+            "session-recordings",
+            "on-site-polls"
+          ]
+        ],
+        [
+          "Validate",
+          "Test a revised listing experience against real find-and-choose tasks.",
+          [
+            "remote-usability-studies"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "Addressing the challenges around increasing choice and competition",
+          "https://speero.com/post/ecommerce-optimization-series-2-addressing-the-challenges-around-increasing-choice-and-competition"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr016"
+    },
+    "trial-to-paid": {
+      "name": "Free Trial to Paid Conversion",
+      "outcome": "conversion",
+      "problem": "I tried it during the trial but never hit the moment that made paying feel worth it.",
+      "opp": "Trial users don't convert to paid",
+      "hmw": "How might we make the value obvious enough during the trial that paying feels like the natural next step?",
+      "triggers": [
+        "Low trial-to-paid rate",
+        "Trial usage tailing off mid-trial",
+        "Upgrade prompts ignored",
+        "Discount requests clustering at trial end"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "new": true,
+      "desc": "People sign up for the trial but never convert to a paid plan, and the team can't tell whether the product failed to prove its value or the upgrade moment failed to land. These methods separate a value problem from a pricing or timing problem, which point to very different fixes.",
+      "stages": [
+        [
+          "Explore",
+          "Map what trial users actually do, and watch the early sessions where converts and drifters diverge.",
+          [
+            "analytics-data-analysis",
+            "session-recordings",
+            "win-loss-analysis"
+          ]
+        ],
+        [
+          "Focus",
+          "Quantify why trials lapse, and hear the expectation gap in users' own words.",
+          [
+            "customer-survey",
+            "customer-interviews"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "13 SaaS pricing models explained",
+          "https://speero.com/post/13-saas-pricing-models-you-can-test-to-optimize-growth-and-monetization"
+        ]
+      ],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr017"
+    },
+    "traffic-quality-channel-fit": {
+      "name": "Traffic Quality & Channel Fit Research",
+      "outcome": "acquisition",
+      "problem": "The ad pulled me in but the offer wasn't what I actually wanted, so I left.",
+      "opp": "We're attracting the wrong visitors",
+      "hmw": "How might we attract visitors who match our best customers?",
+      "triggers": [
+        "Traffic grows quarter on quarter while conversions stay flat",
+        "One or two channels carry unusually high bounce and shallow visits",
+        "Sales says the enquiries are off-profile"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "new": true,
+      "desc": "Traffic is growing but the visitors arriving aren't the ones the business is built for, and everything downstream pays for it. This recipe works out where the misfit traffic enters and what it costs. Behavioural data shows which sources send visitors who bounce, stall or never return, CRM data shows which sources actually produce customers, the ads layer shows which campaigns and queries are buying the mismatch, and the sales floor tells you what a wrong-fit visitor sounds like. Panel message testing then checks that sharpened targeting and positioning reach the right people before more media spend follows the fix.",
+      "stages": [
+        [
+          "Explore",
+          "See which sources send visitors who engage and which send visitors who vanish, and which actually produce customers.",
+          [
+            "analytics-data-analysis",
+            "win-loss-analysis"
+          ]
+        ],
+        [
+          "Focus",
+          "Name the campaigns and queries buying the mismatch, and hear what a wrong-fit enquiry sounds like.",
+          [
+            "ads-analysis",
+            "sales-customer-service-interviews"
+          ]
+        ],
+        [
+          "Validate",
+          "Test the sharpened who-this-is-for message before spend follows it.",
+          [
+            "copy-testing"
+          ]
+        ]
+      ],
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr018"
+    },
+    "content-to-lead": {
+      "name": "Content-to-Lead Conversion Research",
+      "outcome": "acquisition",
+      "problem": "The article was useful. I read it, got what I needed and left. Nothing made a next step feel worth it.",
+      "opp": "Organic visitors read the content and leave",
+      "hmw": "How might we turn content readers into subscribers and leads without wrecking the reading experience?",
+      "triggers": [
+        "Content traffic grows steadily while lead volume stays flat",
+        "Strong rankings and high entrances on posts with near-zero CTA engagement",
+        "The newsletter and gated offers barely grow despite real readership"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "new": true,
+      "desc": "The content programme is doing its job of attracting readers, and then the relationship ends at the last paragraph. This recipe finds where the reader-to-lead path breaks. Analytics shows which posts attract visitors with any buying intent and where readers exit, heatmaps show whether the calls to action are even seen on the templates readers actually use, and on-site polls ask readers directly what they came for and what would make a next step worthwhile. Testing offer and CTA framings on a panel, then checking they register at a glance, de-risks the fix before it ships across hundreds of posts.",
+      "stages": [
+        [
+          "Explore",
+          "Find which posts attract buying intent and where readers exit.",
+          [
+            "analytics-data-analysis",
+            "heatmaps"
+          ]
+        ],
+        [
+          "Focus",
+          "Ask readers what they came for and what would make a next step worth it.",
+          [
+            "on-site-polls"
+          ]
+        ],
+        [
+          "Validate",
+          "Test offer and CTA framings, then check they register at a glance.",
+          [
+            "copy-testing",
+            "five-second-test"
+          ]
+        ]
+      ],
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr019"
+    },
+    "lead-quality": {
+      "name": "Lead Quality Research",
+      "outcome": "acquisition",
+      "problem": "I downloaded the guide because it looked useful. I was never going to buy anything.",
+      "opp": "The pipeline fills with leads sales can't close",
+      "hmw": "How might we attract fewer, better-fit leads instead of more of the wrong ones?",
+      "triggers": [
+        "Lead targets get hit while pipeline and revenue stay thin",
+        "Sales rejects, recycles or quietly ignores a large share of handed-over leads",
+        "Gated content fills the CRM with students, researchers and job-seekers"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "new": true,
+      "desc": "The lead count looks healthy and the pipeline doesn't, which usually means the acquisition engine is optimised for volume rather than fit. This recipe diagnoses the gap from both ends. CRM analysis separates the sources, campaigns and offers that produce closed-won customers from the ones that produce noise, and structured input from the whole sales team turns \"the leads are junk\" into specific, recurring rejection patterns. Interviews with recent buyers and lost prospects establish what a good lead actually looked like on the way in. Panel testing then checks that requalified messaging and offers attract the buyer and politely lose the browser.",
+      "stages": [
+        [
+          "Explore",
+          "Separate the sources that produce customers from the ones that produce noise, through the CRM and the sales floor.",
+          [
+            "win-loss-analysis",
+            "sales-customer-service-interviews",
+            "sales-customer-service-survey"
+          ]
+        ],
+        [
+          "Focus",
+          "Hear the decision firsthand, from well-fit buyers and the deals that got away.",
+          [
+            "customer-interviews",
+            "win-loss-interviews"
+          ]
+        ],
+        [
+          "Validate",
+          "Check requalified messaging attracts the buyer and politely loses the browser.",
+          [
+            "copy-testing"
+          ]
+        ]
+      ],
+      "resources": [],
+      "opp2": "We don't really understand our ICP",
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr020"
+    },
+    "seo-search-intent": {
+      "name": "SEO & Search Intent Research",
+      "outcome": "acquisition",
+      "problem": "I searched for exactly the thing they do. They weren't there, so I went with someone who was.",
+      "opp": "The people searching for what we solve don't find us",
+      "hmw": "How might we show up for the searches our best customers are already making, in their words rather than ours?",
+      "triggers": [
+        "Organic traffic is concentrated on branded terms",
+        "Competitors hold the rankings for the problem-language queries",
+        "Content ranks for informational terms that never convert"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "new": true,
+      "desc": "The customers who most need what the business does are searching for it in their own words and finding someone else. This recipe closes the language gap between how customers describe the problem and how the site describes the solution. Search data shows which intents the site is absent from and which rankings never earn the click, interviews surface the vocabulary customers actually use, and a review of the winning results pages shows what earning each intent takes. A glance test on the landing experience then confirms the click pays off before content investment scales. Search intent match is message match's organic twin.",
+      "stages": [
+        [
+          "Explore",
+          "Map which intents the site is absent from and which rankings never earn the click.",
+          [
+            "search-serp-analysis",
+            "analytics-data-analysis"
+          ]
+        ],
+        [
+          "Focus",
+          "Learn the words customers use for the problem, and see who owns each intent today.",
+          [
+            "customer-interviews",
+            "competitor-review"
+          ]
+        ],
+        [
+          "Validate",
+          "Confirm the landing page pays off the query at a glance.",
+          [
+            "five-second-test"
+          ]
+        ]
+      ],
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr021"
+    },
+    "involuntary-churn": {
+      "name": "Involuntary Churn & Payment Recovery Research",
+      "outcome": "retention",
+      "problem": "My card expired and the subscription just stopped. I never decided to leave, and nothing brought me back.",
+      "opp": "Subscriptions end on failed payments, not decisions",
+      "hmw": "How might we catch and recover the customers who never chose to churn?",
+      "triggers": [
+        "Churn reporting doesn't split voluntary from involuntary",
+        "A chunk of cancellations show no engagement decline beforehand",
+        "Support keeps fielding \"why was I cancelled\" and \"can't update my card\" tickets"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "new": true,
+      "desc": "A meaningful slice of churn is customers who never decided to leave; a payment failed, the retries ran out, and the subscription ended for someone who wanted to keep it. This recipe sizes and explains that leak. Payment funnel analysis shows where charges fail and how many recover, CRM analysis shows who lapses this way and what they were worth, and support logs surface the billing friction customers hit when they try to fix it themselves. A survey of lapsed involuntary customers answers the question the data can't: did they even know, and what would have caught it. Recovery messaging and the update-payment flow get tested before they carry the fix.",
+      "stages": [
+        [
+          "Explore",
+          "Size the leak: where charges fail, how many recover, and what those customers were worth.",
+          [
+            "analytics-data-analysis",
+            "win-loss-analysis"
+          ]
+        ],
+        [
+          "Focus",
+          "Surface the billing friction customers hit, and ask lapsed customers whether they even knew.",
+          [
+            "live-chat-analysis",
+            "customer-survey"
+          ]
+        ],
+        [
+          "Validate",
+          "Test the recovery messaging and the update-payment flow before they carry the fix.",
+          [
+            "copy-testing",
+            "prototype-testing"
+          ]
+        ]
+      ],
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr022"
+    },
+    "engagement-decay": {
+      "name": "Engagement Decay & Habit Research",
+      "outcome": "retention",
+      "problem": "I liked it at first. Then life got busy, I stopped opening it, and nothing gave me a reason to come back.",
+      "opp": "Activated customers drift away after the early weeks",
+      "hmw": "How might we help the product earn a place in customers' routines after the novelty fades?",
+      "triggers": [
+        "Activation numbers look healthy while week-four-plus retention slides",
+        "A wide gap between weekly and monthly active customers",
+        "Exit surveys say \"just stopped using it\" more than any specific complaint"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "new": true,
+      "desc": "These customers activated, found value, and then drifted; not because anything broke, but because the product never earned a place in the routine. Onboarding research won't catch this, because the loss happens after onboarding succeeds. Cohort analysis shows which behaviours separate the customers who stay from the ones who fade and when the fade starts. Diary studies then do what no analytics can: a week or two inside customers' real routines showing where the product fits, what competes with it, and what quietly replaces it. Interviews with drifted-but-recoverable customers explain what changed. Re-engagement and habit-hook concepts get prototype-tested before anything is built.",
+      "stages": [
+        [
+          "Explore",
+          "Find which behaviours separate the customers who stay from the ones who fade, and when the fade starts.",
+          [
+            "analytics-data-analysis"
+          ]
+        ],
+        [
+          "Focus",
+          "Spend a week or two inside customers' real routines, then hear what changed from the drifters.",
+          [
+            "diary-studies",
+            "customer-interviews"
+          ]
+        ],
+        [
+          "Validate",
+          "Prototype-test re-engagement and habit hooks before anything is built.",
+          [
+            "prototype-testing"
+          ]
+        ]
+      ],
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr023"
+    },
+    "repeat-purchase": {
+      "name": "Repeat Purchase & Post-Purchase Research",
+      "outcome": "retention",
+      "problem": "The first order was fine. Nothing after it gave me a reason to order again.",
+      "opp": "First-time buyers never place a second order",
+      "hmw": "How might we make the second order feel like the natural next step rather than a fresh decision?",
+      "triggers": [
+        "Revenue leans almost entirely on new-customer acquisition",
+        "Repeat purchase rate stays flat while acquisition costs climb",
+        "The post-purchase programme is an order confirmation and not much else"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "new": true,
+      "desc": "Most first-time buyers never come back, and the margin lives in the orders they never place. This recipe finds out why the second order isn't happening. Purchase cohort analysis shows the repeat rate, the typical gap to a second order, and which first products lead somewhere versus nowhere. The support team's structured input surfaces what buyers experience after checkout: delivery, returns, and the gap between the listing and the product in hand. One-time buyers explain why there was no second order, and repeat buyers explain what actually brought them back, which are rarely the same answer. Post-purchase and reorder concepts then get tested head to head with past buyers before the lifecycle programme is rebuilt around them.",
+      "stages": [
+        [
+          "Explore",
+          "Read the repeat rate, the gap to a second order, and what buyers experience after checkout.",
+          [
+            "analytics-data-analysis",
+            "sales-customer-service-survey"
+          ]
+        ],
+        [
+          "Focus",
+          "Ask one-time buyers why there was no second order, and repeat buyers what brought them back.",
+          [
+            "customer-survey",
+            "customer-interviews"
+          ]
+        ],
+        [
+          "Validate",
+          "Test post-purchase and reorder concepts head to head with past buyers.",
+          [
+            "preference-test"
+          ]
+        ]
+      ],
+      "resources": [],
+      "updated": "2026-09-01",
+      "rid": "recFIXTUREr024"
+    }
+  },
+  "tools": {
+    "Hotjar": {
+      "cat": "Behaviour Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "VWO": {
+      "cat": "Behaviour Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Content Square": {
+      "cat": "Behaviour Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Full Story": {
+      "cat": "Behaviour Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Decibel Insight": {
+      "cat": "Behaviour Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Microsoft Clarity": {
+      "cat": "Behaviour Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Mouseflow": {
+      "cat": "Behaviour Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Crazyegg": {
+      "cat": "Behaviour Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Lucky Orange": {
+      "cat": "Behaviour Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Google Analytics": {
+      "cat": "Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Adobe Analytics": {
+      "cat": "Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Heap": {
+      "cat": "Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Amplitude": {
+      "cat": "Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Zuko": {
+      "cat": "Form Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Wynter": {
+      "cat": "Copy & Message Testing",
+      "url": "",
+      "desc": ""
+    },
+    "Medallia": {
+      "cat": "Voice of Customer & Feedback",
+      "url": "",
+      "desc": ""
+    },
+    "Userback.io": {
+      "cat": "Voice of Customer & Feedback",
+      "url": "",
+      "desc": ""
+    },
+    "TypeForm": {
+      "cat": "Surveys & Polls",
+      "url": "",
+      "desc": ""
+    },
+    "Google Forms": {
+      "cat": "Surveys & Polls",
+      "url": "",
+      "desc": ""
+    },
+    "Survey Monkey": {
+      "cat": "Surveys & Polls",
+      "url": "",
+      "desc": ""
+    },
+    "Userlytics": {
+      "cat": "Usability & User Testing",
+      "url": "",
+      "desc": ""
+    },
+    "Usertesting.com": {
+      "cat": "Usability & User Testing",
+      "url": "",
+      "desc": ""
+    },
+    "UserZoom": {
+      "cat": "Usability & User Testing",
+      "url": "",
+      "desc": ""
+    },
+    "Maze": {
+      "cat": "Usability & User Testing",
+      "url": "",
+      "desc": ""
+    },
+    "Lookback": {
+      "cat": "Usability & User Testing",
+      "url": "",
+      "desc": ""
+    },
+    "Usability Hub": {
+      "cat": "Usability & User Testing",
+      "url": "",
+      "desc": ""
+    },
+    "Optimal Workshop": {
+      "cat": "Information Architecture",
+      "url": "",
+      "desc": ""
+    },
+    "Askable": {
+      "cat": "Participant Recruitment",
+      "url": "",
+      "desc": ""
+    },
+    "Zoom": {
+      "cat": "Video Conferencing",
+      "url": "",
+      "desc": ""
+    },
+    "Miro": {
+      "cat": "Collaboration & Workshops",
+      "url": "",
+      "desc": ""
+    },
+    "AB Testing Tools (Speero Comparison)": {
+      "cat": "Experimentation Platforms",
+      "url": "",
+      "desc": ""
+    },
+    "Google Search Console": {
+      "cat": "Analytics",
+      "url": "",
+      "desc": ""
+    },
+    "Ahrefs": {
+      "cat": "Analytics",
+      "url": "",
+      "desc": ""
+    }
+  },
+  "toolCats": {
+    "Hotjar": "Behaviour Analytics",
+    "VWO": "Behaviour Analytics",
+    "Content Square": "Behaviour Analytics",
+    "Full Story": "Behaviour Analytics",
+    "Decibel Insight": "Behaviour Analytics",
+    "Microsoft Clarity": "Behaviour Analytics",
+    "Mouseflow": "Behaviour Analytics",
+    "Crazyegg": "Behaviour Analytics",
+    "Lucky Orange": "Behaviour Analytics",
+    "Google Analytics": "Analytics",
+    "Adobe Analytics": "Analytics",
+    "Heap": "Analytics",
+    "Amplitude": "Analytics",
+    "Zuko": "Form Analytics",
+    "Wynter": "Copy & Message Testing",
+    "Medallia": "Voice of Customer & Feedback",
+    "Userback.io": "Voice of Customer & Feedback",
+    "TypeForm": "Surveys & Polls",
+    "Google Forms": "Surveys & Polls",
+    "Survey Monkey": "Surveys & Polls",
+    "Userlytics": "Usability & User Testing",
+    "Usertesting.com": "Usability & User Testing",
+    "UserZoom": "Usability & User Testing",
+    "Maze": "Usability & User Testing",
+    "Lookback": "Usability & User Testing",
+    "Usability Hub": "Usability & User Testing",
+    "Optimal Workshop": "Information Architecture",
+    "Askable": "Participant Recruitment",
+    "Zoom": "Video Conferencing",
+    "Miro": "Collaboration & Workshops",
+    "AB Testing Tools (Speero Comparison)": "Experimentation Platforms",
+    "Google Search Console": "Analytics",
+    "Ahrefs": "Analytics"
+  },
+  "toolCount": 33
+}

@@ -1,0 +1,92 @@
+name: Sync Airtable to hub
+
+on:
+  schedule:
+    - cron: '0 5 * * *'      # 05:00 UTC daily
+  pull_request:
+    paths:
+      - 'research-hub.json'
+      - '.github/scripts/**'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Plan only: print what would change in Webflow, write nothing'
+        type: boolean
+        default: false
+      allow_slug_change:
+        description: 'Permit slug changes (add the 301 in Webflow first)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: research-hub-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # commits research-hub.json back to the repo
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install "pyairtable>=3,<4"
+
+      # Fails the run on a broken Method sequence, an unresolvable method name,
+      # or a link field that disagrees with the sequence text. Nothing is
+      # written when it does.
+      - name: Build research-hub.json from Airtable
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: python .github/scripts/sync.py
+
+      # Second gate, on the rendered output: valid JSON-LD, no HTML that
+      # Webflow would strip, every internal link resolving to a real item.
+      - name: Validate rendered pages
+        run: python .github/scripts/selftest.py research-hub.json
+
+      - name: Commit and push
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name  "speero-sync-bot"
+          git config user.email "sync@speero.com"
+          git add research-hub.json
+          if git diff --cached --quiet; then
+            echo "No data changes - skipping commit"
+          else
+            git commit -m "Sync from Airtable [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+            git push
+          fi
+
+      - name: Sync Webflow CMS and purge CDN
+        env:
+          WEBFLOW_TOKEN: ${{ secrets.WEBFLOW_TOKEN }}
+          WEBFLOW_RECIPES_COLLECTION: ${{ vars.WEBFLOW_RECIPES_COLLECTION }}
+          WEBFLOW_METHODS_COLLECTION: ${{ vars.WEBFLOW_METHODS_COLLECTION }}
+          # Keep publishing off until the Webflow templates exist, otherwise
+          # you publish 51 unstyled pages.
+          WEBFLOW_PUBLISH: ${{ vars.WEBFLOW_PUBLISH }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          ALLOW_SLUG_CHANGE: ${{ inputs.allow_slug_change }}
+        run: python .github/scripts/webflow_sync.py
+
+  # Pull requests get the plan and the validator, never a write.
+  plan:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate the committed data file
+        run: python .github/scripts/selftest.py research-hub.json
