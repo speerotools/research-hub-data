@@ -110,28 +110,34 @@ Set these or empty fields leave bare headings behind.
 `Resources` is empty on all 25 recipes today, so on launch day that whole
 section is hidden on every recipe page. That is correct behaviour, not a bug.
 
-## JSON-LD
+## JSON-LD: confirmed broken, and why
 
-Use **page settings → Schema markup → JSON-LD schema**, not a body embed. It
-renders into the head and Webflow validates it in place.
+**Do not bind `Schema JSONLD` into the Schema markup panel. It does not work
+on this site, and we tested it on live pages.**
 
-On each template, type the script tags and insert the CMS field between them
-with **+ Add field**:
+Webflow HTML-escapes the value of a PlainText CMS token. Entities are not
+decoded inside a `<script>` element, so the published block comes out as
 
-```html
-<script type="application/ld+json">
-{Schema JSONLD}
-</script>
+```
+{&quot;@context&quot;:&quot;https://schema.org&quot;, ...
 ```
 
-The field already holds the complete JSON object, braces included, so the
-token is the entire script body. Do not wrap it in quotes and do not paste
-JSON by hand.
+which is not valid JSON and is ignored by every consumer. Verified on
+`/research-methods/card-sorting` after the first publish.
 
-Publish one page and run it through Google's Rich Results Test before doing
-the rest. Webflow sometimes escapes quotes in bound plain text, which turns
-valid JSON-LD into silent junk. If that happens, build the skeleton in the
-panel and insert individual fields at the value positions instead:
+The custom block also suppresses Webflow's own auto-generated page schema, so
+a broken custom block is strictly worse than none. Both templates have been
+cleared back to null, which restores the automatic `WebPage` schema carrying
+name, description, url, datePublished and dateModified, correctly escaped.
+That is what `/ab-testing-tools/[slug]` ships today.
+
+The Data API cannot help here either: it validates the panel as strict JSON
+and rejects anything containing a CMS token.
+
+### If you want real Article and BreadcrumbList schema
+
+It has to be built by hand in the Designer as a skeleton with individual
+field tokens at the value positions, not as one bound blob:
 
 ```html
 <script type="application/ld+json">
@@ -140,27 +146,24 @@ panel and insert individual fields at the value positions instead:
   "@type": "Article",
   "headline": "{Name}",
   "description": "{Meta Description}",
-  "dateModified": "{Last Modified}",
-  "author": { "@type": "Organization", "name": "Speero" }
+  "author":    { "@type": "Organization", "name": "Speero" },
+  "publisher": { "@type": "Organization", "name": "Speero" }
 }
 </script>
 ```
 
-### FAQPage: not wired yet, on purpose
+Known cost: escaping still applies to each value, so an ampersand in a name
+renders as `&amp;`. That is valid JSON and parses, but the text is wrong. It
+affects 1 method and 13 recipes, all of which have `&` in their name
+("Search & SERP Analysis", "Churn & Retention Research" and so on).
 
-Only 1 of 26 methods currently produces FAQ schema, because FAQ entries are
-generated only from Considerations sub-labels already phrased as questions,
-and 41 of 42 labels are not. Wiring it now would put an empty script block on
-25 pages to serve one question on one page.
+Judgement call for Ben: Webflow's automatic `WebPage` schema is correct and
+already live. Custom `Article` schema is a modest upgrade on it, bought with
+`&amp;` in 14 of 55 headlines. Neither is a blocker for launch.
 
-The `FAQ JSONLD` field keeps generating at no cost. Add a second script block
-in the same panel once the labels have been rewritten as real questions:
-"Sample size" becomes "How many participants do you need?" only where the
-field genuinely answers it. The generator picks up any label ending in `?`
-with no code change.
-
-That rewrite is the highest-value content edit on this hub. It turns 42
-existing sub-headings into question-shaped answers.
+The `schema-jsonld` and `faq-jsonld` fields keep generating. They cost
+nothing, and they are ready the day Webflow stops escaping CMS tokens or the
+build moves somewhere that renders them.
 
 Do not use `schema.org/Recipe` anywhere on this hub. That vocabulary is for
 cooking. The name collision is ours.
