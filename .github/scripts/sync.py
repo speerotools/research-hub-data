@@ -311,16 +311,43 @@ def check_field_names(base) -> None:
                   f"read: {', '.join(unused)}")
 
 
+def view_for(base, key: str, table_id: str) -> str | None:
+    """Which Airtable view to read, which decides the order records come back in.
+
+    Without a view the API returns records in no defined order, so the site
+    ordered itself arbitrarily and did not match the curated order the team
+    sees in Airtable. Reading the first view fixes that and makes ordering
+    something you change by dragging rows, with no field to maintain.
+
+    Override per table with AIRTABLE_<KEY>_VIEW if the first view is not the
+    one you want published.
+    """
+    override = os.environ.get(f"AIRTABLE_{key.upper()}_VIEW")
+    if override:
+        return override
+    try:
+        views = base.table(table_id).schema().views
+    except Exception as e:
+        warn(f"{key}: could not read views ({e}); order will be arbitrary")
+        return None
+    if not views:
+        warn(f"{key}: no views found; order will be arbitrary")
+        return None
+    return views[0].name
+
+
 def fetch_all() -> dict[str, dict[str, dict]]:
-    """Every table as {record_id: fields}."""
+    """Every table as {record_id: fields}, in the order its view defines."""
     api = Api(TOKEN)
     base = api.base(BASE_ID)
     check_field_names(base)
     out: dict[str, dict[str, dict]] = {}
     for key, table_id in T.items():
-        rows = base.table(table_id).all()
+        view = view_for(base, key, table_id)
+        rows = base.table(table_id).all(view=view) if view else base.table(table_id).all()
         out[key] = {r["id"]: r["fields"] for r in rows}
-        print(f"  {key:14} {len(rows):3} records")
+        print(f"  {key:14} {len(rows):3} records"
+              f"{f' (view: {view})' if view else ' (no view, arbitrary order)'}")
     return out
 
 

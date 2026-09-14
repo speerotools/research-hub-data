@@ -54,6 +54,17 @@ from a customer problem), `/research-recipes` (the hub pillar), and
 above its H1. Problems have no pages of their own; each routes to the recipe
 written for it.
 
+## Ordering
+
+Lists on the site follow the order of each table's **first Airtable view**.
+Drag rows in Airtable and the site reorders on the next run. There is no sort
+field to maintain.
+
+Without a view the Airtable API returns records in no defined order, which is
+why the site's order originally did not match the prototype's curated one.
+Override a table with `AIRTABLE_<TABLE>_VIEW`, for example
+`AIRTABLE_RECIPES_VIEW`, if the first view is not the one you want published.
+
 ## Making changes
 
 **Content, a new recipe, a new method, a tool.** Edit Airtable. That is the
