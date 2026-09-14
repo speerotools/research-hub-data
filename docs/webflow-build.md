@@ -112,40 +112,55 @@ section is hidden on every recipe page. That is correct behaviour, not a bug.
 
 ## JSON-LD
 
-Add an HTML Embed to each template:
+Use **page settings → Schema markup → JSON-LD schema**, not a body embed. It
+renders into the head and Webflow validates it in place.
+
+On each template, type the script tags and insert the CMS field between them
+with **+ Add field**:
 
 ```html
 <script type="application/ld+json">
-  <!-- insert the Schema JSONLD field here via + Add Field -->
+{Schema JSONLD}
 </script>
 ```
 
-And on the method template, a second one bound to `FAQ JSONLD` with the
-conditional visibility rule above.
+The field already holds the complete JSON object, braces included, so the
+token is the entire script body. Do not wrap it in quotes and do not paste
+JSON by hand.
 
-**Verify this on one item before building the other fifty.** Webflow
-sometimes HTML-escapes quotes in a bound plain text field, which turns valid
-JSON-LD into silent junk. Publish one method page, run it through Google's
-Rich Results Test, and check the block parses.
-
-If it does not, build the skeleton in the embed instead and bind the
-individual fields at the value positions:
+Publish one page and run it through Google's Rich Results Test before doing
+the rest. Webflow sometimes escapes quotes in bound plain text, which turns
+valid JSON-LD into silent junk. If that happens, build the skeleton in the
+panel and insert individual fields at the value positions instead:
 
 ```html
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "<!-- Name -->",
-  "description": "<!-- Meta Description -->",
-  "dateModified": "<!-- Last Modified -->",
+  "headline": "{Name}",
+  "description": "{Meta Description}",
+  "dateModified": "{Last Modified}",
   "author": { "@type": "Organization", "name": "Speero" }
 }
 </script>
 ```
 
-That pattern is known to work. The generated field stays either way, because
-it keeps the schema logic in Python where it can be tested.
+### FAQPage: not wired yet, on purpose
+
+Only 1 of 26 methods currently produces FAQ schema, because FAQ entries are
+generated only from Considerations sub-labels already phrased as questions,
+and 41 of 42 labels are not. Wiring it now would put an empty script block on
+25 pages to serve one question on one page.
+
+The `FAQ JSONLD` field keeps generating at no cost. Add a second script block
+in the same panel once the labels have been rewritten as real questions:
+"Sample size" becomes "How many participants do you need?" only where the
+field genuinely answers it. The generator picks up any label ending in `?`
+with no code change.
+
+That rewrite is the highest-value content edit on this hub. It turns 42
+existing sub-headings into question-shaped answers.
 
 Do not use `schema.org/Recipe` anywhere on this hub. That vocabulary is for
 cooking. The name collision is ours.
@@ -237,13 +252,11 @@ method directory instead of the hub landing view.
 
 Four things, all of them small, none of them exposed by the API.
 
-1. **Insert the CMS field into each JSON-LD embed.** Both templates carry an
-   `HtmlEmbed` with a `<script type="application/ld+json">` skeleton and a
-   comment saying exactly what to do: click in, press **+ Add Field**, choose
-   `Schema JSONLD` (and `FAQ JSONLD` on the method template). Embed content
-   cannot be bound through the API. Then publish one page and run it through
-   Rich Results Test before doing the rest, because Webflow sometimes escapes
-   quotes in bound plain text and breaks the block silently.
+1. **Schema markup in page settings.** Both templates need
+   `{Schema JSONLD}` inserted between script tags in page settings → Schema
+   markup. The Data API has no write access to that panel. See the JSON-LD
+   section above. FAQ schema stays unwired until the Considerations labels
+   are rewritten as questions.
 
 2. **Conditional visibility.** Set "show only if set" on the Go deeper
    section, the Also Solves line, the FAQ embed and the Last updated row.
