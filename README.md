@@ -39,6 +39,7 @@ python .github/scripts/selftest.py
 
 ## Docs
 
+- [`docs/making-changes.md`](docs/making-changes.md) — how to update the hub day to day
 - [`docs/setup.md`](docs/setup.md) — repos, tokens, variables, Airtable fields, first run
 - [`docs/webflow-build.md`](docs/webflow-build.md) — collection ids, template bindings, JSON-LD, landing pages
 - [`docs/launch-checklist.md`](docs/launch-checklist.md) — what to verify before publishing
