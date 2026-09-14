@@ -251,6 +251,20 @@ what passes authority into the 51 new URLs and it works with JavaScript off.
 `/research-methods` passes `defaultRoute: "methods"` so it opens on the
 method directory instead of the hub landing view.
 
+### Two defects found on the first live publish, and their fixes
+
+**Index links had no slug.** Every link in the landing page index pointed at
+the landing page itself. Webflow's `collectionPage` link mode emits a static
+path, not the current item, and the Designer's "Current item page" option has
+no API equivalent. Fixed by adding a `Page URL` Link field to both
+collections, populated by the sync with the item's own path, and binding the
+link href to it. Robust, and it survives a slug change because the field is
+regenerated every run.
+
+**The recipes landing page had two heroes.** The embed rendered its own
+landing view directly beneath the server-rendered one. Fixed with
+`defaultRoute: "recipes"`, matching what the methods page already did.
+
 ### Still to do by hand
 
 Four things, all of them small, none of them exposed by the API.
