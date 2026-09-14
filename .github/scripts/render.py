@@ -428,6 +428,39 @@ def landing_jsonld(kind: str, data: dict) -> dict:
     not valid JSON. The sync rewrites this every run, so the ItemList stays
     current as recipes and methods are added.
     """
+    if kind == "problems":
+        # Problems have no pages of their own, so each entry points at the
+        # recipe prescribed for it. That is the routing the page is for.
+        ordered = sorted(
+            ((r["opp"], RECIPE_BASE + slug) for slug, r in data["recipes"].items() if r.get("opp")),
+            key=lambda pair: pair[0])
+        path, name = "/research-problems", "Research problems"
+        desc = ("Customer problems in the customer's own words, each routed to "
+                "the research recipe written for it.")
+        return {
+            "@context": "https://schema.org",
+            "@graph": [
+                {"@type": "WebSite", "@id": SITE + "/#website", "url": SITE,
+                 "name": "Speero", "publisher": {"@id": SITE + "/#organization"}},
+                {"@type": "Organization", "@id": SITE + "/#organization",
+                 "name": "Speero", "url": SITE},
+                {"@type": "CollectionPage", "@id": SITE + path, "url": SITE + path,
+                 "name": name, "description": desc,
+                 "isPartOf": {"@id": SITE + "/#website"},
+                 "publisher": {"@id": SITE + "/#organization"}},
+                {"@type": "BreadcrumbList", "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE},
+                    {"@type": "ListItem", "position": 2, "name": name, "item": SITE + path},
+                ]},
+                {"@type": "ItemList", "name": name, "numberOfItems": len(ordered),
+                 "itemListElement": [
+                     {"@type": "ListItem", "position": i + 1, "name": opp,
+                      "url": SITE + url}
+                     for i, (opp, url) in enumerate(ordered)
+                 ]},
+            ],
+        }
+
     if kind == "recipes":
         items, base, path = data["recipes"], RECIPE_BASE, "/research-recipes"
         name = "Research recipes"

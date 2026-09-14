@@ -44,7 +44,15 @@ Edit Airtable, the site follows. No monthly scan, no AI in this pipeline.
 
 Webflow site `5fbb892601063dd93dd166d7`. Templates: methods
 `6aa7a1bd0bfd0f44768d2236`, recipes `6aa7a1be15cd9e02755eb217`. Landing pages:
-recipes `6aa7afe0091e3b99dd1f5cee`, methods `6aa7afe1091e3b99dd1f5d56`.
+problems `6aa7e6b3bcc91931eaca6aa4`, recipes `6aa7afe0091e3b99dd1f5cee`,
+methods `6aa7afe1091e3b99dd1f5d56`. The sync rewrites the JSON-LD on all three
+landing pages every run.
+
+Three public surfaces, matching the wireframe: `/research-problems` (start
+from a customer problem), `/research-recipes` (the hub pillar), and
+`/research-methods`. Each carries the hub nav and XOS locator server-side
+above its H1. Problems have no pages of their own; each routes to the recipe
+written for it.
 
 ## Making changes
 
@@ -87,6 +95,11 @@ publishes as invalid JSON. A custom block also suppresses Webflow's own
 automatic `WebPage` schema, so both templates are cleared and rely on that.
 The landing pages carry full `WebSite` + `Organization` + `ItemList` schema,
 rebuilt every run, because static JSON is not affected.
+
+**The embed's inline `<style>` block is hand-edited.** Each of the three
+landing pages carries a small override block, including
+`#speero-research-hub .section{border:none;}`. Anything rewriting that embed
+must preserve it.
 
 **Conditional visibility is Designer-only**; the visibility setting has zero
 bindable sources. So section headings are generated inside their field: an

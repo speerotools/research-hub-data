@@ -68,6 +68,7 @@ METHODS_COLLECTION = os.environ.get("WEBFLOW_METHODS_COLLECTION", "")
 DATA_FILE = os.environ.get("DATA_FILE", "research-hub.json")
 RECIPES_LANDING = os.environ.get("WEBFLOW_RECIPES_LANDING", "6aa7afe0091e3b99dd1f5cee")
 METHODS_LANDING = os.environ.get("WEBFLOW_METHODS_LANDING", "6aa7afe1091e3b99dd1f5d56")
+PROBLEMS_LANDING = os.environ.get("WEBFLOW_PROBLEMS_LANDING", "6aa7e6b3bcc91931eaca6aa4")
 PUBLISH = os.environ.get("WEBFLOW_PUBLISH", "false").lower() == "true"
 DRY_RUN = os.environ.get("DRY_RUN", "false").lower() == "true"
 ALLOW_SLUG_CHANGE = os.environ.get("ALLOW_SLUG_CHANGE", "false").lower() == "true"
@@ -288,7 +289,8 @@ def write_landing_schema(data: dict) -> None:
     schema is static JSON, so this is where the hub declares what it contains.
     """
     pages = []
-    for page_id, kind in ((RECIPES_LANDING, "recipes"), (METHODS_LANDING, "methods")):
+    for page_id, kind in ((RECIPES_LANDING, "recipes"), (METHODS_LANDING, "methods"),
+                          (PROBLEMS_LANDING, "problems")):
         if page_id:
             pages.append({"id": page_id,
                           "jsonLdSchema": json.dumps(render.landing_jsonld(kind, data),
