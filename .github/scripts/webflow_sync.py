@@ -66,6 +66,8 @@ SITE_ID = os.environ.get("WEBFLOW_SITE_ID", "5fbb892601063dd93dd166d7")
 RECIPES_COLLECTION = os.environ.get("WEBFLOW_RECIPES_COLLECTION", "")
 METHODS_COLLECTION = os.environ.get("WEBFLOW_METHODS_COLLECTION", "")
 DATA_FILE = os.environ.get("DATA_FILE", "research-hub.json")
+RECIPES_LANDING = os.environ.get("WEBFLOW_RECIPES_LANDING", "6aa7afe0091e3b99dd1f5cee")
+METHODS_LANDING = os.environ.get("WEBFLOW_METHODS_LANDING", "6aa7afe1091e3b99dd1f5d56")
 PUBLISH = os.environ.get("WEBFLOW_PUBLISH", "false").lower() == "true"
 DRY_RUN = os.environ.get("DRY_RUN", "false").lower() == "true"
 ALLOW_SLUG_CHANGE = os.environ.get("ALLOW_SLUG_CHANGE", "false").lower() == "true"
@@ -278,6 +280,25 @@ def reconcile(label: str, collection: str, desired: dict[str, dict],
 # MAIN
 # ---------------------------------------------------------------------------
 
+def write_landing_schema(data: dict) -> None:
+    """Refresh the ItemList schema on both landing pages.
+
+    Item pages cannot carry custom JSON-LD, because Webflow escapes CMS token
+    values inside a script element. The landing pages can, because their
+    schema is static JSON, so this is where the hub declares what it contains.
+    """
+    pages = []
+    for page_id, kind in ((RECIPES_LANDING, "recipes"), (METHODS_LANDING, "methods")):
+        if page_id:
+            pages.append({"id": page_id,
+                          "jsonLdSchema": json.dumps(render.landing_jsonld(kind, data),
+                                                     ensure_ascii=False)})
+    if not pages:
+        return
+    req("PATCH", f"{API}/sites/{SITE_ID}/pages/schema_markup", {"pages": pages})
+    print(f"  landing page schema refreshed on {len(pages)} page(s)")
+
+
 def publish_site() -> None:
     """Publish the whole site. Only called when WEBFLOW_SITE_PUBLISH is on.
 
@@ -348,6 +369,12 @@ def main() -> None:
         desired_recipes[r["rid"]] = fd
 
     reconcile("Research Recipes", RECIPES_COLLECTION, desired_recipes, MIN_RECIPES)
+
+    if not DRY_RUN:
+        try:
+            write_landing_schema(data)
+        except Exception as e:   # schema is worth retrying, not worth failing over
+            print(f"  WARN landing schema update failed: {e}", file=sys.stderr)
 
     # A site publish is only worth its blast radius when something moved.
     if SITE_PUBLISH and not DRY_RUN and sum(CHANGED):

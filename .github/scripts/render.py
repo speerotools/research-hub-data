@@ -28,6 +28,17 @@ import re
 SITE = "https://speero.com"
 RECIPE_BASE = "/research-recipes/"
 METHOD_BASE = "/research-methods/"
+TOOLS_HUB = "/ab-testing-tools/"
+
+# Cross-hub pairs, per the link rules in research-hub-seo-aeo-spec.md section 7.
+# Keyed by method slug. The testing tools hub is the only live sibling today;
+# blueprint pairings go here as they are agreed.
+CROSS_HUB = {
+    "ab-testing": ("A/B Testing Tools Comparison",
+                   "/ab-testing-tools",
+                   "Compare the platforms that run these tests, with pricing, "
+                   "SDKs and warehouse support side by side."),
+}
 
 ORG = {
     "@type": "Organization",
@@ -152,16 +163,36 @@ def sequence_html(stages: list, methods: dict) -> str:
     return "".join(out)
 
 
-def tools_html(tool_names: list[str], tools: dict) -> str:
-    """Tool names -> outbound anchors. Tools have no pages of their own."""
+def tools_html(tool_names: list[str], tools: dict, vendor_pages: dict | None = None) -> str:
+    """Tool names -> links.
+
+    A tool that already has a page on the A/B Testing Tools hub links there
+    instead of outward. That is the cross-hub link the SEO spec asks for, and
+    it keeps the authority on speero.com rather than passing it to a vendor.
+    Everything else links to the vendor site, nofollowed.
+    """
+    vendor_pages = vendor_pages or {}
     items = []
     for name in tool_names or []:
-        t = tools.get(name) or {}
-        url = t.get("url")
         label = _inline(name)
+        slug = vendor_pages.get(name.lower())
+        if slug:
+            items.append(f'<li><a href="{TOOLS_HUB}{esc(slug)}">{label}</a></li>')
+            continue
+        url = (tools.get(name) or {}).get("url")
         items.append(f'<li><a href="{esc(url)}" rel="nofollow">{label}</a></li>'
                      if url else f"<li>{label}</li>")
     return "<ul>" + "".join(items) + "</ul>" if items else ""
+
+
+def cross_hub_html(slug: str) -> str:
+    """The cross-hub slot. Renders only where a pairing exists."""
+    pair = CROSS_HUB.get(slug)
+    if not pair:
+        return ""
+    name, url, blurb = pair
+    return (f'<p>{_inline(blurb)} '
+            f'<a href="{esc(url)}"><strong>{_inline(name)}</strong></a></p>')
 
 
 def recipe_links(slugs_and_names: list[tuple[str, str]]) -> str:
@@ -182,11 +213,31 @@ def first_sentence(raw: str) -> str:
     return (m.group(0) if m else s).strip()
 
 
-def meta_description(raw: str, limit: int = 155) -> str:
-    """Trim to a whole word under the limit. Never mid-word, never padded."""
+def meta_description(raw: str, limit: int = 155, floor: int = 90) -> str:
+    """Whole sentences up to the limit, never cut mid-word, never padded.
+
+    A single short opening sentence makes a thin snippet, so sentences are
+    added while they still fit. Nothing is invented to reach a length: if the
+    source is short, the description is short.
+    """
     s = " ".join((raw or "").split())
+    if not s:
+        return ""
     if len(s) <= limit:
         return s
+
+    sentences = re.findall(r"[^.!?]+[.!?]?", s)
+    out = ""
+    for sentence in sentences:
+        candidate = (out + sentence).strip()
+        if len(candidate) > limit:
+            break
+        out = candidate
+        if len(out) >= floor:
+            break
+    if out:
+        return out
+
     cut = s[:limit].rsplit(" ", 1)[0].rstrip(" ,;:-")
     return cut + "..."
 
@@ -310,12 +361,14 @@ def method_fields(slug: str, m: dict, data: dict) -> dict:
         "pros": paragraphs(m.get("pros", "")),
         "cons": paragraphs(m.get("cons", "")),
         "considerations": labelled_sections(m.get("considerations", "")),
-        "tools": tools_html(m.get("tools", []), data.get("tools", {})),
+        "tools": tools_html(m.get("tools", []), data.get("tools", {}),
+                            data.get("vendorPages", {})),
+        "cross-hub": cross_hub_html(slug),
         "resources": links(m.get("resources", [])),
         "used-by-recipes": recipe_links(used),
         "page-url": METHOD_BASE + slug,
         "meta-title": m.get("seoTitle") or meta_title(m["name"], "| Speero research methods"),
-        "meta-description": m.get("seoDesc") or meta_description(first_sentence(m.get("desc", ""))),
+        "meta-description": m.get("seoDesc") or meta_description(m.get("desc", "")),
         "schema-jsonld": method_jsonld(slug, m),
         "faq-jsonld": method_faq_jsonld(m),
     }
@@ -342,9 +395,58 @@ def recipe_fields(slug: str, r: dict, data: dict) -> dict:
         "resources": links(r.get("resources", [])),
         "page-url": RECIPE_BASE + slug,
         "meta-title": r.get("seoTitle") or meta_title(r["name"], "| Speero research recipes"),
-        "meta-description": r.get("seoDesc") or meta_description(first_sentence(r.get("desc", ""))),
+        "meta-description": r.get("seoDesc") or meta_description(r.get("desc", "")),
         "schema-jsonld": recipe_jsonld(slug, r, data["methods"]),
     }
     if r.get("updated"):
         fd["last-modified"] = r["updated"]
     return fd
+
+
+# ---------------------------------------------------------------------------
+# LANDING PAGE SCHEMA
+# ---------------------------------------------------------------------------
+
+def landing_jsonld(kind: str, data: dict) -> dict:
+    """WebSite + Organization + ItemList for a hub landing page.
+
+    Built as plain JSON with no CMS tokens, because Webflow escapes token
+    values inside a script element and the Data API rejects anything that is
+    not valid JSON. The sync rewrites this every run, so the ItemList stays
+    current as recipes and methods are added.
+    """
+    if kind == "recipes":
+        items, base, path = data["recipes"], RECIPE_BASE, "/research-recipes"
+        name = "Research recipes"
+        desc = ("Every Speero research recipe: the customer problem it answers "
+                "and the sequence of methods that answers it.")
+    else:
+        items, base, path = data["methods"], METHOD_BASE, "/research-methods"
+        name = "Research methods"
+        desc = ("Every research method in the Speero library, with what it is "
+                "for, the strength of its signal and what it costs in effort.")
+
+    ordered = sorted(items.items(), key=lambda kv: kv[1]["name"])
+    return {
+        "@context": "https://schema.org",
+        "@graph": [
+            {"@type": "WebSite", "@id": SITE + "/#website", "url": SITE,
+             "name": "Speero", "publisher": {"@id": SITE + "/#organization"}},
+            {"@type": "Organization", "@id": SITE + "/#organization",
+             "name": "Speero", "url": SITE},
+            {"@type": "CollectionPage", "@id": SITE + path, "url": SITE + path,
+             "name": name, "description": desc,
+             "isPartOf": {"@id": SITE + "/#website"},
+             "publisher": {"@id": SITE + "/#organization"}},
+            {"@type": "BreadcrumbList", "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE},
+                {"@type": "ListItem", "position": 2, "name": name, "item": SITE + path},
+            ]},
+            {"@type": "ItemList", "name": name, "numberOfItems": len(ordered),
+             "itemListElement": [
+                 {"@type": "ListItem", "position": i + 1, "name": it["name"],
+                  "url": SITE + base + slug}
+                 for i, (slug, it) in enumerate(ordered)
+             ]},
+        ],
+    }

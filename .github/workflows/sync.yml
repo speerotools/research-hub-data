@@ -54,12 +54,17 @@ jobs:
       - name: Validate rendered pages
         run: python .github/scripts/selftest.py research-hub.json
 
+      # Markdown mirrors and llms.txt, per section 6 of the SEO/AEO spec.
+      # A byproduct of a job we were writing anyway, not the strategy.
+      - name: Build markdown mirrors and llms.txt
+        run: python .github/scripts/publish_assets.py research-hub.json
+
       - name: Commit and push
         if: ${{ !inputs.dry_run }}
         run: |
           git config user.name  "speero-sync-bot"
           git config user.email "sync@speero.com"
-          git add research-hub.json
+          git add research-hub.json llms.txt llms-full.txt md/
           if git diff --cached --quiet; then
             echo "No data changes - skipping commit"
           else

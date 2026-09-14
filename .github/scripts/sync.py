@@ -52,6 +52,8 @@ import os
 import re
 import sys
 import unicodedata
+import urllib.error
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -242,6 +244,31 @@ def parse_sequence(v, where: str, resolve) -> list[list]:
 
 def iso_date(v) -> str:
     return str(v)[:10] if v else ""
+
+
+TESTING_TOOLS_JSON = os.environ.get(
+    "TESTING_TOOLS_JSON",
+    "https://cdn.jsdelivr.net/gh/speerotools/testing-tools-data@main/testing-tools.json")
+
+
+def fetch_vendor_pages() -> dict[str, str]:
+    """{lowercased vendor name: slug} for the A/B Testing Tools hub.
+
+    Lets a tool that already has a page on the sibling hub link there instead
+    of outward, which is the cross-hub link the SEO spec asks for. Failure is
+    not fatal: the links simply fall back to the vendor's own site.
+    """
+    try:
+        with urllib.request.urlopen(TESTING_TOOLS_JSON, timeout=20) as r:
+            vendors = json.loads(r.read().decode()).get("vendors", [])
+    except Exception as e:
+        warn(f"could not read the testing tools hub ({e}); tool links will all "
+             f"point outward")
+        return {}
+    pages = {v["name"].lower(): v["slug"] for v in vendors
+             if v.get("name") and v.get("slug")}
+    print(f"  {len(pages)} vendor pages available for cross-hub links")
+    return pages
 
 
 # ---------------------------------------------------------------------------
@@ -460,6 +487,7 @@ def main() -> None:
     print(f"Fetching base {BASE_ID}...")
     tables = fetch_all()
 
+    vendor_pages = fetch_vendor_pages()
     outcomes, north_star, outcome_slugs = build_outcomes(tables["outcomes"])
     tools, tool_names = build_tools(tables["tools"])
     methods, method_by_id, method_by_name = build_methods(tables["methods"], tool_names)
@@ -497,6 +525,7 @@ def main() -> None:
         "tools": tools,
         "toolCats": {name: t["cat"] for name, t in tools.items()},
         "toolCount": len(tools),
+        "vendorPages": vendor_pages,
     }
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
