@@ -1,6 +1,6 @@
 {
-  "version": "2026-09-15T09:47:21Z",
-  "commit": "fdf6192da14edfe2c15a43a6dc44298a8eee0664",
+  "version": "2026-09-16T09:41:45Z",
+  "commit": "6c701ccd15d1f65b52057a26960bd97ba49d42c5",
   "methods": {
     "remote-usability-studies": {
       "name": "Remote Usability Studies",
@@ -2283,8 +2283,8 @@
     "convert": "convert",
     "zoho pagesense": "zoho-pagesense",
     "harness fme": "harness-fme",
-    "salesforce marketing cloud personalization": "salesforce-marketing-cloud-personalization",
-    "contentful personalization (formerly ninetailed)": "ninetailed-by-contentful",
+    "salesforce personalization": "salesforce-marketing-cloud-personalization",
+    "contentful personalization": "ninetailed-by-contentful",
     "varify.io": "varify",
     "croct": "croct",
     "mutiny": "mutiny",
