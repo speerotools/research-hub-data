@@ -185,15 +185,30 @@ def sequence_html(stages: list, methods: dict) -> str:
     return "".join(out)
 
 
-def chip_list(values: list[str]) -> str:
-    """Values -> a list, one item each, for the chip rows under a heading.
+OBJECTIVES = ("Explore", "Focus", "Validate")
 
-    The facts panel wants these joined into one line, the chips under the H1
-    want one pill per value, and a comma-joined string cannot be split back
-    apart in CSS. So the two shapes are two fields rather than one.
+
+def objective_chips(values: list[str]) -> str:
+    """Objectives -> one list item per pill, always in the same three slots.
+
+    The facts panel wants these joined into one line and the chips under the
+    H1 want one pill each, so the two shapes are two fields: a comma-joined
+    string cannot be split back apart in CSS.
+
+    Each objective also has its own colour in the wireframe, and CSS cannot
+    select an element by its text. Rather than wrap the labels in <em> and
+    <strong> to smuggle that in, which would be a lie about emphasis, the
+    list always carries all three slots in the hub's own Explore, Focus,
+    Validate order. Position identifies the objective; the empty slots are
+    hidden. A method with no objectives renders nothing at all.
     """
-    items = "".join(f"<li>{_inline(v)}</li>" for v in values or [] if v)
-    return f"<ul>{items}</ul>" if items else ""
+    have = {v for v in values or [] if v}
+    if not have:
+        return ""
+    items = "".join(
+        f"<li>{esc(o)}</li>" if o in have else "<li></li>" for o in OBJECTIVES
+    )
+    return f"<ul>{items}</ul>"
 
 
 def paired_html(related_slug: str, methods: dict) -> str:
@@ -431,7 +446,7 @@ def method_fields(slug: str, m: dict, data: dict) -> dict:
         "often-paired-with": paired_html(m.get("related", ""), data["methods"]),
         # One pill per objective under the H1. The joined string above still
         # feeds the facts panel, which the wireframe writes as one line.
-        "objective-chips": chip_list(m.get("objective", [])),
+        "objective-chips": objective_chips(m.get("objective", [])),
         "cross-hub": cross_hub_html(slug),
         "resources": titled("Go deeper", links(m.get("resources", []))),
         "used-by-recipes": recipe_links(used),
