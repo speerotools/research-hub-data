@@ -185,6 +185,17 @@ def sequence_html(stages: list, methods: dict) -> str:
     return "".join(out)
 
 
+def chip_list(values: list[str]) -> str:
+    """Values -> a list, one item each, for the chip rows under a heading.
+
+    The facts panel wants these joined into one line, the chips under the H1
+    want one pill per value, and a comma-joined string cannot be split back
+    apart in CSS. So the two shapes are two fields rather than one.
+    """
+    items = "".join(f"<li>{_inline(v)}</li>" for v in values or [] if v)
+    return f"<ul>{items}</ul>" if items else ""
+
+
 def paired_html(related_slug: str, methods: dict) -> str:
     """The "often paired with" line, or nothing when there is no pairing.
 
@@ -418,6 +429,9 @@ def method_fields(slug: str, m: dict, data: dict) -> dict:
                         or "<p>Runs on your existing systems; no dedicated "
                            "tool required.</p>"),
         "often-paired-with": paired_html(m.get("related", ""), data["methods"]),
+        # One pill per objective under the H1. The joined string above still
+        # feeds the facts panel, which the wireframe writes as one line.
+        "objective-chips": chip_list(m.get("objective", [])),
         "cross-hub": cross_hub_html(slug),
         "resources": titled("Go deeper", links(m.get("resources", []))),
         "used-by-recipes": recipe_links(used),
