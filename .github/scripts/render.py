@@ -138,14 +138,34 @@ def links(pairs: list[list[str]]) -> str:
     return f"<ul>{items}</ul>"
 
 
+NO_VALIDATE_NOTE = (
+    "Where's Validate? For this problem, validation lands in the "
+    "experimentation programme itself: the hypotheses this research produces "
+    "become A/B tests and product bets, measured against the outcome metric."
+)
+
+
 def sequence_html(stages: list, methods: dict) -> str:
     """[[stage, rationale, [slug]]] -> <h3> stage, <p> rationale, linked <ul>.
 
     This is the field the whole recipe page turns on. A nested Collection List
-    could not carry the stage grouping or the rationale, and caps at five
-    items, so the sequence is rendered here instead.
+    could not carry the stage grouping or the rationale, so the sequence is
+    rendered here instead.
+
+    The H2 is the stage names joined ("Explore. Focus. Validate."), which is
+    both the wireframe's heading and an accurate summary of what follows. It
+    lives in the field rather than the template for the reason in titled():
+    a recipe with no stages then renders nothing at all rather than a bare
+    heading.
+
+    A recipe that stops before Validate gets the explanatory note, as a
+    blockquote because that is the only callout shape RichText allows.
     """
     out: list[str] = []
+    names = [stage for stage, _, _ in stages or []]
+    if not names:
+        return ""
+    out.append(f"<h2>{esc('. '.join(names))}.</h2>")
     for stage, rationale, slugs in stages or []:
         out.append(f"<h3>{esc(stage)}</h3>")
         if rationale:
@@ -160,7 +180,22 @@ def sequence_html(stages: list, methods: dict) -> str:
             )
         if items:
             out.append("<ul>" + "".join(items) + "</ul>")
+    if "Validate" not in names:
+        out.append(f"<blockquote>{_inline(NO_VALIDATE_NOTE)}</blockquote>")
     return "".join(out)
+
+
+def paired_html(related_slug: str, methods: dict) -> str:
+    """The "often paired with" line, or nothing when there is no pairing.
+
+    17 of 29 methods carry one. The sentence lives in the field so the 12
+    without a pairing render nothing, rather than a dangling label.
+    """
+    m = (methods or {}).get(related_slug or "")
+    if not m:
+        return ""
+    return (f'<p>Often paired with <a href="{METHOD_BASE}{esc(related_slug)}">'
+            f'<strong>{_inline(m["name"])}</strong></a>.</p>')
 
 
 def tools_html(tool_names: list[str], tools: dict, vendor_pages: dict | None = None) -> str:
@@ -373,9 +408,16 @@ def method_fields(slug: str, m: dict, data: dict) -> dict:
         "cons": paragraphs(m.get("cons", "")),
         "considerations": titled("Practical considerations",
                                  labelled_sections(m.get("considerations", ""))),
-        "tools": titled("Common tools",
+        # "Tools" rather than "Common tools": this block sits in the facts
+        # panel beside the method, where the wireframe labels it Tools. The
+        # fallback keeps the label honest on the three methods that need no
+        # dedicated tool, instead of showing a heading over nothing.
+        "tools": titled("Tools",
                         tools_html(m.get("tools", []), data.get("tools", {}),
-                                   data.get("vendorPages", {}))),
+                                   data.get("vendorPages", {}))
+                        or "<p>Runs on your existing systems; no dedicated "
+                           "tool required.</p>"),
+        "often-paired-with": paired_html(m.get("related", ""), data["methods"]),
         "cross-hub": cross_hub_html(slug),
         "resources": titled("Go deeper", links(m.get("resources", []))),
         "used-by-recipes": recipe_links(used),
