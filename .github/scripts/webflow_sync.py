@@ -301,6 +301,44 @@ def write_landing_schema(data: dict) -> None:
     print(f"  landing page schema refreshed on {len(pages)} page(s)")
 
 
+def write_landing_seo(data: dict) -> None:
+    """Keep the counts in the landing page titles honest.
+
+    The methods title read "26 methods" while the page rendered 29, because
+    the number was typed once and the library kept growing. Anything that
+    states a count has to be derived from the same data the page counts, so
+    it is written here on every run rather than maintained by hand.
+
+    Only the pages whose title actually carries a count are touched, and only
+    the title: the descriptions are editorial and are left alone.
+    """
+    counts = {
+        METHODS_LANDING: (
+            len(data.get("methods", {})),
+            "Research methods library: {n} methods, when to use each | Speero",
+        ),
+        RECIPES_LANDING: (
+            len(data.get("recipes", {})),
+            "Research recipes: {n} playbooks, which research to run | Speero",
+        ),
+    }
+    for page_id, (n, template) in counts.items():
+        if not page_id or not n:
+            continue
+        title = template.format(n=n)
+        try:
+            page = req("GET", f"{API}/pages/{page_id}")
+            seo = dict(page.get("seo") or {})
+            if seo.get("title") == title:
+                continue
+            seo["title"] = title
+            req("PATCH", f"{API}/pages/{page_id}", {"seo": seo})
+            print(f"  landing title -> {title}")
+        except Exception as e:   # a title is not worth failing the sync over
+            print(f"  WARN landing title update failed for {page_id}: {e}",
+                  file=sys.stderr)
+
+
 def publish_site() -> None:
     """Publish the whole site. Only called when WEBFLOW_SITE_PUBLISH is on.
 
@@ -377,6 +415,7 @@ def main() -> None:
             write_landing_schema(data)
         except Exception as e:   # schema is worth retrying, not worth failing over
             print(f"  WARN landing schema update failed: {e}", file=sys.stderr)
+        write_landing_seo(data)
 
     # A site publish is only worth its blast radius when something moved.
     if SITE_PUBLISH and not DRY_RUN and sum(CHANGED):
