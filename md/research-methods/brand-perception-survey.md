@@ -41,7 +41,7 @@ Run the baseline before the brand change is announced, and leave enough time aft
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Wynter](https://wynter.com)
 

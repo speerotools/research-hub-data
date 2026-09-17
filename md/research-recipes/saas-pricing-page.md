@@ -17,6 +17,8 @@ Start broad with a competitor review and a UX heuristic review to see how rivals
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 See how rivals frame pricing and surface obvious friction on your own page.
 

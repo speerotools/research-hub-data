@@ -16,6 +16,8 @@ Customers cancel and the business is left guessing whether it was price, value, 
 
 ## The method sequence
 
+Explore. Focus.
+
 ### Explore
 Read the traces customers leave behind: usage, CRM patterns, recurring complaints.
 
@@ -31,6 +33,8 @@ Quantify the leading reasons, then hear the why in customers' own words.
 - [Customer Survey](/research-methods/customer-survey)
 
 - [Customer Interviews](/research-methods/customer-interviews)
+
+Where's Validate? For this problem, validation lands in the experimentation programme itself: the hypotheses this research produces become A/B tests and product bets, measured against the outcome metric.
 
 Source: https://speero.com/research-recipes/churn-retention
 Last updated: 2026-07-20

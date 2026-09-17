@@ -16,6 +16,8 @@ Traffic is growing but the visitors arriving aren't the ones the business is bui
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 See which sources send visitors who engage and which send visitors who vanish, and which actually produce customers.
 

@@ -34,7 +34,7 @@ Qualitative goals apply: a handful of wins and a handful of losses per segment i
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Zoom](https://zoom.us)
 

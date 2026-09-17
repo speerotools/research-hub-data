@@ -17,6 +17,8 @@ A 5 second test and a UX heuristic review give a fast read on clarity and obviou
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Get a fast read on clarity and obvious friction.
 

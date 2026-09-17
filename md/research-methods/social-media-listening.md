@@ -38,7 +38,7 @@ Raw mention counts mean little on their own. Track against a baseline period and
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Brandwatch](https://www.brandwatch.com)
 

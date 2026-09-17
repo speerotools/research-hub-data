@@ -29,6 +29,11 @@ Practical considerations
 ### Expertise
 Ideally, you need someone with acquisition knowledge to conduct this activity, at the same time, you want someone who isn't directly involved in your acquisition strategy, to prevent bias.
 
+## Common tools
+
+Tools
+Runs on your existing systems; no dedicated tool required.
+
 ## Recipes that use this method
 
 - [Acquisition Research](/research-recipes/acquisition-research)

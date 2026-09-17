@@ -16,6 +16,8 @@ Visitors land on the site and can't quickly tell what the product is, who it's f
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Capture the value in customers' own words, and map which claims differentiate.
 

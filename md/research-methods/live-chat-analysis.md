@@ -37,7 +37,7 @@ The value of this data will depend on the type of live chat you have. E.g. a cha
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Lucky Orange](https://www.luckyorange.com)
 

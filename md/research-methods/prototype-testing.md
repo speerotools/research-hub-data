@@ -39,7 +39,7 @@ The same logic as usability studies applies here. Nielsen Norman says "The answe
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Userlytics](https://www.userlytics.com)
 

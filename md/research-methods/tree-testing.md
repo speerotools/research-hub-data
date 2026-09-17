@@ -35,7 +35,7 @@ Tree testing is primarily a quantitative method, and as such the sample size sho
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Userlytics](https://www.userlytics.com)
 

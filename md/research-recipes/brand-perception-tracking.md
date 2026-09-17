@@ -23,6 +23,8 @@ The explore work reads what the market says unprompted. Social listening and rev
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Read what the market says unprompted: conversations, reviews, and demand for the brand by name.
 

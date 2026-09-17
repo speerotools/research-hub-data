@@ -38,7 +38,7 @@ Next, is the scoring matrix. This is where a smaller project team dig further in
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Miro](https://miro.com)
 

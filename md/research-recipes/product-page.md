@@ -16,6 +16,8 @@ People reach the product page but don't add to basket, and it's unclear whether 
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Compare product-page performance and see where attention stops.
 

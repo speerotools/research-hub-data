@@ -20,6 +20,8 @@ These customers activated, found value, and then drifted; not because anything b
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Find which behaviours separate the customers who stay from the ones who fade, and when the fade starts.
 

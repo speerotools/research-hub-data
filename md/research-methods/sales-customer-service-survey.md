@@ -40,7 +40,7 @@ The goal of this activity is to gather quantitative insights, therefore the samp
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Google Forms](https://www.google.com/forms/about/)
 

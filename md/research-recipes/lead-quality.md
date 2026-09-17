@@ -20,6 +20,8 @@ The lead count looks healthy and the pipeline doesn't, which usually means the a
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Separate the sources that produce customers from the ones that produce noise, through the CRM and the sales floor.
 

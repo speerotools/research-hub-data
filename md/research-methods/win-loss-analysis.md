@@ -32,6 +32,11 @@ Practical considerations
 ### Sample Size
 In this case sample size will depend on the amount of data you have, which will relate to the number of leads, prospects, customers, etc. It will also depend on the depth of the data. If you only have top level data, then aim for more (200-300), whereas if you have detailed, more qualitative data, then you could aim lower 50-100 responses. Also consider the different segments within your sample if you're including convertors and those who did not convert, you need an appropriate sample size for both / all segments.
 
+## Common tools
+
+Tools
+Runs on your existing systems; no dedicated tool required.
+
 ## Recipes that use this method
 
 - [B2B ICP Research](/research-recipes/b2b-icp-research)

@@ -17,6 +17,8 @@ Ads analysis and analytics data analysis set the quantitative picture: which cam
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Set the quantitative picture: which campaigns underperform, and what those visitors do once they land.
 
@@ -57,6 +59,8 @@ How might we speak to our ICP's real motivations, triggers and doubts?
 Messaging and targeting are running on assumptions about who the ideal customer is and what drives them. This recipe builds a grounded picture of the ICP: their motivations, triggers, and fears, uncertainties and doubts. The picture starts in the CRM record, where win-loss analysis shows who actually buys and who walks. The interviews go deep, the polls add immediacy and scale, and the usability sessions tie attitude to behaviour. The messaging built on all of it then gets tested with the people it describes before it ships.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 Get the real language and hesitations behind a decision to buy, from the CRM record and the buyers themselves.
@@ -110,6 +114,8 @@ The explore work reads what the market says unprompted. Social listening and rev
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Read what the market says unprompted: conversations, reviews, and demand for the brand by name.
 
@@ -157,6 +163,8 @@ Shoppers reach the category and listing pages but leave without clicking into a 
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Size the problem: which categories leak most, and how listing visits relate to product views.
 
@@ -199,6 +207,8 @@ How might we get ready-to-buy shoppers through checkout without losing them?
 Shoppers add items to the basket and then leave before paying, and the team can't see what tips them out. Start broad to find where value leaks. Analytics shows which checkout steps lose the most people, while session recordings and heatmaps show what those people actually do at the moment they drop. Then focus in on the payment and address fields with form analytics, and ask leavers why with an exit poll. Finish by validating a reworked flow in remote usability sessions before it goes near a build, so several independent signals point at the same fix.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 Find which steps lose the most people, and watch what they do at the moment they drop.
@@ -247,6 +257,8 @@ Customers cancel and the business is left guessing whether it was price, value, 
 
 ## The method sequence
 
+Explore. Focus.
+
 ### Explore
 Read the traces customers leave behind: usage, CRM patterns, recurring complaints.
 
@@ -262,6 +274,8 @@ Quantify the leading reasons, then hear the why in customers' own words.
 - [Customer Survey](/research-methods/customer-survey)
 
 - [Customer Interviews](/research-methods/customer-interviews)
+
+Where's Validate? For this problem, validation lands in the experimentation programme itself: the hypotheses this research produces become A/B tests and product bets, measured against the outcome metric.
 
 Source: https://speero.com/research-recipes/churn-retention
 Last updated: 2026-07-20
@@ -290,6 +304,8 @@ How might we turn content readers into subscribers and leads without wrecking th
 The content programme is doing its job of attracting readers, and then the relationship ends at the last paragraph. This recipe finds where the reader-to-lead path breaks. Analytics shows which posts attract visitors with any buying intent and where readers exit, heatmaps show whether the calls to action are even seen on the templates readers actually use, and on-site polls ask readers directly what they came for and what would make a next step worthwhile. Testing offer and CTA framings on a panel, then checking they register at a glance, de-risks the fix before it ships across hundreds of posts.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 Find which posts attract buying intent and where readers exit.
@@ -334,6 +350,8 @@ You need a complete view of where and why visitors fail to convert across the si
 It deliberately triangulates across data types. Analytics data analysis, heatmaps and session recordings give the quantitative behavioural picture of where users drop off. Customer surveys and on-site polls add the voice of the customer: the motivations, fears and barriers behind that behaviour. Remote usability studies show real people attempting core journeys, and a UX heuristic review provides an expert read to anchor and prioritise. No single method is trusted on its own; the value comes from where the behavioural, attitudinal and observed evidence agree.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 Build the quantitative behavioural picture and an expert baseline.
@@ -386,6 +404,8 @@ These customers activated, found value, and then drifted; not because anything b
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Find which behaviours separate the customers who stay from the ones who fade, and when the fade starts.
 
@@ -430,6 +450,8 @@ How might we catch and recover the customers who never chose to churn?
 A meaningful slice of churn is customers who never decided to leave; a payment failed, the retries ran out, and the subscription ended for someone who wanted to keep it. This recipe sizes and explains that leak. Payment funnel analysis shows where charges fail and how many recover, CRM analysis shows who lapses this way and what they were worth, and support logs surface the billing friction customers hit when they try to fix it themselves. A survey of lapsed involuntary customers answers the question the data can't: did they even know, and what would have caught it. Recovery messaging and the update-payment flow get tested before they carry the fix.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 Size the leak: where charges fail, how many recover, and what those customers were worth.
@@ -477,6 +499,8 @@ A 5 second test and a UX heuristic review give a fast read on clarity and obviou
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Get a fast read on clarity and obvious friction.
 
@@ -523,6 +547,8 @@ How might we make the lead form quick and painless enough to finish?
 Prospects start the lead form but abandon it before submitting, and the cost of every lost completion is high. Form analytics is the spine here, showing the exact fields where people stall, re-enter or quit, and session recordings add the behaviour around those fields. Analytics frames how many are affected, and an on-site poll asks what stopped them. A shortened or restructured form is then checked in usability sessions before launch, so the changes are grounded in where the friction genuinely sits.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 Locate the exact fields where people stall, and frame how many are affected.
@@ -573,6 +599,8 @@ The lead count looks healthy and the pipeline doesn't, which usually means the a
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Separate the sources that produce customers from the ones that produce noise, through the CRM and the sales floor.
 
@@ -617,6 +645,8 @@ How might we close the gap between mobile and desktop conversion?
 Mobile traffic is large but converts well below desktop, and the team can't tell whether it's layout, speed, forms or intent. Begin by isolating the mobile segment in analytics to size the gap and locate it, then watch mobile session recordings and heatmaps to see the cramped taps, mis-hit buttons and scrolling that numbers alone hide. Form analytics exposes where mobile input breaks down, and an on-site poll catches frustrations in the moment. Validate fixes in usability sessions run on real devices, not a shrunken desktop window.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 Isolate the mobile segment to size the gap, then watch what the numbers hide.
@@ -663,6 +693,8 @@ Visitors know what they want but can't find it, so they bounce between pages or 
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Read the symptoms: search terms, dead-end paths, hunting behaviour.
 
@@ -705,6 +737,8 @@ How might we get new users to their first win before they lose interest?
 New users sign up but never reach the first moment of real value, so they drift away before the product can prove itself. Analytics maps the activation funnel and the step where new users stall, and session recordings show what they try and abandon in those early minutes. Interviews and a survey explain what people expected and where reality fell short, while diary studies capture the experience across the first days rather than a single visit. Usability sessions on the onboarding flow then confirm whether a revised path gets people to value faster.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 Map the activation funnel and watch the early minutes where users stall.
@@ -750,6 +784,8 @@ How might we give product pages the information and reassurance that earns the a
 People reach the product page but don't add to basket, and it's unclear whether the blocker is information, doubt or price. Analytics shows how product pages perform relative to each other and where attention stops, while recordings and heatmaps reveal which content people seek out, skip or expand. On-site polls and a short survey draw out the unanswered questions and hesitations that hold a purchase back. Usability sessions then confirm whether a revised page actually resolves them, so the changes address real doubt rather than guesswork.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 Compare product-page performance and see where attention stops.
@@ -800,6 +836,8 @@ Most first-time buyers never come back, and the margin lives in the orders they 
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Read the repeat rate, the gap to a second order, and what buyers experience after checkout.
 
@@ -843,6 +881,8 @@ The site doesn't get enough traffic to run reliable A/B tests or gather meaningf
 A UX heuristic review and a competitor review set an expert baseline and show how others in the category solve the same problems, with no traffic required. Recruited-panel methods then carry the focus work: remote usability sessions show real people from your audience attempting the core journey, and copy testing checks the message lands with the people it is written for. Preference and prototype tests stand in for the A/B test at the validation step, weighing a proposed change against the current version with a recruited sample. The result is a decision backed by several independent signals, none of which needed the traffic you don't have.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 Set an expert baseline and see how the category solves the same problems. No traffic required.
@@ -889,6 +929,8 @@ The pricing page is where SaaS buyers decide whether the product is worth it, an
 Start broad with a competitor review and a UX heuristic review to see how rivals frame pricing and to surface obvious friction on your own page. Sales and customer service interviews bring in the real objections and questions buyers raise, which often explain hesitation the page never addresses. Copy testing checks whether plan names, feature descriptions and value framing are understood by the target audience. Remote usability studies then show how people move through the page and where they get stuck choosing a plan. The combination moves from market context, to internal knowledge, to message clarity, to observed behaviour, so no single lens carries the decision.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 See how rivals frame pricing and surface obvious friction on your own page.
@@ -937,6 +979,8 @@ The customers who most need what the business does are searching for it in their
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Map which intents the site is absent from and which rankings never earn the click.
 
@@ -979,6 +1023,8 @@ How might we attract visitors who match our best customers?
 Traffic is growing but the visitors arriving aren't the ones the business is built for, and everything downstream pays for it. This recipe works out where the misfit traffic enters and what it costs. Behavioural data shows which sources send visitors who bounce, stall or never return, CRM data shows which sources actually produce customers, the ads layer shows which campaigns and queries are buying the mismatch, and the sales floor tells you what a wrong-fit visitor sounds like. Panel message testing then checks that sharpened targeting and positioning reach the right people before more media spend follows the fix.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 See which sources send visitors who engage and which send visitors who vanish, and which actually produce customers.
@@ -1023,6 +1069,8 @@ People sign up for the trial but never convert to a paid plan, and the team can'
 
 ## The method sequence
 
+Explore. Focus.
+
 ### Explore
 Map what trial users actually do, and watch the early sessions where converts and drifters diverge.
 
@@ -1038,6 +1086,8 @@ Quantify why trials lapse, and hear the expectation gap in users' own words.
 - [Customer Survey](/research-methods/customer-survey)
 
 - [Customer Interviews](/research-methods/customer-interviews)
+
+Where's Validate? For this problem, validation lands in the experimentation programme itself: the hypotheses this research produces become A/B tests and product bets, measured against the outcome metric.
 
 Source: https://speero.com/research-recipes/trial-to-paid
 Last updated: 2026-07-20
@@ -1062,6 +1112,8 @@ How might we give visitors enough confidence to commit?
 Visitors are interested but hesitate to commit because the site hasn't earned their confidence yet. A heuristic review flags the credibility gaps an expert eye catches quickly, such as thin proof, weak security cues or vague claims, and a competitor review shows the trust signals buyers see elsewhere in the category. Interviews, a survey and on-site polls then locate the specific doubts that stall real customers, and copy testing checks whether reassurance language actually lands. Together they separate the trust problems you can feel from the ones customers act on.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 Flag credibility gaps an expert eye catches, and map the trust signals buyers see elsewhere.
@@ -1108,6 +1160,8 @@ A big redesign is about to be built and the risk is shipping months of work that
 
 ## The method sequence
 
+Focus. Validate.
+
 ### Focus
 Check the new design communicates its point, and pressure-test the words carrying it.
 
@@ -1149,6 +1203,8 @@ How might we make our value clear and relevant within seconds of landing?
 Visitors land on the site and can't quickly tell what the product is, who it's for or why it beats the alternative. The explore work goes to the source. Interviews and surveys capture how customers describe the value in their own words, and a competitor review shows which claims are table stakes and which are genuinely differentiating. That language then gets sharpened and tested, with copy testing and a five second test checking whether the message reads clearly and fast, and on-site polls confirming the page answers the questions real visitors arrive with.
 
 ## The method sequence
+
+Explore. Focus. Validate.
 
 ### Explore
 Capture the value in customers' own words, and map which claims differentiate.
@@ -1208,7 +1264,7 @@ Best run once a hypothesis has already been shaped by exploratory and focus-stag
 
 ## Common tools
 
-Common tools
+Tools
 
 - [AB Testing Tools (Speero Comparison)](https://speero.com/ab-testing-tools)
 
@@ -1269,6 +1325,11 @@ Practical considerations
 ### Expertise
 Ideally, you need someone with acquisition knowledge to conduct this activity, at the same time, you want someone who isn't directly involved in your acquisition strategy, to prevent bias.
 
+## Common tools
+
+Tools
+Runs on your existing systems; no dedicated tool required.
+
 ## Recipes that use this method
 
 - [Acquisition Research](/research-recipes/acquisition-research)
@@ -1323,7 +1384,7 @@ There are many digital analytics tools available. Chances are the business you w
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Google Analytics](https://marketingplatform.google.com/about/analytics/)
 
@@ -1436,7 +1497,7 @@ Run the baseline before the brand change is announced, and leave enough time aft
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Wynter](https://wynter.com)
 
@@ -1497,7 +1558,7 @@ For remote or remote-moderated, there are a wide range of online tools available
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Optimal Workshop](https://www.optimalworkshop.com)
 
@@ -1562,7 +1623,7 @@ You can include as many competitors as you have time for in your competitor revi
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Miro](https://miro.com)
 
@@ -1628,7 +1689,7 @@ You need to consider who is your target audience and ensure that the participant
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Wynter](https://wynter.com)
 
@@ -1719,7 +1780,7 @@ If you're recruiting customers for interviews and planning the sessions yourself
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Zoom](https://zoom.us)
 
@@ -1806,7 +1867,7 @@ You need approximately 200 open-ended responses to be confident in the strength 
 
 ## Common tools
 
-Common tools
+Tools
 
 - [TypeForm](https://www.typeform.com)
 
@@ -1886,6 +1947,11 @@ It is advisable to think about offering a staged incentive. E.g. 50% upfront, 50
 ### Tools
 There are many tools you could use to gather "diary entries" on an ongoing basis. You could use text, Whatsapp, or email. Alternatively use a specific diary study tool. The key consideration here is to use a method that is as easy as possible for the participant to input an entry, if they have to log into a specific tool everytime, they may be less inclined to submit an entry vs. using Whatsapp.
 
+## Common tools
+
+Tools
+Runs on your existing systems; no dedicated tool required.
+
 ## Recipes that use this method
 
 - [Engagement Decay & Habit Research](/research-recipes/engagement-decay)
@@ -1948,7 +2014,7 @@ It is possible to increase the length of a 5 second test, e.g. to 10 or 15 secon
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Usability Hub](https://www.lyssna.com)
 
@@ -2005,7 +2071,7 @@ You can either set this up manually using custom analytics tracking or using a b
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Zuko](https://www.zuko.io)
 
@@ -2074,7 +2140,7 @@ Tools include Hotjar, Content Square, Full Story and Microsoft Clarity. These to
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Hotjar](https://www.hotjar.com)
 
@@ -2157,7 +2223,7 @@ The value of this data will depend on the type of live chat you have. E.g. a cha
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Lucky Orange](https://www.luckyorange.com)
 
@@ -2214,7 +2280,7 @@ Nielsen Norman says "The answer is 5, except when it's not" regarding usability 
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Zoom](https://zoom.us)
 
@@ -2285,7 +2351,7 @@ We need approximately 200 open-ended responses to be confident in our strength o
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Hotjar](https://www.hotjar.com)
 
@@ -2375,7 +2441,7 @@ Weight recent reviews more heavily. Old reviews describe a product and a market 
 
 ## Common tools
 
-Common tools
+Tools
 
 - [G2](https://www.g2.com)
 
@@ -2429,7 +2495,7 @@ There are many preference testing tools. Typically this is an option built into 
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Usability Hub](https://www.lyssna.com)
 
@@ -2496,7 +2562,7 @@ The same logic as usability studies applies here. Nielsen Norman says "The answe
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Userlytics](https://www.userlytics.com)
 
@@ -2556,7 +2622,7 @@ Nielsen Norman says "The answer is 5, except when it's not" regarding usability 
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Userlytics](https://www.userlytics.com)
 
@@ -2654,7 +2720,7 @@ The goal of this activity is to gather qualitative insights, therefore the sampl
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Zoom](https://zoom.us)
 
@@ -2716,7 +2782,7 @@ The goal of this activity is to gather quantitative insights, therefore the samp
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Google Forms](https://www.google.com/forms/about/)
 
@@ -2760,7 +2826,7 @@ Intent has to be inferred from queries rather than asked. Rankings move slowly, 
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Google Search Console](https://search.google.com/search-console/about)
 
@@ -2823,7 +2889,7 @@ Tools include Hotjar, Content Square, Full Story and Microsoft Clarity. These to
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Hotjar](https://www.hotjar.com)
 
@@ -2911,7 +2977,7 @@ Raw mention counts mean little on their own. Track against a baseline period and
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Brandwatch](https://www.brandwatch.com)
 
@@ -2962,7 +3028,7 @@ Tree testing is primarily a quantitative method, and as such the sample size sho
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Userlytics](https://www.userlytics.com)
 
@@ -3028,7 +3094,7 @@ Next, is the scoring matrix. This is where a smaller project team dig further in
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Miro](https://miro.com)
 
@@ -3098,6 +3164,11 @@ Practical considerations
 ### Sample Size
 In this case sample size will depend on the amount of data you have, which will relate to the number of leads, prospects, customers, etc. It will also depend on the depth of the data. If you only have top level data, then aim for more (200-300), whereas if you have detailed, more qualitative data, then you could aim lower 50-100 responses. Also consider the different segments within your sample if you're including convertors and those who did not convert, you need an appropriate sample size for both / all segments.
 
+## Common tools
+
+Tools
+Runs on your existing systems; no dedicated tool required.
+
 ## Recipes that use this method
 
 - [B2B ICP Research](/research-recipes/b2b-icp-research)
@@ -3154,7 +3225,7 @@ Qualitative goals apply: a handful of wins and a handful of losses per segment i
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Zoom](https://zoom.us)
 

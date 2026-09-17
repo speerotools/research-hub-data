@@ -20,6 +20,8 @@ A meaningful slice of churn is customers who never decided to leave; a payment f
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Size the leak: where charges fail, how many recover, and what those customers were worth.
 

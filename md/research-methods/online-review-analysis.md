@@ -38,7 +38,7 @@ Weight recent reviews more heavily. Old reviews describe a product and a market 
 
 ## Common tools
 
-Common tools
+Tools
 
 - [G2](https://www.g2.com)
 

@@ -29,7 +29,7 @@ Best run once a hypothesis has already been shaped by exploratory and focus-stag
 
 ## Common tools
 
-Common tools
+Tools
 
 - [AB Testing Tools (Speero Comparison)](https://speero.com/ab-testing-tools)
 
