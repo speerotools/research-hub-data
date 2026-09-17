@@ -16,6 +16,8 @@ People sign up for the trial but never convert to a paid plan, and the team can'
 
 ## The method sequence
 
+Explore. Focus.
+
 ### Explore
 Map what trial users actually do, and watch the early sessions where converts and drifters diverge.
 
@@ -31,6 +33,8 @@ Quantify why trials lapse, and hear the expectation gap in users' own words.
 - [Customer Survey](/research-methods/customer-survey)
 
 - [Customer Interviews](/research-methods/customer-interviews)
+
+Where's Validate? For this problem, validation lands in the experimentation programme itself: the hypotheses this research produces become A/B tests and product bets, measured against the outcome metric.
 
 Source: https://speero.com/research-recipes/trial-to-paid
 Last updated: 2026-07-20

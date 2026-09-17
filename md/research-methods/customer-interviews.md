@@ -47,7 +47,7 @@ If you're recruiting customers for interviews and planning the sessions yourself
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Zoom](https://zoom.us)
 

@@ -16,6 +16,8 @@ Mobile traffic is large but converts well below desktop, and the team can't tell
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Isolate the mobile segment to size the gap, then watch what the numbers hide.
 

@@ -16,6 +16,8 @@ Prospects start the lead form but abandon it before submitting, and the cost of 
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Locate the exact fields where people stall, and frame how many are affected.
 

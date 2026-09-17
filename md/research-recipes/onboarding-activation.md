@@ -16,6 +16,8 @@ New users sign up but never reach the first moment of real value, so they drift 
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Map the activation funnel and watch the early minutes where users stall.
 

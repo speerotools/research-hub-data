@@ -16,6 +16,8 @@ Messaging and targeting are running on assumptions about who the ideal customer 
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Get the real language and hesitations behind a decision to buy, from the CRM record and the buyers themselves.
 

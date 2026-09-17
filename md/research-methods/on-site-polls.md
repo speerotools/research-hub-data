@@ -43,7 +43,7 @@ We need approximately 200 open-ended responses to be confident in our strength o
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Hotjar](https://www.hotjar.com)
 

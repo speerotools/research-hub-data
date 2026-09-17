@@ -16,6 +16,8 @@ A big redesign is about to be built and the risk is shipping months of work that
 
 ## The method sequence
 
+Focus. Validate.
+
 ### Focus
 Check the new design communicates its point, and pressure-test the words carrying it.
 

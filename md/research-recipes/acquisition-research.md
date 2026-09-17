@@ -17,6 +17,8 @@ Ads analysis and analytics data analysis set the quantitative picture: which cam
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Set the quantitative picture: which campaigns underperform, and what those visitors do once they land.
 

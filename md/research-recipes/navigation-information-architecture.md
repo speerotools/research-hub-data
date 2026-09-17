@@ -16,6 +16,8 @@ Visitors know what they want but can't find it, so they bounce between pages or 
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Read the symptoms: search terms, dead-end paths, hunting behaviour.
 

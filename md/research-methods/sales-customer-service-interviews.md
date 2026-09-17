@@ -46,7 +46,7 @@ The goal of this activity is to gather qualitative insights, therefore the sampl
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Zoom](https://zoom.us)
 

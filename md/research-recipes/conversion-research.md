@@ -17,6 +17,8 @@ It deliberately triangulates across data types. Analytics data analysis, heatmap
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Build the quantitative behavioural picture and an expert baseline.
 

@@ -35,7 +35,7 @@ You can include as many competitors as you have time for in your competitor revi
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Miro](https://miro.com)
 

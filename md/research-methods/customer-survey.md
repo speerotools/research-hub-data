@@ -43,7 +43,7 @@ You need approximately 200 open-ended responses to be confident in the strength 
 
 ## Common tools
 
-Common tools
+Tools
 
 - [TypeForm](https://www.typeform.com)
 

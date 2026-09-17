@@ -40,7 +40,7 @@ There are many digital analytics tools available. Chances are the business you w
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Google Analytics](https://marketingplatform.google.com/about/analytics/)
 

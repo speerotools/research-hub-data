@@ -31,7 +31,7 @@ You can either set this up manually using custom analytics tracking or using a b
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Zuko](https://www.zuko.io)
 

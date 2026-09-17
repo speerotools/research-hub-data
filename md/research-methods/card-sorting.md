@@ -45,7 +45,7 @@ For remote or remote-moderated, there are a wide range of online tools available
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Optimal Workshop](https://www.optimalworkshop.com)
 

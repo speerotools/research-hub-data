@@ -17,6 +17,8 @@ A UX heuristic review and a competitor review set an expert baseline and show ho
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Set an expert baseline and see how the category solves the same problems. No traffic required.
 

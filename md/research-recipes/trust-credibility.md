@@ -16,6 +16,8 @@ Visitors are interested but hesitate to commit because the site hasn't earned th
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Flag credibility gaps an expert eye catches, and map the trust signals buyers see elsewhere.
 

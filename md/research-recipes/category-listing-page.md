@@ -16,6 +16,8 @@ Shoppers reach the category and listing pages but leave without clicking into a 
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Size the problem: which categories leak most, and how listing visits relate to product views.
 

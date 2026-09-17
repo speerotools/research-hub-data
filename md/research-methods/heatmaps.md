@@ -39,7 +39,7 @@ Tools include Hotjar, Content Square, Full Story and Microsoft Clarity. These to
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Hotjar](https://www.hotjar.com)
 

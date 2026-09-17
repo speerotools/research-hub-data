@@ -20,6 +20,8 @@ The customers who most need what the business does are searching for it in their
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Map which intents the site is absent from and which rankings never earn the click.
 

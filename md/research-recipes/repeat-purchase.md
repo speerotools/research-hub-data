@@ -20,6 +20,8 @@ Most first-time buyers never come back, and the margin lives in the orders they 
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Read the repeat rate, the gap to a second order, and what buyers experience after checkout.
 

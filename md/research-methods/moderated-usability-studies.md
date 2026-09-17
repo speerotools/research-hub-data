@@ -39,7 +39,7 @@ Nielsen Norman says "The answer is 5, except when it's not" regarding usability 
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Zoom](https://zoom.us)
 

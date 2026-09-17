@@ -20,6 +20,8 @@ The content programme is doing its job of attracting readers, and then the relat
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Find which posts attract buying intent and where readers exit.
 

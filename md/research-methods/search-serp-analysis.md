@@ -24,7 +24,7 @@ Intent has to be inferred from queries rather than asked. Rankings move slowly, 
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Google Search Console](https://search.google.com/search-console/about)
 

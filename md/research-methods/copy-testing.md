@@ -36,7 +36,7 @@ You need to consider who is your target audience and ensure that the participant
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Wynter](https://wynter.com)
 

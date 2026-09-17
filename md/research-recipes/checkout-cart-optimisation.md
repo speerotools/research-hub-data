@@ -16,6 +16,8 @@ Shoppers add items to the basket and then leave before paying, and the team can'
 
 ## The method sequence
 
+Explore. Focus. Validate.
+
 ### Explore
 Find which steps lose the most people, and watch what they do at the moment they drop.
 

@@ -40,7 +40,7 @@ It is possible to increase the length of a 5 second test, e.g. to 10 or 15 secon
 
 ## Common tools
 
-Common tools
+Tools
 
 - [Usability Hub](https://www.lyssna.com)
 

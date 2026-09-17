@@ -34,6 +34,11 @@ It is advisable to think about offering a staged incentive. E.g. 50% upfront, 50
 ### Tools
 There are many tools you could use to gather "diary entries" on an ongoing basis. You could use text, Whatsapp, or email. Alternatively use a specific diary study tool. The key consideration here is to use a method that is as easy as possible for the participant to input an entry, if they have to log into a specific tool everytime, they may be less inclined to submit an entry vs. using Whatsapp.
 
+## Common tools
+
+Tools
+Runs on your existing systems; no dedicated tool required.
+
 ## Recipes that use this method
 
 - [Engagement Decay & Habit Research](/research-recipes/engagement-decay)
