@@ -188,6 +188,23 @@ def sequence_html(stages: list, methods: dict) -> str:
 OBJECTIVES = ("Explore", "Focus", "Validate")
 
 
+def trigger_items(raw: list[str]) -> list[str]:
+    """One signal per checkbox row.
+
+    Airtable holds these one per line on 7 recipes and as a single
+    comma-joined sentence on the other 19. The hub shows one row per signal
+    either way, so a lone comma-joined line is split here rather than asking
+    19 records to be rewritten by hand.
+
+    Only a single line is ever split: where an author has already used
+    separate lines, those are their own rows and are left exactly as written.
+    """
+    rows = [t.strip() for t in (raw or []) if t and t.strip()]
+    if len(rows) == 1 and "," in rows[0]:
+        rows = [p.strip(" .") for p in rows[0].split(",")]
+    return [r[:1].upper() + r[1:] for r in rows if r]
+
+
 def objective_chips(values: list[str]) -> str:
     """Objectives -> one list item per pill, always in the same three slots.
 
@@ -470,7 +487,7 @@ def recipe_fields(slug: str, r: dict, data: dict) -> dict:
         "opportunity-name": r.get("opp", ""),
         "customer-problem": r.get("problem", ""),
         "how-might-we": r.get("hmw", ""),
-        "triggers": bullets(r.get("triggers", [])),
+        "triggers": bullets(trigger_items(r.get("triggers", []))),
         "outcome-area": outcome,
         "discovery-stage": r.get("dstage", ""),
         "evidence-strength": r.get("evidence", ""),
