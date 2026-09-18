@@ -8,7 +8,11 @@ How might we get new users to their first win before they lose interest?
 
 ## You'll recognise this when
 
-- High signup-to-activation drop-off, low day-7 return rate, early support tickets about getting started.
+- High signup-to-activation drop-off
+
+- Low day-7 return rate
+
+- Early support tickets about getting started
 
 ## What this recipe does
 

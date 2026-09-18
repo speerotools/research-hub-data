@@ -8,7 +8,11 @@ How might we give product pages the information and reassurance that earns the a
 
 ## You'll recognise this when
 
-- High product-page traffic with low add-to-cart rate, repeated pre-sales questions, attention stopping above key content.
+- High product-page traffic with low add-to-cart rate
+
+- Repeated pre-sales questions
+
+- Attention stopping above key content
 
 ## What this recipe does
 

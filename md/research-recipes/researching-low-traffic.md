@@ -8,7 +8,13 @@ How might we build evidence for decisions when traffic can't support A/B tests?
 
 ## You'll recognise this when
 
-- Sessions too low to reach significance in a realistic test window, high-stakes pages with thin behavioural data, polls and analytics too sparse to read, decisions resting on opinion or the loudest voice.
+- Sessions too low to reach significance in a realistic test window
+
+- High-stakes pages with thin behavioural data
+
+- Polls and analytics too sparse to read
+
+- Decisions resting on opinion or the loudest voice
 
 ## What this recipe does
 

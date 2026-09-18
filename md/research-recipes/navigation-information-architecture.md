@@ -8,7 +8,11 @@ How might we structure navigation around how customers actually look for things?
 
 ## You'll recognise this when
 
-- Heavy reliance on site search, high pogo-sticking between category pages, low findability scores in past tests.
+- Heavy reliance on site search
+
+- High pogo-sticking between category pages
+
+- Low findability scores in past tests
 
 ## What this recipe does
 

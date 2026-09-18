@@ -8,7 +8,11 @@ How might we make the lead form quick and painless enough to finish?
 
 ## You'll recognise this when
 
-- Low form completion rate, drop-off on specific fields, high cost per lead from paid traffic.
+- Low form completion rate
+
+- Drop-off on specific fields
+
+- High cost per lead from paid traffic
 
 ## What this recipe does
 

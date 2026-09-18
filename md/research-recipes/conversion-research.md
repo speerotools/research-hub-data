@@ -8,7 +8,11 @@ How might we find and remove the biggest on-site barriers to conversion?
 
 ## You'll recognise this when
 
-- Below-benchmark conversion rate, no single clear drop-off, need to build a prioritised test pipeline.
+- Below-benchmark conversion rate
+
+- No single clear drop-off
+
+- Need to build a prioritised test pipeline
 
 ## What this recipe does
 

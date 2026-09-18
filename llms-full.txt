@@ -8,7 +8,11 @@ How might we make the landing page deliver on the promise the ad made?
 
 ## You'll recognise this when
 
-- High ad spend with weak ROAS, high landing-page bounce, poor message match between the ad and the page.
+- High ad spend with weak ROAS
+
+- High landing-page bounce
+
+- Poor message match between the ad and the page
 
 ## What this recipe does
 
@@ -52,7 +56,11 @@ How might we speak to our ICP's real motivations, triggers and doubts?
 
 ## You'll recognise this when
 
-- Messaging built on internal assumptions, unclear persona definition, weak win rates against competitors.
+- Messaging built on internal assumptions
+
+- Unclear persona definition
+
+- Weak win rates against competitors
 
 ## What this recipe does
 
@@ -155,7 +163,13 @@ How might we help shoppers narrow the range and find a product worth clicking?
 
 ## You'll recognise this when
 
-- High category-page exits, low listing-to-product click-through, filters and sorting applied then abandoned, deep scrolling with few product clicks.
+- High category-page exits
+
+- Low listing-to-product click-through
+
+- Filters and sorting applied then abandoned
+
+- Deep scrolling with few product clicks
 
 ## What this recipe does
 
@@ -200,7 +214,11 @@ How might we get ready-to-buy shoppers through checkout without losing them?
 
 ## You'll recognise this when
 
-- High cart abandonment, drop-off concentrated on the payment or shipping step, repeated 'is this secure' support queries.
+- High cart abandonment
+
+- Drop-off concentrated on the payment or shipping step
+
+- Repeated 'is this secure' support queries
 
 ## What this recipe does
 
@@ -249,7 +267,11 @@ How might we understand and reduce the reasons customers leave?
 
 ## You'll recognise this when
 
-- Rising churn, low repeat usage, cancellation reasons citing value or fit.
+- Rising churn
+
+- Low repeat usage
+
+- Cancellation reasons citing value or fit
 
 ## What this recipe does
 
@@ -342,7 +364,11 @@ How might we find and remove the biggest on-site barriers to conversion?
 
 ## You'll recognise this when
 
-- Below-benchmark conversion rate, no single clear drop-off, need to build a prioritised test pipeline.
+- Below-benchmark conversion rate
+
+- No single clear drop-off
+
+- Need to build a prioritised test pipeline
 
 ## What this recipe does
 
@@ -490,7 +516,11 @@ How might we make the landing page deliver on the promise the ad made?
 
 ## You'll recognise this when
 
-- High ad spend with weak ROAS, high landing-page bounce, poor message match between the ad and the page.
+- High ad spend with weak ROAS
+
+- High landing-page bounce
+
+- Poor message match between the ad and the page
 
 ## What this recipe does
 
@@ -540,7 +570,11 @@ How might we make the lead form quick and painless enough to finish?
 
 ## You'll recognise this when
 
-- Low form completion rate, drop-off on specific fields, high cost per lead from paid traffic.
+- Low form completion rate
+
+- Drop-off on specific fields
+
+- High cost per lead from paid traffic
 
 ## What this recipe does
 
@@ -638,7 +672,11 @@ How might we close the gap between mobile and desktop conversion?
 
 ## You'll recognise this when
 
-- Mobile conversion well below desktop, high mobile share of traffic, mis-tap and zoom behaviour in recordings.
+- Mobile conversion well below desktop
+
+- High mobile share of traffic
+
+- Mis-tap and zoom behaviour in recordings
 
 ## What this recipe does
 
@@ -685,7 +723,11 @@ How might we structure navigation around how customers actually look for things?
 
 ## You'll recognise this when
 
-- Heavy reliance on site search, high pogo-sticking between category pages, low findability scores in past tests.
+- Heavy reliance on site search
+
+- High pogo-sticking between category pages
+
+- Low findability scores in past tests
 
 ## What this recipe does
 
@@ -730,7 +772,11 @@ How might we get new users to their first win before they lose interest?
 
 ## You'll recognise this when
 
-- High signup-to-activation drop-off, low day-7 return rate, early support tickets about getting started.
+- High signup-to-activation drop-off
+
+- Low day-7 return rate
+
+- Early support tickets about getting started
 
 ## What this recipe does
 
@@ -777,7 +823,11 @@ How might we give product pages the information and reassurance that earns the a
 
 ## You'll recognise this when
 
-- High product-page traffic with low add-to-cart rate, repeated pre-sales questions, attention stopping above key content.
+- High product-page traffic with low add-to-cart rate
+
+- Repeated pre-sales questions
+
+- Attention stopping above key content
 
 ## What this recipe does
 
@@ -873,7 +923,13 @@ How might we build evidence for decisions when traffic can't support A/B tests?
 
 ## You'll recognise this when
 
-- Sessions too low to reach significance in a realistic test window, high-stakes pages with thin behavioural data, polls and analytics too sparse to read, decisions resting on opinion or the loudest voice.
+- Sessions too low to reach significance in a realistic test window
+
+- High-stakes pages with thin behavioural data
+
+- Polls and analytics too sparse to read
+
+- Decisions resting on opinion or the loudest voice
 
 ## What this recipe does
 
@@ -921,7 +977,11 @@ How might we help buyers self-select the right plan with confidence?
 
 ## You'll recognise this when
 
-- High exit on the pricing page, low trial-to-paid, sales repeatedly answering the same plan-comparison questions.
+- High exit on the pricing page
+
+- Low trial-to-paid
+
+- Sales repeatedly answering the same plan-comparison questions
 
 ## What this recipe does
 
@@ -1016,7 +1076,11 @@ How might we attract visitors who match our best customers?
 
 ## You'll recognise this when
 
-- High traffic with low qualified-lead rate, poor fit between ad audience and ICP, weak engagement from paid channels.
+- High traffic with low qualified-lead rate
+
+- Poor fit between ad audience and ICP
+
+- Weak engagement from paid channels
 
 ## What this recipe does
 
@@ -1061,7 +1125,13 @@ How might we make the value obvious enough during the trial that paying feels li
 
 ## You'll recognise this when
 
-- Low trial-to-paid rate, trial usage tailing off mid-trial, upgrade prompts ignored, discount requests clustering at trial end.
+- Low trial-to-paid rate
+
+- Trial usage tailing off mid-trial
+
+- Upgrade prompts ignored
+
+- Discount requests clustering at trial end
 
 ## What this recipe does
 
@@ -1105,7 +1175,11 @@ How might we give visitors enough confidence to commit?
 
 ## You'll recognise this when
 
-- High traffic with low conversion on commitment steps, weak or missing proof elements, low brand familiarity.
+- High traffic with low conversion on commitment steps
+
+- Weak or missing proof elements
+
+- Low brand familiarity
 
 ## What this recipe does
 
@@ -1152,7 +1226,11 @@ How might we prove the new design beats the current one before we build it?
 
 ## You'll recognise this when
 
-- Major redesign scoped, significant build cost, no evidence the new direction outperforms the current page.
+- Major redesign scoped
+
+- Significant build cost
+
+- No evidence the new direction outperforms the current page
 
 ## What this recipe does
 
@@ -1196,7 +1274,11 @@ How might we make our value clear and relevant within seconds of landing?
 
 ## You'll recognise this when
 
-- High bounce on key landing pages, low message-clarity scores, sales correcting basic misunderstandings.
+- High bounce on key landing pages
+
+- Low message-clarity scores
+
+- Sales correcting basic misunderstandings
 
 ## What this recipe does
 

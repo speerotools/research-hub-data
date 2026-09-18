@@ -8,7 +8,11 @@ How might we help buyers self-select the right plan with confidence?
 
 ## You'll recognise this when
 
-- High exit on the pricing page, low trial-to-paid, sales repeatedly answering the same plan-comparison questions.
+- High exit on the pricing page
+
+- Low trial-to-paid
+
+- Sales repeatedly answering the same plan-comparison questions
 
 ## What this recipe does
 

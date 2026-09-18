@@ -8,7 +8,13 @@ How might we make the value obvious enough during the trial that paying feels li
 
 ## You'll recognise this when
 
-- Low trial-to-paid rate, trial usage tailing off mid-trial, upgrade prompts ignored, discount requests clustering at trial end.
+- Low trial-to-paid rate
+
+- Trial usage tailing off mid-trial
+
+- Upgrade prompts ignored
+
+- Discount requests clustering at trial end
 
 ## What this recipe does
 

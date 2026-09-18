@@ -8,7 +8,11 @@ How might we give visitors enough confidence to commit?
 
 ## You'll recognise this when
 
-- High traffic with low conversion on commitment steps, weak or missing proof elements, low brand familiarity.
+- High traffic with low conversion on commitment steps
+
+- Weak or missing proof elements
+
+- Low brand familiarity
 
 ## What this recipe does
 

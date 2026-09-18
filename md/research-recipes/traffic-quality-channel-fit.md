@@ -8,7 +8,11 @@ How might we attract visitors who match our best customers?
 
 ## You'll recognise this when
 
-- High traffic with low qualified-lead rate, poor fit between ad audience and ICP, weak engagement from paid channels.
+- High traffic with low qualified-lead rate
+
+- Poor fit between ad audience and ICP
+
+- Weak engagement from paid channels
 
 ## What this recipe does
 

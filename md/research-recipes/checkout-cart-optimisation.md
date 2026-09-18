@@ -8,7 +8,11 @@ How might we get ready-to-buy shoppers through checkout without losing them?
 
 ## You'll recognise this when
 
-- High cart abandonment, drop-off concentrated on the payment or shipping step, repeated 'is this secure' support queries.
+- High cart abandonment
+
+- Drop-off concentrated on the payment or shipping step
+
+- Repeated 'is this secure' support queries
 
 ## What this recipe does
 

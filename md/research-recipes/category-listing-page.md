@@ -8,7 +8,13 @@ How might we help shoppers narrow the range and find a product worth clicking?
 
 ## You'll recognise this when
 
-- High category-page exits, low listing-to-product click-through, filters and sorting applied then abandoned, deep scrolling with few product clicks.
+- High category-page exits
+
+- Low listing-to-product click-through
+
+- Filters and sorting applied then abandoned
+
+- Deep scrolling with few product clicks
 
 ## What this recipe does
 

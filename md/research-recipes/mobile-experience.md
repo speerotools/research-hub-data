@@ -8,7 +8,11 @@ How might we close the gap between mobile and desktop conversion?
 
 ## You'll recognise this when
 
-- Mobile conversion well below desktop, high mobile share of traffic, mis-tap and zoom behaviour in recordings.
+- Mobile conversion well below desktop
+
+- High mobile share of traffic
+
+- Mis-tap and zoom behaviour in recordings
 
 ## What this recipe does
 

@@ -8,7 +8,11 @@ How might we prove the new design beats the current one before we build it?
 
 ## You'll recognise this when
 
-- Major redesign scoped, significant build cost, no evidence the new direction outperforms the current page.
+- Major redesign scoped
+
+- Significant build cost
+
+- No evidence the new direction outperforms the current page
 
 ## What this recipe does
 

@@ -8,7 +8,11 @@ How might we understand and reduce the reasons customers leave?
 
 ## You'll recognise this when
 
-- Rising churn, low repeat usage, cancellation reasons citing value or fit.
+- Rising churn
+
+- Low repeat usage
+
+- Cancellation reasons citing value or fit
 
 ## What this recipe does
 

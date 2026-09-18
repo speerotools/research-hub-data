@@ -8,7 +8,11 @@ How might we speak to our ICP's real motivations, triggers and doubts?
 
 ## You'll recognise this when
 
-- Messaging built on internal assumptions, unclear persona definition, weak win rates against competitors.
+- Messaging built on internal assumptions
+
+- Unclear persona definition
+
+- Weak win rates against competitors
 
 ## What this recipe does
 

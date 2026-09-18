@@ -8,7 +8,11 @@ How might we make the landing page deliver on the promise the ad made?
 
 ## You'll recognise this when
 
-- High ad spend with weak ROAS, high landing-page bounce, poor message match between the ad and the page.
+- High ad spend with weak ROAS
+
+- High landing-page bounce
+
+- Poor message match between the ad and the page
 
 ## What this recipe does
 

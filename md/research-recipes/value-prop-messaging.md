@@ -8,7 +8,11 @@ How might we make our value clear and relevant within seconds of landing?
 
 ## You'll recognise this when
 
-- High bounce on key landing pages, low message-clarity scores, sales correcting basic misunderstandings.
+- High bounce on key landing pages
+
+- Low message-clarity scores
+
+- Sales correcting basic misunderstandings
 
 ## What this recipe does
 
