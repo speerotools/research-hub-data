@@ -49,7 +49,7 @@ Tools
 
 - [Microsoft Clarity](https://clarity.microsoft.com)
 
-- [VWO](/ab-testing-tools/vwo)
+- [VWO](https://vwo.com)
 
 - [Full Story](https://www.fullstory.com)
 

@@ -47,7 +47,7 @@ Tools
 
 - [Hotjar](https://www.hotjar.com)
 
-- [VWO](/ab-testing-tools/vwo)
+- [VWO](https://vwo.com)
 
 - [Medallia](https://www.medallia.com)
 

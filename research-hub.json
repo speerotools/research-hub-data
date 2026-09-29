@@ -1,6 +1,6 @@
 {
-  "version": "2026-09-28T11:27:33Z",
-  "commit": "0dfc1c8a5b8d098fa5de447a3fe4d1b71b574e83",
+  "version": "2026-09-29T11:08:07Z",
+  "commit": "43d960757de8b99178859f8b1a097730db4b4c88",
   "methods": {
     "remote-usability-studies": {
       "name": "Remote Usability Studies",
@@ -2269,7 +2269,7 @@
     "shoplift": "shoplift",
     "launchdarkly": "launchdarkly",
     "symplify": "symplify",
-    "vwo": "vwo",
+    "wingify": "wingify",
     "optimizely": "optimizely",
     "adobe target": "adobe-target",
     "conductrics": "conductrics",
@@ -2279,7 +2279,6 @@
     "posthog": "posthog",
     "uniform": "uniform",
     "monetate": "monetate",
-    "ab tasty": "ab-tasty",
     "convert": "convert",
     "zoho pagesense": "zoho-pagesense",
     "harness fme": "harness-fme",

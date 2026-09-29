@@ -2232,7 +2232,7 @@ Tools
 
 - [Microsoft Clarity](https://clarity.microsoft.com)
 
-- [VWO](/ab-testing-tools/vwo)
+- [VWO](https://vwo.com)
 
 - [Full Story](https://www.fullstory.com)
 
@@ -2437,7 +2437,7 @@ Tools
 
 - [Hotjar](https://www.hotjar.com)
 
-- [VWO](/ab-testing-tools/vwo)
+- [VWO](https://vwo.com)
 
 - [Medallia](https://www.medallia.com)
 
@@ -2981,7 +2981,7 @@ Tools
 
 - [Microsoft Clarity](https://clarity.microsoft.com)
 
-- [VWO](/ab-testing-tools/vwo)
+- [VWO](https://vwo.com)
 
 - [Full Story](https://www.fullstory.com)
 
