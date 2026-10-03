@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-02T10:53:39Z",
-  "commit": "5b1b20acfeb2ff8d53f079b4b6ad063fbc45f618",
+  "version": "2026-10-03T10:13:01Z",
+  "commit": "4eebfbeb964a5a43a54afd45c200e2fa67355442",
   "methods": {
     "remote-usability-studies": {
       "name": "Remote Usability Studies",
@@ -2286,7 +2286,6 @@
     "contentful personalization": "ninetailed-by-contentful",
     "varify.io": "varify",
     "croct": "croct",
-    "mutiny": "mutiny",
     "growthbook": "growthbook",
     "kameleoon": "kameleoon",
     "statsig": "statsig",
