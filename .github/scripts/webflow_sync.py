@@ -380,10 +380,15 @@ def main() -> None:
     methods, recipes = data["methods"], data["recipes"]
 
     # Methods first: recipes reference their Webflow ids.
-    desired_methods = {
-        m["rid"]: render.method_fields(slug, m, data)
-        for slug, m in methods.items() if m.get("rid")
-    }
+    # sort-order carries the Airtable first-view order (the order of the JSON)
+    # into the CMS, so the landing pages' native collection lists match the
+    # curated order the embed shows instead of Webflow's created-on default.
+    desired_methods = {}
+    for pos, (slug, m) in enumerate(methods.items(), 1):
+        if m.get("rid"):
+            fd = render.method_fields(slug, m, data)
+            fd["sort-order"] = pos
+            desired_methods[m["rid"]] = fd
     method_ids = reconcile("Research Methods", METHODS_COLLECTION,
                            desired_methods, MIN_METHODS)
 
@@ -394,10 +399,11 @@ def main() -> None:
     }
 
     desired_recipes = {}
-    for slug, r in recipes.items():
+    for pos, (slug, r) in enumerate(recipes.items(), 1):
         if not r.get("rid"):
             continue
         fd = render.recipe_fields(slug, r, data)
+        fd["sort-order"] = pos
         refs, seen = [], set()
         for stage in r.get("stages", []):
             for mslug in stage[2]:

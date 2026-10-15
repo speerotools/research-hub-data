@@ -48,6 +48,11 @@ problems `6aa7e6b3bcc91931eaca6aa4`, recipes `6aa7afe0091e3b99dd1f5cee`,
 methods `6aa7afe1091e3b99dd1f5d56`. The sync rewrites the JSON-LD on all three
 landing pages every run.
 
+Each landing page (and the `/research-recipe-hub` overview, page
+`6aaa9d21b14776ca945954bc`) also carries a native H1, intro and a Collection
+List directory bound to these CMS collections, so the content and real links
+exist in the initial HTML without the embed. See the embed README.
+
 Three public surfaces, matching the wireframe: `/research-problems` (start
 from a customer problem), `/research-recipes` (the hub pillar), and
 `/research-methods`. Each carries the hub nav and XOS locator server-side
@@ -58,7 +63,9 @@ written for it.
 
 Lists on the site follow the order of each table's **first Airtable view**.
 Drag rows in Airtable and the site reorders on the next run. There is no sort
-field to maintain.
+field to maintain in Airtable: `webflow_sync.py` writes each item's position
+into the CMS `sort-order` field, which the landing pages' native collection
+lists sort by.
 
 Without a view the Airtable API returns records in no defined order, which is
 why the site's order originally did not match the prototype's curated one.
