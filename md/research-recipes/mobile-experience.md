@@ -43,5 +43,11 @@ Test fixes in sessions run on real devices.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Mobile UX benchmarking study: comparing four beauty and cosmetics websites](https://speero.com/post/ecommerce-ux-battle-benchmarking-4-beauty-cosmetics-mobile-websites)
+
 Source: https://speero.com/research-recipes/mobile-experience
-Last updated: 2026-07-20
+Last updated: 2026-10-14

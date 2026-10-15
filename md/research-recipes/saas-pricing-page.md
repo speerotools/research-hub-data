@@ -42,5 +42,19 @@ Watch how people move through the page and where they get stuck choosing.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Codecademy case study: research informing pricing, plan-mix and trial experiments](https://speero.com/case-studies/delivering-5x-growth-for-codecademy-with-strategic-testing)
+
+- [Research Objectives Blueprint: define the question before choosing research methods](https://speero.com/blueprints/research-objectives-blueprint)
+
+- [Work with Speero: investigate pricing-page friction](https://speero.com/data-technology-services/saas-pricing-pages)
+
+- [SaaS pricing models: options and tradeoffs to investigate](https://speero.com/post/13-saas-pricing-models-you-can-test-to-optimize-growth-and-monetization)
+
+- [Original pricing-plan study: highlighting, attention and stated choice](https://speero.com/post/the-effects-of-highlighting-a-recommended-pricing-plan-original-research)
+
 Source: https://speero.com/research-recipes/saas-pricing-page
-Last updated: 2026-07-20
+Last updated: 2026-10-14

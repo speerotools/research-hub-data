@@ -46,5 +46,19 @@ Watch real people attempt the core journeys.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Decathlon case study: turning research findings into prioritized problem themes and testing streams](https://speero.com/case-studies/providing-focus-for-decathlons-testing-program)
+
+- [Strategic Testing Roadmap Blueprint: organize research findings into testing priorities](https://speero.com/blueprints/whats-in-a-strategic-testing-roadmap)
+
+- [Work with Speero: turn customer research into testing priorities](https://speero.com/user-research-services/customer-research)
+
+- [On-site survey guide: planning questions and analysing open-ended responses](https://speero.com/post/how-to-use-on-site-surveys-to-help-you-understand-your-users)
+
+- [ResearchXL guide: combine evidence and prioritise research findings](https://speero.com/post/how-to-create-winning-tests-using-the-researchxl-model)
+
 Source: https://speero.com/research-recipes/conversion-research
-Last updated: 2026-07-20
+Last updated: 2026-10-14

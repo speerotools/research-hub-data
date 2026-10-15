@@ -42,5 +42,11 @@ Quantify why trials lapse, and hear the expectation gap in users' own words.
 
 Where's Validate? For this problem, validation lands in the experimentation programme itself: the hypotheses this research produces become A/B tests and product bets, measured against the outcome metric.
 
+## Go deeper
+
+Go deeper
+
+- [Trial users stall before first value? Investigate onboarding and activation](https://speero.com/research-recipes/onboarding-activation)
+
 Source: https://speero.com/research-recipes/trial-to-paid
-Last updated: 2026-07-20
+Last updated: 2026-10-14

@@ -39,5 +39,11 @@ Prototype-test re-engagement and habit hooks before anything is built.
 
 - [Prototype Testing](/research-methods/prototype-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Declining usage has progressed to cancellation? Investigate churn and retention](https://speero.com/research-recipes/churn-retention)
+
 Source: https://speero.com/research-recipes/engagement-decay
-Last updated: 2026-07-20
+Last updated: 2026-10-14

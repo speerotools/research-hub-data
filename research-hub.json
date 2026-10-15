@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-14T09:56:13Z",
-  "commit": "864291463e24232880b495b93ba87bd3ddd04dc5",
+  "version": "2026-10-15T09:37:46Z",
+  "commit": "9deae702e3ffb1bf80602d4198475a6b9f5140b3",
   "methods": {
     "remote-usability-studies": {
       "name": "Remote Usability Studies",
@@ -550,9 +550,13 @@
         [
           "How to get the most out of your user testing efforts",
           "https://speero.com/post/how-to-get-the-most-out-of-your-user-testing-efforts"
+        ],
+        [
+          "Moderated research guide: planning, recruitment, sessions and analysis",
+          "https://speero.com/post/the-ultimate-guide-to-moderated-user-research"
         ]
       ],
-      "updated": "2026-07-20",
+      "updated": "2026-10-14",
       "rid": "recb4KyPfWohX1FiI"
     },
     "copy-testing": {
@@ -992,8 +996,13 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Acquisition brings poorly matched prospects? Investigate traffic quality and channel fit",
+          "https://speero.com/research-recipes/traffic-quality-channel-fit"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recFv1MWi8njNfvdV",
       "opp2": "We're attracting the wrong visitors"
     },
@@ -1036,8 +1045,29 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Decathlon case study: turning research findings into prioritized problem themes and testing streams",
+          "https://speero.com/case-studies/providing-focus-for-decathlons-testing-program"
+        ],
+        [
+          "Strategic Testing Roadmap Blueprint: organize research findings into testing priorities",
+          "https://speero.com/blueprints/whats-in-a-strategic-testing-roadmap"
+        ],
+        [
+          "Work with Speero: turn customer research into testing priorities",
+          "https://speero.com/user-research-services/customer-research"
+        ],
+        [
+          "On-site survey guide: planning questions and analysing open-ended responses",
+          "https://speero.com/post/how-to-use-on-site-surveys-to-help-you-understand-your-users"
+        ],
+        [
+          "ResearchXL guide: combine evidence and prioritise research findings",
+          "https://speero.com/post/how-to-create-winning-tests-using-the-researchxl-model"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recneKiNyVpks4Z6E"
     },
     "saas-pricing-page": {
@@ -1077,8 +1107,29 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Codecademy case study: research informing pricing, plan-mix and trial experiments",
+          "https://speero.com/case-studies/delivering-5x-growth-for-codecademy-with-strategic-testing"
+        ],
+        [
+          "Research Objectives Blueprint: define the question before choosing research methods",
+          "https://speero.com/blueprints/research-objectives-blueprint"
+        ],
+        [
+          "Work with Speero: investigate pricing-page friction",
+          "https://speero.com/data-technology-services/saas-pricing-pages"
+        ],
+        [
+          "SaaS pricing models: options and tradeoffs to investigate",
+          "https://speero.com/post/13-saas-pricing-models-you-can-test-to-optimize-growth-and-monetization"
+        ],
+        [
+          "Original pricing-plan study: highlighting, attention and stated choice",
+          "https://speero.com/post/the-effects-of-highlighting-a-recommended-pricing-plan-original-research"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "rec1PvSuVu9LfFnea"
     },
     "b2b-icp-research": {
@@ -1119,8 +1170,13 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Personas: where they help and where they fail",
+          "https://speero.com/post/understanding-personas-how-they-work-and-when-they-fail"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recNmPalDG7Qy7Y0I"
     },
     "landing-page-optimisation": {
@@ -1205,8 +1261,21 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "RevZilla case study: finding missing cart confirmation as a barrier to checkout",
+          "https://speero.com/case-studies/revzilla-case-study"
+        ],
+        [
+          "ResearchXL Blueprint: investigate customer questions and checkout friction",
+          "https://speero.com/blueprints/research-xl"
+        ],
+        [
+          "Work with Speero: research checkout and customer-experience barriers",
+          "https://speero.com/user-research-services/customer-research"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recR2DzySA3PclxbE"
     },
     "navigation-information-architecture": {
@@ -1246,8 +1315,13 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Shoppers reach a category but cannot narrow their choices? Investigate category pages",
+          "https://speero.com/research-recipes/category-listing-page"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recZa6JhnE72Xgi8o"
     },
     "validating-redesign": {
@@ -1282,8 +1356,13 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Preference testing versus A/B testing: different questions and evidence",
+          "https://speero.com/post/preference-testing-vs-a-b-testing-for-b2b-saas"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "reclIYUkp60zpEAns"
     },
     "churn-retention": {
@@ -1317,8 +1396,17 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Cohort analysis: identify retention patterns to investigate",
+          "https://speero.com/post/using-cohort-analysis-for-conversion-optimization"
+        ],
+        [
+          "Failed payments rather than active cancellation? Investigate involuntary churn",
+          "https://speero.com/research-recipes/involuntary-churn"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "rec4hsenZbNLqaFBU"
     },
     "value-prop-messaging": {
@@ -1359,8 +1447,21 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "BigCommerce case study: using research to prioritize product messaging",
+          "https://speero.com/case-studies/informing-team-direction-through-researchxl"
+        ],
+        [
+          "Problem-Statement Focused Hypothesis: turn messaging research into a testable proposition",
+          "https://speero.com/blueprints/problem-statement-focused-hypothesis"
+        ],
+        [
+          "Work with Speero: test whether your audience understands your messaging",
+          "https://speero.com/user-research-services/copy-testing"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "reciJbRnBp3gjw2fo"
     },
     "mobile-experience": {
@@ -1401,8 +1502,13 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Mobile UX benchmarking study: comparing four beauty and cosmetics websites",
+          "https://speero.com/post/ecommerce-ux-battle-benchmarking-4-beauty-cosmetics-mobile-websites"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recn7t4mX61kzygfs"
     },
     "product-page": {
@@ -1443,8 +1549,21 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Original product-copy study: how formatting affected attention in the tested layouts",
+          "https://speero.com/post/how-does-product-copy-format-affect-user-engagement-original-research"
+        ],
+        [
+          "Original product-image study: size, attention and engagement",
+          "https://speero.com/post/how-product-image-size-affects-attention-and-engagement-original-research"
+        ],
+        [
+          "Original appliance-copy study: mixed effects on perceived value",
+          "https://speero.com/post/price-perceptions-of-products-with-utility-vs-hedonism-copy-original-research"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recjnGzOeNbMQeA9e"
     },
     "lead-gen-form": {
@@ -1485,8 +1604,21 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Form optimization guide: using field-level data to investigate abandonment",
+          "https://speero.com/post/how-to-fill-the-form-optimization-knowledge-gap-what-data-do-you-need-and-where-do-you-find-it"
+        ],
+        [
+          "Web form anatomy: components to inspect during research",
+          "https://speero.com/post/anatomy-of-a-web-form-the-common-building-blocks-and-what-to-look-out-for-when-optimizing"
+        ],
+        [
+          "Desktop form study: radio buttons versus select menus",
+          "https://speero.com/post/form-field-usability-revisited-select-menus-vs-radio-buttons-original-research"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recDmiC1tuSrWsCqo"
     },
     "onboarding-activation": {
@@ -1527,8 +1659,13 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Users reach first value but do not upgrade? Investigate trial-to-paid conversion",
+          "https://speero.com/research-recipes/trial-to-paid"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recx98AQ4EpFZPxvk"
     },
     "trust-credibility": {
@@ -1569,8 +1706,17 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Original social-proof study: attention and recall in tested layouts",
+          "https://speero.com/post/which-types-of-social-proof-work-best-original-research"
+        ],
+        [
+          "Need a broader view of how the market sees you? Track brand perception",
+          "https://speero.com/research-recipes/brand-perception-tracking"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recpl2ut7K98Ag9Xy"
     },
     "researching-low-traffic": {
@@ -1652,8 +1798,13 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Shoppers cannot find the right category? Investigate navigation and information architecture",
+          "https://speero.com/research-recipes/navigation-information-architecture"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recny9GlkYXk1LV2N"
     },
     "trial-to-paid": {
@@ -1687,8 +1838,13 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Trial users stall before first value? Investigate onboarding and activation",
+          "https://speero.com/research-recipes/onboarding-activation"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recLrf1mNZkhuW14l"
     },
     "traffic-quality-channel-fit": {
@@ -1728,8 +1884,13 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Audience fits but the ad-to-page journey stalls? Investigate acquisition",
+          "https://speero.com/research-recipes/acquisition-research"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recKKdA5KCetpHaQf"
     },
     "content-to-lead": {
@@ -1771,8 +1932,17 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Content gating: tradeoffs when turning readers into leads",
+          "https://speero.com/post/gating-content-for-cro"
+        ],
+        [
+          "Content attracts the wrong search intent? Investigate SEO and search intent",
+          "https://speero.com/research-recipes/seo-search-intent"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "reccMttnlpZcEDTJu"
     },
     "lead-quality": {
@@ -1815,8 +1985,21 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Tipalti case study: connecting experimentation to lead-to-opportunity outcomes",
+          "https://speero.com/case-studies/helping-a-fintech-grow-into-a-unicorn"
+        ],
+        [
+          "Goal Tree Mapping Blueprint: connect lead-quality measures to business goals",
+          "https://speero.com/blueprints/goal-tree-mapping"
+        ],
+        [
+          "Work with Speero: understand your ideal customers and buying decisions",
+          "https://speero.com/user-research-services/icp-research"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recRoBfIyqDa9uFuJ",
       "opp2": "We don't really understand our ICP"
     },
@@ -1859,8 +2042,13 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Relevant readers take no next step? Investigate content-to-lead conversion",
+          "https://speero.com/research-recipes/content-to-lead"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recN5R6t7WewlK0ny"
     },
     "involuntary-churn": {
@@ -1903,8 +2091,13 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Customers actively cancelling? Investigate churn and retention",
+          "https://speero.com/research-recipes/churn-retention"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "rechKIS2JJFYryOfm"
     },
     "engagement-decay": {
@@ -1945,8 +2138,13 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Declining usage has progressed to cancellation? Investigate churn and retention",
+          "https://speero.com/research-recipes/churn-retention"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recwYfHoXVbop788A"
     },
     "repeat-purchase": {
@@ -1988,8 +2186,25 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-07-20",
+      "resources": [
+        [
+          "Adore Beauty case study: loyalty and average order value in an experimentation program",
+          "https://speero.com/case-studies/increasing-ecommerce-loyalty-and-conversion-rates"
+        ],
+        [
+          "Program Metrics Blueprint: monitor the health and efficiency of your experimentation program",
+          "https://speero.com/blueprints/program-metrics"
+        ],
+        [
+          "Work with Speero: optimize the customer experience across the lifecycle",
+          "https://speero.com/experimentation-services/customer-experience-optimization"
+        ],
+        [
+          "The retention economy: the business case for understanding returning customers",
+          "https://speero.com/post/the-retention-economy-and-why-it-matters"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recelHOvWZWLnRcBq"
     },
     "brand-perception-tracking": {
@@ -2034,8 +2249,13 @@
           ]
         ]
       ],
-      "resources": [],
-      "updated": "2026-08-06",
+      "resources": [
+        [
+          "Buyers hesitate at the point of purchase? Investigate trust and credibility",
+          "https://speero.com/research-recipes/trust-credibility"
+        ]
+      ],
+      "updated": "2026-10-14",
       "rid": "recyqrVFNx1nEK8OB"
     }
   },

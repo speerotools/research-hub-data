@@ -40,5 +40,13 @@ Quantify the leading reasons, then hear the why in customers' own words.
 
 Where's Validate? For this problem, validation lands in the experimentation programme itself: the hypotheses this research produces become A/B tests and product bets, measured against the outcome metric.
 
+## Go deeper
+
+Go deeper
+
+- [Cohort analysis: identify retention patterns to investigate](https://speero.com/post/using-cohort-analysis-for-conversion-optimization)
+
+- [Failed payments rather than active cancellation? Investigate involuntary churn](https://speero.com/research-recipes/involuntary-churn)
+
 Source: https://speero.com/research-recipes/churn-retention
-Last updated: 2026-07-20
+Last updated: 2026-10-14

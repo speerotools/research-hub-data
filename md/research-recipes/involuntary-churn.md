@@ -43,5 +43,11 @@ Test the recovery messaging and the update-payment flow before they carry the fi
 
 - [Prototype Testing](/research-methods/prototype-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Customers actively cancelling? Investigate churn and retention](https://speero.com/research-recipes/churn-retention)
+
 Source: https://speero.com/research-recipes/involuntary-churn
-Last updated: 2026-07-20
+Last updated: 2026-10-14

@@ -41,5 +41,11 @@ Confirm the landing page pays off the query at a glance.
 
 - [5 Second Test](/research-methods/five-second-test)
 
+## Go deeper
+
+Go deeper
+
+- [Relevant readers take no next step? Investigate content-to-lead conversion](https://speero.com/research-recipes/content-to-lead)
+
 Source: https://speero.com/research-recipes/seo-search-intent
-Last updated: 2026-07-20
+Last updated: 2026-10-14

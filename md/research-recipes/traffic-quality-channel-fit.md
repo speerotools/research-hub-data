@@ -41,5 +41,11 @@ Test the sharpened who-this-is-for message before spend follows it.
 
 - [Copy Testing](/research-methods/copy-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Audience fits but the ad-to-page journey stalls? Investigate acquisition](https://speero.com/research-recipes/acquisition-research)
+
 Source: https://speero.com/research-recipes/traffic-quality-channel-fit
-Last updated: 2026-07-20
+Last updated: 2026-10-14

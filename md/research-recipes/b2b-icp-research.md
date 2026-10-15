@@ -43,5 +43,11 @@ Test the messaging built on it with the people it describes before it ships.
 
 - [Copy Testing](/research-methods/copy-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Personas: where they help and where they fail](https://speero.com/post/understanding-personas-how-they-work-and-when-they-fail)
+
 Source: https://speero.com/research-recipes/b2b-icp-research
-Last updated: 2026-07-20
+Last updated: 2026-10-14

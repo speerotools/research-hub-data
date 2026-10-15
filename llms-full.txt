@@ -40,8 +40,14 @@ Check the first impression matches the promise the ad made.
 
 - [5 Second Test](/research-methods/five-second-test)
 
+## Go deeper
+
+Go deeper
+
+- [Acquisition brings poorly matched prospects? Investigate traffic quality and channel fit](https://speero.com/research-recipes/traffic-quality-channel-fit)
+
 Source: https://speero.com/research-recipes/acquisition-research
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -91,8 +97,14 @@ Test the messaging built on it with the people it describes before it ships.
 
 - [Copy Testing](/research-methods/copy-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Personas: where they help and where they fail](https://speero.com/post/understanding-personas-how-they-work-and-when-they-fail)
+
 Source: https://speero.com/research-recipes/b2b-icp-research
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -147,8 +159,14 @@ Re-run the same measurement after the change and compare to the baseline.
 
 - [Brand Perception Survey](/research-methods/brand-perception-survey)
 
+## Go deeper
+
+Go deeper
+
+- [Buyers hesitate at the point of purchase? Investigate trust and credibility](https://speero.com/research-recipes/trust-credibility)
+
 Source: https://speero.com/research-recipes/brand-perception-tracking
-Last updated: 2026-08-06
+Last updated: 2026-10-14
 
 
 ---
@@ -198,8 +216,14 @@ Test a revised listing experience against real find-and-choose tasks.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Shoppers cannot find the right category? Investigate navigation and information architecture](https://speero.com/research-recipes/navigation-information-architecture)
+
 Source: https://speero.com/research-recipes/category-listing-page
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -251,8 +275,18 @@ Prove the reworked flow with observed tasks and a live test.
 
 - [A/B Testing](/research-methods/ab-testing)
 
+## Go deeper
+
+Go deeper
+
+- [RevZilla case study: finding missing cart confirmation as a barrier to checkout](https://speero.com/case-studies/revzilla-case-study)
+
+- [ResearchXL Blueprint: investigate customer questions and checkout friction](https://speero.com/blueprints/research-xl)
+
+- [Work with Speero: research checkout and customer-experience barriers](https://speero.com/user-research-services/customer-research)
+
 Source: https://speero.com/research-recipes/checkout-cart-optimisation
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -299,8 +333,16 @@ Quantify the leading reasons, then hear the why in customers' own words.
 
 Where's Validate? For this problem, validation lands in the experimentation programme itself: the hypotheses this research produces become A/B tests and product bets, measured against the outcome metric.
 
+## Go deeper
+
+Go deeper
+
+- [Cohort analysis: identify retention patterns to investigate](https://speero.com/post/using-cohort-analysis-for-conversion-optimization)
+
+- [Failed payments rather than active cancellation? Investigate involuntary churn](https://speero.com/research-recipes/involuntary-churn)
+
 Source: https://speero.com/research-recipes/churn-retention
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -348,8 +390,16 @@ Test offer and CTA framings, then check they register at a glance.
 
 - [5 Second Test](/research-methods/five-second-test)
 
+## Go deeper
+
+Go deeper
+
+- [Content gating: tradeoffs when turning readers into leads](https://speero.com/post/gating-content-for-cro)
+
+- [Content attracts the wrong search intent? Investigate SEO and search intent](https://speero.com/research-recipes/seo-search-intent)
+
 Source: https://speero.com/research-recipes/content-to-lead
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -402,8 +452,22 @@ Watch real people attempt the core journeys.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Decathlon case study: turning research findings into prioritized problem themes and testing streams](https://speero.com/case-studies/providing-focus-for-decathlons-testing-program)
+
+- [Strategic Testing Roadmap Blueprint: organize research findings into testing priorities](https://speero.com/blueprints/whats-in-a-strategic-testing-roadmap)
+
+- [Work with Speero: turn customer research into testing priorities](https://speero.com/user-research-services/customer-research)
+
+- [On-site survey guide: planning questions and analysing open-ended responses](https://speero.com/post/how-to-use-on-site-surveys-to-help-you-understand-your-users)
+
+- [ResearchXL guide: combine evidence and prioritise research findings](https://speero.com/post/how-to-create-winning-tests-using-the-researchxl-model)
+
 Source: https://speero.com/research-recipes/conversion-research
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -449,8 +513,14 @@ Prototype-test re-engagement and habit hooks before anything is built.
 
 - [Prototype Testing](/research-methods/prototype-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Declining usage has progressed to cancellation? Investigate churn and retention](https://speero.com/research-recipes/churn-retention)
+
 Source: https://speero.com/research-recipes/engagement-decay
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -500,8 +570,14 @@ Test the recovery messaging and the update-payment flow before they carry the fi
 
 - [Prototype Testing](/research-methods/prototype-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Customers actively cancelling? Investigate churn and retention](https://speero.com/research-recipes/churn-retention)
+
 Source: https://speero.com/research-recipes/involuntary-churn
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -605,8 +681,18 @@ Check the restructured form in usability sessions before launch.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Form optimization guide: using field-level data to investigate abandonment](https://speero.com/post/how-to-fill-the-form-optimization-knowledge-gap-what-data-do-you-need-and-where-do-you-find-it)
+
+- [Web form anatomy: components to inspect during research](https://speero.com/post/anatomy-of-a-web-form-the-common-building-blocks-and-what-to-look-out-for-when-optimizing)
+
+- [Desktop form study: radio buttons versus select menus](https://speero.com/post/form-field-usability-revisited-select-menus-vs-radio-buttons-original-research)
+
 Source: https://speero.com/research-recipes/lead-gen-form
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -656,8 +742,18 @@ Check requalified messaging attracts the buyer and politely loses the browser.
 
 - [Copy Testing](/research-methods/copy-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Tipalti case study: connecting experimentation to lead-to-opportunity outcomes](https://speero.com/case-studies/helping-a-fintech-grow-into-a-unicorn)
+
+- [Goal Tree Mapping Blueprint: connect lead-quality measures to business goals](https://speero.com/blueprints/goal-tree-mapping)
+
+- [Work with Speero: understand your ideal customers and buying decisions](https://speero.com/user-research-services/icp-research)
+
 Source: https://speero.com/research-recipes/lead-quality
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -707,8 +803,14 @@ Test fixes in sessions run on real devices.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Mobile UX benchmarking study: comparing four beauty and cosmetics websites](https://speero.com/post/ecommerce-ux-battle-benchmarking-4-beauty-cosmetics-mobile-websites)
+
 Source: https://speero.com/research-recipes/mobile-experience
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -756,8 +858,14 @@ Check the proposed structure lets people find things.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Shoppers reach a category but cannot narrow their choices? Investigate category pages](https://speero.com/research-recipes/category-listing-page)
+
 Source: https://speero.com/research-recipes/navigation-information-architecture
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -807,8 +915,14 @@ Confirm a revised onboarding path gets people to value faster.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Users reach first value but do not upgrade? Investigate trial-to-paid conversion](https://speero.com/research-recipes/trial-to-paid)
+
 Source: https://speero.com/research-recipes/onboarding-activation
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -858,8 +972,18 @@ Confirm the revised page resolves real doubt.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Original product-copy study: how formatting affected attention in the tested layouts](https://speero.com/post/how-does-product-copy-format-affect-user-engagement-original-research)
+
+- [Original product-image study: size, attention and engagement](https://speero.com/post/how-product-image-size-affects-attention-and-engagement-original-research)
+
+- [Original appliance-copy study: mixed effects on perceived value](https://speero.com/post/price-perceptions-of-products-with-utility-vs-hedonism-copy-original-research)
+
 Source: https://speero.com/research-recipes/product-page
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -907,8 +1031,20 @@ Test post-purchase and reorder concepts head to head with past buyers.
 
 - [Preference Test](/research-methods/preference-test)
 
+## Go deeper
+
+Go deeper
+
+- [Adore Beauty case study: loyalty and average order value in an experimentation program](https://speero.com/case-studies/increasing-ecommerce-loyalty-and-conversion-rates)
+
+- [Program Metrics Blueprint: monitor the health and efficiency of your experimentation program](https://speero.com/blueprints/program-metrics)
+
+- [Work with Speero: optimize the customer experience across the lifecycle](https://speero.com/experimentation-services/customer-experience-optimization)
+
+- [The retention economy: the business case for understanding returning customers](https://speero.com/post/the-retention-economy-and-why-it-matters)
+
 Source: https://speero.com/research-recipes/repeat-purchase
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -1011,8 +1147,22 @@ Watch how people move through the page and where they get stuck choosing.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Codecademy case study: research informing pricing, plan-mix and trial experiments](https://speero.com/case-studies/delivering-5x-growth-for-codecademy-with-strategic-testing)
+
+- [Research Objectives Blueprint: define the question before choosing research methods](https://speero.com/blueprints/research-objectives-blueprint)
+
+- [Work with Speero: investigate pricing-page friction](https://speero.com/data-technology-services/saas-pricing-pages)
+
+- [SaaS pricing models: options and tradeoffs to investigate](https://speero.com/post/13-saas-pricing-models-you-can-test-to-optimize-growth-and-monetization)
+
+- [Original pricing-plan study: highlighting, attention and stated choice](https://speero.com/post/the-effects-of-highlighting-a-recommended-pricing-plan-original-research)
+
 Source: https://speero.com/research-recipes/saas-pricing-page
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -1060,8 +1210,14 @@ Confirm the landing page pays off the query at a glance.
 
 - [5 Second Test](/research-methods/five-second-test)
 
+## Go deeper
+
+Go deeper
+
+- [Relevant readers take no next step? Investigate content-to-lead conversion](https://speero.com/research-recipes/content-to-lead)
+
 Source: https://speero.com/research-recipes/seo-search-intent
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -1109,8 +1265,14 @@ Test the sharpened who-this-is-for message before spend follows it.
 
 - [Copy Testing](/research-methods/copy-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Audience fits but the ad-to-page journey stalls? Investigate acquisition](https://speero.com/research-recipes/acquisition-research)
+
 Source: https://speero.com/research-recipes/traffic-quality-channel-fit
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -1159,8 +1321,14 @@ Quantify why trials lapse, and hear the expectation gap in users' own words.
 
 Where's Validate? For this problem, validation lands in the experimentation programme itself: the hypotheses this research produces become A/B tests and product bets, measured against the outcome metric.
 
+## Go deeper
+
+Go deeper
+
+- [Trial users stall before first value? Investigate onboarding and activation](https://speero.com/research-recipes/onboarding-activation)
+
 Source: https://speero.com/research-recipes/trial-to-paid
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -1210,8 +1378,16 @@ Check the reassurance language actually lands.
 
 - [Copy Testing](/research-methods/copy-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Original social-proof study: attention and recall in tested layouts](https://speero.com/post/which-types-of-social-proof-work-best-original-research)
+
+- [Need a broader view of how the market sees you? Track brand perception](https://speero.com/research-recipes/brand-perception-tracking)
+
 Source: https://speero.com/research-recipes/trust-credibility
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -1258,8 +1434,14 @@ Weigh it against the current version, confirm people can complete the core tasks
 
 - [A/B Testing](/research-methods/ab-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Preference testing versus A/B testing: different questions and evidence](https://speero.com/post/preference-testing-vs-a-b-testing-for-b2b-saas)
+
 Source: https://speero.com/research-recipes/validating-redesign
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -1309,8 +1491,18 @@ Confirm the page answers the questions real visitors arrive with.
 
 - [On-site Polls](/research-methods/on-site-polls)
 
+## Go deeper
+
+Go deeper
+
+- [BigCommerce case study: using research to prioritize product messaging](https://speero.com/case-studies/informing-team-direction-through-researchxl)
+
+- [Problem-Statement Focused Hypothesis: turn messaging research into a testable proposition](https://speero.com/blueprints/problem-statement-focused-hypothesis)
+
+- [Work with Speero: test whether your audience understands your messaging](https://speero.com/user-research-services/copy-testing)
+
 Source: https://speero.com/research-recipes/value-prop-messaging
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---
@@ -2382,8 +2574,10 @@ Go deeper
 
 - [How to get the most out of your user testing efforts](https://speero.com/post/how-to-get-the-most-out-of-your-user-testing-efforts)
 
+- [Moderated research guide: planning, recruitment, sessions and analysis](https://speero.com/post/the-ultimate-guide-to-moderated-user-research)
+
 Source: https://speero.com/research-methods/moderated-usability-studies
-Last updated: 2026-07-20
+Last updated: 2026-10-14
 
 
 ---

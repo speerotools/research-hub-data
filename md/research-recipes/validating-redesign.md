@@ -40,5 +40,11 @@ Weigh it against the current version, confirm people can complete the core tasks
 
 - [A/B Testing](/research-methods/ab-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Preference testing versus A/B testing: different questions and evidence](https://speero.com/post/preference-testing-vs-a-b-testing-for-b2b-saas)
+
 Source: https://speero.com/research-recipes/validating-redesign
-Last updated: 2026-07-20
+Last updated: 2026-10-14

@@ -59,5 +59,7 @@ Go deeper
 
 - [How to get the most out of your user testing efforts](https://speero.com/post/how-to-get-the-most-out-of-your-user-testing-efforts)
 
+- [Moderated research guide: planning, recruitment, sessions and analysis](https://speero.com/post/the-ultimate-guide-to-moderated-user-research)
+
 Source: https://speero.com/research-methods/moderated-usability-studies
-Last updated: 2026-07-20
+Last updated: 2026-10-14

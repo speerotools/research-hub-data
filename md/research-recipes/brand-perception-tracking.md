@@ -48,5 +48,11 @@ Re-run the same measurement after the change and compare to the baseline.
 
 - [Brand Perception Survey](/research-methods/brand-perception-survey)
 
+## Go deeper
+
+Go deeper
+
+- [Buyers hesitate at the point of purchase? Investigate trust and credibility](https://speero.com/research-recipes/trust-credibility)
+
 Source: https://speero.com/research-recipes/brand-perception-tracking
-Last updated: 2026-08-06
+Last updated: 2026-10-14

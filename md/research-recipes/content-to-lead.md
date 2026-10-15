@@ -41,5 +41,13 @@ Test offer and CTA framings, then check they register at a glance.
 
 - [5 Second Test](/research-methods/five-second-test)
 
+## Go deeper
+
+Go deeper
+
+- [Content gating: tradeoffs when turning readers into leads](https://speero.com/post/gating-content-for-cro)
+
+- [Content attracts the wrong search intent? Investigate SEO and search intent](https://speero.com/research-recipes/seo-search-intent)
+
 Source: https://speero.com/research-recipes/content-to-lead
-Last updated: 2026-07-20
+Last updated: 2026-10-14

@@ -43,5 +43,15 @@ Check requalified messaging attracts the buyer and politely loses the browser.
 
 - [Copy Testing](/research-methods/copy-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Tipalti case study: connecting experimentation to lead-to-opportunity outcomes](https://speero.com/case-studies/helping-a-fintech-grow-into-a-unicorn)
+
+- [Goal Tree Mapping Blueprint: connect lead-quality measures to business goals](https://speero.com/blueprints/goal-tree-mapping)
+
+- [Work with Speero: understand your ideal customers and buying decisions](https://speero.com/user-research-services/icp-research)
+
 Source: https://speero.com/research-recipes/lead-quality
-Last updated: 2026-07-20
+Last updated: 2026-10-14

@@ -40,5 +40,11 @@ Check the first impression matches the promise the ad made.
 
 - [5 Second Test](/research-methods/five-second-test)
 
+## Go deeper
+
+Go deeper
+
+- [Acquisition brings poorly matched prospects? Investigate traffic quality and channel fit](https://speero.com/research-recipes/traffic-quality-channel-fit)
+
 Source: https://speero.com/research-recipes/acquisition-research
-Last updated: 2026-07-20
+Last updated: 2026-10-14

@@ -43,5 +43,15 @@ Confirm the revised page resolves real doubt.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Original product-copy study: how formatting affected attention in the tested layouts](https://speero.com/post/how-does-product-copy-format-affect-user-engagement-original-research)
+
+- [Original product-image study: size, attention and engagement](https://speero.com/post/how-product-image-size-affects-attention-and-engagement-original-research)
+
+- [Original appliance-copy study: mixed effects on perceived value](https://speero.com/post/price-perceptions-of-products-with-utility-vs-hedonism-copy-original-research)
+
 Source: https://speero.com/research-recipes/product-page
-Last updated: 2026-07-20
+Last updated: 2026-10-14

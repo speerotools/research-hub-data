@@ -45,5 +45,15 @@ Prove the reworked flow with observed tasks and a live test.
 
 - [A/B Testing](/research-methods/ab-testing)
 
+## Go deeper
+
+Go deeper
+
+- [RevZilla case study: finding missing cart confirmation as a barrier to checkout](https://speero.com/case-studies/revzilla-case-study)
+
+- [ResearchXL Blueprint: investigate customer questions and checkout friction](https://speero.com/blueprints/research-xl)
+
+- [Work with Speero: research checkout and customer-experience barriers](https://speero.com/user-research-services/customer-research)
+
 Source: https://speero.com/research-recipes/checkout-cart-optimisation
-Last updated: 2026-07-20
+Last updated: 2026-10-14

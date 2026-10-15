@@ -43,5 +43,11 @@ Confirm a revised onboarding path gets people to value faster.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Users reach first value but do not upgrade? Investigate trial-to-paid conversion](https://speero.com/research-recipes/trial-to-paid)
+
 Source: https://speero.com/research-recipes/onboarding-activation
-Last updated: 2026-07-20
+Last updated: 2026-10-14

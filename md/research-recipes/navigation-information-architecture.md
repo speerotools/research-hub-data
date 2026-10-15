@@ -41,5 +41,11 @@ Check the proposed structure lets people find things.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Shoppers reach a category but cannot narrow their choices? Investigate category pages](https://speero.com/research-recipes/category-listing-page)
+
 Source: https://speero.com/research-recipes/navigation-information-architecture
-Last updated: 2026-07-20
+Last updated: 2026-10-14

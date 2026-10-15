@@ -43,5 +43,11 @@ Test a revised listing experience against real find-and-choose tasks.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Shoppers cannot find the right category? Investigate navigation and information architecture](https://speero.com/research-recipes/navigation-information-architecture)
+
 Source: https://speero.com/research-recipes/category-listing-page
-Last updated: 2026-07-20
+Last updated: 2026-10-14

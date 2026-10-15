@@ -43,5 +43,13 @@ Check the reassurance language actually lands.
 
 - [Copy Testing](/research-methods/copy-testing)
 
+## Go deeper
+
+Go deeper
+
+- [Original social-proof study: attention and recall in tested layouts](https://speero.com/post/which-types-of-social-proof-work-best-original-research)
+
+- [Need a broader view of how the market sees you? Track brand perception](https://speero.com/research-recipes/brand-perception-tracking)
+
 Source: https://speero.com/research-recipes/trust-credibility
-Last updated: 2026-07-20
+Last updated: 2026-10-14

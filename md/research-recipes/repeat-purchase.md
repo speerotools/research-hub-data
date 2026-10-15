@@ -41,5 +41,17 @@ Test post-purchase and reorder concepts head to head with past buyers.
 
 - [Preference Test](/research-methods/preference-test)
 
+## Go deeper
+
+Go deeper
+
+- [Adore Beauty case study: loyalty and average order value in an experimentation program](https://speero.com/case-studies/increasing-ecommerce-loyalty-and-conversion-rates)
+
+- [Program Metrics Blueprint: monitor the health and efficiency of your experimentation program](https://speero.com/blueprints/program-metrics)
+
+- [Work with Speero: optimize the customer experience across the lifecycle](https://speero.com/experimentation-services/customer-experience-optimization)
+
+- [The retention economy: the business case for understanding returning customers](https://speero.com/post/the-retention-economy-and-why-it-matters)
+
 Source: https://speero.com/research-recipes/repeat-purchase
-Last updated: 2026-07-20
+Last updated: 2026-10-14

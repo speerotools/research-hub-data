@@ -43,5 +43,15 @@ Check the restructured form in usability sessions before launch.
 
 - [Remote Usability Studies](/research-methods/remote-usability-studies)
 
+## Go deeper
+
+Go deeper
+
+- [Form optimization guide: using field-level data to investigate abandonment](https://speero.com/post/how-to-fill-the-form-optimization-knowledge-gap-what-data-do-you-need-and-where-do-you-find-it)
+
+- [Web form anatomy: components to inspect during research](https://speero.com/post/anatomy-of-a-web-form-the-common-building-blocks-and-what-to-look-out-for-when-optimizing)
+
+- [Desktop form study: radio buttons versus select menus](https://speero.com/post/form-field-usability-revisited-select-menus-vs-radio-buttons-original-research)
+
 Source: https://speero.com/research-recipes/lead-gen-form
-Last updated: 2026-07-20
+Last updated: 2026-10-14

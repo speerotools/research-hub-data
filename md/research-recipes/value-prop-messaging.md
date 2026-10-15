@@ -43,5 +43,15 @@ Confirm the page answers the questions real visitors arrive with.
 
 - [On-site Polls](/research-methods/on-site-polls)
 
+## Go deeper
+
+Go deeper
+
+- [BigCommerce case study: using research to prioritize product messaging](https://speero.com/case-studies/informing-team-direction-through-researchxl)
+
+- [Problem-Statement Focused Hypothesis: turn messaging research into a testable proposition](https://speero.com/blueprints/problem-statement-focused-hypothesis)
+
+- [Work with Speero: test whether your audience understands your messaging](https://speero.com/user-research-services/copy-testing)
+
 Source: https://speero.com/research-recipes/value-prop-messaging
-Last updated: 2026-07-20
+Last updated: 2026-10-14
