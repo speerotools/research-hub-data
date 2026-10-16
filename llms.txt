@@ -23,7 +23,7 @@
 - [Onboarding & Activation Research](https://speero.com/research-recipes/onboarding-activation): New users sign up but never reach the first moment of real value, so they drift away before the product can prove itself.
 - [Product Page Optimisation](https://speero.com/research-recipes/product-page): People reach the product page but don't add to basket, and it's unclear whether the blocker is information, doubt or price.
 - [Repeat Purchase & Post-Purchase Research](https://speero.com/research-recipes/repeat-purchase): Most first-time buyers never come back, and the margin lives in the orders they never place.
-- [Researching With Low Traffic](https://speero.com/research-recipes/researching-low-traffic): The site doesn't get enough traffic to run reliable A/B tests or gather meaningful poll and analytics data, so decisions default to opinion.
+- [Researching With Low Traffic](https://speero.com/research-recipes/researching-low-traffic): When traffic is too low for a suitably powered A/B test, recruited-participant research can identify usability problems, test message comprehension and explore stated preferences.
 - [SEO & Search Intent Research](https://speero.com/research-recipes/seo-search-intent): The customers who most need what the business does are searching for it in their own words and finding someone else.
 - [SaaS Pricing Page](https://speero.com/research-recipes/saas-pricing-page): The pricing page is where SaaS buyers decide whether the product is worth it, and it is often where they stall.
 - [Traffic Quality & Channel Fit Research](https://speero.com/research-recipes/traffic-quality-channel-fit): Traffic is growing but the visitors arriving aren't the ones the business is built for, and everything downstream pays for it.
