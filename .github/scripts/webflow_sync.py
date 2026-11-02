@@ -60,6 +60,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 import render  # noqa: E402
 
 API = "https://api.webflow.com/v2"
+# Page schema markup is only on the beta API (PATCH /beta/sites/{id}/pages/schema-markup).
+BETA_API = "https://api.webflow.com/beta"
 
 TOKEN = os.environ.get("WEBFLOW_TOKEN")
 SITE_ID = os.environ.get("WEBFLOW_SITE_ID", "5fbb892601063dd93dd166d7")
@@ -297,7 +299,11 @@ def write_landing_schema(data: dict) -> None:
                                                      ensure_ascii=False)})
     if not pages:
         return
-    req("PATCH", f"{API}/sites/{SITE_ID}/pages/schema_markup", {"pages": pages})
+    res = req("PATCH", f"{BETA_API}/sites/{SITE_ID}/pages/schema-markup", {"pages": pages})
+    stored = {p.get("id") for p in res.get("pages", []) if p.get("jsonLdSchema")}
+    missing = [p["id"] for p in pages if p["id"] not in stored]
+    if missing:
+        raise RuntimeError(f"no schema stored for page(s): {', '.join(missing)}")
     print(f"  landing page schema refreshed on {len(pages)} page(s)")
 
 
@@ -416,11 +422,13 @@ def main() -> None:
 
     reconcile("Research Recipes", RECIPES_COLLECTION, desired_recipes, MIN_RECIPES)
 
+    schema_failed = False
     if not DRY_RUN:
         try:
             write_landing_schema(data)
-        except Exception as e:   # schema is worth retrying, not worth failing over
-            print(f"  WARN landing schema update failed: {e}", file=sys.stderr)
+        except Exception as e:   # finish the run, then fail it so the miss is seen
+            print(f"ERROR landing schema update failed: {e}", file=sys.stderr)
+            schema_failed = True
         write_landing_seo(data)
 
     # A site publish is only worth its blast radius when something moved.
@@ -439,6 +447,8 @@ def main() -> None:
     if not PUBLISH:
         print("Items are staged as drafts-in-waiting. Set the WEBFLOW_PUBLISH "
               "repo variable to 'true' once the templates are built.")
+    if schema_failed:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
