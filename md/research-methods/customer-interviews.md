@@ -53,7 +53,11 @@ Tools
 
 - [Lookback](https://www.lookback.com)
 
+- [Listen Labs](https://listenlabs.ai)
+
 ## Recipes that use this method
+
+- [Agentic Commerce Readiness](/research-recipes/agentic-commerce-readiness)
 
 - [B2B ICP Research](/research-recipes/b2b-icp-research)
 
@@ -84,4 +88,4 @@ Go deeper
 - [4 mental models for voice of customer research](https://speero.com/post/4-mental-models-to-help-you-conduct-voice-of-customer-research)
 
 Source: https://speero.com/research-methods/customer-interviews
-Last updated: 2026-07-20
+Last updated: 2026-11-05

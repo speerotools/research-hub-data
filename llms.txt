@@ -5,6 +5,7 @@
 ## Research recipes
 
 - [Acquisition Research](https://speero.com/research-recipes/acquisition-research): Paid traffic is arriving but converting poorly, and it is unclear whether the problem sits in the ads, the landing pages, or the match between the two.
+- [Agentic Commerce Readiness](https://speero.com/research-recipes/agentic-commerce-readiness): More shoppers now start in an AI assistant, and if the assistant can't read a store's products, prices or policies, it recommends someone else.
 - [B2B ICP Research](https://speero.com/research-recipes/b2b-icp-research): Messaging and targeting are running on assumptions about who the ideal customer is and what drives them.
 - [Brand Perception Baseline & Tracking](https://speero.com/research-recipes/brand-perception-tracking): A rebrand, relaunch or repositioning is coming, and nobody can say how the market sees the brand today, which means nobody will be able to say whether the work changed anything.
 - [Category & Listing Page Optimisation](https://speero.com/research-recipes/category-listing-page): Shoppers reach the category and listing pages but leave without clicking into a product, and it is unclear whether the range, the filters or the product cards are to blame.
@@ -26,6 +27,7 @@
 - [Researching With Low Traffic](https://speero.com/research-recipes/researching-low-traffic): When traffic is too low for a suitably powered A/B test, recruited-participant research can identify usability problems, test message comprehension and explore stated preferences.
 - [SEO & Search Intent Research](https://speero.com/research-recipes/seo-search-intent): The customers who most need what the business does are searching for it in their own words and finding someone else.
 - [SaaS Pricing Page](https://speero.com/research-recipes/saas-pricing-page): The pricing page is where SaaS buyers decide whether the product is worth it, and it is often where they stall.
+- [Test Backlog Pre-Screening](https://speero.com/research-recipes/test-backlog-pre-screening): The team has more test ideas than traffic to run them, so every slot spent on a weak idea is a slot lost.
 - [Traffic Quality & Channel Fit Research](https://speero.com/research-recipes/traffic-quality-channel-fit): Traffic is growing but the visitors arriving aren't the ones the business is built for, and everything downstream pays for it.
 - [Trust & Credibility Audit](https://speero.com/research-recipes/trust-credibility): Visitors are interested but hesitate to commit because the site hasn't earned their confidence yet.
 - [Validating a Redesign Before Build](https://speero.com/research-recipes/validating-redesign): A big redesign is about to be built and the risk is shipping months of work that performs worse than what it replaces.
@@ -35,7 +37,9 @@
 
 - [5 Second Test](https://speero.com/research-methods/five-second-test): We use a sample pool of target participants and analyse their responses to a series of questions after they look at a page for a limited time (typically 5 seconds).
 - [A/B Testing](https://speero.com/research-methods/ab-testing): Running a live, randomised experiment that splits traffic between a control and one or more variants to measure the causal effect of a change on a target metric.
+- [AI Agent Walkthrough](https://speero.com/research-methods/ai-agent-walkthrough): AI agents attempt tasks on a prototype or live site, sometimes acting as personas, and report where they got stuck, what broke and what confused them.
 - [Ads Analysis](https://speero.com/research-methods/ads-analysis): Analysis of ads data within Google Ads, Facebook ads, Instagram ads, etc, focused on performance, CPC, Impressions, Clicks, Cost, with the aim of identifying which campaigns and ads are underperforming.
+- [Agentic Commerce Readiness Audit](https://speero.com/research-methods/agentic-commerce-readiness-audit): An audit of how well AI shopping assistants and agents can find, read and buy from a site.
 - [Analytics Data Analysis](https://speero.com/research-methods/analytics-data-analysis): Analysis of website analytics data to determine overall performance, performance by segment, e.g.
 - [Brand Perception Survey](https://speero.com/research-methods/brand-perception-survey): A structured survey run with a recruited panel that matches the target market, measuring unaided and aided brand awareness, brand preference, and the associations people hold against named competitors.
 - [Card Sorting](https://speero.com/research-methods/card-sorting): Card sorting involves participants sorting and labeling website content (which is represented on "cards") into groups that make sense to them.
@@ -50,6 +54,7 @@
 - [Moderated Usability Studies](https://speero.com/research-methods/moderated-usability-studies): Use a sample pool of participants who match your target audience.
 - [On-site Polls](https://speero.com/research-methods/on-site-polls): On-site polls are very short surveys that appear on your website for website users to answer.
 - [Online Review Analysis](https://speero.com/research-methods/online-review-analysis): Structured analysis of the reviews the market has already written on review platforms, app stores and marketplaces, for the brand and for its competitors.
+- [Predictive Attention Analysis](https://speero.com/research-methods/predictive-attention-analysis): A model trained on eye-tracking data predicts where people will look first on a page, ad or design.
 - [Preference Test](https://speero.com/research-methods/preference-test): Preference testing involves showing participants two (or more) versions of a page, an element, or a piece of copy, and asking them to select their preference and provide rationale for their preference.
 - [Prototype Testing](https://speero.com/research-methods/prototype-testing): Use usability study tools or specific prototype testing tools such as Maze to set recruited participants specific tasks to complete on a prototype version of a page, functionality or website.
 - [Remote Usability Studies](https://speero.com/research-methods/remote-usability-studies): Use a sample pool of participants who match your target audience.
@@ -58,6 +63,9 @@
 - [Search & SERP Analysis](https://speero.com/research-methods/search-serp-analysis): Analysis of organic search performance and the surrounding results landscape.
 - [Session Recordings](https://speero.com/research-methods/session-recordings): Session recording analysis involves watching recordings of real users interacting with the website, using a tool added into your website code.
 - [Social Media Listening](https://speero.com/research-methods/social-media-listening): Systematic monitoring of what people say about a brand, its competitors and its category across social platforms, forums and communities.
+- [Synthetic Interviews & Personas](https://speero.com/research-methods/synthetic-interviews-personas): Interviewing or chatting with AI-generated personas built from an audience description, and sometimes from your own research and customer data.
+- [Synthetic Shopper Simulation](https://speero.com/research-methods/synthetic-shopper-simulation): AI agents acting as shoppers browse or judge a control and one or more variants, and the tool predicts which version would perform better.
+- [Synthetic Survey Panel](https://speero.com/research-methods/synthetic-survey-panel): Running a survey or concept test on a simulated panel of respondents instead of real people.
 - [Tree Testing](https://speero.com/research-methods/tree-testing): Tree testing involves replicating a website navigation (existing or proposed) in a link "tree".
 - [UX Heuristic Review](https://speero.com/research-methods/ux-heuristic-review): A UX heuristic review in this context is a review of a website based on a set of guiding UX principles, with the aim to identify areas of potential UX friction (ultimately areas of the user experience that could be creating friction or barriers for users on that website).
 - [Win-loss Analysis (CRM Analysis)](https://speero.com/research-methods/win-loss-analysis): Analysis of data housed within existing CRM (Customer Relationship Management) tool / database, e.g.

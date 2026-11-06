@@ -1,6 +1,6 @@
 {
-  "version": "2026-11-05T12:56:21Z",
-  "commit": "dd697fbc9313950437cf433cfbc59a8e40e80eda",
+  "version": "2026-11-06T12:44:02Z",
+  "commit": "c927b26e0670c04507a7fdc74fcee4c7f0cb40db",
   "methods": {
     "remote-usability-studies": {
       "name": "Remote Usability Studies",
@@ -20,7 +20,8 @@
         "Usertesting.com",
         "Askable",
         "UserZoom",
-        "Lookback"
+        "Lookback",
+        "Loop11"
       ],
       "related": "moderated-usability-studies",
       "desc": "Use a sample pool of participants who match your target audience. Watch and listen as they walk through your site and perform tasks set by you, designed to emulate your core user journey or area of focus. Tasks and questions are set up within an external tool, meaning participants complete the session independently in their own time, thinking out loud as they go. Once complete, the recording of their screen, voice over (and sometimes webcam image) will be accessible within the tool for analysis.",
@@ -38,7 +39,7 @@
           "https://speero.com/post/how-to-get-the-most-out-of-your-user-testing-efforts"
         ]
       ],
-      "updated": "2026-07-20",
+      "updated": "2026-11-05",
       "rid": "recpMjKslja9Dz3Q4"
     },
     "customer-survey": {
@@ -94,7 +95,8 @@
       ],
       "tools": [
         "Zoom",
-        "Lookback"
+        "Lookback",
+        "Listen Labs"
       ],
       "related": "customer-survey",
       "desc": "Usually 30 minute - 1 hour sessions run on a one-to-one basis either in person or remotely on Zoom, Teams, etc. Customers are recruited via email database and should ideally be incentivized for their time, e.g. a discount code or gift card.",
@@ -112,7 +114,7 @@
           "https://speero.com/post/4-mental-models-to-help-you-conduct-voice-of-customer-research"
         ]
       ],
-      "updated": "2026-07-20",
+      "updated": "2026-11-05",
       "rid": "recjpYEhxmkKGqif1"
     },
     "on-site-polls": {
@@ -184,7 +186,7 @@
       "cons": "Session recordings are open to interpretation, since there's a lack of explanation of the behaviour. You may see someone doing something, but you won't necessarily know why they are doing that (and you can't ask them). \n\nSession recording analysis can be time-consuming, since you have to manually watch the recordings. There are ways to reduce this, such as speeding up recordings, skipping periods of inactivity and using filters to ensure you only watch the recordings that are most relevant to your research needs.",
       "considerations": "Analysis & Interpretation\nThe primary consideration with session recording analysis is how to approach the analysis part. Typically one person within a team would watch either a set number of recordings or spend a set amount of time watching recordings. Although multiple people could also conduct this activity, perhaps focusing on different pages, elements or user type. It is important to establish a strategy for tagging and note-taking that is used consistently to support analysis and prevent insights from getting lost or diluted. \n\nFor example, say you're watching 100 recordings. You might see some behaviours in the first 5 recordings that don't appear to be particularly interesting, but after 80 recordings you see that this behaviour actually happened in the large majority of sessions you've watched. This is why it is important to tag all behaviours from the beginning (within reason). \n\nIt can be beneficial to gather multiple people together for analysis and interpretation of behaviours. Once you've watched and tagged multiple recordings, get together with your team to share what you found and hypothesise about why this behaviour might be happening. Since there is no way of knowing the truth at this stage, it can help to have multiple points of view. \n\nQualitative vs. Quantitative\nAlthough strictly speaking, session recordings are a form of digital analytics and therefore quantitative in nature, given the time involved in watching individual sessions in order to truly pull quantitative data from this method, you can think of session recordings as qualitative and heatmaps as their quantitative counterpart. In a similar way to surveys being useful for gathering large quantities of data, and interviews being effective for gathering a smaller, but higher quality of insight. \n\nTools\nTools include Hotjar, Content Square, Full Story and Microsoft Clarity. These tools have a very wide range of price points, typically Hotjar was the tool of choice due to it's reasonable price point, but this has increased in price more recently. Microsoft Clarity offers a free solution.",
       "resources": [],
-      "updated": "2026-07-20",
+      "updated": "2026-11-05",
       "rid": "recuDR87ohVBCydHz"
     },
     "heatmaps": {
@@ -218,7 +220,7 @@
       "cons": "Heat maps are open to interpretation, since there's a lack of explanation of the behaviour. You may see high or low engagement with a specific element, but you won't necessarily know why there is high or low engagement. \n\nHeat maps can be prone to technical issues. It's important to be aware of the types of issues that can occur, for example, usually the tool will take a screenshot of the page from the sample user and then overlay the data which represents 100s or 1000s of users on that screenshot. That screenshot may not be representative of exactly what every user sees. Dynamic elements can also cause technical issues with heat maps; e.g. you may see high engagement on the main homepage banner, but this could actually represent engagement with the main navigation drop-downs. It's important not to take everything you see as 100% truth, if you see something unusual or that you can't explain, it may be indicative of a technical issue that should be investigated.",
       "considerations": "Analysis & Interpretation\nAs with session recordings, it can be beneficial to gather multiple people together for analysis and interpretation of heatmaps to hypothesise about why this behaviour might be happening. Since there is no way of knowing the truth at this stage, it can help to have multiple points of view. \n\nTools\nTools include Hotjar, Content Square, Full Story and Microsoft Clarity. These tools have a very wide range of price points, typically Hotjar was the tool of choice due to it's reasonable price point, but this has increased in price more recently. Microsoft Clarity offers a free solution.",
       "resources": [],
-      "updated": "2026-07-20",
+      "updated": "2026-11-05",
       "rid": "recws2eB0fo4wzaJv"
     },
     "analytics-data-analysis": {
@@ -267,7 +269,7 @@
           "https://ga4audit.speero.com/"
         ]
       ],
-      "updated": "2026-07-20",
+      "updated": "2026-11-05",
       "rid": "recrZtNf7N6DrLPSq"
     },
     "sales-customer-service-interviews": {
@@ -519,7 +521,7 @@
           "https://maze.co/blog/preference-testing/"
         ]
       ],
-      "updated": "2026-07-20",
+      "updated": "2026-11-05",
       "rid": "recu5xIygj26qvo6Q"
     },
     "moderated-usability-studies": {
@@ -797,7 +799,7 @@
           "https://speero.com/post/can-you-run-multiple-a-b-tests-at-the-same-time"
         ]
       ],
-      "updated": "2026-07-20",
+      "updated": "2026-11-05",
       "rid": "recBlbu1DJ3bQ3UGn"
     },
     "search-serp-analysis": {
@@ -824,7 +826,7 @@
       "cons": "Intent has to be inferred from queries rather than asked. Rankings move slowly, so validating changes takes time and can be confounded by algorithm updates.",
       "considerations": "",
       "resources": [],
-      "updated": "2026-08-06",
+      "updated": "2026-11-05",
       "rid": "recb0TT1pZETP0uFO"
     },
     "win-loss-interviews": {
@@ -930,6 +932,172 @@
       "resources": [],
       "updated": "2026-08-06",
       "rid": "recAAOsa5sxW8AKbg"
+    },
+    "synthetic-interviews-personas": {
+      "name": "Synthetic Interviews & Personas",
+      "objective": [
+        "Explore"
+      ],
+      "data": "Qualitative",
+      "signal": "Low",
+      "effort": "Low",
+      "surface": [
+        "Any surface",
+        "Messaging & copy"
+      ],
+      "tools": [
+        "Synthetic Users",
+        "Ask Rally",
+        "Delve AI",
+        "OpinioAI",
+        "Evidenza"
+      ],
+      "related": "customer-interviews",
+      "desc": "Interviewing or chatting with AI-generated personas built from an audience description, and sometimes from your own research and customer data. The output reads like interview transcripts, but no real customer is involved, so every finding is a hypothesis to test with people.",
+      "use": "Pilot an interview guide or survey before real fieldwork, and catch confusing or leading questions.\nOrient quickly in an unfamiliar audience or category before planning real research.\nGenerate a long list of possible objections and motivations to probe with real customers.\nStress-test draft copy for unclear claims and jargon ahead of a real copy test.",
+      "pros": "Results come back in minutes, with no recruiting, scheduling or incentives.\n\nCheap enough to run many times, so a guide or concept can be iterated before real people see it.\n\nPersonas grounded in your own interviews and data perform better than demographic prompts.",
+      "cons": "Answers bunch around the most common response and drop the unusual ones. NN/g calls this mode collapse, and it means synthetic interviews miss the long tail that real research is often looking for.\n\nSynthetic personas tend to be agreeable and positive, so they flatter concepts that real users would question.\n\nThey are weakest for niche, non-Western or minority audiences, for emotional and habit-driven behaviour, and for anything genuinely new.\n\nNo real customer is studied, so this is not user research and cannot validate a decision.",
+      "considerations": "Pair it\nAlways follow with Customer Interviews, a Customer Survey or Copy Testing with real people, aimed at confirming or killing what the synthetic run suggested.\n\nCustomer language\nNever take customer wording from synthetic personas for copy, keywords or labels. Use their output to shape questions, then take the words from real customers.\n\nLabel it\nReports should say which findings came from people and which came from models.\n\nModel drift\nOutputs shift as the underlying model updates, so re-run rather than reuse old results.",
+      "resources": [],
+      "updated": "2026-11-05",
+      "rid": "rec2fo3jvS1z6T5Ww"
+    },
+    "synthetic-survey-panel": {
+      "name": "Synthetic Survey Panel",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Quantitative",
+      "signal": "Low",
+      "effort": "Low",
+      "surface": [
+        "Messaging & copy",
+        "Pricing page"
+      ],
+      "tools": [
+        "Qualtrics Synthetic Panels",
+        "Expected Parrot"
+      ],
+      "related": "customer-survey",
+      "desc": "Running a survey or concept test on a simulated panel of respondents instead of real people. Some panels are prompted general models, others are trained or calibrated on real survey data. Results can suggest which options rank higher, but they cannot measure real levels of interest or intent.",
+      "use": "Pretest a questionnaire before sending it to a real sample.\nScreen a long list of concepts, claims or messages down to a shortlist for real testing.\nGet a rough relative ranking of options when no budget or audience is available yet.",
+      "pros": "Fast and cheap at large simulated sample sizes.\n\nUseful for spotting badly worded questions and obviously weak options before spending panel budget.\n\nRelative rankings are more reliable than absolute numbers in the published research.",
+      "cons": "Averages can look plausible while the spread of answers is far too narrow, and subgroup results get pulled toward the middle.\n\nAbsolute numbers such as purchase intent, satisfaction or usability scores are often inflated.\n\nRelationships between questions and driver analysis can come out wrong, so it is unsafe for segmentation or causal claims.\n\nVendors report accuracy in different, mostly undefined ways, so their figures cannot be compared.",
+      "considerations": "Pair it\nAny option that survives the synthetic screen goes to a real Customer Survey, Brand Perception Survey or Copy Testing before a decision is made.\n\nRead the order, not the size\nTrust which option ranks higher more than how big the gap looks. Never use synthetic results for sample size or power calculations.\n\nVendor claims\nAsk vendors how accuracy was measured, on how many studies, and whether the comparison data was held out. ESOMAR's 20 Questions for AI buyers is a useful checklist.",
+      "resources": [],
+      "updated": "2026-11-05",
+      "rid": "recm7FYlDIasdkpvd"
+    },
+    "synthetic-shopper-simulation": {
+      "name": "Synthetic Shopper Simulation",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Quantitative",
+      "signal": "Low",
+      "effort": "Low",
+      "surface": [
+        "Landing pages",
+        "Checkout & cart",
+        "Any surface"
+      ],
+      "tools": [
+        "Squoosh",
+        "Shopify SimGym",
+        "VWO"
+      ],
+      "related": "ab-testing",
+      "desc": "AI agents acting as shoppers browse or judge a control and one or more variants, and the tool predicts which version would perform better. Some tools drive real browsers on live or staged pages, others compare screenshots. It is a way to pre-screen ideas, not a substitute for a live experiment.",
+      "use": "Pre-screen a test backlog and drop the weakest variants before spending traffic.\nSanity-check a variant for obvious friction before launch.\nCompare two themes or page versions when traffic is too low to test both live.",
+      "pros": "Returns a prediction in hours rather than weeks of live traffic.\n\nSession replays and agent reasoning can surface friction worth investigating.\n\nUseful for ordering a backlog when traffic is the constraint.",
+      "cons": "Independent studies of predicting A/B winners land well below vendor headlines, and one study of 330 CRO tests found model judges close to chance.\n\nPredicted effect sizes are often shrunk or inflated, so they cannot feed revenue forecasts or sample size planning.\n\nHeadline match rates can mislead, because many 'winners' in test archives come from non-significant tests.\n\nAgents don't behave like real shoppers with real money, time pressure and habits.",
+      "considerations": "Pair it\nAnything worth shipping still goes through an A/B Test. Use synthetic results to decide what to test, never what to ship.\n\nTool scope\nShopify SimGym compares two themes only, and bot protection can block its shoppers. Squoosh and VWO's synthetic test suit backlog screening better.\n\nVendor claims\nAsk how a match rate was measured, how many tests it covers and whether non-significant tests count as winners.",
+      "resources": [],
+      "updated": "2026-11-05",
+      "rid": "recZnpjxdqubqdx9J"
+    },
+    "predictive-attention-analysis": {
+      "name": "Predictive Attention Analysis",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Quantitative",
+      "signal": "Low",
+      "effort": "Low",
+      "surface": [
+        "Landing pages",
+        "Acquisition & ads"
+      ],
+      "tools": [
+        "Attention Insight",
+        "Neurons Predict",
+        "Dragonfly AI",
+        "Microsoft Clarity"
+      ],
+      "related": "heatmaps",
+      "desc": "A model trained on eye-tracking data predicts where people will look first on a page, ad or design. It gives a quick read on visual hierarchy without recruiting anyone, but it predicts attention, not understanding or conversion.",
+      "use": "Check whether the headline, offer and call to action draw attention on a hero, landing page or PDP.\nCompare the visual hierarchy of design options before a 5 second test.\nCheck ad creative and packaging for clear focal points.",
+      "pros": "Instant results on a static design, before anything is built or live.\n\nCheap enough to run on every design iteration.\n\nGrounded in real eye-tracking data rather than a general language model.",
+      "cons": "Attention is not comprehension, motivation or conversion. A well-seen element can still confuse or fail to persuade.\n\nIt works on static images, so it misses scrolling, interaction and intent.\n\nVendors report accuracy with undefined metrics that cannot be compared.",
+      "considerations": "Pair it\nFollow with a 5 Second Test or Heatmaps from real visitors to check that what draws attention is also understood.\n\nUse it for hierarchy\nTreat it as a design check, not as evidence a change will lift conversion.",
+      "resources": [],
+      "updated": "2026-11-05",
+      "rid": "recvo4Me11ZnzhHgG"
+    },
+    "ai-agent-walkthrough": {
+      "name": "AI Agent Walkthrough",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Qualitative",
+      "signal": "Low",
+      "effort": "Low",
+      "surface": [
+        "Any surface"
+      ],
+      "tools": [
+        "Uxia",
+        "Loop11"
+      ],
+      "related": "ux-heuristic-review",
+      "desc": "AI agents attempt tasks on a prototype or live site, sometimes acting as personas, and report where they got stuck, what broke and what confused them. It works like an automated expert pass rather than a usability study with real people.",
+      "use": "Run a quick pre-flight check on a prototype before booking real participants.\nCatch broken flows, dead ends and obvious friction on key journeys.\nAdd a second automated pass alongside a UX heuristic review.",
+      "pros": "Fast and repeatable, so it can run on every build or variant.\n\nCatches functional breakage that people would hit before any test runs.\n\nNo recruiting or scheduling.",
+      "cons": "Agents fail tasks real people complete easily, and push through friction that stops real people, so findings include false positives and misses.\n\nThe think-aloud commentary is generated, not observed, so it is not real user reasoning.\n\nIt can't measure satisfaction, trust or how hard a task felt.",
+      "considerations": "Pair it\nFollow with Remote Usability Studies with real participants before acting on anything beyond clear breakage.\n\nTriage findings\nTreat each reported issue as a lead to verify, not a confirmed problem.\n\nScope\nThis covers persona-style walkthroughs and QA agents for journeys. Engineering test automation suites sit outside the hub.",
+      "resources": [],
+      "updated": "2026-11-05",
+      "rid": "recvTeRh7bL69n2a1"
+    },
+    "agentic-commerce-readiness-audit": {
+      "name": "Agentic Commerce Readiness Audit",
+      "objective": [
+        "Explore",
+        "Validate"
+      ],
+      "data": "Quantitative",
+      "signal": "Low",
+      "effort": "Low",
+      "surface": [
+        "Acquisition & ads",
+        "Checkout & cart"
+      ],
+      "tools": [
+        "Shopify Agentic Commerce Readiness"
+      ],
+      "related": "search-serp-analysis",
+      "desc": "An audit of how well AI shopping assistants and agents can find, read and buy from a site. It checks product data, structured markup, policies and checkout readiness, then flags what stops an agent recommending or completing a purchase.",
+      "use": "Find out whether AI assistants can see accurate prices, stock, shipping and returns information.\nSpot gaps in structured product data that keep products out of AI recommendations.\nSet a baseline before fixes, then re-run it to track progress.",
+      "pros": "Free scanning tools make a first pass quick and cheap.\n\nIssues found are usually concrete and fixable, such as missing schema or unclear policies.\n\nCovers a fast-growing channel that most research methods ignore.",
+      "cons": "Most readiness tools are static scanners, so a good score doesn't prove a real agent can complete a purchase.\n\nAI assistants change often, so results date quickly.\n\nIt measures the site's readiness, not how customers actually use AI assistants to shop.",
+      "considerations": "Pair it\nAdd an AI Agent Walkthrough of real checkout flows, and talk to customers who started their search in an AI assistant.\n\nMeasure the channel\nTrack AI-referred visits and orders in analytics so fixes can be judged on real traffic.",
+      "resources": [],
+      "updated": "2026-11-05",
+      "rid": "recfec65KtSaM8zFw"
     }
   },
   "outcomes": [
@@ -1017,16 +1185,17 @@
       ],
       "dstage": "Explore",
       "evidence": "Emerging",
-      "desc": "You need a complete view of where and why visitors fail to convert across the site, not just on a single page. This is the broad diagnostic that feeds an experimentation programme.\n\nIt deliberately triangulates across data types. Analytics data analysis, heatmaps and session recordings give the quantitative behavioural picture of where users drop off. Customer surveys and on-site polls add the voice of the customer: the motivations, fears and barriers behind that behaviour. Remote usability studies show real people attempting core journeys, and a UX heuristic review provides an expert read to anchor and prioritise. No single method is trusted on its own; the value comes from where the behavioural, attitudinal and observed evidence agree.",
+      "desc": "You need a complete view of where and why visitors fail to convert across the site, not just on a single page. This is the broad diagnostic that feeds an experimentation programme.\n\nIt deliberately triangulates across data types. Analytics data analysis, heatmaps and session recordings give the quantitative behavioural picture of where users drop off. Customer surveys and on-site polls add the voice of the customer: the motivations, fears and barriers behind that behaviour. Remote usability studies show real people attempting core journeys, and a UX heuristic review provides an expert read to anchor and prioritise. An AI agent walkthrough adds a fast second pass that catches broken flows, though its findings are leads to verify rather than evidence. No single method is trusted on its own; the value comes from where the behavioural, attitudinal and observed evidence agree.",
       "stages": [
         [
           "Explore",
-          "Build the quantitative behavioural picture and an expert baseline.",
+          "Build the quantitative behavioural picture and an expert baseline, with an AI agent walkthrough as a second automated pass on core journeys.",
           [
             "analytics-data-analysis",
             "heatmaps",
             "session-recordings",
-            "ux-heuristic-review"
+            "ux-heuristic-review",
+            "ai-agent-walkthrough"
           ]
         ],
         [
@@ -1067,7 +1236,7 @@
           "https://speero.com/post/how-to-create-winning-tests-using-the-researchxl-model"
         ]
       ],
-      "updated": "2026-10-14",
+      "updated": "2026-11-05",
       "rid": "recneKiNyVpks4Z6E"
     },
     "saas-pricing-page": {
@@ -1190,14 +1359,15 @@
       ],
       "dstage": "Explore",
       "evidence": "Hypothesised",
-      "desc": "A landing page is underperforming and you need to understand what is blocking visitors before redesigning it. The aim is to diagnose friction across first impression, message and on-page behaviour.\n\nA 5 second test and a UX heuristic review give a fast read on clarity and obvious friction. Heatmaps and session recordings show where attention goes and where people hesitate or drop off. On-site polls ask visitors directly what is missing or unclear, and copy testing checks whether the core message lands with the target audience. The behavioural data shows what is happening, the polls and copy testing explain why, and the heuristic review and 5 second test surface quick wins to act on first.",
+      "desc": "A landing page is underperforming and you need to understand what is blocking visitors before redesigning it. The aim is to diagnose friction across first impression, message and on-page behaviour.\n\nA 5 second test and a UX heuristic review give a fast read on clarity and obvious friction, and predictive attention analysis adds a quick check of whether the headline and call to action draw the eye. Heatmaps and session recordings show where attention goes and where people hesitate or drop off. On-site polls ask visitors directly what is missing or unclear, and copy testing checks whether the core message lands with the target audience. The behavioural data shows what is happening, the polls and copy testing explain why, and the heuristic review and 5 second test surface quick wins to act on first.",
       "stages": [
         [
           "Explore",
-          "Get a fast read on clarity and obvious friction.",
+          "Get a fast read on clarity, obvious friction and what draws the eye.",
           [
             "five-second-test",
-            "ux-heuristic-review"
+            "ux-heuristic-review",
+            "predictive-attention-analysis"
           ]
         ],
         [
@@ -1219,7 +1389,7 @@
         ]
       ],
       "resources": [],
-      "updated": "2026-07-20",
+      "updated": "2026-11-05",
       "rid": "recU01NH2Nt5fdxTB"
     },
     "checkout-cart-optimisation": {
@@ -1335,8 +1505,16 @@
       ],
       "dstage": "Validate",
       "evidence": "Hypothesised",
-      "desc": "A big redesign is about to be built and the risk is shipping months of work that performs worse than what it replaces. This recipe front-loads the validation. A five second test checks whether the new design communicates its point at a glance, a preference test weighs it against the current version, and copy testing pressure-tests the words carrying the message. Prototype and moderated usability sessions then confirm people can actually complete the core tasks, so the redesign earns its place before a developer touches it.",
+      "desc": "A big redesign is about to be built and the risk is shipping months of work that performs worse than what it replaces. This recipe front-loads the validation. Predictive attention analysis and an AI agent walkthrough catch obvious hierarchy and flow problems cheaply, before any participant is booked. A five second test then checks whether the new design communicates its point at a glance, a preference test weighs it against the current version, and copy testing pressure-tests the words carrying the message. Prototype and moderated usability sessions then confirm people can actually complete the core tasks, so the redesign earns its place before a developer touches it.",
       "stages": [
+        [
+          "Explore",
+          "Catch obvious problems before booking participants, checking where attention lands and where an AI agent gets stuck.",
+          [
+            "predictive-attention-analysis",
+            "ai-agent-walkthrough"
+          ]
+        ],
         [
           "Focus",
           "Check the new design communicates its point, and pressure-test the words carrying it.",
@@ -1362,7 +1540,7 @@
           "https://speero.com/post/preference-testing-vs-a-b-testing-for-b2b-saas"
         ]
       ],
-      "updated": "2026-10-14",
+      "updated": "2026-11-05",
       "rid": "reclIYUkp60zpEAns"
     },
     "churn-retention": {
@@ -1420,12 +1598,13 @@
       ],
       "dstage": "Explore",
       "evidence": "Hypothesised",
-      "desc": "Visitors land on the site and can't quickly tell what the product is, who it's for or why it beats the alternative. The explore work goes to the source. Interviews and surveys capture how customers describe the value in their own words, and a competitor review shows which claims are table stakes and which are genuinely differentiating. That language then gets sharpened and tested, with copy testing and a five second test checking whether the message reads clearly and fast, and on-site polls confirming the page answers the questions real visitors arrive with.",
+      "desc": "Visitors land on the site and can't quickly tell what the product is, who it's for or why it beats the alternative. The explore work goes to the source. A quick synthetic interview run can pilot the interview guide, but it only shapes the questions, because synthetic personas return the most common phrasing and miss the words real customers use. Interviews and surveys capture how customers describe the value in their own words, and a competitor review shows which claims are table stakes and which are genuinely differentiating. That language then gets sharpened and tested, with copy testing and a five second test checking whether the message reads clearly and fast, and on-site polls confirming the page answers the questions real visitors arrive with.",
       "stages": [
         [
           "Explore",
-          "Capture the value in customers' own words, and map which claims differentiate.",
+          "Capture the value in customers' own words, and map which claims differentiate. Synthetic interviews can pilot the interview guide first, but the words themselves must come from real customers.",
           [
+            "synthetic-interviews-personas",
             "customer-interviews",
             "customer-survey",
             "competitor-review"
@@ -1461,7 +1640,7 @@
           "https://speero.com/user-research-services/copy-testing"
         ]
       ],
-      "updated": "2026-10-14",
+      "updated": "2026-11-05",
       "rid": "reciJbRnBp3gjw2fo"
     },
     "mobile-experience": {
@@ -1730,14 +1909,16 @@
       ],
       "dstage": "Explore",
       "evidence": "Hypothesised",
-      "desc": "When traffic is too low for a suitably powered A/B test, recruited-participant research can identify usability problems, test message comprehension and explore stated preferences. It cannot establish how much a change will increase conversion or revenue on your live site.\n\nStart with a UX heuristic review and competitor review to generate questions, not proven fixes. Recruit people who fit the intended audience for remote usability studies and copy testing. Observe where they struggle with tasks and what they understand; distinguish observed behaviour from what participants say they would do.\n\nAt the Validate step, preference tests compare stated choices and the reasons behind them. Prototype testing checks whether participants can understand and use a proposed design in the study setting. Use these findings to revise a design, reject a weak concept or decide whether a limited, reversible rollout is justified. Neither method substitutes for a randomized experiment measuring live business outcomes.\n\nRecord the remaining uncertainty, participant selection and study conditions. If you ship without an adequately powered experiment, monitor guardrails and define rollback criteria, but do not label a before-and-after change as causal conversion lift. Revisit controlled measurement when it becomes feasible.",
+      "desc": "When traffic is too low for a suitably powered A/B test, recruited-participant research can identify usability problems, test message comprehension and explore stated preferences. It cannot establish how much a change will increase conversion or revenue on your live site.\n\nStart with a UX heuristic review and competitor review to generate questions, not proven fixes. Synthetic shopper simulation and predictive attention analysis can help rank design options at this stage, but they predict rather than measure, so treat their output as more questions. Recruit people who fit the intended audience for remote usability studies and copy testing. Observe where they struggle with tasks and what they understand; distinguish observed behaviour from what participants say they would do.\n\nAt the Validate step, preference tests compare stated choices and the reasons behind them. Prototype testing checks whether participants can understand and use a proposed design in the study setting. Use these findings to revise a design, reject a weak concept or decide whether a limited, reversible rollout is justified. Neither method substitutes for a randomized experiment measuring live business outcomes.\n\nRecord the remaining uncertainty, participant selection and study conditions. If you ship without an adequately powered experiment, monitor guardrails and define rollback criteria, but do not label a before-and-after change as causal conversion lift. Revisit controlled measurement when it becomes feasible.",
       "stages": [
         [
           "Explore",
-          "Use expert and competitor reviews to generate research questions. These are hypotheses, not evidence that a change will improve conversion.",
+          "Use expert and competitor reviews to generate research questions. Synthetic shopper simulation and predictive attention analysis can rank design options in the same spirit. All of these are hypotheses, not evidence that a change will improve conversion.",
           [
             "ux-heuristic-review",
-            "competitor-review"
+            "competitor-review",
+            "synthetic-shopper-simulation",
+            "predictive-attention-analysis"
           ]
         ],
         [
@@ -1763,7 +1944,7 @@
           "https://speero.com/post/preference-testing-vs-a-b-testing-for-b2b-saas"
         ]
       ],
-      "updated": "2026-10-15",
+      "updated": "2026-11-05",
       "rid": "recGZnvm7u8TT6UOr"
     },
     "category-listing-page": {
@@ -2262,6 +2443,96 @@
       ],
       "updated": "2026-10-14",
       "rid": "recyqrVFNx1nEK8OB"
+    },
+    "test-backlog-pre-screening": {
+      "name": "Test Backlog Pre-Screening",
+      "outcome": "foundational",
+      "problem": "We don't have the volume to be statistically significant, so every change is a leap of faith.",
+      "opp": "We can't test because traffic is too low",
+      "hmw": "How might we build evidence for decisions when traffic can't support A/B tests?",
+      "triggers": [
+        "Sessions too low to reach significance in a realistic test window, high-stakes pages with thin behavioural data, polls and analytics too sparse to read, decisions resting on opinion or the loudest voice."
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "desc": "The team has more test ideas than traffic to run them, so every slot spent on a weak idea is a slot lost. This recipe uses cheap, fast signals to order the backlog before any traffic is spent, then lets a live experiment make the final call.\n\nAnalytics data analysis sizes where each idea would act and how much traffic that page actually gets. Synthetic shopper simulation and predictive attention analysis then give a quick read on which variants look weakest, so they can be dropped or reworked. Both are hypotheses, not evidence. They rank options and can't predict lift, and published studies of AI-predicted A/B winners land well short of vendor claims.\n\nThe survivors go to real people. Heatmaps and session recordings show how visitors behave on the pages in question, and a preference test checks how the remaining variants compare with real participants. Only then does the strongest idea earn an A/B test, which remains the only step here that measures a causal effect.",
+      "stages": [
+        [
+          "Explore",
+          "Size where each idea acts, then use synthetic signals to drop the weakest variants. These rank options; they don't predict lift.",
+          [
+            "analytics-data-analysis",
+            "synthetic-shopper-simulation",
+            "predictive-attention-analysis"
+          ]
+        ],
+        [
+          "Focus",
+          "Take the survivors to real visitors and real participants.",
+          [
+            "heatmaps",
+            "session-recordings",
+            "preference-test"
+          ]
+        ],
+        [
+          "Validate",
+          "Run the strongest idea as a live experiment.",
+          [
+            "ab-testing"
+          ]
+        ]
+      ],
+      "resources": [],
+      "updated": "2026-11-05",
+      "rid": "rec5EOxUIY5LtzyVR",
+      "new": true
+    },
+    "agentic-commerce-readiness": {
+      "name": "Agentic Commerce Readiness",
+      "outcome": "acquisition",
+      "problem": "I asked an assistant to find me one. It never suggested you, or it couldn't tell me the price.",
+      "opp": "AI shopping agents can't find or buy from us",
+      "hmw": "How might we make our products easy for the AI assistants our customers shop through to read, recommend and buy?",
+      "triggers": [
+        "AI assistants recommend competitors for queries we should win",
+        "AI-referred traffic is growing but rarely converts",
+        "Assistants quote wrong prices, stock or shipping details for our products",
+        "Product data and policies live in images or scripts that agents can't read"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "desc": "More shoppers now start in an AI assistant, and if the assistant can't read a store's products, prices or policies, it recommends someone else. This recipe checks how AI agents experience the site and how customers actually use them.\n\nAn agentic commerce readiness audit flags missing product data, unreadable policies and checkout blockers, and search and SERP analysis shows where the brand is absent from the questions customers ask. In Focus, an AI agent walkthrough of real checkout flows tests whether an agent can actually complete a purchase, and customer interviews with buyers who started in an AI assistant explain what they asked and why they chose where they bought.\n\nTo validate, re-run the audit after fixes and use analytics to track AI-referred visits and orders over time. A readiness score alone doesn't prove agents can buy, so the analytics trend is the measure that counts.",
+      "stages": [
+        [
+          "Explore",
+          "Audit what AI agents can read and where the brand is missing from customers' questions.",
+          [
+            "agentic-commerce-readiness-audit",
+            "search-serp-analysis"
+          ]
+        ],
+        [
+          "Focus",
+          "See whether an agent can complete a real purchase, and hear from buyers who started in an AI assistant.",
+          [
+            "ai-agent-walkthrough",
+            "customer-interviews"
+          ]
+        ],
+        [
+          "Validate",
+          "Re-run the audit after fixes and track AI-referred visits and orders.",
+          [
+            "agentic-commerce-readiness-audit",
+            "analytics-data-analysis"
+          ]
+        ]
+      ],
+      "resources": [],
+      "updated": "2026-11-05",
+      "rid": "rec2G0Z1zmPlQMq7U",
+      "new": true
     }
   },
   "tools": {
@@ -2444,6 +2715,86 @@
       "cat": "Voice of Customer & Feedback",
       "url": "https://www.trustpilot.com",
       "desc": "Consumer review platform."
+    },
+    "Synthetic Users": {
+      "cat": "Synthetic Research",
+      "url": "https://www.syntheticusers.com",
+      "desc": "Runs synthetic interviews from an audience definition and topic guide, optionally grounded in your own data."
+    },
+    "Ask Rally": {
+      "cat": "Synthetic Research",
+      "url": "https://askrally.com",
+      "desc": "Polls panels of AI personas on headlines and messages."
+    },
+    "Delve AI": {
+      "cat": "Synthetic Research",
+      "url": "https://www.delve.ai",
+      "desc": "Builds personas and queryable twins from first-party analytics and CRM data."
+    },
+    "OpinioAI": {
+      "cat": "Synthetic Research",
+      "url": "https://www.opinio.ai",
+      "desc": "Persona Q&A and message evaluation, with a free tier."
+    },
+    "Evidenza": {
+      "cat": "Synthetic Research",
+      "url": "https://www.evidenza.ai",
+      "desc": "Synthetic buyers, mostly B2B, for positioning, segmentation and creative testing."
+    },
+    "Uxia": {
+      "cat": "AI Agents & QA",
+      "url": "https://www.uxia.app",
+      "desc": "AI users walk prototypes, live sites and apps and report friction; human testers also available."
+    },
+    "Qualtrics Synthetic Panels": {
+      "cat": "Synthetic Research",
+      "url": "https://www.qualtrics.com/support/survey-platform/distributions-module/synthetic-panels/",
+      "desc": "Synthetic US general-population panel for concept and message surveys."
+    },
+    "Expected Parrot": {
+      "cat": "Synthetic Research",
+      "url": "https://www.expectedparrot.com",
+      "desc": "Open-source Python library for running surveys and experiments on AI agents."
+    },
+    "Listen Labs": {
+      "cat": "Usability & User Testing",
+      "url": "https://listenlabs.ai",
+      "desc": "AI-moderated interviews with real people at scale; also sells twins built from those interviews."
+    },
+    "Squoosh": {
+      "cat": "Synthetic Research",
+      "url": "https://squoosh.ai",
+      "desc": "Synthetic shopper panels predict the winning variant before a live A/B test."
+    },
+    "Shopify SimGym": {
+      "cat": "Synthetic Research",
+      "url": "https://help.shopify.com/en/manual/online-store/simgym",
+      "desc": "AI shoppers compare two Shopify themes before publishing. Research preview, Liquid stores only."
+    },
+    "Attention Insight": {
+      "cat": "Predictive Attention",
+      "url": "https://attentioninsight.com",
+      "desc": "Predicted heatmaps and clarity scores from a model trained on eye-tracking data."
+    },
+    "Neurons Predict": {
+      "cat": "Predictive Attention",
+      "url": "https://www.neuronsinc.com",
+      "desc": "Predicted attention for pages and ads from an eye-tracking database."
+    },
+    "Dragonfly AI": {
+      "cat": "Predictive Attention",
+      "url": "https://dragonflyai.co",
+      "desc": "Predicted attention for designs and packaging from a model of human vision."
+    },
+    "Loop11": {
+      "cat": "AI Agents & QA",
+      "url": "https://www.loop11.com",
+      "desc": "Usability testing with human panels and AI browser agents running the same tasks."
+    },
+    "Shopify Agentic Commerce Readiness": {
+      "cat": "AI Agents & QA",
+      "url": "https://commerce-readiness.shopify.io",
+      "desc": "Free scan that scores how well AI shopping agents can read and buy from a store."
     }
   },
   "toolCats": {
@@ -2482,9 +2833,25 @@
     "Ahrefs": "Analytics",
     "Brandwatch": "Voice of Customer & Feedback",
     "G2": "Voice of Customer & Feedback",
-    "Trustpilot": "Voice of Customer & Feedback"
+    "Trustpilot": "Voice of Customer & Feedback",
+    "Synthetic Users": "Synthetic Research",
+    "Ask Rally": "Synthetic Research",
+    "Delve AI": "Synthetic Research",
+    "OpinioAI": "Synthetic Research",
+    "Evidenza": "Synthetic Research",
+    "Uxia": "AI Agents & QA",
+    "Qualtrics Synthetic Panels": "Synthetic Research",
+    "Expected Parrot": "Synthetic Research",
+    "Listen Labs": "Usability & User Testing",
+    "Squoosh": "Synthetic Research",
+    "Shopify SimGym": "Synthetic Research",
+    "Attention Insight": "Predictive Attention",
+    "Neurons Predict": "Predictive Attention",
+    "Dragonfly AI": "Predictive Attention",
+    "Loop11": "AI Agents & QA",
+    "Shopify Agentic Commerce Readiness": "AI Agents & QA"
   },
-  "toolCount": 36,
+  "toolCount": 52,
   "vendorPages": {
     "ablyft": "ablyft",
     "datadog": "eppo-by-datadog",

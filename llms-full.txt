@@ -52,6 +52,61 @@ Last updated: 2026-10-14
 
 ---
 
+# Agentic Commerce Readiness
+
+**AI shopping agents can't find or buy from us**
+
+> I asked an assistant to find me one. It never suggested you, or it couldn't tell me the price.
+
+How might we make our products easy for the AI assistants our customers shop through to read, recommend and buy?
+
+## You'll recognise this when
+
+- AI assistants recommend competitors for queries we should win
+
+- AI-referred traffic is growing but rarely converts
+
+- Assistants quote wrong prices, stock or shipping details for our products
+
+- Product data and policies live in images or scripts that agents can't read
+
+## What this recipe does
+
+More shoppers now start in an AI assistant, and if the assistant can't read a store's products, prices or policies, it recommends someone else. This recipe checks how AI agents experience the site and how customers actually use them.
+An agentic commerce readiness audit flags missing product data, unreadable policies and checkout blockers, and search and SERP analysis shows where the brand is absent from the questions customers ask. In Focus, an AI agent walkthrough of real checkout flows tests whether an agent can actually complete a purchase, and customer interviews with buyers who started in an AI assistant explain what they asked and why they chose where they bought.
+To validate, re-run the audit after fixes and use analytics to track AI-referred visits and orders over time. A readiness score alone doesn't prove agents can buy, so the analytics trend is the measure that counts.
+
+## The method sequence
+
+Explore. Focus. Validate.
+
+### Explore
+Audit what AI agents can read and where the brand is missing from customers' questions.
+
+- [Agentic Commerce Readiness Audit](/research-methods/agentic-commerce-readiness-audit)
+
+- [Search & SERP Analysis](/research-methods/search-serp-analysis)
+
+### Focus
+See whether an agent can complete a real purchase, and hear from buyers who started in an AI assistant.
+
+- [AI Agent Walkthrough](/research-methods/ai-agent-walkthrough)
+
+- [Customer Interviews](/research-methods/customer-interviews)
+
+### Validate
+Re-run the audit after fixes and track AI-referred visits and orders.
+
+- [Agentic Commerce Readiness Audit](/research-methods/agentic-commerce-readiness-audit)
+
+- [Analytics Data Analysis](/research-methods/analytics-data-analysis)
+
+Source: https://speero.com/research-recipes/agentic-commerce-readiness
+Last updated: 2026-11-05
+
+
+---
+
 # B2B ICP Research
 
 **We don't really understand our ICP**
@@ -423,14 +478,14 @@ How might we find and remove the biggest on-site barriers to conversion?
 ## What this recipe does
 
 You need a complete view of where and why visitors fail to convert across the site, not just on a single page. This is the broad diagnostic that feeds an experimentation programme.
-It deliberately triangulates across data types. Analytics data analysis, heatmaps and session recordings give the quantitative behavioural picture of where users drop off. Customer surveys and on-site polls add the voice of the customer: the motivations, fears and barriers behind that behaviour. Remote usability studies show real people attempting core journeys, and a UX heuristic review provides an expert read to anchor and prioritise. No single method is trusted on its own; the value comes from where the behavioural, attitudinal and observed evidence agree.
+It deliberately triangulates across data types. Analytics data analysis, heatmaps and session recordings give the quantitative behavioural picture of where users drop off. Customer surveys and on-site polls add the voice of the customer: the motivations, fears and barriers behind that behaviour. Remote usability studies show real people attempting core journeys, and a UX heuristic review provides an expert read to anchor and prioritise. An AI agent walkthrough adds a fast second pass that catches broken flows, though its findings are leads to verify rather than evidence. No single method is trusted on its own; the value comes from where the behavioural, attitudinal and observed evidence agree.
 
 ## The method sequence
 
 Explore. Focus. Validate.
 
 ### Explore
-Build the quantitative behavioural picture and an expert baseline.
+Build the quantitative behavioural picture and an expert baseline, with an AI agent walkthrough as a second automated pass on core journeys.
 
 - [Analytics Data Analysis](/research-methods/analytics-data-analysis)
 
@@ -439,6 +494,8 @@ Build the quantitative behavioural picture and an expert baseline.
 - [Session Recordings](/research-methods/session-recordings)
 
 - [UX Heuristic Review](/research-methods/ux-heuristic-review)
+
+- [AI Agent Walkthrough](/research-methods/ai-agent-walkthrough)
 
 ### Focus
 Add the voice of the customer behind the behaviour.
@@ -467,7 +524,7 @@ Go deeper
 - [ResearchXL guide: combine evidence and prioritise research findings](https://speero.com/post/how-to-create-winning-tests-using-the-researchxl-model)
 
 Source: https://speero.com/research-recipes/conversion-research
-Last updated: 2026-10-14
+Last updated: 2026-11-05
 
 
 ---
@@ -601,18 +658,20 @@ How might we make the landing page deliver on the promise the ad made?
 ## What this recipe does
 
 A landing page is underperforming and you need to understand what is blocking visitors before redesigning it. The aim is to diagnose friction across first impression, message and on-page behaviour.
-A 5 second test and a UX heuristic review give a fast read on clarity and obvious friction. Heatmaps and session recordings show where attention goes and where people hesitate or drop off. On-site polls ask visitors directly what is missing or unclear, and copy testing checks whether the core message lands with the target audience. The behavioural data shows what is happening, the polls and copy testing explain why, and the heuristic review and 5 second test surface quick wins to act on first.
+A 5 second test and a UX heuristic review give a fast read on clarity and obvious friction, and predictive attention analysis adds a quick check of whether the headline and call to action draw the eye. Heatmaps and session recordings show where attention goes and where people hesitate or drop off. On-site polls ask visitors directly what is missing or unclear, and copy testing checks whether the core message lands with the target audience. The behavioural data shows what is happening, the polls and copy testing explain why, and the heuristic review and 5 second test surface quick wins to act on first.
 
 ## The method sequence
 
 Explore. Focus. Validate.
 
 ### Explore
-Get a fast read on clarity and obvious friction.
+Get a fast read on clarity, obvious friction and what draws the eye.
 
 - [5 Second Test](/research-methods/five-second-test)
 
 - [UX Heuristic Review](/research-methods/ux-heuristic-review)
+
+- [Predictive Attention Analysis](/research-methods/predictive-attention-analysis)
 
 ### Focus
 See where attention goes, where people drop, and ask them what's missing.
@@ -631,7 +690,7 @@ Confirm the winning change with a live experiment.
 - [A/B Testing](/research-methods/ab-testing)
 
 Source: https://speero.com/research-recipes/landing-page-optimisation
-Last updated: 2026-07-20
+Last updated: 2026-11-05
 
 
 ---
@@ -1070,7 +1129,7 @@ How might we build evidence for decisions when traffic can't support A/B tests?
 ## What this recipe does
 
 When traffic is too low for a suitably powered A/B test, recruited-participant research can identify usability problems, test message comprehension and explore stated preferences. It cannot establish how much a change will increase conversion or revenue on your live site.
-Start with a UX heuristic review and competitor review to generate questions, not proven fixes. Recruit people who fit the intended audience for remote usability studies and copy testing. Observe where they struggle with tasks and what they understand; distinguish observed behaviour from what participants say they would do.
+Start with a UX heuristic review and competitor review to generate questions, not proven fixes. Synthetic shopper simulation and predictive attention analysis can help rank design options at this stage, but they predict rather than measure, so treat their output as more questions. Recruit people who fit the intended audience for remote usability studies and copy testing. Observe where they struggle with tasks and what they understand; distinguish observed behaviour from what participants say they would do.
 At the Validate step, preference tests compare stated choices and the reasons behind them. Prototype testing checks whether participants can understand and use a proposed design in the study setting. Use these findings to revise a design, reject a weak concept or decide whether a limited, reversible rollout is justified. Neither method substitutes for a randomized experiment measuring live business outcomes.
 Record the remaining uncertainty, participant selection and study conditions. If you ship without an adequately powered experiment, monitor guardrails and define rollback criteria, but do not label a before-and-after change as causal conversion lift. Revisit controlled measurement when it becomes feasible.
 
@@ -1079,11 +1138,15 @@ Record the remaining uncertainty, participant selection and study conditions. If
 Explore. Focus. Validate.
 
 ### Explore
-Use expert and competitor reviews to generate research questions. These are hypotheses, not evidence that a change will improve conversion.
+Use expert and competitor reviews to generate research questions. Synthetic shopper simulation and predictive attention analysis can rank design options in the same spirit. All of these are hypotheses, not evidence that a change will improve conversion.
 
 - [UX Heuristic Review](/research-methods/ux-heuristic-review)
 
 - [Competitor Review](/research-methods/competitor-review)
+
+- [Synthetic Shopper Simulation](/research-methods/synthetic-shopper-simulation)
+
+- [Predictive Attention Analysis](/research-methods/predictive-attention-analysis)
 
 ### Focus
 Recruit relevant participants. Remote usability studies reveal observed task difficulties; copy testing examines comprehension and reported reactions. Findings depend on the sample and study setting.
@@ -1106,7 +1169,7 @@ Go deeper
 - [Preference testing versus A/B testing: stated preference is not conversion evidence](https://speero.com/post/preference-testing-vs-a-b-testing-for-b2b-saas)
 
 Source: https://speero.com/research-recipes/researching-low-traffic
-Last updated: 2026-10-15
+Last updated: 2026-11-05
 
 
 ---
@@ -1226,6 +1289,63 @@ Go deeper
 
 Source: https://speero.com/research-recipes/seo-search-intent
 Last updated: 2026-10-14
+
+
+---
+
+# Test Backlog Pre-Screening
+
+**We can't test because traffic is too low**
+
+> We don't have the volume to be statistically significant, so every change is a leap of faith.
+
+How might we build evidence for decisions when traffic can't support A/B tests?
+
+## You'll recognise this when
+
+- Sessions too low to reach significance in a realistic test window
+
+- High-stakes pages with thin behavioural data
+
+- Polls and analytics too sparse to read
+
+- Decisions resting on opinion or the loudest voice
+
+## What this recipe does
+
+The team has more test ideas than traffic to run them, so every slot spent on a weak idea is a slot lost. This recipe uses cheap, fast signals to order the backlog before any traffic is spent, then lets a live experiment make the final call.
+Analytics data analysis sizes where each idea would act and how much traffic that page actually gets. Synthetic shopper simulation and predictive attention analysis then give a quick read on which variants look weakest, so they can be dropped or reworked. Both are hypotheses, not evidence. They rank options and can't predict lift, and published studies of AI-predicted A/B winners land well short of vendor claims.
+The survivors go to real people. Heatmaps and session recordings show how visitors behave on the pages in question, and a preference test checks how the remaining variants compare with real participants. Only then does the strongest idea earn an A/B test, which remains the only step here that measures a causal effect.
+
+## The method sequence
+
+Explore. Focus. Validate.
+
+### Explore
+Size where each idea acts, then use synthetic signals to drop the weakest variants. These rank options; they don't predict lift.
+
+- [Analytics Data Analysis](/research-methods/analytics-data-analysis)
+
+- [Synthetic Shopper Simulation](/research-methods/synthetic-shopper-simulation)
+
+- [Predictive Attention Analysis](/research-methods/predictive-attention-analysis)
+
+### Focus
+Take the survivors to real visitors and real participants.
+
+- [Heatmaps](/research-methods/heatmaps)
+
+- [Session Recordings](/research-methods/session-recordings)
+
+- [Preference Test](/research-methods/preference-test)
+
+### Validate
+Run the strongest idea as a live experiment.
+
+- [A/B Testing](/research-methods/ab-testing)
+
+Source: https://speero.com/research-recipes/test-backlog-pre-screening
+Last updated: 2026-11-05
 
 
 ---
@@ -1418,11 +1538,18 @@ How might we prove the new design beats the current one before we build it?
 
 ## What this recipe does
 
-A big redesign is about to be built and the risk is shipping months of work that performs worse than what it replaces. This recipe front-loads the validation. A five second test checks whether the new design communicates its point at a glance, a preference test weighs it against the current version, and copy testing pressure-tests the words carrying the message. Prototype and moderated usability sessions then confirm people can actually complete the core tasks, so the redesign earns its place before a developer touches it.
+A big redesign is about to be built and the risk is shipping months of work that performs worse than what it replaces. This recipe front-loads the validation. Predictive attention analysis and an AI agent walkthrough catch obvious hierarchy and flow problems cheaply, before any participant is booked. A five second test then checks whether the new design communicates its point at a glance, a preference test weighs it against the current version, and copy testing pressure-tests the words carrying the message. Prototype and moderated usability sessions then confirm people can actually complete the core tasks, so the redesign earns its place before a developer touches it.
 
 ## The method sequence
 
-Focus. Validate.
+Explore. Focus. Validate.
+
+### Explore
+Catch obvious problems before booking participants, checking where attention lands and where an AI agent gets stuck.
+
+- [Predictive Attention Analysis](/research-methods/predictive-attention-analysis)
+
+- [AI Agent Walkthrough](/research-methods/ai-agent-walkthrough)
 
 ### Focus
 Check the new design communicates its point, and pressure-test the words carrying it.
@@ -1449,7 +1576,7 @@ Go deeper
 - [Preference testing versus A/B testing: different questions and evidence](https://speero.com/post/preference-testing-vs-a-b-testing-for-b2b-saas)
 
 Source: https://speero.com/research-recipes/validating-redesign
-Last updated: 2026-10-14
+Last updated: 2026-11-05
 
 
 ---
@@ -1472,14 +1599,16 @@ How might we make our value clear and relevant within seconds of landing?
 
 ## What this recipe does
 
-Visitors land on the site and can't quickly tell what the product is, who it's for or why it beats the alternative. The explore work goes to the source. Interviews and surveys capture how customers describe the value in their own words, and a competitor review shows which claims are table stakes and which are genuinely differentiating. That language then gets sharpened and tested, with copy testing and a five second test checking whether the message reads clearly and fast, and on-site polls confirming the page answers the questions real visitors arrive with.
+Visitors land on the site and can't quickly tell what the product is, who it's for or why it beats the alternative. The explore work goes to the source. A quick synthetic interview run can pilot the interview guide, but it only shapes the questions, because synthetic personas return the most common phrasing and miss the words real customers use. Interviews and surveys capture how customers describe the value in their own words, and a competitor review shows which claims are table stakes and which are genuinely differentiating. That language then gets sharpened and tested, with copy testing and a five second test checking whether the message reads clearly and fast, and on-site polls confirming the page answers the questions real visitors arrive with.
 
 ## The method sequence
 
 Explore. Focus. Validate.
 
 ### Explore
-Capture the value in customers' own words, and map which claims differentiate.
+Capture the value in customers' own words, and map which claims differentiate. Synthetic interviews can pilot the interview guide first, but the words themselves must come from real customers.
+
+- [Synthetic Interviews & Personas](/research-methods/synthetic-interviews-personas)
 
 - [Customer Interviews](/research-methods/customer-interviews)
 
@@ -1510,7 +1639,7 @@ Go deeper
 - [Work with Speero: test whether your audience understands your messaging](https://speero.com/user-research-services/copy-testing)
 
 Source: https://speero.com/research-recipes/value-prop-messaging
-Last updated: 2026-10-14
+Last updated: 2026-11-05
 
 
 ---
@@ -1556,6 +1685,8 @@ Tools
 
 - [Landing Page Optimisation](/research-recipes/landing-page-optimisation)
 
+- [Test Backlog Pre-Screening](/research-recipes/test-backlog-pre-screening)
+
 - [Validating a Redesign Before Build](/research-recipes/validating-redesign)
 
 ## Go deeper
@@ -1571,7 +1702,7 @@ Go deeper
 - [Can you run multiple A/B tests at the same time](https://speero.com/post/can-you-run-multiple-a-b-tests-at-the-same-time)
 
 Source: https://speero.com/research-methods/ab-testing
-Last updated: 2026-07-20
+Last updated: 2026-11-05
 
 
 ---
@@ -1620,6 +1751,123 @@ Runs on your existing systems; no dedicated tool required.
 
 Source: https://speero.com/research-methods/ads-analysis
 Last updated: 2026-07-20
+
+
+---
+
+# Agentic Commerce Readiness Audit
+
+An audit of how well AI shopping assistants and agents can find, read and buy from a site. It checks product data, structured markup, policies and checkout readiness, then flags what stops an agent recommending or completing a purchase.
+
+| | |
+|---|---|
+| Stage | Explore, Validate |
+| Data type | Quantitative |
+| Strength of signal | Low |
+| Effort | Low |
+| Surface area | Acquisition & ads, Checkout & cart |
+
+## When to reach for it
+
+Find out whether AI assistants can see accurate prices, stock, shipping and returns information.Spot gaps in structured product data that keep products out of AI recommendations.Set a baseline before fixes, then re-run it to track progress.
+
+## Strengths
+
+Free scanning tools make a first pass quick and cheap.
+Issues found are usually concrete and fixable, such as missing schema or unclear policies.
+Covers a fast-growing channel that most research methods ignore.
+
+## Limits
+
+Most readiness tools are static scanners, so a good score doesn't prove a real agent can complete a purchase.
+AI assistants change often, so results date quickly.
+It measures the site's readiness, not how customers actually use AI assistants to shop.
+
+## Practical considerations
+
+Practical considerations
+
+### Pair it
+Add an AI Agent Walkthrough of real checkout flows, and talk to customers who started their search in an AI assistant.
+
+### Measure the channel
+Track AI-referred visits and orders in analytics so fixes can be judged on real traffic.
+
+## Common tools
+
+Tools
+
+- [Shopify Agentic Commerce Readiness](https://commerce-readiness.shopify.io)
+
+## Recipes that use this method
+
+- [Agentic Commerce Readiness](/research-recipes/agentic-commerce-readiness)
+
+Source: https://speero.com/research-methods/agentic-commerce-readiness-audit
+Last updated: 2026-11-05
+
+
+---
+
+# AI Agent Walkthrough
+
+AI agents attempt tasks on a prototype or live site, sometimes acting as personas, and report where they got stuck, what broke and what confused them. It works like an automated expert pass rather than a usability study with real people.
+
+| | |
+|---|---|
+| Stage | Explore, Focus |
+| Data type | Qualitative |
+| Strength of signal | Low |
+| Effort | Low |
+| Surface area | Any surface |
+
+## When to reach for it
+
+Run a quick pre-flight check on a prototype before booking real participants.Catch broken flows, dead ends and obvious friction on key journeys.Add a second automated pass alongside a UX heuristic review.
+
+## Strengths
+
+Fast and repeatable, so it can run on every build or variant.
+Catches functional breakage that people would hit before any test runs.
+No recruiting or scheduling.
+
+## Limits
+
+Agents fail tasks real people complete easily, and push through friction that stops real people, so findings include false positives and misses.
+The think-aloud commentary is generated, not observed, so it is not real user reasoning.
+It can't measure satisfaction, trust or how hard a task felt.
+
+## Practical considerations
+
+Practical considerations
+
+### Pair it
+Follow with Remote Usability Studies with real participants before acting on anything beyond clear breakage.
+
+### Triage findings
+Treat each reported issue as a lead to verify, not a confirmed problem.
+
+### Scope
+This covers persona-style walkthroughs and QA agents for journeys. Engineering test automation suites sit outside the hub.
+
+## Common tools
+
+Tools
+
+- [Uxia](https://www.uxia.app)
+
+- [Loop11](https://www.loop11.com)
+
+## Recipes that use this method
+
+- [Agentic Commerce Readiness](/research-recipes/agentic-commerce-readiness)
+
+- [Conversion Research](/research-recipes/conversion-research)
+
+- [Validating a Redesign Before Build](/research-recipes/validating-redesign)
+
+Source: https://speero.com/research-methods/ai-agent-walkthrough
+Last updated: 2026-11-05
 
 
 ---
@@ -1686,6 +1934,8 @@ Tools
 
 - [Acquisition Research](/research-recipes/acquisition-research)
 
+- [Agentic Commerce Readiness](/research-recipes/agentic-commerce-readiness)
+
 - [Category & Listing Page Optimisation](/research-recipes/category-listing-page)
 
 - [Checkout & Cart Optimisation](/research-recipes/checkout-cart-optimisation)
@@ -1716,6 +1966,8 @@ Tools
 
 - [SEO & Search Intent Research](/research-recipes/seo-search-intent)
 
+- [Test Backlog Pre-Screening](/research-recipes/test-backlog-pre-screening)
+
 - [Traffic Quality & Channel Fit Research](/research-recipes/traffic-quality-channel-fit)
 
 ## Go deeper
@@ -1731,7 +1983,7 @@ Go deeper
 - [Speero GA4 audit tool](https://ga4audit.speero.com/)
 
 Source: https://speero.com/research-methods/analytics-data-analysis
-Last updated: 2026-07-20
+Last updated: 2026-11-05
 
 
 ---
@@ -2068,7 +2320,11 @@ Tools
 
 - [Lookback](https://www.lookback.com)
 
+- [Listen Labs](https://listenlabs.ai)
+
 ## Recipes that use this method
+
+- [Agentic Commerce Readiness](/research-recipes/agentic-commerce-readiness)
 
 - [B2B ICP Research](/research-recipes/b2b-icp-research)
 
@@ -2099,7 +2355,7 @@ Go deeper
 - [4 mental models for voice of customer research](https://speero.com/post/4-mental-models-to-help-you-conduct-voice-of-customer-research)
 
 Source: https://speero.com/research-methods/customer-interviews
-Last updated: 2026-07-20
+Last updated: 2026-11-05
 
 
 ---
@@ -2460,8 +2716,10 @@ Tools
 
 - [Product Page Optimisation](/research-recipes/product-page)
 
+- [Test Backlog Pre-Screening](/research-recipes/test-backlog-pre-screening)
+
 Source: https://speero.com/research-methods/heatmaps
-Last updated: 2026-07-20
+Last updated: 2026-11-05
 
 
 ---
@@ -2741,6 +2999,72 @@ Last updated: 2026-08-06
 
 ---
 
+# Predictive Attention Analysis
+
+A model trained on eye-tracking data predicts where people will look first on a page, ad or design. It gives a quick read on visual hierarchy without recruiting anyone, but it predicts attention, not understanding or conversion.
+
+| | |
+|---|---|
+| Stage | Explore, Focus |
+| Data type | Quantitative |
+| Strength of signal | Low |
+| Effort | Low |
+| Surface area | Landing pages, Acquisition & ads |
+
+## When to reach for it
+
+Check whether the headline, offer and call to action draw attention on a hero, landing page or PDP.Compare the visual hierarchy of design options before a 5 second test.Check ad creative and packaging for clear focal points.
+
+## Strengths
+
+Instant results on a static design, before anything is built or live.
+Cheap enough to run on every design iteration.
+Grounded in real eye-tracking data rather than a general language model.
+
+## Limits
+
+Attention is not comprehension, motivation or conversion. A well-seen element can still confuse or fail to persuade.
+It works on static images, so it misses scrolling, interaction and intent.
+Vendors report accuracy with undefined metrics that cannot be compared.
+
+## Practical considerations
+
+Practical considerations
+
+### Pair it
+Follow with a 5 Second Test or Heatmaps from real visitors to check that what draws attention is also understood.
+
+### Use it for hierarchy
+Treat it as a design check, not as evidence a change will lift conversion.
+
+## Common tools
+
+Tools
+
+- [Attention Insight](https://attentioninsight.com)
+
+- [Neurons Predict](https://www.neuronsinc.com)
+
+- [Dragonfly AI](https://dragonflyai.co)
+
+- [Microsoft Clarity](https://clarity.microsoft.com)
+
+## Recipes that use this method
+
+- [Landing Page Optimisation](/research-recipes/landing-page-optimisation)
+
+- [Researching With Low Traffic](/research-recipes/researching-low-traffic)
+
+- [Test Backlog Pre-Screening](/research-recipes/test-backlog-pre-screening)
+
+- [Validating a Redesign Before Build](/research-recipes/validating-redesign)
+
+Source: https://speero.com/research-methods/predictive-attention-analysis
+Last updated: 2026-11-05
+
+
+---
+
 # Preference Test
 
 Preference testing involves showing participants two (or more) versions of a page, an element, or a piece of copy, and asking them to select their preference and provide rationale for their preference. Data from the full sample of participants can then be used to draw conclusions about the best-performing version.
@@ -2791,6 +3115,8 @@ Tools
 
 - [Researching With Low Traffic](/research-recipes/researching-low-traffic)
 
+- [Test Backlog Pre-Screening](/research-recipes/test-backlog-pre-screening)
+
 - [Validating a Redesign Before Build](/research-recipes/validating-redesign)
 
 ## Go deeper
@@ -2800,7 +3126,7 @@ Go deeper
 - [https://maze.co/blog/preference-testing/](https://maze.co/blog/preference-testing/)
 
 Source: https://speero.com/research-methods/preference-test
-Last updated: 2026-07-20
+Last updated: 2026-11-05
 
 
 ---
@@ -2918,6 +3244,8 @@ Tools
 
 - [Lookback](https://www.lookback.com)
 
+- [Loop11](https://www.loop11.com)
+
 ## Recipes that use this method
 
 - [B2B ICP Research](/research-recipes/b2b-icp-research)
@@ -2951,7 +3279,7 @@ Go deeper
 - [How to get the most out of your user testing efforts](https://speero.com/post/how-to-get-the-most-out-of-your-user-testing-efforts)
 
 Source: https://speero.com/research-methods/remote-usability-studies
-Last updated: 2026-07-20
+Last updated: 2026-11-05
 
 
 ---
@@ -3118,12 +3446,14 @@ Tools
 
 ## Recipes that use this method
 
+- [Agentic Commerce Readiness](/research-recipes/agentic-commerce-readiness)
+
 - [Brand Perception Baseline & Tracking](/research-recipes/brand-perception-tracking)
 
 - [SEO & Search Intent Research](/research-recipes/seo-search-intent)
 
 Source: https://speero.com/research-methods/search-serp-analysis
-Last updated: 2026-08-06
+Last updated: 2026-11-05
 
 
 ---
@@ -3215,8 +3545,10 @@ Tools
 
 - [Product Page Optimisation](/research-recipes/product-page)
 
+- [Test Backlog Pre-Screening](/research-recipes/test-backlog-pre-screening)
+
 Source: https://speero.com/research-methods/session-recordings
-Last updated: 2026-07-20
+Last updated: 2026-11-05
 
 
 ---
@@ -3271,6 +3603,195 @@ Tools
 
 Source: https://speero.com/research-methods/social-media-listening
 Last updated: 2026-08-06
+
+
+---
+
+# Synthetic Interviews & Personas
+
+Interviewing or chatting with AI-generated personas built from an audience description, and sometimes from your own research and customer data. The output reads like interview transcripts, but no real customer is involved, so every finding is a hypothesis to test with people.
+
+| | |
+|---|---|
+| Stage | Explore |
+| Data type | Qualitative |
+| Strength of signal | Low |
+| Effort | Low |
+| Surface area | Any surface, Messaging & copy |
+
+## When to reach for it
+
+Pilot an interview guide or survey before real fieldwork, and catch confusing or leading questions.Orient quickly in an unfamiliar audience or category before planning real research.Generate a long list of possible objections and motivations to probe with real customers.Stress-test draft copy for unclear claims and jargon ahead of a real copy test.
+
+## Strengths
+
+Results come back in minutes, with no recruiting, scheduling or incentives.
+Cheap enough to run many times, so a guide or concept can be iterated before real people see it.
+Personas grounded in your own interviews and data perform better than demographic prompts.
+
+## Limits
+
+Answers bunch around the most common response and drop the unusual ones. NN/g calls this mode collapse, and it means synthetic interviews miss the long tail that real research is often looking for.
+Synthetic personas tend to be agreeable and positive, so they flatter concepts that real users would question.
+They are weakest for niche, non-Western or minority audiences, for emotional and habit-driven behaviour, and for anything genuinely new.
+No real customer is studied, so this is not user research and cannot validate a decision.
+
+## Practical considerations
+
+Practical considerations
+
+### Pair it
+Always follow with Customer Interviews, a Customer Survey or Copy Testing with real people, aimed at confirming or killing what the synthetic run suggested.
+
+### Customer language
+Never take customer wording from synthetic personas for copy, keywords or labels. Use their output to shape questions, then take the words from real customers.
+
+### Label it
+Reports should say which findings came from people and which came from models.
+
+### Model drift
+Outputs shift as the underlying model updates, so re-run rather than reuse old results.
+
+## Common tools
+
+Tools
+
+- [Synthetic Users](https://www.syntheticusers.com)
+
+- [Ask Rally](https://askrally.com)
+
+- [Delve AI](https://www.delve.ai)
+
+- [OpinioAI](https://www.opinio.ai)
+
+- [Evidenza](https://www.evidenza.ai)
+
+## Recipes that use this method
+
+- [Value Proposition & Messaging](/research-recipes/value-prop-messaging)
+
+Source: https://speero.com/research-methods/synthetic-interviews-personas
+Last updated: 2026-11-05
+
+
+---
+
+# Synthetic Shopper Simulation
+
+AI agents acting as shoppers browse or judge a control and one or more variants, and the tool predicts which version would perform better. Some tools drive real browsers on live or staged pages, others compare screenshots. It is a way to pre-screen ideas, not a substitute for a live experiment.
+
+| | |
+|---|---|
+| Stage | Explore, Focus |
+| Data type | Quantitative |
+| Strength of signal | Low |
+| Effort | Low |
+| Surface area | Landing pages, Checkout & cart, Any surface |
+
+## When to reach for it
+
+Pre-screen a test backlog and drop the weakest variants before spending traffic.Sanity-check a variant for obvious friction before launch.Compare two themes or page versions when traffic is too low to test both live.
+
+## Strengths
+
+Returns a prediction in hours rather than weeks of live traffic.
+Session replays and agent reasoning can surface friction worth investigating.
+Useful for ordering a backlog when traffic is the constraint.
+
+## Limits
+
+Independent studies of predicting A/B winners land well below vendor headlines, and one study of 330 CRO tests found model judges close to chance.
+Predicted effect sizes are often shrunk or inflated, so they cannot feed revenue forecasts or sample size planning.
+Headline match rates can mislead, because many 'winners' in test archives come from non-significant tests.
+Agents don't behave like real shoppers with real money, time pressure and habits.
+
+## Practical considerations
+
+Practical considerations
+
+### Pair it
+Anything worth shipping still goes through an A/B Test. Use synthetic results to decide what to test, never what to ship.
+
+### Tool scope
+Shopify SimGym compares two themes only, and bot protection can block its shoppers. Squoosh and VWO's synthetic test suit backlog screening better.
+
+### Vendor claims
+Ask how a match rate was measured, how many tests it covers and whether non-significant tests count as winners.
+
+## Common tools
+
+Tools
+
+- [Squoosh](https://squoosh.ai)
+
+- [Shopify SimGym](https://help.shopify.com/en/manual/online-store/simgym)
+
+- [VWO](https://vwo.com)
+
+## Recipes that use this method
+
+- [Researching With Low Traffic](/research-recipes/researching-low-traffic)
+
+- [Test Backlog Pre-Screening](/research-recipes/test-backlog-pre-screening)
+
+Source: https://speero.com/research-methods/synthetic-shopper-simulation
+Last updated: 2026-11-05
+
+
+---
+
+# Synthetic Survey Panel
+
+Running a survey or concept test on a simulated panel of respondents instead of real people. Some panels are prompted general models, others are trained or calibrated on real survey data. Results can suggest which options rank higher, but they cannot measure real levels of interest or intent.
+
+| | |
+|---|---|
+| Stage | Explore, Focus |
+| Data type | Quantitative |
+| Strength of signal | Low |
+| Effort | Low |
+| Surface area | Messaging & copy, Pricing page |
+
+## When to reach for it
+
+Pretest a questionnaire before sending it to a real sample.Screen a long list of concepts, claims or messages down to a shortlist for real testing.Get a rough relative ranking of options when no budget or audience is available yet.
+
+## Strengths
+
+Fast and cheap at large simulated sample sizes.
+Useful for spotting badly worded questions and obviously weak options before spending panel budget.
+Relative rankings are more reliable than absolute numbers in the published research.
+
+## Limits
+
+Averages can look plausible while the spread of answers is far too narrow, and subgroup results get pulled toward the middle.
+Absolute numbers such as purchase intent, satisfaction or usability scores are often inflated.
+Relationships between questions and driver analysis can come out wrong, so it is unsafe for segmentation or causal claims.
+Vendors report accuracy in different, mostly undefined ways, so their figures cannot be compared.
+
+## Practical considerations
+
+Practical considerations
+
+### Pair it
+Any option that survives the synthetic screen goes to a real Customer Survey, Brand Perception Survey or Copy Testing before a decision is made.
+
+### Read the order, not the size
+Trust which option ranks higher more than how big the gap looks. Never use synthetic results for sample size or power calculations.
+
+### Vendor claims
+Ask vendors how accuracy was measured, on how many studies, and whether the comparison data was held out. ESOMAR's 20 Questions for AI buyers is a useful checklist.
+
+## Common tools
+
+Tools
+
+- [Qualtrics Synthetic Panels](https://www.qualtrics.com/support/survey-platform/distributions-module/synthetic-panels/)
+
+- [Expected Parrot](https://www.expectedparrot.com)
+
+Source: https://speero.com/research-methods/synthetic-survey-panel
+Last updated: 2026-11-05
 
 
 ---

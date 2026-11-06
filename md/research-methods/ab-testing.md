@@ -39,6 +39,8 @@ Tools
 
 - [Landing Page Optimisation](/research-recipes/landing-page-optimisation)
 
+- [Test Backlog Pre-Screening](/research-recipes/test-backlog-pre-screening)
+
 - [Validating a Redesign Before Build](/research-recipes/validating-redesign)
 
 ## Go deeper
@@ -54,4 +56,4 @@ Go deeper
 - [Can you run multiple A/B tests at the same time](https://speero.com/post/can-you-run-multiple-a-b-tests-at-the-same-time)
 
 Source: https://speero.com/research-methods/ab-testing
-Last updated: 2026-07-20
+Last updated: 2026-11-05

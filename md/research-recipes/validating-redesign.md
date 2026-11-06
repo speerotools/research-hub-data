@@ -16,11 +16,18 @@ How might we prove the new design beats the current one before we build it?
 
 ## What this recipe does
 
-A big redesign is about to be built and the risk is shipping months of work that performs worse than what it replaces. This recipe front-loads the validation. A five second test checks whether the new design communicates its point at a glance, a preference test weighs it against the current version, and copy testing pressure-tests the words carrying the message. Prototype and moderated usability sessions then confirm people can actually complete the core tasks, so the redesign earns its place before a developer touches it.
+A big redesign is about to be built and the risk is shipping months of work that performs worse than what it replaces. This recipe front-loads the validation. Predictive attention analysis and an AI agent walkthrough catch obvious hierarchy and flow problems cheaply, before any participant is booked. A five second test then checks whether the new design communicates its point at a glance, a preference test weighs it against the current version, and copy testing pressure-tests the words carrying the message. Prototype and moderated usability sessions then confirm people can actually complete the core tasks, so the redesign earns its place before a developer touches it.
 
 ## The method sequence
 
-Focus. Validate.
+Explore. Focus. Validate.
+
+### Explore
+Catch obvious problems before booking participants, checking where attention lands and where an AI agent gets stuck.
+
+- [Predictive Attention Analysis](/research-methods/predictive-attention-analysis)
+
+- [AI Agent Walkthrough](/research-methods/ai-agent-walkthrough)
 
 ### Focus
 Check the new design communicates its point, and pressure-test the words carrying it.
@@ -47,4 +54,4 @@ Go deeper
 - [Preference testing versus A/B testing: different questions and evidence](https://speero.com/post/preference-testing-vs-a-b-testing-for-b2b-saas)
 
 Source: https://speero.com/research-recipes/validating-redesign
-Last updated: 2026-10-14
+Last updated: 2026-11-05

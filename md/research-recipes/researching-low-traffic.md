@@ -19,7 +19,7 @@ How might we build evidence for decisions when traffic can't support A/B tests?
 ## What this recipe does
 
 When traffic is too low for a suitably powered A/B test, recruited-participant research can identify usability problems, test message comprehension and explore stated preferences. It cannot establish how much a change will increase conversion or revenue on your live site.
-Start with a UX heuristic review and competitor review to generate questions, not proven fixes. Recruit people who fit the intended audience for remote usability studies and copy testing. Observe where they struggle with tasks and what they understand; distinguish observed behaviour from what participants say they would do.
+Start with a UX heuristic review and competitor review to generate questions, not proven fixes. Synthetic shopper simulation and predictive attention analysis can help rank design options at this stage, but they predict rather than measure, so treat their output as more questions. Recruit people who fit the intended audience for remote usability studies and copy testing. Observe where they struggle with tasks and what they understand; distinguish observed behaviour from what participants say they would do.
 At the Validate step, preference tests compare stated choices and the reasons behind them. Prototype testing checks whether participants can understand and use a proposed design in the study setting. Use these findings to revise a design, reject a weak concept or decide whether a limited, reversible rollout is justified. Neither method substitutes for a randomized experiment measuring live business outcomes.
 Record the remaining uncertainty, participant selection and study conditions. If you ship without an adequately powered experiment, monitor guardrails and define rollback criteria, but do not label a before-and-after change as causal conversion lift. Revisit controlled measurement when it becomes feasible.
 
@@ -28,11 +28,15 @@ Record the remaining uncertainty, participant selection and study conditions. If
 Explore. Focus. Validate.
 
 ### Explore
-Use expert and competitor reviews to generate research questions. These are hypotheses, not evidence that a change will improve conversion.
+Use expert and competitor reviews to generate research questions. Synthetic shopper simulation and predictive attention analysis can rank design options in the same spirit. All of these are hypotheses, not evidence that a change will improve conversion.
 
 - [UX Heuristic Review](/research-methods/ux-heuristic-review)
 
 - [Competitor Review](/research-methods/competitor-review)
+
+- [Synthetic Shopper Simulation](/research-methods/synthetic-shopper-simulation)
+
+- [Predictive Attention Analysis](/research-methods/predictive-attention-analysis)
 
 ### Focus
 Recruit relevant participants. Remote usability studies reveal observed task difficulties; copy testing examines comprehension and reported reactions. Findings depend on the sample and study setting.
@@ -55,4 +59,4 @@ Go deeper
 - [Preference testing versus A/B testing: stated preference is not conversion evidence](https://speero.com/post/preference-testing-vs-a-b-testing-for-b2b-saas)
 
 Source: https://speero.com/research-recipes/researching-low-traffic
-Last updated: 2026-10-15
+Last updated: 2026-11-05

@@ -17,18 +17,20 @@ How might we make the landing page deliver on the promise the ad made?
 ## What this recipe does
 
 A landing page is underperforming and you need to understand what is blocking visitors before redesigning it. The aim is to diagnose friction across first impression, message and on-page behaviour.
-A 5 second test and a UX heuristic review give a fast read on clarity and obvious friction. Heatmaps and session recordings show where attention goes and where people hesitate or drop off. On-site polls ask visitors directly what is missing or unclear, and copy testing checks whether the core message lands with the target audience. The behavioural data shows what is happening, the polls and copy testing explain why, and the heuristic review and 5 second test surface quick wins to act on first.
+A 5 second test and a UX heuristic review give a fast read on clarity and obvious friction, and predictive attention analysis adds a quick check of whether the headline and call to action draw the eye. Heatmaps and session recordings show where attention goes and where people hesitate or drop off. On-site polls ask visitors directly what is missing or unclear, and copy testing checks whether the core message lands with the target audience. The behavioural data shows what is happening, the polls and copy testing explain why, and the heuristic review and 5 second test surface quick wins to act on first.
 
 ## The method sequence
 
 Explore. Focus. Validate.
 
 ### Explore
-Get a fast read on clarity and obvious friction.
+Get a fast read on clarity, obvious friction and what draws the eye.
 
 - [5 Second Test](/research-methods/five-second-test)
 
 - [UX Heuristic Review](/research-methods/ux-heuristic-review)
+
+- [Predictive Attention Analysis](/research-methods/predictive-attention-analysis)
 
 ### Focus
 See where attention goes, where people drop, and ask them what's missing.
@@ -47,4 +49,4 @@ Confirm the winning change with a live experiment.
 - [A/B Testing](/research-methods/ab-testing)
 
 Source: https://speero.com/research-recipes/landing-page-optimisation
-Last updated: 2026-07-20
+Last updated: 2026-11-05

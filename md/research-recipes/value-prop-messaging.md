@@ -16,14 +16,16 @@ How might we make our value clear and relevant within seconds of landing?
 
 ## What this recipe does
 
-Visitors land on the site and can't quickly tell what the product is, who it's for or why it beats the alternative. The explore work goes to the source. Interviews and surveys capture how customers describe the value in their own words, and a competitor review shows which claims are table stakes and which are genuinely differentiating. That language then gets sharpened and tested, with copy testing and a five second test checking whether the message reads clearly and fast, and on-site polls confirming the page answers the questions real visitors arrive with.
+Visitors land on the site and can't quickly tell what the product is, who it's for or why it beats the alternative. The explore work goes to the source. A quick synthetic interview run can pilot the interview guide, but it only shapes the questions, because synthetic personas return the most common phrasing and miss the words real customers use. Interviews and surveys capture how customers describe the value in their own words, and a competitor review shows which claims are table stakes and which are genuinely differentiating. That language then gets sharpened and tested, with copy testing and a five second test checking whether the message reads clearly and fast, and on-site polls confirming the page answers the questions real visitors arrive with.
 
 ## The method sequence
 
 Explore. Focus. Validate.
 
 ### Explore
-Capture the value in customers' own words, and map which claims differentiate.
+Capture the value in customers' own words, and map which claims differentiate. Synthetic interviews can pilot the interview guide first, but the words themselves must come from real customers.
+
+- [Synthetic Interviews & Personas](/research-methods/synthetic-interviews-personas)
 
 - [Customer Interviews](/research-methods/customer-interviews)
 
@@ -54,4 +56,4 @@ Go deeper
 - [Work with Speero: test whether your audience understands your messaging](https://speero.com/user-research-services/copy-testing)
 
 Source: https://speero.com/research-recipes/value-prop-messaging
-Last updated: 2026-10-14
+Last updated: 2026-11-05

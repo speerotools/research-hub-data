@@ -60,6 +60,8 @@ Tools
 
 - [Acquisition Research](/research-recipes/acquisition-research)
 
+- [Agentic Commerce Readiness](/research-recipes/agentic-commerce-readiness)
+
 - [Category & Listing Page Optimisation](/research-recipes/category-listing-page)
 
 - [Checkout & Cart Optimisation](/research-recipes/checkout-cart-optimisation)
@@ -90,6 +92,8 @@ Tools
 
 - [SEO & Search Intent Research](/research-recipes/seo-search-intent)
 
+- [Test Backlog Pre-Screening](/research-recipes/test-backlog-pre-screening)
+
 - [Traffic Quality & Channel Fit Research](/research-recipes/traffic-quality-channel-fit)
 
 ## Go deeper
@@ -105,4 +109,4 @@ Go deeper
 - [Speero GA4 audit tool](https://ga4audit.speero.com/)
 
 Source: https://speero.com/research-methods/analytics-data-analysis
-Last updated: 2026-07-20
+Last updated: 2026-11-05

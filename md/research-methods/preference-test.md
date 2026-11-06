@@ -48,6 +48,8 @@ Tools
 
 - [Researching With Low Traffic](/research-recipes/researching-low-traffic)
 
+- [Test Backlog Pre-Screening](/research-recipes/test-backlog-pre-screening)
+
 - [Validating a Redesign Before Build](/research-recipes/validating-redesign)
 
 ## Go deeper
@@ -57,4 +59,4 @@ Go deeper
 - [https://maze.co/blog/preference-testing/](https://maze.co/blog/preference-testing/)
 
 Source: https://speero.com/research-methods/preference-test
-Last updated: 2026-07-20
+Last updated: 2026-11-05

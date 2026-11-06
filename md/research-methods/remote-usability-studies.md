@@ -46,6 +46,8 @@ Tools
 
 - [Lookback](https://www.lookback.com)
 
+- [Loop11](https://www.loop11.com)
+
 ## Recipes that use this method
 
 - [B2B ICP Research](/research-recipes/b2b-icp-research)
@@ -79,4 +81,4 @@ Go deeper
 - [How to get the most out of your user testing efforts](https://speero.com/post/how-to-get-the-most-out-of-your-user-testing-efforts)
 
 Source: https://speero.com/research-methods/remote-usability-studies
-Last updated: 2026-07-20
+Last updated: 2026-11-05

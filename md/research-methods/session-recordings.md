@@ -85,5 +85,7 @@ Tools
 
 - [Product Page Optimisation](/research-recipes/product-page)
 
+- [Test Backlog Pre-Screening](/research-recipes/test-backlog-pre-screening)
+
 Source: https://speero.com/research-methods/session-recordings
-Last updated: 2026-07-20
+Last updated: 2026-11-05

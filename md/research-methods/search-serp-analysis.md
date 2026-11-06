@@ -32,9 +32,11 @@ Tools
 
 ## Recipes that use this method
 
+- [Agentic Commerce Readiness](/research-recipes/agentic-commerce-readiness)
+
 - [Brand Perception Baseline & Tracking](/research-recipes/brand-perception-tracking)
 
 - [SEO & Search Intent Research](/research-recipes/seo-search-intent)
 
 Source: https://speero.com/research-methods/search-serp-analysis
-Last updated: 2026-08-06
+Last updated: 2026-11-05
