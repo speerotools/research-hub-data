@@ -49,4 +49,4 @@ Tools
 - [Brand Perception Baseline & Tracking](/research-recipes/brand-perception-tracking)
 
 Source: https://speero.com/research-methods/online-review-analysis
-Last updated: 2026-08-06
+Last updated: 2026-11-06

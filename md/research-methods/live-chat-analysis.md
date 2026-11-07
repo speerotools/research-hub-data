@@ -48,4 +48,4 @@ Tools
 - [Involuntary Churn & Payment Recovery Research](/research-recipes/involuntary-churn)
 
 Source: https://speero.com/research-methods/live-chat-analysis
-Last updated: 2026-07-20
+Last updated: 2026-11-06

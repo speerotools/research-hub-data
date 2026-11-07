@@ -54,4 +54,4 @@ Go deeper
 - [Form optimization tips with Alun from Zuko](https://speero.com/post/form-optimization-tips-with-alun-from-zuko)
 
 Source: https://speero.com/research-methods/form-analytics
-Last updated: 2026-07-20
+Last updated: 2026-11-06

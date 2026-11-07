@@ -109,4 +109,4 @@ Go deeper
 - [Speero GA4 audit tool](https://ga4audit.speero.com/)
 
 Source: https://speero.com/research-methods/analytics-data-analysis
-Last updated: 2026-11-05
+Last updated: 2026-11-06

@@ -59,4 +59,4 @@ Tools
 - [Value Proposition & Messaging](/research-recipes/value-prop-messaging)
 
 Source: https://speero.com/research-methods/five-second-test
-Last updated: 2026-07-20
+Last updated: 2026-11-06

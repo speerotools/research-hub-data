@@ -61,4 +61,4 @@ Tools
 - [Traffic Quality & Channel Fit Research](/research-recipes/traffic-quality-channel-fit)
 
 Source: https://speero.com/research-methods/sales-customer-service-interviews
-Last updated: 2026-08-06
+Last updated: 2026-11-06

@@ -47,4 +47,4 @@ Tools
 - [Lead Quality Research](/research-recipes/lead-quality)
 
 Source: https://speero.com/research-methods/win-loss-interviews
-Last updated: 2026-07-20
+Last updated: 2026-11-06

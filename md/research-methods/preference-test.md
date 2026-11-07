@@ -59,4 +59,4 @@ Go deeper
 - [https://maze.co/blog/preference-testing/](https://maze.co/blog/preference-testing/)
 
 Source: https://speero.com/research-methods/preference-test
-Last updated: 2026-11-05
+Last updated: 2026-11-06

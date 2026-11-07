@@ -73,4 +73,4 @@ Go deeper
 - [How does product copy format affect user engagement (original research)](https://speero.com/post/how-does-product-copy-format-affect-user-engagement-original-research)
 
 Source: https://speero.com/research-methods/copy-testing
-Last updated: 2026-08-06
+Last updated: 2026-11-06

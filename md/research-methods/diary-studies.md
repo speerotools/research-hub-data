@@ -54,4 +54,4 @@ Go deeper
 - [When to use context methods, field and diary studies (NN/g)](https://www.nngroup.com/articles/context-methods-field-diary-studies/)
 
 Source: https://speero.com/research-methods/diary-studies
-Last updated: 2026-07-20
+Last updated: 2026-11-06

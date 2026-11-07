@@ -53,4 +53,4 @@ Tools
 - [Repeat Purchase & Post-Purchase Research](/research-recipes/repeat-purchase)
 
 Source: https://speero.com/research-methods/sales-customer-service-survey
-Last updated: 2026-07-20
+Last updated: 2026-11-06

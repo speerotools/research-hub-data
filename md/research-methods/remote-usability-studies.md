@@ -81,4 +81,4 @@ Go deeper
 - [How to get the most out of your user testing efforts](https://speero.com/post/how-to-get-the-most-out-of-your-user-testing-efforts)
 
 Source: https://speero.com/research-methods/remote-usability-studies
-Last updated: 2026-11-05
+Last updated: 2026-11-06

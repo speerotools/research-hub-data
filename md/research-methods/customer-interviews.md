@@ -88,4 +88,4 @@ Go deeper
 - [4 mental models for voice of customer research](https://speero.com/post/4-mental-models-to-help-you-conduct-voice-of-customer-research)
 
 Source: https://speero.com/research-methods/customer-interviews
-Last updated: 2026-11-05
+Last updated: 2026-11-06

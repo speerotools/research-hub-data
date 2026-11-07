@@ -39,4 +39,4 @@ Tools
 - [SEO & Search Intent Research](/research-recipes/seo-search-intent)
 
 Source: https://speero.com/research-methods/search-serp-analysis
-Last updated: 2026-11-05
+Last updated: 2026-11-06

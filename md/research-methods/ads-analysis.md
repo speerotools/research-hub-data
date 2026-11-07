@@ -41,4 +41,4 @@ Runs on your existing systems; no dedicated tool required.
 - [Traffic Quality & Channel Fit Research](/research-recipes/traffic-quality-channel-fit)
 
 Source: https://speero.com/research-methods/ads-analysis
-Last updated: 2026-07-20
+Last updated: 2026-11-06

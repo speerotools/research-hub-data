@@ -58,4 +58,4 @@ Tools
 - [Validating a Redesign Before Build](/research-recipes/validating-redesign)
 
 Source: https://speero.com/research-methods/prototype-testing
-Last updated: 2026-07-20
+Last updated: 2026-11-06

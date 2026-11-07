@@ -88,4 +88,4 @@ Go deeper
 - [How to gather voice of customer behavioral insights](https://speero.com/post/how-to-gather-voice-of-customer-behavioral-insights)
 
 Source: https://speero.com/research-methods/on-site-polls
-Last updated: 2026-07-20
+Last updated: 2026-11-06

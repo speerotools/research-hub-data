@@ -56,4 +56,4 @@ Go deeper
 - [Card sorting vs tree testing (NN/g)](https://www.nngroup.com/articles/card-sorting-tree-testing-differences/)
 
 Source: https://speero.com/research-methods/tree-testing
-Last updated: 2026-07-20
+Last updated: 2026-11-06

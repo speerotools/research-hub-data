@@ -80,4 +80,4 @@ Tools
 - [Test Backlog Pre-Screening](/research-recipes/test-backlog-pre-screening)
 
 Source: https://speero.com/research-methods/heatmaps
-Last updated: 2026-11-05
+Last updated: 2026-11-06

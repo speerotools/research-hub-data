@@ -58,4 +58,4 @@ Go deeper
 - [Ecommerce UX battle, benchmarking 4 mobile websites](https://speero.com/post/ecommerce-ux-battle-benchmarking-4-beauty-cosmetics-mobile-websites)
 
 Source: https://speero.com/research-methods/competitor-review
-Last updated: 2026-07-20
+Last updated: 2026-11-06

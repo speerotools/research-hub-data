@@ -69,4 +69,4 @@ Go deeper
 - [Example review, WHOOP](https://speero.com/post/an-heuristic-review-of-whoop-com)
 
 Source: https://speero.com/research-methods/ux-heuristic-review
-Last updated: 2026-07-20
+Last updated: 2026-11-06

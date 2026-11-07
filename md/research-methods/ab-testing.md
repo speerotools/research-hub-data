@@ -56,4 +56,4 @@ Go deeper
 - [Can you run multiple A/B tests at the same time](https://speero.com/post/can-you-run-multiple-a-b-tests-at-the-same-time)
 
 Source: https://speero.com/research-methods/ab-testing
-Last updated: 2026-11-05
+Last updated: 2026-11-06
