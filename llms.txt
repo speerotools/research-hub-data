@@ -19,6 +19,7 @@
 - [Landing Page Optimisation](https://speero.com/research-recipes/landing-page-optimisation): A landing page is underperforming and you need to understand what is blocking visitors before redesigning it.
 - [Lead Quality Research](https://speero.com/research-recipes/lead-quality): The lead count looks healthy and the pipeline doesn't, which usually means the acquisition engine is optimised for volume rather than fit.
 - [Lead-Gen Form Optimisation](https://speero.com/research-recipes/lead-gen-form): Prospects start the lead form but abandon it before submitting, and the cost of every lost completion is high.
+- [Market Blind Spot Research](https://speero.com/research-recipes/market-blind-spot-research): Everyone in the category sells the same way, and nobody on the team can say what the market is missing or which angle is worth betting on.
 - [Mobile Experience Optimisation](https://speero.com/research-recipes/mobile-experience): Mobile traffic is large but converts well below desktop, and the team can't tell whether it's layout, speed, forms or intent.
 - [Navigation & Information Architecture](https://speero.com/research-recipes/navigation-information-architecture): Visitors know what they want but can't find it, so they bounce between pages or fall back on search and give up.
 - [Onboarding & Activation Research](https://speero.com/research-recipes/onboarding-activation): New users sign up but never reach the first moment of real value, so they drift away before the product can prove itself.
@@ -51,6 +52,7 @@
 - [Form Analytics](https://speero.com/research-methods/form-analytics): Form analytics is similar to regular analytics analysis, but focused on your website forms.
 - [Heatmaps](https://speero.com/research-methods/heatmaps): Heat maps visualise on-site behaviour by representing clicks, hover and mouse movement with colours overlaid on a screenshot of the pages of a website.
 - [Live Chat Analysis](https://speero.com/research-methods/live-chat-analysis): Analysis of on-site live chat transcripts to uncover fears, uncertainties and doubts that users are facing on-site, including identifying any unanswered questions (which could point towards missing or sub-optimal website content).
+- [Market Thesis Stress Test](https://speero.com/research-methods/market-thesis-stress-test): Reading a whole category's public material with an AI model: competitor sites and pricing, what incumbents tell investors on earnings calls, and what customers say in reviews and forums.
 - [Moderated Usability Studies](https://speero.com/research-methods/moderated-usability-studies): Use a sample pool of participants who match your target audience.
 - [On-site Polls](https://speero.com/research-methods/on-site-polls): On-site polls are very short surveys that appear on your website for website users to answer.
 - [Online Review Analysis](https://speero.com/research-methods/online-review-analysis): Structured analysis of the reviews the market has already written on review platforms, app stores and marketplaces, for the brand and for its competitors.

@@ -817,6 +817,66 @@ Last updated: 2026-10-14
 
 ---
 
+# Market Blind Spot Research
+
+**We don't know how the market sees us**
+
+> I've heard the name, but I couldn't tell you what they do differently or whether they're for someone like me.
+
+How might we know how our market actually perceives us, and whether that perception is moving?
+
+## You'll recognise this when
+
+- A rebrand or repositioning is being scoped with no baseline of current awareness or perception
+
+- Positioning debates inside the company run on opinion because nobody has market evidence
+
+- Sales keeps correcting the same wrong assumptions about what the company does
+
+- The brand is missing from consideration sets it should be in
+
+## What this recipe does
+
+Everyone in the category sells the same way, and nobody on the team can say what the market is missing or which angle is worth betting on. This recipe reads the whole category, not just the company: competitor sites and pricing, what incumbents tell investors, and what customers say unprompted in reviews and forums.
+The analysis asks three questions. What do the leaders know that their customers would never admit? Which beliefs does the whole category take for granted, and could any already be false? Which pains keep coming up that nobody is building for? One angle is then attacked over several rounds, each bringing new evidence, until what is left holds up. The result is a sharp go-to-market hypothesis, and it goes to the buyers it describes before anyone builds on it.
+
+## The method sequence
+
+Explore. Focus. Validate.
+
+### Explore
+Read the category in its own words and in its customers' words.
+
+- [Competitor Review](/research-methods/competitor-review)
+
+- [Online Review Analysis](/research-methods/online-review-analysis)
+
+- [Social Media Listening](/research-methods/social-media-listening)
+
+### Focus
+Find the shared blind spots, then attack one angle with new evidence each round.
+
+- [Market Thesis Stress Test](/research-methods/market-thesis-stress-test)
+
+### Validate
+Put the surviving angle in front of the buyers it describes.
+
+- [Copy Testing](/research-methods/copy-testing)
+
+- [Customer Interviews](/research-methods/customer-interviews)
+
+## Go deeper
+
+Go deeper
+
+- [Need to measure how the market sees you over time? Brand Perception Baseline & Tracking](https://speero.com/research-recipes/brand-perception-tracking)
+
+Source: https://speero.com/research-recipes/market-blind-spot-research
+Last updated: 2026-11-09
+
+
+---
+
 # Mobile Experience Optimisation
 
 **Mobile converts far worse than desktop**
@@ -2163,6 +2223,8 @@ Tools
 
 ## Recipes that use this method
 
+- [Market Blind Spot Research](/research-recipes/market-blind-spot-research)
+
 - [Researching With Low Traffic](/research-recipes/researching-low-traffic)
 
 - [SEO & Search Intent Research](/research-recipes/seo-search-intent)
@@ -2180,7 +2242,7 @@ Go deeper
 - [Ecommerce UX battle, benchmarking 4 mobile websites](https://speero.com/post/ecommerce-ux-battle-benchmarking-4-beauty-cosmetics-mobile-websites)
 
 Source: https://speero.com/research-methods/competitor-review
-Last updated: 2026-11-06
+Last updated: 2026-11-09
 
 
 ---
@@ -2241,6 +2303,8 @@ Tools
 
 - [Lead Quality Research](/research-recipes/lead-quality)
 
+- [Market Blind Spot Research](/research-recipes/market-blind-spot-research)
+
 - [Researching With Low Traffic](/research-recipes/researching-low-traffic)
 
 - [SaaS Pricing Page](/research-recipes/saas-pricing-page)
@@ -2260,7 +2324,7 @@ Go deeper
 - [How does product copy format affect user engagement (original research)](https://speero.com/post/how-does-product-copy-format-affect-user-engagement-original-research)
 
 Source: https://speero.com/research-methods/copy-testing
-Last updated: 2026-11-06
+Last updated: 2026-11-09
 
 
 ---
@@ -2336,6 +2400,8 @@ Tools
 
 - [Lead Quality Research](/research-recipes/lead-quality)
 
+- [Market Blind Spot Research](/research-recipes/market-blind-spot-research)
+
 - [Onboarding & Activation Research](/research-recipes/onboarding-activation)
 
 - [Repeat Purchase & Post-Purchase Research](/research-recipes/repeat-purchase)
@@ -2355,7 +2421,7 @@ Go deeper
 - [4 mental models for voice of customer research](https://speero.com/post/4-mental-models-to-help-you-conduct-voice-of-customer-research)
 
 Source: https://speero.com/research-methods/customer-interviews
-Last updated: 2026-11-06
+Last updated: 2026-11-09
 
 
 ---
@@ -2779,6 +2845,64 @@ Last updated: 2026-11-06
 
 ---
 
+# Market Thesis Stress Test
+
+Reading a whole category's public material with an AI model: competitor sites and pricing, what incumbents tell investors on earnings calls, and what customers say in reviews and forums. The model is asked questions that force thinking rather than summary, then one go-to-market angle is attacked over several rounds, each bringing new evidence, until what is left holds up. The output is a hypothesis to test with buyers, not a finding.
+
+| | |
+|---|---|
+| Stage | Explore, Focus |
+| Data type | Qualitative |
+| Strength of signal | Low |
+| Effort | Medium |
+| Surface area | Any surface, Messaging & copy |
+
+## When to reach for it
+
+Get up to speed on an unfamiliar category before a research engagement or a pitch.Find the beliefs a whole category takes for granted, and spot the ones that may already be false.Turn a hunch about positioning into a sharp hypothesis worth a message test.Check whether "nobody does this" is true before building a strategy on it.
+
+## Strengths
+
+Days of desk research shrink to a working session, using material that is already public.Every claim traces back to a logged source, so the reasoning can be checked.Forcing each round to bring new, contrary evidence catches weak angles that a single reading lets through.No recruiting, scheduling or incentives.
+
+## Limits
+
+It is only as good as the material fed in. Review sites and forums often block automated reading, so exports are usually needed.AI models tend to agree with the angle they are handed unless the process forces them to attack it.Public material shows what vendors claim and what some customers post, not how buyers actually decide.No buyer is studied, so it cannot validate a decision.
+
+## Practical considerations
+
+Practical considerations
+
+### Set a floor
+Agree a minimum before the analysis starts, for example eight competitor sites and 30 full reviews. Below it, label the output a desk scan and treat every pattern as a signal, not a count.
+
+### Count real voices only
+A mention is one reviewer's own words. Review-site summaries, search snippets and vendor comparison pages are not customer voice.
+
+### Look at home first
+Read what the company already publishes (ROI studies, case studies, analyst reports) before claiming a gap in the market.
+
+### Attack with new evidence
+Each round must bring a source not already used, starting with "does anyone already do this?". A round that only reshuffles the same evidence does not count.
+
+### Pair it
+Always follow with Copy Testing or Customer Interviews aimed at confirming or killing the surviving angle.
+
+## Common tools
+
+Tools
+Runs on your existing systems; no dedicated tool required.
+
+## Recipes that use this method
+
+- [Market Blind Spot Research](/research-recipes/market-blind-spot-research)
+
+Source: https://speero.com/research-methods/market-thesis-stress-test
+Last updated: 2026-11-09
+
+
+---
+
 # Moderated Usability Studies
 
 Use a sample pool of participants who match your target audience. Watch and listen as they walk through your site and perform queued tasks. Moderated usability studies involve one-to-one sessions conducted by a skilled moderator who will set the tasks and questions, allowing for a deeper level of insight. Moderated usability studies can be conducted in person or via Zoom, Teams, etc.
@@ -2993,8 +3117,10 @@ Tools
 
 - [Brand Perception Baseline & Tracking](/research-recipes/brand-perception-tracking)
 
+- [Market Blind Spot Research](/research-recipes/market-blind-spot-research)
+
 Source: https://speero.com/research-methods/online-review-analysis
-Last updated: 2026-11-06
+Last updated: 2026-11-09
 
 
 ---
@@ -3601,8 +3727,10 @@ Tools
 
 - [Brand Perception Baseline & Tracking](/research-recipes/brand-perception-tracking)
 
+- [Market Blind Spot Research](/research-recipes/market-blind-spot-research)
+
 Source: https://speero.com/research-methods/social-media-listening
-Last updated: 2026-11-06
+Last updated: 2026-11-09
 
 
 ---

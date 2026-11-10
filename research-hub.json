@@ -1,6 +1,6 @@
 {
-  "version": "2026-11-09T13:38:10Z",
-  "commit": "b16e16a21840eb19a664528fcb9fe33285f940cb",
+  "version": "2026-11-10T13:15:52Z",
+  "commit": "9c4678f8756c26d3775e21d5db376603f64821ee",
   "methods": {
     "remote-usability-studies": {
       "name": "Remote Usability Studies",
@@ -114,7 +114,7 @@
           "https://speero.com/post/4-mental-models-to-help-you-conduct-voice-of-customer-research"
         ]
       ],
-      "updated": "2026-11-06",
+      "updated": "2026-11-09",
       "rid": "recjpYEhxmkKGqif1"
     },
     "on-site-polls": {
@@ -350,7 +350,7 @@
           "https://speero.com/post/ecommerce-ux-battle-benchmarking-4-beauty-cosmetics-mobile-websites"
         ]
       ],
-      "updated": "2026-11-06",
+      "updated": "2026-11-09",
       "rid": "recuRKAD2Tc6OcB1c"
     },
     "ux-heuristic-review": {
@@ -591,7 +591,7 @@
           "https://speero.com/post/how-does-product-copy-format-affect-user-engagement-original-research"
         ]
       ],
-      "updated": "2026-11-06",
+      "updated": "2026-11-09",
       "rid": "recPp8wWtpEuENmYm"
     },
     "prototype-testing": {
@@ -904,7 +904,7 @@
       "cons": "The people who post are not a representative sample of the market, and loud voices skew the read.\n\nVolume can be thin for niche and B2B categories, so weeks can pass without meaningful signal.\n\nSentiment classification is rough. Irony, jargon and mixed opinions get mislabelled.",
       "considerations": "Where to listen\nThe right sources depend on the audience. Developer and technical audiences live in forums, communities and Q&A sites more than mainstream social platforms, so pick sources by where the buyers actually talk, not by what the tool covers best.\n\nBaseline before judging\nRaw mention counts mean little on their own. Track against a baseline period and against competitors so a change reads as signal rather than noise.",
       "resources": [],
-      "updated": "2026-11-06",
+      "updated": "2026-11-09",
       "rid": "recLVTPwBSzcFyQ36"
     },
     "online-review-analysis": {
@@ -930,7 +930,7 @@
       "cons": "Reviews cluster at the extremes, because the satisfied middle rarely writes.\n\nPlatform incentives and vendor review programmes shape what gets posted.\n\nReviews describe the product experience more than the brand, so they inform perception work without measuring awareness.",
       "considerations": "Source selection\nMatch platforms to the category. Software lives on software review sites, consumer products on marketplaces and app stores. Note each platform's review-collection incentives when weighing what you read.\n\nRecency\nWeight recent reviews more heavily. Old reviews describe a product and a market that may no longer exist.",
       "resources": [],
-      "updated": "2026-11-06",
+      "updated": "2026-11-09",
       "rid": "recAAOsa5sxW8AKbg"
     },
     "synthetic-interviews-personas": {
@@ -1098,6 +1098,30 @@
       "resources": [],
       "updated": "2026-11-05",
       "rid": "recfec65KtSaM8zFw"
+    },
+    "market-thesis-stress-test": {
+      "name": "Market Thesis Stress Test",
+      "objective": [
+        "Explore",
+        "Focus"
+      ],
+      "data": "Qualitative",
+      "signal": "Low",
+      "effort": "Medium",
+      "surface": [
+        "Any surface",
+        "Messaging & copy"
+      ],
+      "tools": [],
+      "related": "competitor-review",
+      "desc": "Reading a whole category's public material with an AI model: competitor sites and pricing, what incumbents tell investors on earnings calls, and what customers say in reviews and forums. The model is asked questions that force thinking rather than summary, then one go-to-market angle is attacked over several rounds, each bringing new evidence, until what is left holds up. The output is a hypothesis to test with buyers, not a finding.",
+      "use": "Get up to speed on an unfamiliar category before a research engagement or a pitch.\nFind the beliefs a whole category takes for granted, and spot the ones that may already be false.\nTurn a hunch about positioning into a sharp hypothesis worth a message test.\nCheck whether \"nobody does this\" is true before building a strategy on it.",
+      "pros": "Days of desk research shrink to a working session, using material that is already public.\nEvery claim traces back to a logged source, so the reasoning can be checked.\nForcing each round to bring new, contrary evidence catches weak angles that a single reading lets through.\nNo recruiting, scheduling or incentives.",
+      "cons": "It is only as good as the material fed in. Review sites and forums often block automated reading, so exports are usually needed.\nAI models tend to agree with the angle they are handed unless the process forces them to attack it.\nPublic material shows what vendors claim and what some customers post, not how buyers actually decide.\nNo buyer is studied, so it cannot validate a decision.",
+      "considerations": "Set a floor\nAgree a minimum before the analysis starts, for example eight competitor sites and 30 full reviews. Below it, label the output a desk scan and treat every pattern as a signal, not a count.\n\nCount real voices only\nA mention is one reviewer's own words. Review-site summaries, search snippets and vendor comparison pages are not customer voice.\n\nLook at home first\nRead what the company already publishes (ROI studies, case studies, analyst reports) before claiming a gap in the market.\n\nAttack with new evidence\nEach round must bring a source not already used, starting with \"does anyone already do this?\". A round that only reshuffles the same evidence does not count.\n\nPair it\nAlways follow with Copy Testing or Customer Interviews aimed at confirming or killing the surviving angle.",
+      "resources": [],
+      "updated": "2026-11-09",
+      "rid": "recYxl5IKAGqNaeMm"
     }
   },
   "outcomes": [
@@ -2532,6 +2556,58 @@
       "resources": [],
       "updated": "2026-11-05",
       "rid": "rec2G0Z1zmPlQMq7U",
+      "new": true
+    },
+    "market-blind-spot-research": {
+      "name": "Market Blind Spot Research",
+      "outcome": "foundational",
+      "problem": "I've heard the name, but I couldn't tell you what they do differently or whether they're for someone like me.",
+      "opp": "We don't know how the market sees us",
+      "hmw": "How might we know how our market actually perceives us, and whether that perception is moving?",
+      "triggers": [
+        "A rebrand or repositioning is being scoped with no baseline of current awareness or perception",
+        "Positioning debates inside the company run on opinion because nobody has market evidence",
+        "Sales keeps correcting the same wrong assumptions about what the company does",
+        "The brand is missing from consideration sets it should be in"
+      ],
+      "dstage": "Explore",
+      "evidence": "Hypothesised",
+      "desc": "Everyone in the category sells the same way, and nobody on the team can say what the market is missing or which angle is worth betting on. This recipe reads the whole category, not just the company: competitor sites and pricing, what incumbents tell investors, and what customers say unprompted in reviews and forums.\n\nThe analysis asks three questions. What do the leaders know that their customers would never admit? Which beliefs does the whole category take for granted, and could any already be false? Which pains keep coming up that nobody is building for? One angle is then attacked over several rounds, each bringing new evidence, until what is left holds up. The result is a sharp go-to-market hypothesis, and it goes to the buyers it describes before anyone builds on it.",
+      "stages": [
+        [
+          "Explore",
+          "Read the category in its own words and in its customers' words.",
+          [
+            "competitor-review",
+            "online-review-analysis",
+            "social-media-listening"
+          ]
+        ],
+        [
+          "Focus",
+          "Find the shared blind spots, then attack one angle with new evidence each round.",
+          [
+            "market-thesis-stress-test"
+          ]
+        ],
+        [
+          "Validate",
+          "Put the surviving angle in front of the buyers it describes.",
+          [
+            "copy-testing",
+            "customer-interviews"
+          ]
+        ]
+      ],
+      "resources": [
+        [
+          "Need to measure how the market sees you over time? Brand Perception Baseline & Tracking",
+          "https://speero.com/research-recipes/brand-perception-tracking"
+        ]
+      ],
+      "updated": "2026-11-09",
+      "rid": "recrzZz8ltuUfRZUy",
+      "opp2": "We don't really understand our ICP",
       "new": true
     }
   },

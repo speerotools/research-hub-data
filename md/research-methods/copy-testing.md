@@ -54,6 +54,8 @@ Tools
 
 - [Lead Quality Research](/research-recipes/lead-quality)
 
+- [Market Blind Spot Research](/research-recipes/market-blind-spot-research)
+
 - [Researching With Low Traffic](/research-recipes/researching-low-traffic)
 
 - [SaaS Pricing Page](/research-recipes/saas-pricing-page)
@@ -73,4 +75,4 @@ Go deeper
 - [How does product copy format affect user engagement (original research)](https://speero.com/post/how-does-product-copy-format-affect-user-engagement-original-research)
 
 Source: https://speero.com/research-methods/copy-testing
-Last updated: 2026-11-06
+Last updated: 2026-11-09

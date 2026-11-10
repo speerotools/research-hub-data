@@ -69,6 +69,8 @@ Tools
 
 - [Lead Quality Research](/research-recipes/lead-quality)
 
+- [Market Blind Spot Research](/research-recipes/market-blind-spot-research)
+
 - [Onboarding & Activation Research](/research-recipes/onboarding-activation)
 
 - [Repeat Purchase & Post-Purchase Research](/research-recipes/repeat-purchase)
@@ -88,4 +90,4 @@ Go deeper
 - [4 mental models for voice of customer research](https://speero.com/post/4-mental-models-to-help-you-conduct-voice-of-customer-research)
 
 Source: https://speero.com/research-methods/customer-interviews
-Last updated: 2026-11-06
+Last updated: 2026-11-09
