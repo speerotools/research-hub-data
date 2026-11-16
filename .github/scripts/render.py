@@ -29,6 +29,12 @@ SITE = "https://speero.com"
 RECIPE_BASE = "/research-recipes/"
 METHOD_BASE = "/research-methods/"
 TOOLS_HUB = "/ab-testing-tools/"
+SYNTHETIC_GUIDE = "/research-synthetic-users"
+
+# Evidence source values that mean "a model stood in for a customer". The
+# badge, the directory filter and the caveat panel all key off this one set,
+# so there is a single place to change if Airtable gains another option.
+SIMULATED = ("Synthetic", "Hybrid")
 
 # Cross-hub pairs, per the link rules in research-hub-seo-aeo-spec.md section 7.
 # Keyed by method slug. The testing tools hub is the only live sibling today;
@@ -203,6 +209,37 @@ def trigger_items(raw: list[str]) -> list[str]:
     if len(rows) == 1 and "," in rows[0]:
         rows = [p.strip(" .") for p in rows[0].split(",")]
     return [r[:1].upper() + r[1:] for r in rows if r]
+
+
+def is_simulated(evidence: str) -> bool:
+    return (evidence or "").strip() in SIMULATED
+
+
+def synthetic_badge(evidence: str) -> str:
+    """The badge label, or nothing at all for a real-people method.
+
+    The template's badge is bound to this and hidden while it is empty, which
+    is how a method that studies real people shows no badge without needing
+    conditional visibility, a Designer-only control with no API equivalent.
+    """
+    return evidence.strip() if is_simulated(evidence) else ""
+
+
+def synthetic_caveat(evidence: str) -> str:
+    """The eggplant panel under the intro on a simulated method's page.
+
+    Empty for every other method, so the panel collapses rather than leaving
+    an empty box. The wording is the mockup's, and the link is the one rule
+    the panel exists to carry: pair it with real people.
+    """
+    if not is_simulated(evidence):
+        return ""
+    return (
+        "<p><strong>This method studies a model, not your customers.</strong></p>"
+        "<p>Use it to prepare and prioritise research. Follow it with a "
+        "real-people method before you act on anything it suggests.</p>"
+        f'<p><a href="{SYNTHETIC_GUIDE}">When to use synthetic users</a></p>'
+    )
 
 
 def objective_chips(values: list[str]) -> str:
@@ -446,6 +483,11 @@ def method_fields(slug: str, m: dict, data: dict) -> dict:
         "strength-of-signal": m.get("signal", ""),
         "effort": m.get("effort", ""),
         "surface-area": ", ".join(m.get("surface", [])),
+        "evidence-source": m.get("evidenceSource", ""),
+        # Empty on a real-people method, which is what hides the badge and
+        # the caveat panel without conditional visibility.
+        "synthetic-badge": synthetic_badge(m.get("evidenceSource", "")),
+        "synthetic-caveat": synthetic_caveat(m.get("evidenceSource", "")),
         "use-cases": paragraphs(m.get("use", "")),
         "pros": paragraphs(m.get("pros", "")),
         "cons": paragraphs(m.get("cons", "")),

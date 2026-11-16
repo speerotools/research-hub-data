@@ -107,6 +107,7 @@ F_METHOD = {
     "objective": "Objective", "data": "Primary Data Type",
     "signal": "Strength of Signal", "effort": "Effort", "tools": "Tools",
     "resources": "Resources", "surface": "Surface Area",
+    "evidence": "Evidence source",
     # optional
     "related": "Related Methods", "seo_title": "Meta Title",
     "seo_desc": "Meta Description", "modified": "Last Modified",
@@ -426,6 +427,14 @@ def build_methods(rows: dict[str, dict], tool_names: dict[str, str]) -> tuple[di
             err(f"{where}: duplicate slug {slug!r}")
             continue
 
+        evidence = text(f.get(F_METHOD["evidence"]))
+        if not evidence:
+            # The synthetic badge, the directory filter and the caveat panel
+            # all key off this, so a blank one silently drops a method out of
+            # the filter rather than failing loudly.
+            warn(f"{where}: 'Evidence source' is empty; "
+                 "the method will not carry a badge or appear under a filter")
+
         data_types = as_list(f.get(F_METHOD["data"]))
         m = {
             "name": name,
@@ -434,6 +443,7 @@ def build_methods(rows: dict[str, dict], tool_names: dict[str, str]) -> tuple[di
             "signal": text(f.get(F_METHOD["signal"])),
             "effort": text(f.get(F_METHOD["effort"])),
             "surface": as_list(f.get(F_METHOD["surface"])),
+            "evidenceSource": evidence,
             "tools": [tool_names[t] for t in (f.get(F_METHOD["tools"]) or [])
                       if t in tool_names],
             "related": None,
