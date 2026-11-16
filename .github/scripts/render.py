@@ -229,8 +229,9 @@ def synthetic_caveat(evidence: str) -> str:
     """The eggplant panel under the intro on a simulated method's page.
 
     Empty for every other method, so the panel collapses rather than leaving
-    an empty box. The wording is the mockup's, and the link is the one rule
-    the panel exists to carry: pair it with real people.
+    an empty box. The wording is the mockup's. The guide link that sits
+    beside it is a static button in the template, not part of this field,
+    because the mockup puts it outside the text column.
     """
     if not is_simulated(evidence):
         return ""
@@ -238,8 +239,50 @@ def synthetic_caveat(evidence: str) -> str:
         "<p><strong>This method studies a model, not your customers.</strong></p>"
         "<p>Use it to prepare and prioritise research. Follow it with a "
         "real-people method before you act on anything it suggests.</p>"
-        f'<p><a href="{SYNTHETIC_GUIDE}">When to use synthetic users</a></p>'
     )
+
+
+def _split_items(raw: str) -> list[str]:
+    """Rows that are already one per line, or paragraphs split by blank lines."""
+    raw = (raw or "").strip()
+    if not raw:
+        return []
+    parts = raw.split("\n\n") if "\n\n" in raw else raw.split("\n")
+    return [" ".join(p.split()) for p in parts if p.strip()]
+
+
+def synthetic_list(evidence: str, raw: str) -> str:
+    """One of the two bullet panels on a simulated method's page.
+
+    Empty for every other method. That emptiness is the switch: the Designer
+    condition and the :empty rule both read the same field, so the panel can
+    never appear on a page that has nothing to put in it.
+    """
+    if not is_simulated(evidence):
+        return ""
+    return bullets(_split_items(raw))
+
+
+def synthetic_pair(evidence: str, related_slug: str, methods: dict) -> dict:
+    """The real-people method Airtable says to pair a simulated one with.
+
+    Airtable carries exactly one pairing per method, so this renders one card.
+    The mockup drew three; the other two would have to be invented, which
+    would put methods on the page that nobody chose.
+    """
+    blank = {"name": "", "evidence": "", "url": ""}
+    if not is_simulated(evidence):
+        return blank
+    m = (methods or {}).get(related_slug or "")
+    if not m:
+        return blank
+    return {
+        "name": m["name"],
+        "evidence": m.get("evidenceSource", ""),
+        # Absolute, because this one feeds a Webflow Link field rather than
+        # an href written into generated HTML.
+        "url": SITE + METHOD_BASE + related_slug,
+    }
 
 
 def objective_chips(values: list[str]) -> str:
@@ -474,6 +517,8 @@ def method_fields(slug: str, m: dict, data: dict) -> dict:
          if any(slug in st[2] for st in r["stages"])),
         key=lambda p: p[1],
     )
+    _syn_pair = synthetic_pair(m.get("evidenceSource", ""),
+                               m.get("related", ""), data["methods"])
     fd = {
         "name": m["name"],
         "slug": slug,
@@ -503,6 +548,14 @@ def method_fields(slug: str, m: dict, data: dict) -> dict:
                         or "<p>Runs on your existing systems; no dedicated "
                            "tool required.</p>"),
         "often-paired-with": paired_html(m.get("related", ""), data["methods"]),
+        # The board-2 layout for simulated methods. Every one of these is
+        # empty on the other 30 methods, so the second layout cannot leak
+        # onto a page that studies real people.
+        "syn-good": synthetic_list(m.get("evidenceSource", ""), m.get("use", "")),
+        "syn-limits": synthetic_list(m.get("evidenceSource", ""), m.get("cons", "")),
+        "syn-pair-name": _syn_pair["name"],
+        "syn-pair-evidence": _syn_pair["evidence"],
+        "syn-pair-url": _syn_pair["url"],
         # One pill per objective under the H1. The joined string above still
         # feeds the facts panel, which the wireframe writes as one line.
         "objective-chips": objective_chips(m.get("objective", [])),
