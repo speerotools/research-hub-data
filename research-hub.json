@@ -1,6 +1,6 @@
 {
-  "version": "2026-11-15T12:30:46Z",
-  "commit": "8df78d0641fbfd3a51ad101f966e2a4b43c16422",
+  "version": "2026-11-16T08:35:03Z",
+  "commit": "c3eba6815935e1c0331ae28afc5e601fc14202f2",
   "methods": {
     "remote-usability-studies": {
       "name": "Remote Usability Studies",
@@ -15,6 +15,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Observed behaviour",
       "tools": [
         "Userlytics",
         "Usertesting.com",
@@ -55,6 +56,7 @@
         "Any surface",
         "Messaging & copy"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [
         "TypeForm",
         "Google Forms",
@@ -93,6 +95,7 @@
         "Any surface",
         "Messaging & copy"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [
         "Zoom",
         "Lookback",
@@ -129,6 +132,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [
         "Hotjar",
         "VWO",
@@ -168,6 +172,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Observed behaviour",
       "tools": [
         "Hotjar",
         "Content Square",
@@ -202,6 +207,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Observed behaviour",
       "tools": [
         "Hotjar",
         "Content Square",
@@ -236,6 +242,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Observed behaviour",
       "tools": [
         "Google Analytics",
         "Adobe Analytics",
@@ -284,6 +291,7 @@
         "Messaging & copy",
         "Pricing page"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [
         "Zoom"
       ],
@@ -309,6 +317,7 @@
         "Messaging & copy",
         "Pricing page"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [
         "Google Forms",
         "Survey Monkey"
@@ -335,6 +344,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Expert review",
       "tools": [
         "Miro"
       ],
@@ -365,6 +375,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Expert review",
       "tools": [
         "Miro"
       ],
@@ -407,6 +418,7 @@
       "surface": [
         "Navigation & IA"
       ],
+      "evidenceSource": "Observed behaviour",
       "tools": [
         "Optimal Workshop",
         "Userlytics",
@@ -444,6 +456,7 @@
       "surface": [
         "Navigation & IA"
       ],
+      "evidenceSource": "Observed behaviour",
       "tools": [
         "Userlytics",
         "Optimal Workshop",
@@ -481,6 +494,7 @@
         "Landing pages",
         "Messaging & copy"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [
         "Usability Hub"
       ],
@@ -505,6 +519,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [
         "Usability Hub",
         "Wynter"
@@ -536,6 +551,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Observed behaviour",
       "tools": [
         "Zoom",
         "Askable",
@@ -576,6 +592,7 @@
         "Landing pages",
         "Pricing page"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [
         "Wynter"
       ],
@@ -605,6 +622,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Observed behaviour",
       "tools": [
         "Userlytics",
         "Usertesting.com",
@@ -632,6 +650,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [],
       "related": null,
       "desc": "Diary studies involve recruiting participants to take part in research over the period of a few weeks to a few months. Participants are asked to submit \"diary\" entries every time they naturally do a certain behaviour, e.g. browse for a specific product or service. Diary studies can be conducted via email, text, whatsapp or bespoke platforms.",
@@ -664,6 +683,7 @@
         "Acquisition & ads",
         "Landing pages"
       ],
+      "evidenceSource": "Observed behaviour",
       "tools": [],
       "related": null,
       "desc": "Analysis of ads data within Google Ads, Facebook ads, Instagram ads, etc, focused on performance, CPC, Impressions, Clicks, Cost, with the aim of identifying which campaigns and ads are underperforming.",
@@ -686,6 +706,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [
         "Lucky Orange"
       ],
@@ -711,6 +732,7 @@
         "Messaging & copy",
         "Pricing page"
       ],
+      "evidenceSource": "Observed behaviour",
       "tools": [],
       "related": null,
       "desc": "Analysis of data housed within existing CRM (Customer Relationship Management) tool / database, e.g. Salesforce, Pipedrive, etc. to understand customers and potential customers challenges, pain points, blockers, decision making process, etc. on a large scale and identify nuances between different customer types.",
@@ -735,6 +757,7 @@
         "Forms",
         "Checkout & cart"
       ],
+      "evidenceSource": "Observed behaviour",
       "tools": [
         "Zuko"
       ],
@@ -772,6 +795,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Observed behaviour",
       "tools": [
         "AB Testing Tools (Speero Comparison)"
       ],
@@ -815,6 +839,7 @@
         "Acquisition & ads",
         "Landing pages"
       ],
+      "evidenceSource": "Observed behaviour",
       "tools": [
         "Google Search Console",
         "Ahrefs"
@@ -842,6 +867,7 @@
         "Messaging & copy",
         "Pricing page"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [
         "Zoom",
         "Lookback"
@@ -869,6 +895,7 @@
         "Messaging & copy",
         "Acquisition & ads"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [
         "Wynter"
       ],
@@ -894,6 +921,7 @@
         "Any surface",
         "Messaging & copy"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [
         "Brandwatch"
       ],
@@ -919,6 +947,7 @@
         "Any surface",
         "Messaging & copy"
       ],
+      "evidenceSource": "Stated by real people",
       "tools": [
         "G2",
         "Trustpilot"
@@ -945,6 +974,7 @@
         "Any surface",
         "Messaging & copy"
       ],
+      "evidenceSource": "Synthetic",
       "tools": [
         "Synthetic Users",
         "Ask Rally",
@@ -975,6 +1005,7 @@
         "Messaging & copy",
         "Pricing page"
       ],
+      "evidenceSource": "Synthetic",
       "tools": [
         "Qualtrics Synthetic Panels",
         "Expected Parrot"
@@ -1003,6 +1034,7 @@
         "Checkout & cart",
         "Any surface"
       ],
+      "evidenceSource": "Synthetic",
       "tools": [
         "Squoosh",
         "Shopify SimGym",
@@ -1031,6 +1063,7 @@
         "Landing pages",
         "Acquisition & ads"
       ],
+      "evidenceSource": "Hybrid",
       "tools": [
         "Attention Insight",
         "Neurons Predict",
@@ -1059,6 +1092,7 @@
       "surface": [
         "Any surface"
       ],
+      "evidenceSource": "Synthetic",
       "tools": [
         "Uxia",
         "Loop11"
@@ -1086,6 +1120,7 @@
         "Acquisition & ads",
         "Checkout & cart"
       ],
+      "evidenceSource": "Expert review",
       "tools": [
         "Shopify Agentic Commerce Readiness"
       ],
@@ -1112,6 +1147,7 @@
         "Any surface",
         "Messaging & copy"
       ],
+      "evidenceSource": "Hybrid",
       "tools": [],
       "related": "competitor-review",
       "desc": "Reading a whole category's public material with an AI model: competitor sites and pricing, what incumbents tell investors on earnings calls, and what customers say in reviews and forums. The model is asked questions that force thinking rather than summary, then one go-to-market angle is attacked over several rounds, each bringing new evidence, until what is left holds up. The output is a hypothesis to test with buyers, not a finding.",
