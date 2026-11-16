@@ -556,6 +556,13 @@ def method_fields(slug: str, m: dict, data: dict) -> dict:
         "syn-pair-name": _syn_pair["name"],
         "syn-pair-evidence": _syn_pair["evidence"],
         "syn-pair-url": _syn_pair["url"],
+        # Which of the two layouts the method template renders. Webflow
+        # strips an element whose visibility resolves to false out of the
+        # published HTML, so only one layout ever reaches a crawler. The
+        # pair is written here rather than toggled by hand so a method that
+        # changes evidence source switches layout on the next sync.
+        "is-simulated": is_simulated(m.get("evidenceSource", "")),
+        "is-classic": not is_simulated(m.get("evidenceSource", "")),
         # One pill per objective under the H1. The joined string above still
         # feeds the facts panel, which the wireframe writes as one line.
         "objective-chips": objective_chips(m.get("objective", [])),
