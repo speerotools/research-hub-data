@@ -1,6 +1,6 @@
 {
-  "version": "2026-11-16T13:22:37Z",
-  "commit": "055cc659e3ed07232c4ae2f6a470217d3f11bd55",
+  "version": "2026-11-17T14:07:50Z",
+  "commit": "c0fce2e2b36e20a493feb25fadcc730d342c6888",
   "methods": {
     "remote-usability-studies": {
       "name": "Remote Usability Studies",
@@ -2983,6 +2983,7 @@
     "posthog": "posthog",
     "uniform": "uniform",
     "monetate": "monetate",
+    "ab tasty": "ab-tasty",
     "convert": "convert",
     "zoho pagesense": "zoho-pagesense",
     "harness fme": "harness-fme",
@@ -2990,6 +2991,7 @@
     "contentful personalization": "ninetailed-by-contentful",
     "varify.io": "varify",
     "croct": "croct",
+    "mutiny": "mutiny",
     "growthbook": "growthbook",
     "kameleoon": "kameleoon",
     "statsig": "statsig",
